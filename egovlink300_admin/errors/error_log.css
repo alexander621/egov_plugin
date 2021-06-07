@@ -1,0 +1,77 @@
+/* STANDARD STYLES */
+H3 {font-family: font-family: arial,tahoma;; font-size: 20px; color: #336699;}
+H4 {font-family: font-family: arial,tahoma;; font-size: 16px; color: #000000;}
+P {font-family: arial,tahoma; font-size: 12px; color: #000000;}
+BODY {font-family: font-family: arial,tahoma;; font-size: 10px; color: #000000;}
+TD {font-family: font-family: arial,tahoma;; font-size: 10px; color: #000000;}
+SELECT {font-family: font-family: arial,tahoma;; font-size: 10px; color: #000000;}
+FONT {font-family: font-family: arial,tahoma;; font-size: 10px; color: #000000;}
+li {font-family: font-family: arial,tahoma;; font-size: 12px; color: #000000;text-align:left;}
+a         {font-family: arial,tahoma; font-size: 12px; color:#000000; text-decoration:none; font-weight:bold;}
+a:active  {font-family: arial,tahoma; font-size: 12px; color:#000000; text-decoration:none; font-weight:bold;}
+a:hover   {font-family: arial,tahoma; font-size: 12px; color:#225e82; text-decoration:none; font-weight:bold;}
+body {background-image: URL('images/watermark2.jpg');background-repeat: no-repeat;background-position: top right; }
+
+
+
+/* BOX STYLES */
+div.sectionform {padding: 10px;}
+div.securitynotice {background-color:#e0e0e0;border-style:solid solid solid solid; border-width:1px; border-color:#c0c0c0;padding:5px;}
+div.subsection {border-style:solid solid solid solid; border-width:1px; border-color:#666666;padding:5px; width:400px;}
+td.box {border-style:solid solid solid solid; border-width:1px; border-color:#666666;}
+div.greybox {padding:5px;border-style:solid solid solid solid; border-width:1px; border-color:#666666;background-color:#e0e0e0;}
+div.logonfail {padding:5px;border-style:solid solid solid solid; border-width:1px; border-color:#666666;background-color:yellow;font-weight:bold;}
+div.box {border-style:solid solid solid solid; border-width:1px; border-color:#666666; padding:10px;}
+div.headerbox {border-style:solid solid solid solid; border-width:1px; border-color:#000000;background-color:#225e82;padding:2px;color:#ffffff;}
+div.footerbox {height:100%;border-style:solid solid solid solid; border-width:1px; border-color:#000000;background-color:#225e82;padding:2px;color:#ffffff;}
+div.labelbox {border-style:solid solid solid solid;border-color:#000000; border-width:1px;background-color:#e0e0e0;padding:5px;}
+table.labels {border-style:solid solid solid solid;border-color:#000000; border-width:1px;background-color:#ffffff;font-size: 12px;width:150px;}
+.labels {border-style:solid solid solid solid;border-color:#000000; border-width:1px;background-color:#e0e0e0;font-size: 12px;text-align:center;}
+.labelstop {border-style:solid solid solid solid;border-color:#000000; border-width:1px;background-color:#e0e0e0;font-size: 2px;}
+td.selectedlabel {border-style:solid solid solid solid;border-color:#000000; border-width:1px;background-color:#00ff00;font-size: 12px;text-align:center;}
+div.success {font-family: arial,tahoma;border-style:solid solid solid solid; color:blue; border-width:1px; border-color:#666666;background-color:#e0e0e0;font-size: 12px;padding:5px;font-weight:bold;}
+div.fail {font-family: arial,tahoma;border-style:solid solid solid solid; color:red; border-width:1px; border-color:#666666;background-color:#e0e0e0;font-size: 12px;padding:5px;font-weight:bold;}
+.smallbtn {font-weight:bold;font-family: verdana,sans-serif; font-size: 10px;color:#ffffff; background-color:#7B022B;width:200px;}
+img.logo {margin:5px; border: 1px 1px 1px 1px solid #000000;}
+div.errorbox {text-align:left; width:90%; border-style:solid;border-color:#000000;border-width:1px;font-family: arial,tahoma; font-size: 12px; color:#000000;padding:5px;background-color:#e0e0e0;}
+
+/* HEADERS */
+font.header {font-family: arial,tahoma; font-size: 18px; color: #FFFFFF;}
+.label {font-family: arial,tahoma; font-size: 11px; color: #000000;font-weight:bold;}
+a.topmenu {color:#FFFFFF;}
+
+/* FOOTERS */
+font.footer {margin: 7px;font-family: arial,tahoma;; font-size:11px; color: #ffffff; font-weight:bold;}
+
+
+/* FORM STYLES */
+input.txtbox {font-family: arial,tahoma;; font-size: 10px; color: #000000; width:100px;}
+input.textbox {font-family: arial,tahoma;; font-size: 10px; color: #000000; width:250px;}
+input.passbox {font-family: arial,tahoma;; font-size: 10px; color: #000000; width:100px;}
+input.txtbox3 {font-family: arial,tahoma;; font-size: 24px; color: #000000;font-weight:bold; width:150px;}
+input.txtbox2 {font-family: arial,tahoma;; font-size: 10px; color: #000000; width:30px;}
+input.btn {font-family: arial,tahoma;; font-size: 12px; color: #000000; width:190px;background-color:#e0e0e0;font-weight:bold; }
+input.btn2 {font-family: arial,tahoma;; font-size: 12px; color: #000000; width:100px;background-color:#e0e0e0;font-weight:bold; }
+input.btn3 {font-family: arial,tahoma;; font-size: 10px; color: #000000; background-color:#e0e0e0; }
+legend  {font-family: arial,tahoma; font-size: 11px; color: #000000;font-weight:bold;}
+fieldset {width:400px;padding:5px;}
+li.names {font-family: verdana,sans-serif; font-size: 12px;color:#000000;background-color:#ffffff;}
+fieldset.names {width: 280px;padding:5px;background-color:#ffffff;}
+
+/* MENUS */
+a.menu {font-family: arial,tahoma; font-size: 12px; color:#000000 text-decoration:none;font-weight:bold;border-style:solid solid solid solid;border-color:#d6d3ce; border-width:1px;}
+a.menu:active {font-family: arial,tahoma; font-size: 12px; color:#000000;text-decoration:none;font-weight:bold;}
+a.menu:hover {font-family: arial,tahoma; font-size: 12px; color:#000000;font-weight:bold;border-style:solid solid solid solid;border-color:#000000; border-width:1px;background-color:#e0e0e0;}
+a.menu:visited {font-family: arial,tahoma; font-size: 12px; color:#000000;text-decoration:none;font-weight:bold;}
+
+/*LAYOUT STYLES*/
+td.menu {height:575;width:175px;background-color:#e0e0e0;border-right:1px solid #000000;}
+
+/*EXCEL TABLE STYLES*/
+table.excel {}
+td.excelheader {font-weight:bold;background-color:#eeeeee;border-top: solid #000000 1px;border-right: solid #000000 1px;font-family: verdana,sans-serif; font-size: 10px;border-bottom: solid #000000 1px;}
+td.exceldata {background-color:white;border-right: solid #c0c0c0 1px;border-bottom: solid #c0c0c0 1px;font-family: verdana,sans-serif; font-size: 10px;height:12px;}
+td.excelheaderleft {font-weight:bold;border-left: solid #000000 1px;background-color:#eeeeee;border-top: solid #000000 1px;border-right: solid #000000 1px;font-family: verdana,sans-serif; font-size: 10px;border-bottom: solid #000000 1px;}
+td.exceldataleft {background-color:white;border-left: solid #c0c0c0 1px;border-right: solid #c0c0c0 1px;border-bottom: solid #c0c0c0 1px;font-family: verdana,sans-serif; font-size: 10px;height:12px;}
+
+

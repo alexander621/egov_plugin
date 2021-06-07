@@ -1,0 +1,629 @@
+﻿body {
+   margin:  0;
+   padding: 0;
+}
+
+img {
+   max-width: 100%;
+}
+
+#wrapper_header,
+#wrapper_content,
+#wrapper_footer {
+   border:     0pt solid #000000;
+   font-style: normal;
+   font-size:  100%;
+}
+
+#header,
+#nav-wrap,
+#welcome_info,
+#content,
+#wrapper_footer {
+   border: 0pt solid #ff0000;
+}
+
+#wrapper_body,
+#wrapper_header,
+#wrapper_footer,
+#header,
+#wrapper_footer {
+   width: 100%;  /* 800px */
+}
+
+/*--------------------------------------------------------------------------------
+BEGIN: Navigation
+----------------------------------------------------------------------------------*/
+#nav-wrap
+{
+    background-color: #efefef;
+}
+
+/*
+#menu-icon,
+#navmenu 
+{
+    margin-left: 2.5%; /* (20px / 800px) * 100 */
+/*}
+*/
+
+#menu-icon
+{
+    background-color: #c0c0c0;
+	font-weight: bold;
+	font-family: verdana,sans-serif;
+    color: #000000;
+    cursor: pointer;
+    display: block; /* show menu icon */
+    border-left: 1pt solid #000000;
+    border-right: 1pt solid #000000;
+}
+
+#navmenu, 
+#navmenu li {
+	margin: 0;
+	padding: 0;
+}
+
+#navmenu
+{
+    clear: both;
+	position: absolute;
+	z-index: 10000;
+	background-color: #808080;
+	border: 1px solid #c0c0c0;
+	display: none; /* visibility will be toggled with jquery */
+    /*margin-left: 2.5%; */
+    width: 200px;
+}
+
+#navmenu li {
+    clear: both;
+	float: none;
+	list-style: none;
+	margin: 1px 0px;
+}
+
+#navmenu a, 
+#navmenu ul a
+{
+    /* font: inherit; */
+	/* background-color: none; */
+	/* padding: 0; */
+    font-family: verdana,sans-serif;
+	display: inline;
+	color: #666666;
+	border: none;
+	text-decoration: none;
+}
+
+/* -- navmenu link -- */
+#navmenu a {
+	display: block;
+	color: #000000;
+	background-color: #ecebeb;
+}
+
+#navmenu a:hover, 
+#navmenu ul a:hover
+{
+    background: none;
+	color: #000000;
+}
+
+/* -- navmenu dropdown -- */
+#navmenu ul {
+	background-color: #ffffff;
+	padding: 2px;
+	position: absolute;
+	border: solid 1px #cccccc;
+	display: none; /* hide dropdown */
+	width: 200px;
+}
+
+#navmenu ul li {
+	float: none;
+	margin: 3px 0 3px 15px;
+	padding: 0;
+}
+
+#navmenu li:hover > ul {
+	display: block; /* show dropdown on hover */
+}
+
+#nav-wrap
+{
+   position: relative;
+}
+
+/* -- Sub-Navigation -- */
+#submenu_nav 
+{
+    border-bottom: 1pt solid #000000;
+    background-color: #eeeeee;
+    text-align: right;
+    background: -moz-linear-gradient(top,#eeeeee,#c0c0c0);  /* Firefox */
+    background: -webkit-gradient(linear,left top,left bottom, from(#eeeeee), to(#c0c0c0));  /* Safari, Chrome */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#c0c0c0');  /* Internet Explorer (<= 5) */
+    -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#c0c0c0')';  /* Internet Explorer (8) */
+}
+   
+#submenu_options li
+{
+    display: inline;
+    border-left: 1pt solid #404040;
+    border-bottom: 1pt solid #404040;
+    padding: 4px 5px;
+    background-color: #c0c0c0;
+    font-size: 0.75em;
+    font-family: Verdana,sans Serif;
+    cursor: pointer;
+}
+
+#submenu_search 
+{
+    border-right: 1pt solid #000000;
+}
+
+#submenu_options
+{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0 0 1px 0;
+}
+
+/*
+#submenu_lists,
+#submenu_quicklinks_list,
+#submenu_categories_list,
+#submenu_search_box 
+{
+    display: none;
+}
+*/
+
+/*
+#submenu_lists
+{
+    position: relative;
+    float: right;
+    z-index: 9999;
+    min-width: 40%; /* (320 / 800) * 100 */
+/*    border-left: 1pt solid #404040;
+    border-bottom: 1pt solid #404040;
+    border-right: 1pt solid #404040;
+    border-bottom-left-radius: 6px;
+    background-color: #40791C;
+       /* opacity: 0.5;  /* Non-IE */
+       /* filter: alpha(opacity=50);  /* IE */
+/*    font-family: Verdana,sans-serif;
+    font-size: 1em;
+    padding: 0 0 3px 3px;
+}
+*/
+
+#subcategorymenu_list,
+#loggedinlinks_list
+{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#loggedinlinks_list li,
+#subcategorymenu_list li
+{
+    border-top: 1pt solid #000000;
+    background-color: #efefef;
+    padding: 2px;
+}
+
+/*--------------------------------------------------------------------------------
+END: Navigation
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Footer
+----------------------------------------------------------------------------------*/
+
+#wrapper_footer 
+{
+    width: 100%;
+}
+
+#footer_fadeline_top 
+{
+    background-color: #666666;
+}
+
+#footer_fadeline_bottom 
+{
+    background-color: #ffffff;
+}
+
+#footer_fadeline_top,
+#footer_fadeline_bottom
+{
+    height: 0.25em;
+}
+
+#footer
+{
+    background-color: #6298C7;
+    text-align: center;
+    color: #ffffff;
+    font-family: Verdana,sans-serif;
+    font-size: 0.6875em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer a 
+{
+    color: #ffffff;
+}
+
+#bottom_navigation 
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.625em;
+}
+
+#bottom_navigation a 
+{
+    white-space: nowrap;
+}
+
+#google_translator 
+{
+    margin-top: 0.625em;
+}
+
+/*--------------------------------------------------------------------------------
+END: Footer
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Classes and Events
+----------------------------------------------------------------------------------*/
+#classesSearchBox 
+{
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 0.75em;
+    font-family: Verdana,sans-serif;
+}
+
+#viewpick 
+{
+	margin-top: 1.25%;
+	text-align: right;
+}
+
+#dropdown_viewpick 
+{
+    margin-left: auto;
+}
+
+#txtsearchphrase 
+{
+    width: 45%;
+    background-color: #e0e0e0;
+}
+
+#txtsearchphrase
+{
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+
+/* -- NEW CLASS STYLES -------------------------------------------------------*/
+.fieldset_classes
+{
+    background-color: #eeeeee;
+    border: 1pt solid #c0c0c0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+}
+
+.fieldset_subcategories 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 5px;
+}
+
+.fieldset_classes legend,
+.fieldset_subcategories legend
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    padding: 2px 10px;
+    font-weight: bold;
+}
+
+#categorylist 
+{
+    list-style: none;
+    padding: 0;
+}
+
+/*--------------------------------------------------------------------------------
+END: Classes and Events
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens over 800px
+----------------------------------------------------------------------------------*/
+/*@media screen and (min-width: 801px) {*/
+   #welcome_info,
+   #content
+   {
+      margin-left: 2.5%;  /* (20px / 800px) * 100 */
+   }
+
+   #wrapper_content
+   {
+       width: 800px;
+       clear: left;
+   }
+   
+   /* -- Main Navigation -- */
+   #menu-icon 
+   {
+       width: 190px;  /* width is 200px.  With 10px padding-left the width is set to 180 */
+       padding: 2px 0px 2px 10px;
+       font-size: 0.75em;
+   }
+
+   #navmenu
+   {
+       width: 190px;  /* width is 200px.  With 10px padding-left the width is set to 180 */
+   }
+
+   #navmenu a
+   {
+       padding: 4px 0px 4px 10px;
+       font-size: 0.75em;
+   }
+   
+   #navmenu ul a
+   {
+       font-size: 0.75em;
+   }
+
+   /* -- Footer Navigation -- */  
+   #bottom_navigation 
+   {
+       width: 800px;
+   }
+
+   /* -- Sub-Menu Navigation -- */
+   #submenu_options
+   {
+       width: 800px;
+   }
+   
+   #submenu_options 
+   {
+       list-style: none;
+   }
+   
+   /* -- Classes and Events -- */
+   .fieldset_subcategories
+   {
+       margin-bottom: 10px;
+   }
+
+   .mobile_subcategories 
+   {
+       display: none;
+   }
+/*}*/
+/*--------------------------------------------------------------------------------
+END: Set up for screens over 800px
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) 
+{
+/*
+    #content
+    {
+        margin-left: 2.5%;  /* (20px / 800px) * 100 */
+/*
+    }
+*/
+   
+    #welcome_info 
+    {
+        margin: 3px;
+        padding: 2px;
+        background-color: #eeeeee;
+        border: 1pt solid #c0c0c0;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+	/* -- Main Navigation -- */
+/*
+	#menu-icon
+	{
+		background: #ecebeb url(menu-icon_white.png) no-repeat 10px center;
+        width: 160px;  /* width is 200px.  With 20px padding-left, AND the menu image, the width is set to 160 */
+/*
+        font-size: 1em;
+        height: 2em;
+		padding: 10px 0px 0px 40px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-topright: 10px;
+        top: 42px;  /* This is for screen LESS than 801px */
+/*
+	}
+*/
+
+    #navmenu 
+    {
+        top: 42px;  /* This is for screen LESS than 801px */
+    }
+
+	#navmenu a 
+	{
+	    height: 2em;
+	    padding: 12px 0px 4px 10px;
+        font-size: 1em;
+	}
+
+   #navmenu ul a
+   {
+       font-size: 1em;
+   }
+ 
+   /* -- Sub-Navigation -- */
+   #submenu 
+   {
+       text-align: right;
+   }
+   
+   #submenu_options
+   {
+       width: 100%;
+   }
+
+   #submenu_nav
+   {
+       padding: 5px 10px 5px 0;
+   }
+
+/*
+   #submenu_lists 
+   {
+       min-width: 320px; /* (320 / 800) * 100 */
+/*       margin-top: 6px;
+       margin-right: 10px;
+   }
+*/
+   #submenu_options li
+   {
+       font-size: 0.875em;  /* 14 / 16 */
+       padding: 8px 5px;
+   }
+   
+   /* -- Footer -- */
+   
+   /* -- Bottom Navigation -- */
+   #bottom_navigation
+   {
+       display: none;
+   }
+
+   /* -- Google Translator -- */
+   #google_translator 
+   {
+       display: none;
+   }
+
+   /* -- Classes and Events -- */
+   #classesSearchBox
+   {
+   	text-align: center;
+   	margin-bottom: 10px;
+   }
+   
+   #txtsearchphrase,
+   #searchButton
+   {
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+
+   #txtsearchphrase
+   {
+       height: 2.5em;  /* 40 / 16 */
+       border-radius: 20px;
+       -moz-border-radius: 20px;
+       -webkit-border-radius: 20px;
+       border: 1pt solid #c0c0c0;
+       padding-left: 0.625em;
+       padding-right: 0.625em;
+   }
+   
+   #searchButton
+   {
+       height: 3em;  /* 48 / 16 */
+       width: 60px;
+       border-radius: 20px;
+       -moz-border-radius: 20px;
+       -webkit-border-radius: 20px;
+       font-size: 1em;
+   }
+   
+   #viewpick 
+   {
+       text-align: center;
+       margin-bottom: 10px;
+   }
+
+   #dropdown_viewpick 
+   {
+       height: 2.5em;  /* 40 / 16 */
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .fieldset_classes,
+   .fieldset_subcategories
+   {
+       border: 0pt solid #000000;
+       background-color: #ffffff;
+       padding: 0px;
+   }
+
+   .fieldset_classes legend,
+   .fieldset_subcategories legend,
+   .subcategoryinfo 
+   {
+       display: none;
+   }
+   
+   .mobile_subcategories 
+   {
+       margin-bottom: 5px;
+   }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 420px
+----------------------------------------------------------------------------------*/
+/*
+@media screen and (max-width: 420px) 
+{
+    #submenu_lists 
+    {
+        min-width: 90%;
+    }
+}
+*/
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 420px
+----------------------------------------------------------------------------------*/

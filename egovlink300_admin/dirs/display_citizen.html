@@ -1,0 +1,466 @@
+<%
+Dim pagesize, totalpages,RA,totalrecords,groupname,thisname,currentpage,conn,rs,groupmode,strSQL,CName,AdditonURL
+Dim numstartid,numendid,i,deleteurl,EventOrNot,Str_Bgcolor,username,password,str_image,editurl,FullName
+
+'groupmode=1, display individual group
+'groupmode=2, display all member
+
+'pagesize = Session("PageSize")
+pagesize = GetUserPageSize( Session("UserId") ) ' Steve Loar 2/6/2007
+
+'totalpages=1
+
+thisname = request.servervariables("script_name")
+
+if not isempty(request.querystring("currentpage")) then
+	CurrentPage=clng(request.querystring("currentpage"))
+else
+	currentpage=1
+end if
+
+' the above value will be provided by the display_committee.asp
+'page size, RA, pagerecord, currentpage values must be declared to global variables.
+ DisplayRecords()
+
+'------------------------------------------------------------------------------------------------------------------------------------------
+' CUSTOM FUNCTIONS AND SUBROUTINES
+'------------------------------------------------------------------------------------------------------------------------------------------
+
+'--------------------------------------------------------------------------------------------------
+' SUB  DISPLAYRECORDS()
+'--------------------------------------------------------------------------------------------------
+Sub  DisplayRecords()
+
+	thisname=request.servervariables("script_name")
+	set conn = Server.CreateObject("ADODB.Connection")
+	conn.Open Application("DSN")
+	set rs = Server.CreateObject("ADODB.Recordset")
+	set rs.ActiveConnection = conn
+	rs.CursorLocation = 3 
+	rs.CursorType = 3 
+	'response.write "<br>GroupID="&request.querystring("groupid")
+
+	if trim(request.querystring("groupid")) <> "" then
+		'response.write "<br>display group<br>"
+		GroupMode = 1
+		strSQL = "select u.userid, userfname,userlname, useremail, userpassword, userlname + ' ' + userfname as username,"
+		strSQL = strSQL & " ug.groupname, u.registrationblocked, u.residenttype, birthdate, residencyverified, isnull(accountbalance, 00000.0000) as accountbalance, familyid, u.headofhousehold from egov_users u INNER JOIN  vwcitizengroups ug"
+		strSQL = strSQL & " ON u.userid=ug.citizenid WHERE u.orgid = " & Session("OrgID") & sView 
+		strSQL = strSQL & " AND isdeleted = 0 and userregistered = '1' and ug.groupid = " & CLng(request.querystring("groupid")) & " order by userlname, userfname, useremail"
+		' Build QUERY FOR EXPORT TO CSV
+		sCSVSql = "select userlname + ' ' + userfname as username, familyid, useremail, "
+		sCSVSql = sCSVSql & " ug.groupname, u.registrationblocked, u.residenttype, birthdate, residencyverified, isnull(accountbalance, 00000.0000) as accountbalance, u.headofhousehold from egov_users u INNER JOIN  vwcitizengroups ug "
+		sCSVSql = sCSVSql & " ON u.userid = ug.citizenid where orgid = " & session("orgid") & sView
+		sCSVSql = sCSVSql & " AND isdeleted = 0 and userregistered = '1' and ug.groupid = " & CLng(request.querystring("groupid")) & " order by userlname, userfname, useremail"
+	else
+		GroupMode = 2
+		'response.write "<br>display All<br>"
+		strSQL = "select userid, userfname,userlname, useremail, userpassword, userlname + ' ' + userfname as username, "
+		strSQL = strSQL & " u.registrationblocked, u.residenttype, birthdate, residencyverified, isnull(accountbalance, 00000.0000) as accountbalance, familyid, u.headofhousehold from egov_users u where u.orgid = " & Session("OrgID") & sView 
+		strSQL = strSQL & " AND isdeleted = 0 and userregistered = '1' order by userlname, userfname, useremail"
+		' Build QUERY FOR EXPORT TO CSV
+		sCSVSql = "SELECT userfname as [first name], userlname as [last name], familyid, CONVERT(varchar,birthdate,101) AS birthdate, (DATEDIFF(dd, birthdate, getdate())/365) AS age, useremail AS email, u.registrationblocked, "
+		sCSVSql = sCSVSql & " u.residenttype, residencyverified, userhomephone AS [home phone], usercell AS [cell phone], "
+		sCSVSql = sCSVSql & " useraddress AS address, useraddress2 AS address2, userunit AS unit, "
+		sCSVSql = sCSVSql & " usercity AS city, userstate AS state, userzip AS zip, userbusinessname AS [business name], "
+		sCSVSql = sCSVSql & " userbusinessaddress as [business address], userworkphone AS [work phone], "
+		sCSVSql = sCSVSql & " ISNULL(accountbalance, 00000.0000) AS accountbalance, u.headofhousehold "
+		sCSVSql = sCSVSql & " FROM egov_users u WHERE orgid = " & session("orgid") & sView
+		sCSVSql = sCSVSql & " AND isdeleted = 0 and userregistered = '1' order by userlname, userfname, useremail"
+	end If
+
+'	response.write sCSVSql & "<br /><br />"
+	' STORE QUERY FOR EXPORT TO CSV
+	session("DISPLAYQUERY") = sCSVSql
+	
+	rs.Open strSQL
+	'------- the following code dealing with the recordcount=0-------
+	if rs.recordcount = 0 then
+		rs.close
+		if groupmode = 1 then
+		strSQL = "select groupname from citizengroups where groupid = " & clng(request.querystring("groupid"))
+		rs.Open strSQL
+		CName = langCommittee & ":&nbsp;" & rs("groupname")	
+		groupname = rs("groupname")	
+		rs.close
+		else
+		CName=langTabCommittees&":&nbsp;"&langDiaplyMember
+		end if
+		CName = "Citizen Management"
+		call statistics(CName)
+
+		'call navagatorbar(0, True )
+		navagatorbar 0, True
+
+		'response.write "<br /><br />"
+		response.write "<div class=""citizenshadow"">"
+		response.write "<table border=""0"" cellpadding=""5"" cellspacing=""0"" id=""citizenlist"">"
+		response.write "<tr><th align=left width='60%'>&nbsp;&nbsp;&nbsp;&nbsp;"&langUser&"</th><th  align='center'>&nbsp;"&langTypeEmail&"</th></tr>"
+		response.write "<tr><td align=left colspan=2>&nbsp;&nbsp;<FONT SIZE=1 COLOR=red><B>"&langNoRecords&"</B></FONT></td></tr>"
+		response.write "</table>"
+		response.write "</div>"
+		exit sub
+	end if
+	'--------------------------------------------------------------------
+	rs.movefirst
+	totalrecords = rs.RecordCount
+	TotalPages = (totalrecords \ pagesize) + 1  '\means integer/integer
+	if totalrecords Mod pagesize=0 and TotalPages>0 then TotalPages=TotalPages-1
+	if totalrecords<=pagesize then TotalPages=1
+	if TotalPages < 1 then TotalPages = 1
+	if isNumeric(CurrentPage) then
+		if CurrentPage < 1 Then
+			CurrentPage = 1
+		End If 
+		If CurrentPage > TotalPages Then
+			CurrentPage = TotalPages
+		End If 
+	Else 
+		CurrentPage = 1
+	end if
+	numstartid	= (CurrentPage-1) * PageSize
+	numendid	= IIf(numstartid + PageSize < totalrecords, numstartid+pagesize- 1, totalrecords - 1)
+'	response.write "<br>totalrecords="&totalrecords&"  numberstartid="&numstartid&" numendid="&numendid
+'	response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages & "<br />"
+	'==========================================================================================
+	RA=rs.GetRows
+	if groupmode=1 then
+		CName=langCommittee&":&nbsp;"&RA(6,i)
+		groupname=RA(6,i)
+		else
+		CName=langTabCommittees&":&nbsp;"&langDiaplyMember
+	end if
+
+	CName = "Citizen Management"
+
+	statistics CName 
+	navagatorbar 1, True  
+	deleteurl = "delete_multiplecitizen.asp?previousURL=" & thisname & "&Extra=" & request.querystring
+	response.write vbcrlf & "<form name=""DeleteMember"" method=""post"" action=""" & deleteurl & """>"
+	response.write vbcrlf & "<div class=""citizenshadow"">"
+	'==========  the following will display the whole table=========================================
+	response.write vbcrlf & "<table border=""0"" cellpadding=""5"" cellspacing=""0"" id=""citizenlist"">"
+	response.write vbcrlf & "<tr><th align=""left"">"
+	response.write "<input class=""listCheck"" type=checkbox name=""chkSelectAll"" onClick=""selectAll('DeleteMember', this.checked, 'delete')"">"
+	response.write "</th><th align=left width=""60%"">"&langUser&"</th>"
+	If OrgHasFeature("hasfamily") Then
+		response.write "<th>Family Id</th>"
+		response.write "<th>Age</th>"
+		response.write "<th>Resident</th>"
+		If OrgHasFeature("registration blocking") Then 
+			response.write "<th>Blocked</th>"
+		End If 
+	End If 
+	response.write "<th align='center' colspan=2>&nbsp;" & langTypeEmail & "</th>"
+	If OrgHasFeature("activities") Then
+		response.write "<th>Recreation Activities</th>"
+	End If
+	If OrgHasFeature("citizen accounts") Then
+		response.write "<th>Account</th>"
+	End If 
+	If OrgHasFeature("groups") Then
+		response.write "<th>Edit Groups</th>"
+	End If 
+	response.write "</tr>"
+	iRowCount = 0
+	'--------------------------------------------------------------------------
+	For i = numstartid To numendid
+		'-- alternateviely show different color-----
+		EventOrNot=(i+2) mod 2
+		if EventOrNot=0 then
+			sRowClass = ""
+		else
+			sRowClass = " class=""altrow"" "
+		end if
+		'-------------------------------------------
+		username=RA(4,i)
+		password=RA(5,i)
+		'if (isnull(username)) or (username="") then
+		If Not RA(12,i) Then 
+			' Family Member image
+			str_image="<img src='../images/newcontact.gif'>"
+		Else
+			' Head of family image
+			str_image="<img src='../images/newuser.gif'>"
+		end if
+		'-----------------------------------------
+		'GroupNumber=entry(RA(0,i))
+		If bEditFamily Then
+			'If RA(3,i) = "" Or IsNull(RA(3,i)) Then 
+			If Not RA(12,i) Then
+				' Family Members
+				editurl = "manage_family_member.asp?u=" & RA(0,i) & "&iReturn=0"
+			Else
+				' Head of Household
+				'editurl = "display_individual_citizen.asp?userid=" & RA(0,i)
+				editurl = "update_citizen.asp?userid=" & RA(0,i)
+			End If 
+		Else 
+			'editurl = "display_individual_citizen.asp?userid=" & RA(0,i)
+			editurl = "update_citizen.asp?userid=" & RA(0,i)
+		End If 
+
+		If IsNull(RA(2,i)) Then
+			' Handle subscriptions
+			FullName = RA(3,i)
+		Else 
+			FullName = Trim(RA(2,i)) & ",&nbsp;" & Trim(RA(1,i))
+		End If 
+		iRowCount = iRowCount + 1
+		response.write 	"<tr id=""" & iRowCount & """" & sRowClass & " onMouseOver=""mouseOverRow(this);"" onMouseOut=""mouseOutRow(this);"">"
+	'	if HasPermission("CanEditUser")  and request.querystring("groupid")="" Then
+		If request("groupid") = "" Then 
+			response.write  "<td><input type=""checkbox"" name=""delete"" value=""" & RA(0,i) & """ />"
+		Else
+			response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"">&nbsp;"
+		end if
+		response.write "</td>"
+		'response.write " <td><a href=""" & editurl & """>" & FullName & "</a></td>"
+		response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"">" & str_image & "&nbsp;" & FullName & "</td>"
+		If OrgHasFeature("hasfamily") Then
+			' Show FamilyId
+			response.write "<td>"
+			response.write "<a href=""javascript:FamilyList('" & RA(11,i) & "');"">" & RA(11,i) & "</a>"
+			response.write "</td>"
+			' ********************************************************************************************
+			' Show Age
+			response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"">"
+			If Trim(RA(8,i)) = "" Or IsNull(RA(8,i)) Then
+				response.write "Adult"
+			Else
+				response.write GetCitizenAge( RA(8,i) )
+			End If 
+			response.write "</td>"
+			' show residency
+			response.write " <td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"" align=""center"">"
+			If RA(7,i) = "R" Then 
+				response.write "Yes" 
+				If OrgHasFeature( "residency verification" ) And Not RA(9,i) Then
+					response.write "?"
+				End If 
+			Else
+				response.write "&nbsp;"
+			End If 
+			response.write "</td>"
+
+			If OrgHasFeature("registration blocking") Then
+				' Show blocked status
+				response.write " <td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"" align=""center"">"
+				If RA(6,i) Then 
+					response.write "Yes" 
+				Else
+					response.write "&nbsp;"
+				End If 
+				response.write "</td>"
+			End If 
+
+		End If 
+		If RA(3,i) <> "" Then 
+			response.write "<td align='center'><a href=""mailto:"&RA(3,i)&"""><img src=""../images/newmail_small.gif"" border=""0"" /></a></td>"
+			response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"">&nbsp;" & RA(3,i) & "</td>"
+		Else
+			sMailTo = GetFamilyEmail( RA(0,i) )
+			If sMailTo <> "" Then
+				response.write "<td align='center'><a href=""mailto:" & sMailTo & """><img src=""../images/newmail_small.gif"" border=""0""></a></td>"
+				response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"">&nbsp;" & sMailTo & "</td>"
+			Else
+				response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"" align='center'>&nbsp;</td>"
+				response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"">&nbsp;</td>"
+			End If 
+			
+		End If 
+
+		If OrgHasFeature("activities") Then
+			If CitizenHasRecreationActivities( RA(0,i) ) Then 
+				If RA(3,i) = "" Or IsNull(RA(3,i)) Then
+					response.write "<td align=""center""><a href=""activities_list.asp?u=" & RA(0,i) & "&v=1"">View</a>"
+				Else
+					response.write "<td align=""center""><a href=""activities_list.asp?u=" & RA(0,i) & "&v=2"">View</a>"
+				End If 
+			Else
+				response.write "<td onMouseOver=""this.title='click to edit';"" onMouseOut=""this.title='';"" onClick=""location.href='" & editurl & "';"" align=""center"">&nbsp;"
+			End If 
+			response.write "</td>"
+		End If 
+
+		' Citizen accounts
+		If OrgHasFeature("citizen accounts") Then
+			response.write "<td align=""right""><a href=""citizen_account_history.asp?u=" & RA(0,i) & """>" & FormatCurrency(RA(10,i), 2) & "</a></td>"
+		End If
+
+		' Citizen groups for Documents security
+		'response.write    "<td align='center'>&nbsp;"&RA(3,i)&"</td>"
+		If OrgHasFeature("groups") Then
+			response.write "<td><i><a href=javascript:openWin2('ManageCitizenGroup.asp?userid="&RA(0,i)&"','_blank')>"&langEdit&"</a></i></td>"
+		End If 
+		response.write "</tr>"
+		'rs.movenext 
+	Next   
+	'----------------------------------------------------------------------------
+	response.write vbcrlf & "</table>"
+	response.write vbcrlf & "</div>"
+	response.write vbcrlf & "</form>"
+	
+	navagatorbar 1, False 
+	'=======  end of displaying the whole table================================================
+	rs.close
+	Set rs = Nothing 
+	conn.close
+	Set conn = Nothing 
+End Sub 
+
+
+'--------------------------------------------------------------------------------------------------
+' FUNCTION ENTRY(GROUPID)
+'--------------------------------------------------------------------------------------------------
+Function entry(groupid)
+	' -100 means total records
+	' if a groupid>0 it will show individual group
+	set conn2 = Server.CreateObject("ADODB.Connection")
+	conn2.Open Application("DSN")
+	set rs2 = Server.CreateObject("ADODB.Recordset")
+	set rs2.ActiveConnection = conn2
+	rs2.CursorLocation = 3 
+	rs2.CursorType = 3 
+	if groupid=-100 then
+		strSQL2= "select count(ug.userid) as totaluser from usersgroups ug inner join groups g on ug.userid=u.userid and u.orgid="&Session("OrgID")
+	else
+		strSQL2= "select count(ug.userid) as totaluser from usersgroups ug inner join groups g on ug.userid=u.userid and u.orgid="&Session("OrgID")&" where ug.groupid="&groupid
+	end if
+	rs2.Open strSQL2
+	AllUsers=rs2("totaluser")
+	rs2.close
+	conn2.close
+	set rs=nothing
+	set conn2=nothing
+	entry=AllUsers
+end function 
+
+
+'--------------------------------------------------------------------------------------------------
+' SUB STATISTICS(CNAME)
+'--------------------------------------------------------------------------------------------------
+Sub statistics( CName )
+	response.write "<table><tr>"
+	response.write "<td><font size='+1'><b>"&CName&"</b></font><br>"
+	' response.write "<img src='../images/arrow_2back.gif' align='absmiddle'>&nbsp;<a href='display_committee.asp'>"&langBackToCommittee&"</td>"
+	response.write "</td></tr></table><br><br>"
+end sub
+
+
+'--------------------------------------------------------------------------------------------------
+' SUB  NAVAGATORBAR(RECORD)
+'--------------------------------------------------------------------------------------------------
+Sub navagatorbar( record, bHeader )
+	if groupmode=1 then
+		AdditonURL="groupid="&request.querystring("groupid")&"&"
+	else
+		AdditonURL=""
+	end If
+	If bHeader Then 
+		response.write vbcrlf & "<form name=""displayForm1"" method=""post"" action=""display_citizen.asp"">" & vbcrlf 
+	End If 
+	response.write "<div style='font-size:10px; padding-bottom:5px;'>"
+		if currentpage > 1 then 
+			response.write "<a href='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)& "&v=" & sShowCitizens & "&searchvalue=" & request("searchvalue") & "&includeemails=" & request("includeemails") & "'>"
+			response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>"&langPrev&" "&pagesize&"</A>"
+		else
+			response.write "<!a href='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)& "&v=" & sShowCitizens & "&searchvalue=" & request("searchvalue") & "&includeemails=" & request("includeemails") & "'>"
+			response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>"& _
+			"<font color=#999999>"&langPrev&" "&pagesize&"</font></A>"
+		end if
+    	
+'		response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages
+		if currentpage < totalpages then 
+			response.write "&nbsp;&nbsp;<a href='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)& "&v=" & sShowCitizens & "&searchvalue=" & request("searchvalue") & "&includeemails=" & request("includeemails") & "'>"&langNext&" "&pagesize
+		else
+			response.write "&nbsp;&nbsp;<!a href='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)& "&v=" & sShowCitizens & "&searchvalue=" & request("searchvalue") & "&includeemails=" & request("includeemails") & "'>"& _
+			"<font color=#999999>"&langNext&" "&pagesize&"</font>" 
+		end if
+	    response.write 	"<img src='../images/arrow_forward.gif' align='absmiddle' border=""0"" /></a>"
+
+		'------- the following is the additional convenient links showing on the top of table---
+		if request.querystring("groupid")<>"" then
+			'-------------------------- for group display
+			' response.write "**groupnamee="&groupname&"<br>"
+	'		if HasPermission("CanEditCommittee") OR HasPermission("CanEdit"&groupname) then
+			response.write	"&nbsp;&nbsp;<img src='../images/newgroup.gif' width='16' height='16' align='absmiddle'>&nbsp;&nbsp;"
+			response.write "<a href=javascript:openWin2('ManageCitizenGroupMember.asp?groupid="&request.querystring("groupid")&"','_blank')>"&langEdit&" "&langmemberShip&"</A>"
+	'		end if
+			'-----------------------------------	
+		else
+			'-------------------------- for all users, delete or add them
+'			If UserHasPermission( Session("UserId"), "add citizens" ) Then
+'				response.write	"&nbsp;&nbsp;<img src='../images/newuser.gif' width='16' height='16' align='absmiddle'>&nbsp;<a href='register_citizen.asp'>"&langNewMember&"</a> &nbsp;&nbsp;"
+'			End If 
+			if record > 0  then %>
+			 &nbsp;&nbsp;<img src="../images/small_delete.gif" align="absmiddle">&nbsp;<a href="javascript:document.DeleteMember.submit();" onClick="javascript: return confirm('<%=langWanttoDeleteMember%>');"><%=langDelete%></a>
+<%			 End If 
+
+			If bHeader Then %>
+				<% ShowDisplayPicks sShowCitizens %>
+<%			End If 
+
+			If bHeader Then
+				' Search stuff here
+				response.write vbcrlf & "<br /><br /><input type=""text"" name=""searchvalue"" value=""" & request("searchvalue") & """ id=""searchvalue"" maxlength=""30"" size=""30"" /> &nbsp; "
+				response.write "<input type=""submit"" value=""Search List"" name=""searchbutton"" /> &nbsp; "
+				response.write "<input type=""button"" class=""button"" name=""export"" value=""Export to CSV"" onClick=""location.href='../export/csv_export.asp';"" /> &nbsp; "
+				response.write "<br /><input type=""checkbox"" name=""includeemails""" & sCheckEmails & " />&nbsp;Include Emails in Search"
+			End If 
+		
+	'		end if
+			'-----------------------
+		end If
+		If bHeader Then 
+			response.write "</form>"
+		End If 
+		'------- end of convenient links showing on the top of table---
+End Sub  
+
+
+'--------------------------------------------------------------------------------------------------
+' Sub ShowDisplayPicks( iShowCitizens )
+'--------------------------------------------------------------------------------------------------
+Sub ShowDisplayPicks( iShowCitizens )
+	%> &nbsp; &nbsp; Display: 
+		<select name="v" onChange='reloadpage( );'>
+			<option value="1"<%If CInt(iShowCitizens) = CInt(1) Then response.write " selected=""selected"" " End If%>>Everyone</option>
+<%		If OrgHasFeature( "hasfamily" ) Then %>
+			<option value="2"<%If CInt(iShowCitizens) = CInt(2) Then response.write " selected=""selected"" " End If%>>Head of Household</option>
+<%		End If 
+		If OrgHasFeature("residency verification") Then %>
+			<option value="3"<%If CInt(iShowCitizens) = CInt(3) Then response.write " selected=""selected"" " End If%>>Need Residency Verification</option>
+<%		End If 
+		If OrgHasFeature("registration blocking") Then %>
+			<option value="4"<%If CInt(iShowCitizens) = CInt(4) Then response.write " selected=""selected"" " End If%>>Blocked Households</option>
+<%		End If 
+		If OrgHasFeature("subscriptions") Then %>
+			<option value="5"<%If CInt(iShowCitizens) = CInt(5) Then response.write " selected=""selected"" " End If%>>Email Only Subscribers</option>
+<%		End If
+%>
+		</select>
+	<%
+End Sub 
+
+'--------------------------------------------------------------------------------------------------
+' FUNCTION IIF(BCHECK, STRUE, SFALSE)
+'--------------------------------------------------------------------------------------------------
+function IIf(bCheck, sTrue, sFalse)
+		if bCheck then IIf = sTrue Else IIf = sFalse
+end function 
+%>
+
+<script language=javascript>
+	function openWin1(url, name) {
+  popupWin = window.open(url, name,
+"resizable,width=550,height=450");
+}
+</script>
+
+<script language=javascript>
+	function openWin2(url, name) {
+  popupWin = window.open(url, name,
+"resizable,width=380,height=300");
+}
+</script>

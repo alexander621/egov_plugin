@@ -1,0 +1,11 @@
+div#newsearchfailed p
+{
+    padding-bottom: 3em;
+	font-weight: bold;
+}
+
+fieldset.articleblock 
+{
+	margin-bottom: 2em;
+}
+

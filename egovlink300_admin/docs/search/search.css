@@ -1,0 +1,122 @@
+<!--
+body {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+}
+	
+td {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+}
+	
+li {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+}
+
+p {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+}
+
+input {
+	font-family: Verdana, Arial, Helvetica;
+	font-size: 8pt;
+}
+
+b {
+	font-family: Verdana, Arial, Helvetica;
+	font-weight: bold;
+	font-size: 8pt;
+	}
+
+a {
+	font-family: Verdana, Arial, Helvetica;
+	font-weight: bold;
+	font-size: 8pt;
+	}
+
+code {
+	font-family: Courier;
+	font-size: 8pt;
+}
+
+h1 {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18pt;
+	color: black;
+	}
+
+h2 {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 14pt;
+	color: black;
+      }
+
+h3 {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 12pt;
+	color: black;
+      }
+
+.NavLink {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8pt;
+	text-decoration: none;
+	color: white;
+	}
+
+.Hit {
+	font-family: Verdana, Arial, Helvetica;
+	font-variant: small-caps
+	font-style: normal;
+	font-weight: bold;
+	font-size: 8pt;
+	color: black;
+	background-color: #FFFF00;
+	}
+
+.RecordTitle {
+	font-family: Verdana, Arial, Helvetica;
+	font-weight: bold;
+	FONT-SIZE: 10px;
+    COLOR: #003366;
+    BACKGROUND-COLOR: #eeeeee;
+}
+
+.RecordStats {
+	font-family: Verdana, Arial, Helvetica;
+	font-style: italic;
+	font-weight: normal;
+	font-size: 8pt;
+	color: black;
+	}
+
+
+table#searchtablelist {
+    border: 1px solid #336699;
+	width: 1100px !important;
+	}
+
+table#searchtablelist th {
+    height: 24px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#searchtablelist td {
+    height: 26px;
+	}
+
+
+//-->

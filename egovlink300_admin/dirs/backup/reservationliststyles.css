@@ -1,0 +1,35 @@
+div#reservationreportshadow {
+	background: #919191; 
+	width: 1000px;
+	margin-top: 20px;
+	}
+
+table#reservationreport {
+	width: 1000px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	}
+
+table#reservationreport th {
+    height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#reservationreport td {
+    height: 26px;
+	}
+
+table#reservationreport td.rentalnamecell {
+	padding-left: 1em;
+	}
+
+tr#totalsrow td {
+	border-top: 1px solid #336699;
+	font-weight: bold;
+	background-color: #cccccc;
+	}
+

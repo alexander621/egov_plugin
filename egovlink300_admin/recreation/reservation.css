@@ -1,0 +1,235 @@
+/* RECREATION CATEGORIES */
+.categorytitle {font-family: verdana,sans-serif;font-size:18px;font-weight:bold;}
+font.categorysubtitle {font-family: verdana,sans-serif;font-size:14px;font-weight:bold;}
+font.categorydescription {font-family: verdana,sans-serif;font-size:12px;}
+img.categoryimage {border: solid #000000 1px;height:100px;width:100px;}
+div.categorygroup {cursor: pointer;margin-bottom:10px; height:100px;width:760px;}
+A.categorytitle:active{COLOR: #000000; font-family: verdana,sans-serif;font-size:18px;font-weight:bold;}
+A.categorytitle:link{COLOR: #000000;  font-family: verdana,sans-serif;font-size:18px;font-weight:bold;}
+A.categorytitle:visited{COLOR: #000000; font-family: verdana,sans-serif;font-size:18px;font-weight:bold; }
+A.categorytitle:hover{TEXT-DECORATION: underline;COLOR: #000000; font-family: verdana,sans-serif;font-size:18px;font-weight:bold; }
+
+
+/* RECREATION RESERVATION CALENDAR */
+.calheader {background-color:#e0e0e0;font-family: verdana,sans-serif;font-size:12px;}
+
+table.calfacilityselection  {
+	background-color:#93bee1;
+	font-family: verdana,sans-serif;
+	font-size:12px; 
+	position: relative; 
+	border: 1px solid #000; 
+}
+
+.caldateselect  {background-color:#93bee1;font-family: verdana,sans-serif;font-size:12px;}
+.legendlabel {font-family: verdana,sans-serif; font-size: 10px;font-weight:bold;}
+.callegendopen {background-color:#006633;height:15px;width:15px; }
+.callegendreserved {background-color:#990033;height:15px;width:15px; }
+.callegendonhold {background-color:#FFFF99;height:15px;width:15px; }
+.callegendholiday {background-color:#0000FF;height:15px;width:15px; }
+.dropshadow { background-color: #919191;width:760px; }
+
+
+div.open {color:#000000;font-size:10px;cursor:pointer;background-color:#006633;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.onhold {color:#000000;font-size:10px;cursor:pointer;background-color:#FFFF99;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.reserved {font-family: verdana,sans-serif;color:#ffffff;font-size:10px;background-color:#990033;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.holiday {font-family: verdana,sans-serif;color:#ffffff;font-size:10px;background-color:#0000FF;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+
+A.open:active{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px;}
+A.open:link{COLOR: #FFFFFF;  font-family: verdana,sans-serif;font-size:10px;}
+A.open:visited{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+A.open:hover{TEXT-DECORATION: underline;COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+
+a.holiday {COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+a.holiday:hover {text-decoration:underline;}
+
+A.onhold {COLOR: #000000; font-family: verdana,sans-serif;font-size:10px;}
+A.onhold:active{COLOR: #000000; font-family: verdana,sans-serif;font-size:10px;}
+A.onhold:link{COLOR: #000000;  font-family: verdana,sans-serif;font-size:10px;}
+A.onhold:visited{COLOR: #000000; font-family: verdana,sans-serif;font-size:10px; }
+A.onhold:hover{TEXT-DECORATION: underline;COLOR: #000000; font-family: verdana,sans-serif;font-size:10px; }
+
+A.reserved:active{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px;}
+A.reserved:link{COLOR: #FFFFFF;  font-family: verdana,sans-serif;font-size:10px;}
+A.reserved:visited{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+A.reserved:hover{TEXT-DECORATION: underline;COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+
+
+/* RECREATION RESERVATION FORM */
+.reserveformtitle{background-color:#93bee1; border-top: solid #000000 1px;border-right: solid #000000 1px;border-left: solid #000000 1px; width:760px;padding:5px;font-weight:bold;font-family: verdana,sans-serif;font-size:12px;}
+.reserveforminputarea {background-color:#e0e0e0; border: solid #000000 1px; width:760px;padding:5px;margin-bottom:10px;padding-bottom: 10px;}
+.reservationformlabel {font-family: verdana,sans-serif; font-size: 10px;font-weight:bold;text-align:right; }
+.reservationformselect {font-family: verdana,sans-serif; font-size: 10px; }
+.reserveformbutton {cursor: pointer;text-align:left; background-color: #93bee1; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 14px; font-weight:bold; width:300px;}
+.reserveformbuttonsmall {cursor: pointer;text-align:center; background-color: #93bee1; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+
+body,b,P,font,fieldset
+{
+	font-size: 12px;
+	font-family: verdana,sans-serif;
+}
+
+input.button {
+	cursor: pointer;
+	background-color: #93bee1; 
+	color: #ffffff;
+	font-family: verdana, sans-serif; 
+	font-size: 14px; 
+	font-weight: bold;
+	}
+
+#searchtip {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+	}
+
+span#searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+table.calendarlegend {
+	border: 1px solid #000;
+	width:200px;
+	position: relative; 
+	top: 0px; 
+	left: 0px; 
+	background: #fff;
+	margin-bottom: 20px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+table.tablelist {
+	border: 1px solid #000;
+	position: relative; 
+	top: 0px; 
+	left: 0px; 
+	background: #fff;
+	margin-bottom: 20px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+div.returnnav {
+	margin-bottom: 20px;
+}
+
+a.linkbutton {
+	border: 1px solid #777;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius : 10px;
+	font-weight: bold;
+	color: #333;
+	/*text-shadow: 1px 1px 1px #fff;*/
+	background: #d0d1d2;
+	padding: 5px 15px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+a.linkbutton:hover {
+	color: #fff !important;
+	background-color: #666;
+	text-decoration: none;
+}
+
+a.linkbutton:visited {
+	color: #333;
+	text-decoration: none;
+}
+
+textarea#internalnote {
+	height: 90px; 
+	width: 90%;
+}
+
+input.facilitybutton {
+	border: 1px solid #777;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius : 10px;
+	font-weight: bold;
+	color: #333;
+	/*text-shadow: 1px 1px 1px #fff;*/
+	background: #d0d1d2;
+	padding: 5px 15px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+input.facilitybutton:hover {
+	color: #fff;
+	background-color: #666;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+div.reserveformtitle {
+	-webkit-border-top-left-radius: 10px;
+	-moz-border-radius-topleft: 10px;
+	border-top-left-radius: 10px;
+	-webkit-border-top-right-radius: 10px;
+	-moz-border-radius-topright: 10px;
+	border-top-right-radius: 10px;
+}
+
+div.reserveforminputarea {
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+fieldset#cancelreportpicks {
+	margin: 20px 0;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+
+label {
+	font-weight: bold;
+}
+
+div.reserveforminstructions {
+	margin: 10px 0;
+}
+
+input.userbutton {
+	display: none;
+	}
+
+span#nomatch {
+	color: red;
+	font-weight: bold;
+}
+
+table#paymentdisplay {
+	width: 50%;
+}
+
+td.amountdisplay {
+	width: 55%;
+	text-align: left;
+	padding-left: 1em;
+}
+
+td.amountlabel {
+	width: 45%;
+	text-align: right;
+	font-weight: bold;
+}

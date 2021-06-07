@@ -1,0 +1,48 @@
+table#shippinginfoentry {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	margin-bottom: 2em;
+	}
+
+table#merchandiselist {
+	position: relative;
+	top: 0; 
+	left: 0;
+	border: 1px solid black;
+	width: 700px;
+	margin-top: 1em;
+	}
+
+table#merchandiselist th {
+	height: 26px;
+    font-size: 10px;
+	background-color: silver;
+    border-bottom: 1px solid black;
+	text-align: center;
+	}
+
+table#merchandiselist td {
+	height: 20px;
+	font-family: arial;
+    font-size: 10pt;
+	padding-left: 1em;
+	}
+
+tr.altrow {
+	background-color: #eeeeee;
+	}
+
+tr.totalrow td {
+	font-weight: bold;
+	background-color:#cccccc;
+	border-top: 1px solid black;
+	}
+
+td.newmerchandise {
+	border-top: 1px solid black;
+	}
+

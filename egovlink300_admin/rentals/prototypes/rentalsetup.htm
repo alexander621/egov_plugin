@@ -1,0 +1,435 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Facility Setup</title>
+    <style type="text/css">
+        div#content {
+            margin-left: 2em;
+           }
+           
+        th {
+            background-color: Silver;
+            border-bottom: 1px solid black;
+            }
+        td {
+            white-space: nowrap;
+            }
+        div.tab {
+            border: 1px solid black;
+            margin-top: 2em;
+            width: 800px;
+            padding-bottom: 2em;
+            padding-left: 1em;
+            padding-right: 1em;
+            }
+        table {
+            border: 1px solid black;
+            }
+        table#availabilitytable, table#offseason, table#associatedtable {
+            width: 500px;
+            }
+        table#docstable {
+            width: 100%;
+            }
+            
+        #Text1
+        {
+            width: 295px;
+        }
+        #Text2
+        {
+            width: 76px;
+        }
+        #Text3
+        {
+            width: 81px;
+        }
+        #Text4
+        {
+            width: 212px;
+        }
+        #TextArea1
+        {
+            width: 772px;
+            height: 220px;
+        }
+        .style1
+        {
+            width: 73px;
+        }
+        #TextArea2
+        {
+            width: 419px;
+        }
+        #Select11
+        {
+            width: 74px;
+        }
+        #Select13
+        {
+            width: 58px;
+        }
+        #Select12
+        {
+            width: 60px;
+        }
+        #Select14
+        {
+            width: 66px;
+        }
+        #TextArea3
+        {
+            width: 778px;
+            height: 51px;
+        }
+        #Select3
+        {
+            width: 441px;
+        }
+        #Select4
+        {
+            width: 441px;
+        }
+    </style>
+</head>
+<body>
+<div id="content">
+    <h3>Rental Setup</h3>
+    <p>
+        Name:
+        <input id="Text1" type="text" value="Room 105" /></p>
+    <div class="tab">
+        <b>General Tab</b><br /><br />
+        <input id="Checkbox1" type="checkbox" /> Public can view &nbsp;
+        <input id="Checkbox2" type="checkbox" /> Public can reserve &nbsp;
+        <input id="Checkbox14" type="checkbox" /> Public reservations require approval<br /><br />
+        
+        Location:&nbsp;
+        <select id="Select1" name="D1">
+            <option value="b">Burgess Recrecation Center</option>
+            <option value="h">Onetta M Harris Community Center</option>
+        </select><br /><br />
+        Category:&nbsp;
+            <input id="Checkbox22" type="checkbox" /> Room &nbsp;
+            <input id="Checkbox23" type="checkbox" /> Picnic Shelter &nbsp;
+            <input id="Checkbox24" type="checkbox" /> Lodge &nbsp;
+            <input id="Checkbox25" type="checkbox" /> Ball Field &nbsp;
+            <input id="Checkbox26" type="checkbox" /> Wedding Reception &nbsp;
+        <br />
+        <br />
+        Dimensions:
+        <input id="Text2" type="text" />&nbsp; by&nbsp;
+        <input id="Text3" type="text" /><br /><br />
+        
+        Capacity:<br /><textarea id="TextArea2" name="S2">Capacity of 2 people</textarea><br />
+        <br />
+        
+        
+        Supervisor: <select id="Select2" name="D1">
+                        <option value="n">Nancy Nuckolls</option>
+                        <option value="s">Steve Loar</option>
+                    </select><br />
+        <br />
+        Receipt Notes:<br /><textarea id="TextArea3" name="S2">No alcohol is allowed in this room. Show up at least an hour before your reservation.</textarea><br />
+        <br />
+    </div>
+    
+<div class="tab">
+    <b>Description Tab</b><br />
+    <br />
+    <textarea id="TextArea1" name="S1">This is the description of the facility that will tell about the facility and anything that is needed to know about making a reservation. Simple HTML will allow formatting control.</textarea>
+</div>        
+
+<div class="tab">
+    <b>Images Tab</b><br />
+    <br />
+    <p>
+        Place Images:&nbsp;
+        <select id="Select10" name="D6">
+            <option value="r">To the right of the description</option>
+            <option value="b">Beneath the description</option>
+        </select>
+    </p>
+    <input id="Button1" type="button" value="Add Image" />&nbsp;&nbsp;
+    <input id="Button2" type="button" value="Remove Selected Images" /><br />
+    <br />
+    <table style="width:100%;" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <th>
+                Image File</th>
+            <th>
+                Alt Tag</th>
+            <th>
+                Position</th>
+        </tr>
+        <tr>
+            <td>
+                <input id="Checkbox7" type="checkbox" />&nbsp;
+                http://images/image1.jpg
+            </td>
+            <td>
+                Exterior</td>
+            <td>
+                1</td>
+        </tr>
+        <tr>
+            <td>
+                <input id="Checkbox8" type="checkbox" />&nbsp;
+                http://images/image2.jpg
+            </td>
+            <td>
+                Interior</td>
+            <td>
+                2</td>
+        </tr>
+    </table>
+</div>
+
+    <div class="tab">
+        <b>In Season Availability Tab</b><br /><br />
+        <table id="availabilitytable" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <th>
+                    Available</th>
+                <th>
+                    Day of Week</th>
+                <th>
+                    Hours</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox3" type="checkbox" /></td>
+                <td align="center">
+                    Sunday</td>
+                <td align="center">
+                    10AM - 9PM</td>
+                <td align="center">
+                    <input id="Button5" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox4" type="checkbox" /></td>
+                <td align="center">
+                    Monday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button6" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox5" type="checkbox" /></td>
+                <td align="center">
+                    Tuesday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button7" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox11" type="checkbox" /></td>
+                <td align="center">
+                    Wednesday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button9" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox12" type="checkbox" /></td>
+                <td align="center">
+                    Thursday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button10" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox6" type="checkbox" /></td>
+                <td align="center">
+                    Friday</td>
+                <td align="center">
+                    8AM - 1AM</td>
+                <td align="center"><input id="Button8" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox13" type="checkbox" /></td>
+                <td align="center">
+                    Saturday</td>
+                <td align="center">
+                    8AM - 1AM</td>
+                <td align="center"><input id="Button11" type="button" value="Edit" /></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="tab">
+        <b>Off Season Availability Tab</b><br />
+        <br />
+        <input id="Checkbox29" type="checkbox" />&nbsp; This rental has an off season<br />
+        <br />
+        <b>Off Season Dates</b><br />
+        From: &nbsp; <select id="Select11" name="D7">
+            <option>January</option>
+        </select>&nbsp;
+        <select id="Select13" name="D9">
+            <option>1</option>
+        </select>&nbsp;&nbsp;&nbsp; To: &nbsp; 
+        <select id="Select12" name="D8">
+            <option>March</option>
+        </select>&nbsp;
+        <select id="Select14" name="D10">
+            <option>30</option>
+        </select><br /><br />
+        
+        <table id="offseason" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+                <th>
+                    Available</th>
+                <th>
+                    Day of Week</th>
+                <th>
+                    Hours</th>
+                <th>&nbsp;</th>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox15" type="checkbox" /></td>
+                <td align="center">
+                    Sunday</td>
+                <td align="center">
+                    10AM - 9PM</td>
+                <td align="center">
+                    <input id="Button13" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox16" type="checkbox" /></td>
+                <td align="center">
+                    Monday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button14" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox17" type="checkbox" /></td>
+                <td align="center">
+                    Tuesday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button15" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox18" type="checkbox" /></td>
+                <td align="center">
+                    Wednesday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button16" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox19" type="checkbox" /></td>
+                <td align="center">
+                    Thursday</td>
+                <td align="center">
+                    8AM - 10PM</td>
+                <td align="center"><input id="Button17" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox20" type="checkbox" /></td>
+                <td align="center">
+                    Friday</td>
+                <td align="center">
+                    8AM - 1AM</td>
+                <td align="center"><input id="Button18" type="button" value="Edit" /></td>
+            </tr>
+            <tr>
+                <td class="style1" align="center">
+                    <input id="Checkbox21" type="checkbox" /></td>
+                <td align="center">
+                    Saturday</td>
+                <td align="center">
+                    8AM - 1AM</td>
+                <td align="center"><input id="Button19" type="button" value="Edit" /></td>
+            </tr>
+        </table>
+    </div>
+
+
+<div class="tab">
+    <b>Documents Tab</b><br />
+    <br />
+    This is for waivers, maps and any documents related to this rental.<br /><br />
+    <input id="Button3" type="button" value="Add" />&nbsp;&nbsp;
+    <input id="Button4" type="button" value="Remove Selected" /><br /><br />
+    <table id="docstable" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <th>
+                Document</th>
+            <th>
+                Name</th>
+        </tr>
+        <tr>
+            <td>
+                <input id="Checkbox9" type="checkbox" />&nbsp;
+                http://docs/medicalrelease.pdf</td>
+            <td>
+                Medical Release Form</td>
+        </tr>
+        <tr>
+            <td>
+                <input id="Checkbox10" type="checkbox" />&nbsp;
+                http://docs/generalrelease.pdf</td>
+            <td>
+                General Release Form</td>
+        </tr>
+    </table>
+</div>
+
+<div class="tab">
+    <b>Associated Rentals Tab</b><br />
+    <br />This is a list of rentals that the public might want to rent as part of this rental.<br /><br />
+    <input id="Button20" type="button" value="Add" />&nbsp;&nbsp;
+    <input id="Button21" type="button" value="Remove Selected" /><br /><br />
+    <table id="associatedtable" cellpadding="0" cellspacing="0" border="0">
+        <tr>
+            <th>
+                Associated Rentals</th>
+        </tr>
+        <tr>
+            <td>
+                <input id="Checkbox27" type="checkbox" />&nbsp;
+                <select id="Select3" name="D8">
+                    <option>Kitchen (Burgess Recrecation Center)</option>
+                    <option>Portch (Burgess Recrecation Center)</option>
+                    <option>Rm 116 (Burgess Recrecation Center)</option>
+                    <option>Grand Ballroom (Onetta M Harris Community Center)</option>
+                </select>
+                </td>
+        </tr>
+        <tr>
+            <td>
+                <input id="Checkbox28" type="checkbox" />&nbsp;
+                <select id="Select4" name="D8">
+                    <option>Kitchen (Burgess Recrecation Center)</option>
+                    <option>Portch (Burgess Recrecation Center)</option>
+                    <option>Rm 116(Burgess Recrecation Center)</option>
+                    <option>Grand Ballroom (Onetta M Harris Community Center)</option>
+                </select>
+                </td>
+        </tr>
+    </table>
+</div>
+
+<p>
+    <input id="Button12" type="button" value="Save Changes" /></p>
+    
+</div>
+</body>
+</html>

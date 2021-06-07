@@ -1,0 +1,16 @@
+#receiptlinks, #topbuttons, #idControls, #topprintbutton, table#pageheader, table#logheader, #mainmenuitems, #topbackbutton, #rostershowtype {
+	display: none !important;
+	}
+
+.noprint, .menu, .class_separator, .button {
+	display: none !important;
+	}
+
+
+div.newpage {
+	page-break-after: always;
+	}
+
+span#permitalertmsg {
+	color: black;
+	}

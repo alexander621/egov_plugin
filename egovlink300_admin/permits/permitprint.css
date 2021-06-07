@@ -1,0 +1,75 @@
+#receiptlinks, #topbuttons, #idControls, #topprintbutton, table#pageheader, table#logheader, #mainmenuitems, #topbackbutton, #rostershowtype, .footerbox {
+	display: none !important;
+	}
+
+div.filterselection {
+	display: none !important;
+	}
+
+div#revenuereportshadow, div#inspectiontableshadow, div#issuedpermitreportshadow, div#impactfeereportshadow {
+	background: #ffffff !important;
+	}
+
+.noprint, .menu, .class_separator, .button {
+	display: none !important;
+	}
+
+#content { 
+	padding: 0 !important; 
+	width: 600px !important; 
+	}
+
+#content table { 
+	position: relative !important; 
+	top: 0 !important; 
+	left: 0 !important; 
+	width: 800px !important; 
+	background: #ffffff !important;
+	}
+
+tr	{
+	background-color: #ffffff !important;
+	}
+
+th, td	{
+	background-color: #ffffff !important;
+	}
+
+/* This is a landscape report */
+table#inspectiondetailsreport {
+	width: 900px !important;
+	margin-bottom: 4em !important;
+	}
+
+/* This is a landscape report */
+table#inspectorroute {
+	width: 1000px !important;
+	margin-bottom: 4em !important;
+	}
+
+table#maptable {
+	page-break-after: always !important;
+	}
+
+div#invoicesummarypagebreak {
+	page-break-before: always !important;
+	}
+
+table#issuedpermitreport {
+	width: 1100px !important;
+	}
+
+table#stategroupscount {
+	width: 300px !important;
+	}
+
+div.reportselection {
+	padding:0 !important; 
+	margin: 0 !important;
+	margin-bottom: 1em !important;
+	}
+
+span#printdaterange {
+	visibility: visible !important;
+	}
+

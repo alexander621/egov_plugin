@@ -1,0 +1,505 @@
+
+
+<html>
+<head>
+<title>E-Gov Services City of Montgomery - Manage Account</title>
+
+<link rel="stylesheet" href="http://www.egovlink.com/montgomery/css/styles.css" type="text/css">
+<link href="global.css" rel="http://www.egovlink.com/montgomery/stylesheet" type="text/css">
+<link rel="stylesheet" href="http://www.egovlink.com/montgomery/css/style_26.css" type="text/css">
+
+<script language="Javascript" src="http://www.egovlink.com/montgomery/scripts/modules.js"></script>
+<script language="Javascript" src="http://www.egovlink.com/montgomery/scripts/easyform.js"></script>
+
+<script language=javascript>
+<!--
+
+function openWin2(url, name) {
+  popupWin = window.open(url, name,"resizable,width=500,height=450");
+}
+
+function UpdateFamily(iUserId)
+	{
+		location.href='family_members.asp?userid=' + iUserId;
+	}
+
+function Validate() {
+	var msg="";
+	if(document.register.egov_users_userpassword.value != document.register.skip_userpassword2.value)
+	{
+		msg+="The passwords you have entered do not match.\n";
+	}
+
+	var rege = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*\.(\w{2}|(com|net|org|edu|mil|gov|biz))$/;
+	var Ok = rege.test(document.register.egov_users_useremail.value);
+
+	if (! Ok)
+	{
+		msg+="The email must be in a valid format.\n";
+	}
+
+	// set the work phone
+	if (document.register.skip_work_areacode.value != "" || document.register.skip_work_exchange.value != "" || document.register.skip_work_line.value != "" || document.register.skip_work_ext.value != "")
+	{
+		var sPhone = document.register.skip_work_areacode.value + document.register.skip_work_exchange.value + document.register.skip_work_line.value;
+		if (sPhone.length < 10)
+		{
+			msg += "Work Phone Number must be a valid phone number, including area code, or blank\n";
+		}
+		else
+		{
+			document.register.egov_users_userworkphone.value = document.register.skip_work_areacode.value + document.register.skip_work_exchange.value + document.register.skip_work_line.value + document.register.skip_work_ext.value;
+			var rege = /^\d+$/;
+			var Ok = rege.exec(document.register.egov_users_userworkphone.value);
+			if ( ! Ok )
+			{
+				msg += "Work Phone Number must be a valid phone number, including area code, or blank\n";
+			}
+		}
+	}
+
+	// set the fax
+	if (document.register.skip_fax_areacode.value != "" || document.register.skip_fax_exchange.value != "" || document.register.skip_fax_line.value != "" )
+	{
+		var sPhone = document.register.skip_fax_areacode.value + document.register.skip_fax_exchange.value + document.register.skip_fax_line.value;
+		if (sPhone.length < 10)
+		{
+			msg += "Fax must be a valid phone number, including area code, or blank\n";
+		}
+		else
+		{
+			document.register.egov_users_userfax.value = document.register.skip_fax_areacode.value + document.register.skip_fax_exchange.value + document.register.skip_fax_line.value;
+			var rege = /^\d+$/;
+			var Ok = rege.exec(document.register.egov_users_userfax.value);
+			if ( ! Ok )
+			{
+				msg += "Fax must be a valid phone number, including area code, or blank\n";
+			}
+		}
+	}
+
+	// set the home phone number
+	document.register.egov_users_userhomephone.value = document.register.skip_user_areacode.value + document.register.skip_user_exchange.value + document.register.skip_user_line.value;
+	if (document.register.egov_users_userhomephone.value != "" )
+	{
+		var hPhone = document.register.egov_users_userhomephone.value;
+		if (hPhone.length < 10)
+		{
+			msg += "The home phone must be a valid phone number, including area code.\n";
+		}
+		else
+		{
+			var rege = /^\d+$/;
+			var Ok = rege.exec(document.register.egov_users_userhomephone.value);
+			if ( ! Ok )
+			{
+				msg += "The home phone must be a valid phone number, including area code.\n";
+			}
+		}
+	}
+	else
+	{
+		msg+="The home phone cannot be blank.\n";
+	}
+
+
+	// Process the business address if one was chosen
+	var bexists = eval(document.register["skip_Baddress"]);
+	if(bexists)
+	{
+		//See if they picked from the business dropdown and put that in the address field 
+		if (document.register.skip_Baddress.selectedIndex > -1)
+		{
+			var belement = document.register.skip_Baddress;
+			var bselectedvalue = belement.options[belement.selectedIndex].value;
+
+			//alert( bselectedvalue );
+			//  0000 is the first pick that we do not want
+			if (bselectedvalue != "0000")
+			{
+				document.register.egov_users_userbusinessaddress.value = bselectedvalue;
+				document.register.egov_users_residenttype.value = "B";
+			}
+		}
+	}
+
+	// Process the resident address if one was chosen - this is second to set the local resident type
+	var exists = eval(document.register["skip_Raddress"]);
+	if(exists)
+	{
+		// See if they picked from the resident dropdown and put that in the address field 
+		if (document.register.skip_Raddress.selectedIndex > -1)
+		{
+			var element = document.register.skip_Raddress;
+			var selectedvalue = element.options[element.selectedIndex].value;
+
+			//alert( selectedvalue );
+			//  0000 is the first pick that we do not want
+			if (selectedvalue != "0000")
+			{
+				document.register.egov_users_useraddress.value = selectedvalue;
+				document.register.egov_users_residenttype.value = "R";
+			}
+		}
+	}
+
+
+	if(msg != "")
+	{
+		msg="Your form could not be submitted for the following reasons.\n\n" + msg;
+		alert(msg);
+		return;
+	}
+	else {	
+		if (validateForm('register')) 
+		{ 
+			document.register.submit(); 
+		}
+	}
+}
+
+function GoBack(ReturnToURL)
+{
+	if (ReturnToURL != "")
+	{
+		location.href=ReturnToURL;
+	}
+	else
+	{
+		history.go(-1);
+	}
+}
+
+	var isNN = (navigator.appName.indexOf("Netscape")!=-1);
+
+	function autoTab(input,len, e) 
+	{
+		var keyCode = (isNN) ? e.which : e.keyCode; 
+		var filter = (isNN) ? [0,8,9] : [0,8,9,16,17,18,37,38,39,40,46];
+
+		if(input.value.length >= len && !containsElement(filter,keyCode)) {
+			input.value = input.value.slice(0, len);
+		var addNdx = 1;
+
+		while(input.form[(getIndex(input)+addNdx) % input.form.length].type == "hidden") 
+		{
+			addNdx++;
+			//alert(input.form[(getIndex(input)+addNdx) % input.form.length].type);
+		}
+
+		input.form[(getIndex(input)+addNdx) % input.form.length].focus();
+	}
+
+	function containsElement(arr, ele) 
+	{
+		var found = false, index = 0;
+
+		while(!found && index < arr.length)
+			if(arr[index] == ele)
+				found = true;
+			else
+				index++;
+		return found;
+	}
+
+	function getIndex(input) 
+	{
+		var index = -1, i = 0, found = false;
+
+		while (i < input.form.length && index == -1)
+			if (input.form[i] == input)index = i;
+			else i++;
+				return index;
+	}
+		return true;
+	}
+
+//-->
+</script>
+
+</head>
+
+
+
+<script language="Javascript">
+<!--
+	// Steve Loar 2/17/2006 - To set focus on login form
+	function SetFocus()
+	{
+		var formnames = document.getElementsByName("frmLogin");
+		if (formnames.length == 1)
+		{
+			var bexists = eval(document.frmLogin["email"]);
+			if(bexists)
+			{
+				document.frmLogin.email.focus();
+			}
+		}
+	}
+
+	function HideThings()
+	{
+		// Steve Loar 2/21/2006 - To hide form selects that block the dropdown menu
+
+		// events/calendar.asp
+		var formnames = document.getElementsByName("frmDate");
+		if (formnames.length == 1)
+		{
+			var bexists = eval(document.frmDate["month"]);
+			if(bexists)
+			{
+				document.frmDate.month.style.visibility="hidden";
+			}
+			bexists = eval(document.frmDate["year"]);
+			if(bexists)
+			{
+				document.frmDate.year.style.visibility="hidden";
+			}
+		}
+		// recreation/facility_availability.asp
+		formnames = document.getElementsByName("frmcal");
+		if (formnames.length == 1)
+		{
+			var bexists = eval(document.frmcal["selfacility"]);
+			if(bexists)
+			{
+				document.frmcal.selfacility.style.visibility="hidden";
+			}
+		}
+
+	}
+
+	function UnhideThings()
+	{
+		// Steve Loar 2/21/2006 - To unhide form selects that block the dropdown menu
+
+		// events/calendar.asp
+		var formnames = document.getElementsByName("frmDate");
+		if (formnames.length == 1)
+		{
+			var bexists = eval(document.frmDate["month"]);
+			if(bexists)
+			{
+				document.frmDate.month.style.visibility="visible";
+			}
+			bexists = eval(document.frmDate["year"]);
+			if(bexists)
+			{
+				document.frmDate.year.style.visibility="visible";
+			}
+		}
+		// recreation/facility_availability.asp
+		formnames = document.getElementsByName("frmcal");
+		if (formnames.length == 1)
+		{
+			var bexists = eval(document.frmcal["selfacility"]);
+			if(bexists)
+			{
+				document.frmcal.selfacility.style.visibility="visible";
+			}
+		}
+	}
+
+ //-->
+ </script>
+
+<body topmargin="0" leftmargin="0" rightmargin="0" bottommargin="0" topmargin="0" onload="javascript:SetFocus();">
+
+
+<table cellspacing=0 cellpadding=0 border=0 bordercolor=green >
+
+
+<!--BEGIN: TOP GRAPHIC-->
+  <tr>
+    <td height=77 width=100% valign=top background="http://www.egovlink.com/montgomery/custom/images/montgomery/top.gif">
+		<a href="http://www.montgomeryohio.org/"><img name="City Logo" src="http://www.egovlink.com/montgomery/custom/images/montgomery/logo.gif" border="0" alt="Click here to return to the E-Government Services start page"></a>
+	</td>
+    <td width=1  height=77 background="http://www.egovlink.com/montgomery/custom/images/montgomery/top.gif">
+		<img src="http://www.egovlink.com/montgomery/img/clearshim.gif" border="0" width=1 height=77 >
+	</td>
+  </tr>
+<!--END: TOP GRAPHIC-->
+
+
+ <!--BEGIN: BUTTON ROW-->
+  <tr bgcolor="#9999CD">
+    <td>
+
+	 <!--BEGIN: MENU-->
+		<div id="listmenu">
+		 <ul>			
+		  <li onmouseover="javascript:HideThings();" onmouseout="javascript:UnhideThings();"><a href="#">Main Menu</a>
+		    <ul>
+			 <li><a href="http://www.montgomeryohio.org/">City Home</a></li>
+	         <li><a href="http://www.egovlink.com/montgomery/">E-Gov Home</a></li>
+ 			 <li><a href="http://www.egovlink.com/montgomery/action.asp">Action Line</a></li>
+			 <li><a href="http://www.egovlink.com/montgomery/events/calendar.asp">Community Calendar</a></li>
+			 <li><a href="http://www.egovlink.com/montgomery/docs/menu/home.asp">Documents</a></li>
+			 <li><a href="http://www.egovlink.com/montgomery/recreation/facility_list.asp">Facility Reservations</a></li>
+			 <li><a href="http://www.montgomeryohio.org/discover/recreation/pool.htm">Pool Passes</a></li>
+             <li><a href="http://www.egovlink.com/montgomery/classes/class_list.asp">Event/Class Registration</a></li>
+			 <li><a href="http://www.montgomeryohio.org/government/gifts.htm">Commemorative Gifts </a></li>
+		     </ul>
+		  </li>
+		  </ul>
+		</div>
+	  <!--END: MENU-->
+
+	</td>
+  </tr>
+
+  <!--BEGIN: FADE LINES-->
+	  <tr bgcolor="#666666"  ><td height="1" colspan="2" ></td></tr>
+<!--END: FADE LINES-->
+<tr><td>&nbsp;</td></tr>
+  <!--END: BUTTON ROW-->
+
+
+  
+
+  <!--BEGIN: MAIN BODY CONTENT-->
+  <tr>
+    <td valign=top class=indent20>
+ 
+
+
+
+
+
+<!--BODY CONTENT-->
+
+
+<P>
+<div align=left style="padding-bottom:20px;"> <DIV style=" padding-left:5px;"><B>YOU ARE LOGGED IN AS: TOM TESTER. &nbsp;&nbsp;<A HREF="manage_account.asp">MANAGE ACCOUNT</A> | <A HREF="user_home.asp?trantype=0">VIEW REQUESTS</A> | <A HREF="logout.asp">LOGOUT</A></B></DIV> </div>
+</p>
+
+<div style="margin-left:25px;">
+
+
+<br /><br /><a href="javascript:GoBack('/montgomery/action.asp?')"><img src="http://www.egovlink.com/montgomery/images/arrow_2back.gif" align="absmiddle" border="0">&nbsp;Return to Action Line</a><br /><br />
+
+<P><div style=""margin-left:20px; "" class=box_header4>Manage Distribution Lists: </div>
+<div class=groupsmall2>
+	<form name="register" action="manage_account.asp" method=post>
+	<input type=hidden name="columnnameid" value="userid">
+	<input type=hidden name="userid" value="4262">
+	<input type=hidden name="egov_users_orgid" value="26">
+	<input type=hidden name="ef:egov_users_useremail-text/req" value="Email Address">
+	<input type=hidden name="ef:egov_users_userpassword-text/req" value="Password 1">
+	<input type=hidden name="ef:skip_userpassword2-text/req" value="Password 2">
+	<input type=hidden name="ef:egov_users_userhomephone-text/req/phone" value="Phone Number">
+	<input type=hidden name="ef:egov_users_userfname-text/req" value="First name">
+	<input type=hidden name="ef:egov_users_userlname-text/req" value="Last name">
+	<input type=hidden name="egov_users_residenttype" value="R">
+
+	<!--input type=hidden name="ef:egov_users_userbusiness-text/req" value="Company name">
+	<input type=hidden name="ef:egov_users_useraddress-text/req" value="Address">
+	<input type=hidden name="ef:egov_users_usercity-text/req" value="City">
+	<input type=hidden name="ef:egov_users_userzip-text/req/zip" value="Zip"-->
+	<table>
+		
+		
+		
+		
+
+		<tr><td class=label align="right">
+			
+			Distribution List 1: 
+		</td><td>
+			<input type="checkbox" checked value="sloar@eclink.com" name="egov_users_useremail" style="width:300;" maxlength="100">
+		</td></tr>
+
+			<tr><td class=label align="right">
+			
+			Distribution List 2: 
+		</td><td>
+			<input type="checkbox" checked value="sloar@eclink.com" name="egov_users_useremail" style="width:300;" maxlength="100">
+		</td></tr>
+
+
+				<tr><td class=label align="right">
+			
+			Distribution List 3: 
+		</td><td>
+			<input type="checkbox" checked value="sloar@eclink.com" name="egov_users_useremail" style="width:300;" maxlength="100">
+		</td></tr>
+
+	
+
+		<tr><td colspan=2 align=right>
+		<input class="actionbtn" type="button" value="Save Changes" onClick="javascript:location.href='dl_5.html';">
+		</td></tr>
+
+	</table>
+	
+
+	</form>
+	</div></div></div>
+
+	<P>&nbsp;</p>
+   
+    </td>
+   <td width=1 ><img src="img/clearshim.gif" border="0" width=1 ></td>
+  </tr>
+</table>
+<!--END OF PAGE CONTENT-->
+
+
+<!--BEGIN: FADE LINES-->
+<table bgcolor="#d6d3ce" border="0" cellpadding="2" cellspacing="0" width="100%"  >
+	  <tr bgcolor="#666666"><td height="1" colspan="2"></td></tr>
+	  <tr bgcolor="#ffffff"><td height="1" colspan="2"></td></tr>
+</table>
+<!--END: FADE LINES-->
+
+
+<!--BEGIN: BOTTOM MENU AND COPYRIGHT INFORMATION-->
+<center>
+
+<div class=footerbox  ><table width=100% cellspacing=0 cellpadding=0><tr><TD valign=top align=center >
+<br>
+<font class=footermenu >
+<a class=afooter href="http://www.montgomeryohio.org/">City Home</a> |
+<a class=afooter href="http://www.egovlink.com/montgomery/">E-Gov Home</a>
+
+ |
+<a class=afooter href="http://www.egovlink.com/montgomery/action.asp">Citizen Action Line</a>
+ |
+<a class=afooter href="http://www.egovlink.com/montgomery/events/calendar.asp">Community Calendar</a>
+ |
+<a class=afooter href="http://www.egovlink.com/montgomery/docs/menu/home.asp">Online Documents</a>
+
+	<br><a class=afooter href="http://www.egovlink.com/montgomery/user_login.asp">Login</a> | <a class=afooter href="http://www.egovlink.com/montgomery/register.asp">Register</a>
+
+
+
+<br><bR>
+<font class=footer>Copyright &copy;2004-<script type="text/javascript"> 
+		<!--
+			var theDate=new Date();
+			document.write(theDate.getFullYear());
+		//-->
+</script>. <i>electronic commerce</i> link, inc. dba <a href="http://www.egovlink.com" target="_NEW"><font class=footermenu>egovlink</font></a>.</font>
+
+
+<!--BEGIN: DEMO CHECK TO ADD ADMIN LINK-->
+
+<!--END: DEMO CHECK TO ADD ADMIN LINK-->
+
+
+<br>&nbsp;
+</font>
+</td>
+<!--<td width=50 background="http://www.egovlink.com/montgomery/img/fade.gif" >&nbsp;</td>
+<td align=right bgcolor=#FFFFFF>
+<div class="logo"> <font  size="1" face="Verdana,Tahoma,Arial"><b>Powered by </b><br><A HREF="http://www.eclink.com"><img src="http://www.egovlink.com/montgomery/img/poweredby.jpg" vspace=5 align="center" border="0"></A></div></td>-->
+</tr></table>
+</div>
+<!--END: BOTTOM MENU AND COPYRIGHT INFORMATION-->
+
+
+
+
+
+</body>
+</html>

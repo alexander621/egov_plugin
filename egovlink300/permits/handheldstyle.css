@@ -1,0 +1,16 @@
+body {
+	font-family: Helvitica, Georgia, Serif;
+	color: #666;
+	background-color: #ddd;
+	font-size: smaller;
+	margin: 0;
+	padding: 0;
+	padding-left: 1em;
+	padding-right: 1em;
+	}
+
+input#submitbtn {
+	margin-left: 6em;
+	}
+
+

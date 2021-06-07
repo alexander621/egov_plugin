@@ -1,0 +1,55 @@
+/*DEFAULT PAGE STYLES*/
+font.pagetitle { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+font.datetagline { COLOR: #c0c0c0; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.formtitle {COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+div.footerbox {background-color:#8A6228;COLOR: #FFFFFF; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px;  }
+td.box_header  {background-color:#8A6228;width:100%; color:#FFFFFF; font-family:verdana,sans-serif; font-size:12px; font-weight:bold; text-align:center;}
+/*
+div.box_header2 {font-weight:bold;background-color:#8A6228;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:400 px;padding:2px;color:#FFFFFF;}
+*/
+
+div.box_header2 {
+	background-color:#8A6228;
+	color:#FFFFFF;
+	}
+
+div.box_header4 {
+	background-color:#8A6228;
+	color:#FFFFFF;
+	}
+
+/*HOMEPAGE STYLES*/
+
+
+/*ACTION LINE STYLES*/
+input.actionbtn {BACKGROUND-COLOR:#2E1999; COLOR: #FFFFFF; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+
+/*PAYMENT STYLES*/
+input.paymentbtn {BACKGROUND-COLOR:#2E1999; COLOR: #FFFFFF; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+
+/*DOCUMENT STYLES*/
+font.searchlabel { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+font.searchlink { COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.documentfolder { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+/*CURRENTLY SELECTED FOLDER*/
+a.documentfolder:hover {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:visited {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:active {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:link {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+
+/*NEW FOLDER/DOCUMENT STYLES*/
+#foldheader {cursor:pointer;cursor:hand ; list-style-image:url('../docs/fold.gif'); list-style-type: none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;  }
+#foldinglist {list-style-image:none; list-style-type: none; font-family: verdana,sans-serif; font-size: 10px;  }
+li.emptyfolder {color:#000000; font-family: verdana,sans-serif; font-size: 10px;}
+
+a.documentlist:link {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:visited {color:#000000; text-decoration:none; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:active {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:hover {color:RED; text-decoration:underline; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+/*CALENDAR STYLES*/
+

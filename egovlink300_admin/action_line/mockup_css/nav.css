@@ -1,0 +1,44 @@
+body {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.navbar {
+    margin-bottom: 20px;
+}
+
+.navbar-brand {
+  float: left;
+  height: 55px;
+  padding: 15px 50px;
+  font-size: 18px;
+  line-height: 20px;
+}
+
+.logo {
+  padding: 5px 5px;
+}
+.nav .dropdown-menu {
+  width: 100%; 
+  padding: 5px 5px;
+}
+
+.message {
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 1.9em;
+    color: #428BCA;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+.jumbotron p {
+    text-align: center;
+}
+
+.wo-item .container {
+    font-family: Arial;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}

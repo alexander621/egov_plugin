@@ -1,0 +1,13 @@
+
+#receiptlinks, #topbuttons, #listmenu, #userdisplay, #topleftbuttons, #accountmenu, div#itemshow {
+	display: none !important;
+	}
+
+.noprint, .menu, .footerbox {
+	display: none !important;
+	}
+
+form#frmDate {
+	page-break-after: always !important;
+	}
+

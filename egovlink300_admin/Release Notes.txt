@@ -1,0 +1,12 @@
+Release 3.0.0
+Date:  10/10/2003
+---------------------------------------------------------------------------------
+-Rewritten web code (enhanced speed, scalability and security)
+-Redesigned database structure (enhanced speed and scalability)
+-Numberous bug fixes and patches since version 2.5.0
+
+Release 3.0.1
+Date:  11/24/2003
+---------------------------------------------------------------------------------
+-Updated delcategory.asp page to handle folders with single quotes.
+

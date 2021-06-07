@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="rd_checkaddress.aspx.cs" Inherits="rd_checkaddress" %>

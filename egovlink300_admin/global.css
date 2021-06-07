@@ -1,0 +1,1111 @@
+H3 {FONT-FAMILY: Verdana,Tahoma,Arial;}
+BODY
+{
+    MARGIN: 0px;
+    BORDER-BOTTOM: #003366 0px solid;
+    background:white;
+
+}
+
+fieldset legend {
+	background-color: #ffffff;
+	border: 1pt solid #c0c0c0;
+	border-radius: 5px;
+	color: #800000;
+	font-family: Verdana, sans-serif;
+	font-size: 1.25em;
+	padding: 2px 5px;
+}
+
+table tr.altrow {
+	background-color: #ececec;
+	}
+
+TD
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana,Tahoma;
+}
+TH
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana,Tahoma;
+}
+INPUT
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana,Tahoma,Arial;
+}
+SELECT
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana,Tahoma,Arial;
+}
+TEXTAREA
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Verdana,Tahoma,Arial;
+}
+.rtf p
+{
+    margin: 0px;
+}
+.time
+{
+    FONT-SIZE: 11px;
+    FONT-FAMILY: Tahoma,Arial;
+}
+.nomargin
+{
+    MARGIN: -4px;
+}
+.listcheck
+{
+    PADDING-RIGHT: 0px;
+    PADDING-LEFT: 0px;
+    PADDING-BOTTOM: 0px;
+    MARGIN: -4px 0px;
+    PADDING-TOP: 0px;
+}
+.maincell
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    PADDING-BOTTOM: 5px;
+    PADDING-TOP: 5px
+}
+.hdr
+{
+    FONT-SIZE: 14px;
+    FONT-FAMILY: Verdana,Tahoma
+}
+.disclaimer
+{
+    FONT-SIZE: 10px;
+    PADDING-TOP: 5px;
+    FONT-FAMILY: Arial,Tahoma
+}
+.messagehead
+{
+    BORDER-RIGHT: #336699 1px solid;
+    BORDER-TOP: #336699 1px solid;
+    BORDER-LEFT: #336699 1px solid;
+    BORDER-BOTTOM: #336699 1px solid
+}
+.messagehead TH
+{
+    HEIGHT: 24px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1
+}
+
+.tablelist {
+    border: 1px solid #336699;
+	}
+
+.tablelist th {
+    HEIGHT: 24px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+.tablelist TD {
+    HEIGHT: 26px;
+	}
+
+.tableadmin {
+    border: 1px solid #336699;
+	}
+
+.tableadmin th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	cursor: pointer;
+	}
+
+table.tableadmin tr.altrow {
+	background-color: #ececec;
+	}
+
+.quicklink {
+    PADDING-BOTTOM: 6px
+	}
+
+.title {
+    PADDING-BOTTOM: 2px
+	}
+
+.agenda {
+    MARGIN-BOTTOM: 5px
+	}
+
+.agenda li {
+    PADDING-RIGHT: 2px;
+    PADDING-LEFT: 2px;
+    PADDING-BOTTOM: 2px;
+    PADDING-TOP: 2px;
+    list-style-type:none;
+	}
+
+A:link
+{
+    COLOR: #0000bb;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: #0000bb;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: #0000bb;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #0000ff;
+    TEXT-DECORATION: underline
+}
+.tab {
+  padding:0px 1px;
+}
+A.tab:link
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000033;
+    FONT-FAMILY: Tahoma,Arial;
+    TEXT-DECORATION: none
+}
+A.tab:visited
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000033;
+    FONT-FAMILY: Tahoma,Arial;
+    TEXT-DECORATION: none
+}
+A.tab:active
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000033;
+    FONT-FAMILY: Tahoma,Arial;
+    TEXT-DECORATION: none
+}
+A.tab:hover
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #000033;
+    FONT-FAMILY: Tahoma,Arial;
+    TEXT-DECORATION: none
+}
+A.header:link
+{
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    TEXT-DECORATION: none
+}
+A.header:visited
+{
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    TEXT-DECORATION: none
+}
+A.header:active
+{
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    TEXT-DECORATION: none
+}
+A.header:hover
+{
+    FONT-SIZE: 10px;
+    COLOR: #ffffff;
+    TEXT-DECORATION: none
+}
+.section
+{
+    PADDING-RIGHT: 5px;
+    PADDING-LEFT: 5px;
+    FONT-SIZE: 11px;
+    PADDING-BOTTOM: 5px;
+    LINE-HEIGHT: 16px;
+    PADDING-TOP: 5px;
+    FONT-FAMILY: Verdana,Tahoma,Arial;
+    BACKGROUND-COLOR: #ffffff
+}
+.section_hdr
+{
+    FONT-WEIGHT: bold;
+    FONT-SIZE: 10px;
+    COLOR: #003366
+}
+.menu
+{
+    BACKGROUND-COLOR: #336699
+}
+.submenu
+{
+    BORDER-BOTTOM: #336699 1px solid;
+    HEIGHT: 30px;
+    BACKGROUND-COLOR: #93bee1;
+}
+
+td.documentsubmenu {
+    background-color: #93bee1;
+	}
+
+TD.listcell
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1
+}
+TD.ecapture
+{
+    FONT-WEIGHT: bolder;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1
+}
+.subtablelist
+{
+    BORDER-RIGHT: #336699 1px solid;
+    BORDER-LEFT: #336699 1px solid;
+    BORDER-BOTTOM: #336699 1px solid
+}
+.subtablelist TH
+{
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #c9def0;
+}
+.signupmenu {
+  border:1px solid #336699;
+}
+.signupmenu th {
+  font-family:Tahoma,Verdana,Arial;
+  font-size:11px;
+  background-color:#336699;
+  color:#ffffff;
+  height:22px;
+}
+.signupmenu td {
+  font-family:Tahoma,Verdana,Arial;
+  font-size:11px;
+  background-color:#dce9f4;
+  color:#0000bb;
+}
+
+.aboutmelabel {
+	FONT-WEIGHT: bolder;
+}
+
+INPUT.aboutme
+{
+    BACKGROUND-COLOR: #35679A;
+    COLOR: white;
+    FONT-FAMILY: Verdana,Tahoma;
+}
+
+/*ORGANIZATION ADMIN STYLES */
+div.orgadminbox {background-color:#e0e0e0;border: solid #000000 1px; width:400px;padding:15px;}
+div.orgadminboxf {FONT-SIZE: 12px; background-color:#e0e0e0; border: 1px solid #000000; width: 600px; padding:15px;}
+input.new_org_form {width:400px;}
+textarea.new_org_form {width:400px;HEIGHT:60PX;}
+font.label {color:#000066;FONT-SIZE: 12px; FONT-FAMILY: Verdana,Tahoma,Arial; font-weight:bold;}
+div.copyright_text {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;font-weight:bold;}
+p.disclaimer {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;}
+input.submitbtn {color:#FFFFFF;background-color:#000066;font-weight:bold;cursor:pointer;}
+li.orglist {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;font-weight:bold;}
+ul.orglist {margin-top:5px;}
+tr.formrowG {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;background-color:#e0e0e0;}
+tr.formrowW {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;background-color:#ffffff;}
+tr.formrowheader {color:#ffffff;FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;background-color:#000066;font-weight:bold;}
+
+td.formlist  {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;}
+P  {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;}
+font {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;}
+legend {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;}
+fieldset {padding:10px;}
+div.warning {FONT-FAMILY: Verdana,Tahoma,Arial;font-size:10px;width:600px;font-weight:bold;color:yellow;background-color:red;padding:10;border: solid #000000 1px;margin-top:10px;margin-bottom:10px;}
+
+.subtitle {COLOR: #cc0000; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+
+A.edit:link {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000bb; TEXT-DECORATION: none}
+A.edit:visited {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000bb; TEXT-DECORATION: none}
+A.edit:active {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000bb; TEXT-DECORATION: none}
+A.edit:hover {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000ff; TEXT-DECORATION: underline}
+
+
+/*FORM FIELD STYLES*/
+text.formtext {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial; width:300px;}
+textarea.prompt {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;width:450px;height:50px;}
+td.question {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;FONT-WEIGHT:BOLD;}
+radio.formradio {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;}
+checkbox.formcheckbox {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;}
+select.formselect {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;}
+textarea.formtextarea {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;width:450px;height:50px;}
+textarea.formtextareaBig {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;width:450px;height:350px;}
+P {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;}
+LI {FONT-SIZE: 12px;FONT-FAMILY: Verdana,Tahoma,Arial;}
+input.actionbtn {BACKGROUND-COLOR:#2E1999; COLOR: #FFFFFF; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;cursor:pointer;}
+div.groupSmall {background-color:#e0e0e0; border: 1px solid #000000; width: 400px; padding: 15px;}
+div.box_header2 {font-weight:bold; background-color:#2E1999; border-top: 1px solid #000000; border-left: 1px solid #000000; border-right: 1px solid #000000; width: 400px; padding:2px; color:#FFFFFF;}
+table.tablenewaction td, table.tablenewaction td li { background-color:#e0e0e0; }
+/*table.start, table.start td { background-color:#e0e0e0; }*/
+
+
+/*WEB STATS STYLES*/
+.sectiontitle {COLOR: #cc0000; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+.webstattitle {COLOR: #000000; font-family: verdana,sans-serif; font-size: 14px; padding-left:5px; font-weight:bold }
+
+div.webstat {background-color:#e0e0e0;border: solid #000000 1px; width:400px;padding:15px;}
+
+td.title  {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial; font-weight:bold }
+td.detail  {FONT-SIZE: 10px; FONT-FAMILY: Verdana,Tahoma,Arial;}
+td.statlabel  {COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; padding-left:5px; font-weight:bold }
+td.statdetail {COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; padding-left:5px;  }
+
+hr.webstat {color:#000000; height:1px; width:75%; size:1px;} 
+font {font-size: 14px;}
+
+
+A.webstat:link {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000bb; TEXT-DECORATION: none}
+A.webstat:visited {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000bb; TEXT-DECORATION: none}
+A.webstat:active {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000bb; TEXT-DECORATION: none}
+A.webstat:hover {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;COLOR: #0000ff; TEXT-DECORATION: underline}
+
+font.pagetitle { COLOR: #FF0000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+font.datetagline { COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.formtitle {COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+
+#content { 
+	padding: 30px; 
+	/*width: 100%; 20170516 COMMENTED OUT BECAUSE IT CAUSED SIDE SCROLLING IN IFRAME */
+	font-size: 11px; 
+	font-family: Verdana,Tahoma; 
+	}
+
+#content div.shadow { background: #919191; }
+#content table { position: relative; top: -4px; left: -4px; width: 100%; background: #fff;}
+#content table.formlist { border: 1px solid #919191; }
+
+.alternate {background-color: #e0e0e0;}
+
+input.excelexport {height:18px;background-repeat:no-repeat;font-family: verdana,sans-serif; font-size: 10px;font-weight:bold;}
+
+
+/* Purchases reports styles */
+#content table.purchasereport {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 800px;
+	}
+
+#content table.purchasereport th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+#content div.purchasereportshadow { 
+	background: #919191; 
+	width: 800px;
+	margin-top: 20px;
+	}
+
+#content fieldset#purchasereport {
+	width: 679px;
+	}
+
+#content table#receiptuserinfo {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 220px;
+	}
+#content span#printbutton {
+	margin-left: 600px;
+	}
+
+div#topright {
+	float: right;
+	margin-bottom: 6px;
+	}
+
+#centercontent {	
+	width: 800px;	
+	font-family: verdana,sans-serif;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 3em;
+	}
+
+#centercontent h3 {
+	padding: 0;
+	margin: 0;
+	}
+
+#centercontent h5 {
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+	}
+
+/* End of Purchases Report styles */
+
+input.button {
+	cursor: pointer;
+	}
+
+/* FAQ Categories styles */
+
+table#tablefaqcatADD,
+table#tablefaqcatSAVE {
+	width: 550px;
+    border: 1px solid #336699;
+	}
+
+table#tablefaqcatADD th,
+table#tablefaqcatSAVE th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+#content div#faqshadow { 
+	width: 550px;
+	background: #919191; 
+	}
+
+td.featureparent {FONT-SIZE: 10px;FONT-FAMILY: Verdana,Tahoma,Arial;Font-weight: bold; BACKGROUND-COLOR: #c0c0c0;}
+
+table#pageheader {
+    background-color: #336699;
+	}
+
+table#pageheader td img {
+	padding: 0;
+	}
+
+table#pageheader td#title {
+	font-family: arial,tahoma; 
+	font-size: 11px; 
+	color: #ffffff;
+	font-weight: bold;
+	padding-right: 15px;
+	width: 100%;
+	}
+
+table#logheader {
+	height: 30px;
+	background-color: #93bee1;
+	border-bottom: 2px solid #666666;
+	width: 100%;
+	}
+
+table#logheader td.namerow {
+	border-bottom: 2px solid #ffffff;
+	padding-right: 1em;
+	}
+
+div#featurewelcome {
+	font-size: 14px;
+	font-weight: bold;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+div#featuredate {
+	margin-top: 2px;
+	margin-bottom: 3em;
+	}
+
+div.featuretitles {
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom: 1px solid #666666;
+	padding: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	}
+
+p.featurebody {
+	margin-top: 1em;
+	margin-bottom: 3em;
+	padding: 0;
+	line-height: 1.5;
+	}
+
+p.featurebodywithlist {
+	margin-top: 1em;
+	margin-bottom: 0;
+	padding: 0;
+	}
+
+p.featurebodywithlist ul {
+	margin-top: 0;
+	}
+
+table#bodytable {
+	width: 680px;
+	}
+
+table#featuremanager th { 
+	background-color: #99CCFF;
+	}
+
+table#featuremanager tr.altrow {
+	background-color: #ECECEC;
+	}
+
+table#featuremanager tr.featureparent {
+	background-color: #c0c0c0;
+	}
+
+div.glaccounts_shadow {
+	 background: #919191;
+	 width: 720px;
+	 margin-bottom: 1em;
+	}
+
+table#glaccounts {
+	width: 720px;
+	border: 1px solid black;
+	}
+
+table#glaccounts th { 
+	background-color: #99CCFF;
+	border-bottom: 1px solid black;
+	}
+
+table#glaccounts tr.altrow {
+	background-color: #ECECEC;
+	}
+
+div.citizenshadow {
+	 background: #919191;
+	 width: 850px;
+	 margin-bottom: 1em;
+	}
+
+table#citizenlist {
+	width: 950px;
+	border: 1px solid #666;
+	top: 0 !important;
+	left: 0 !important;
+	margin-top: 2em !important;
+	margin-bottom: 3em !important;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#citizenlist th { 
+	background-color: #99CCFF;
+	border-bottom: 1px solid black;
+	height: 40px;
+	}
+
+table#citizenlist td {
+    height: 30px;
+	}
+
+table#citizenlist tr.altrow {
+	background-color: #ececec;
+	}
+
+span.spanlink {
+	cursor: pointer;
+	}
+
+table#newaddress {
+	width: 350px;
+	}
+
+p#pagenote {
+	font-size: 14px;
+	font-weight: bold;
+	color: red;
+	margin-bottom: 2em;
+	}
+
+table#newsitemedit {
+	border: 1px solid #000000;
+	background-color: #e0e0e0;
+	}
+
+img.calendarimg {
+	cursor: pointer;
+	}
+
+div.footerbox {
+	text-align: center;
+	clear: both;
+	}
+
+textarea.blockednotes {
+	width: 300px;
+	height: 30px;
+	}
+
+textarea.features {
+	height: 70px;
+	width: 550px;
+	}
+
+textarea.purchasenotes {
+	width: 350px;
+	height: 6em;
+	}
+
+#warningmsg {
+	font-size: 14px;
+	font-weight: bold;
+	color: red;
+	margin-bottom: 2em;
+	}
+
+div#mainmenuitems {
+	margin: 0;
+	padding: 0;
+	}
+
+textarea.orgedittext {
+	width: 550px;
+	height: 60px;
+	}
+
+p.receiptheader {
+	text-align: center;
+	font-weight: bold;
+	}
+
+table#receiptpayments {
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+	width: 600px;
+	}
+
+table#journalreceiptpayments {
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+	width: 300px;
+	}
+
+table#accountchange {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	margin: 0;
+	padding: 0;
+	margin-top: 1em;
+	width: 300px;
+	}
+
+td.totalpayment {
+	border-top: 1px solid black;
+	}
+
+td.journaltotalpayment {
+	border-top: 1px solid black;
+	}
+
+td#changecell {
+	border-bottom: 1px solid black;
+	}
+
+table#userlist {
+    position: relative;
+	top: 0;
+	left: 0;
+	margin: 1.5em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#userlist th {
+    height: 24px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#userlist td {
+    height: 26px;
+	}
+
+table#adminuserlist {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1.5em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#adminuserlist th {
+    height: 24px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#adminuserlist td {
+    height: 26px;
+	}
+
+#content table.receiptpayment {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 800px;
+	}
+
+#content table.receiptpayment th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+#content table.receiptpayment td {
+    height: 30px;
+	}
+
+#content table.receiptpayment tr#totalrow td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+#content div.receiptpaymentshadow { 
+	background: #919191; 
+	width: 800px;
+	margin-top: 20px;
+	}
+
+table#registertable, div#registershadow {
+	width: 700px;
+	}
+
+div#addresspickcontent {	
+	width: 570px;	
+	font-family: verdana,sans-serif;
+	float: left;
+	margin-left: 15px;
+	padding-right: 15px;
+	}
+
+div#addresspicklist {
+	padding: 1em 0;
+	margin: 1em 0;
+	padding-left: 5em;
+	border: 1px solid silver;
+	}
+
+p.addresspicker {
+	width: 510px;
+	}
+
+#content table#activitytotal {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 850px;
+	}
+
+#content table#activitytotal th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+#content table#activitytotal td {
+    height: 30px;
+	}
+
+#content table#activitytotal tr#totalrow td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+#content div.activitytotalshadow { 
+	background: #919191; 
+	width: 850px;
+	margin-top: 20px;
+	}
+
+span.titletext {
+	font-size: medium;
+	font-weight: bold;
+	}
+
+fieldset#registrationsubscription {
+	margin-left: 3em;
+	margin-right: 4em;
+	}
+
+/* Need this to override the yui tabview style so tabs have top border line in IE */
+.yui-skin-sam .yui-navset .yui-nav a,.yui-skin-sam .yui-navset .yui-navset-top .yui-nav a {
+	border-width: 1px 1px;
+	}
+
+/* Tooltip styles */
+div#dhtmltooltip {
+	position: absolute;
+	left: -300px;
+	width: 300px;
+	border: 1px solid #000;
+	padding: 2px;
+	background-color: #FFF;
+	visibility: hidden;
+	z-index: 100;
+	color: #000;
+	font-weight: normal; 
+	font-size: 11px;
+	font-family: Verdana,Tahoma,Arial;
+	padding-left: .5em;
+	padding-bottom: .5em;
+	/*Remove below line to remove shadow. Below line should always appear last within this CSS*/
+	filter: progid:DXImageTransform.Microsoft.Shadow(color=gray,direction=135);
+	}
+
+#dhtmlpointer {
+	position:absolute;
+	left: -300px;
+	z-index: 101;
+	visibility: hidden;
+	}
+
+/* Used to display the floating messages next to fields used in form validation */
+.msg        {display:none; position:absolute; z-index:200; background:url('images/msg_arrow.gif') left center no-repeat; padding-left:7px; font:12px Verdana, Arial, Helvetica, sans-serif; color:#000000; }
+.msgcontent {display:block; background:#f3e6e6; border:2px solid #924949; border-left:none; padding:5px; min-width:150px; max-width:250px; font:12px Verdana, Arial, Helvetica, sans-serif; color:#000000; }
+
+/* End of Tooltip stypes */
+
+tr#activitylisttotal td {
+	border-top: 1px solid black;
+	height: 26px;
+	font-weight: bold;
+	background-color:#cccccc;
+	}
+
+/* Styles related to success popup */
+div#successmessage {
+	position: absolute;
+	background-color: #fff;
+	padding: 5px; 
+	z-index: 200;
+	visibility: hidden;
+	}
+
+div#successmessageheader {
+	height: 24px;
+	width: 300px;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: arial, sans-serif;
+	background: url(images/success_header.gif) repeat-x; 
+	border:1px solid #4f6d81;
+	border-bottom: none;
+	color: #355468;
+	}
+
+div#displayedmessage {
+	padding-top: 1.5em;
+	height: 150px;
+	width: 300px;
+	font-family: arial, sans-serif;
+	font-size: 13pt;
+	background: #fff url(images/success_bg.jpg) bottom right no-repeat; 
+	border:1px solid #4f6d81;
+	border-top: none;
+	}
+
+span.successmessagetext {
+	padding-left: 1em;
+	}
+/* End of Styles related to success popup */
+
+div#savebuttonsdiv {
+	margin-bottom: 1em;
+	}
+
+table#paymentsortoptions {
+	margin-top: 1.5em;
+	margin-left: 1em;
+	}
+
+span.paymentserviceinfo {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 10pt;
+	color: #000000;
+	}
+
+p#outagetext {
+	padding: 0;
+	margin: 5em 5em 15em 5em;
+	font-weight: bold;
+	font-size: larger;
+	}
+
+span.supportHeaderTitle { 
+	font-family: arial; 
+	color: #ffff00; 
+	font-weight: bold; 
+	}
+
+span.supportHeaderLabel { 
+	font-family: arial; 
+	color: #ffff00; 
+	}
+
+/* Drag and Drop styles */
+.DragContainer, .OverDragContainer {
+  float:   left;
+  margin:  3px;
+  border:  #669999 2px solid;
+  padding: 5px;
+}
+
+.DragBox, .OverDragBox, .DragDragBox, .miniDragBox {
+  border:        #000 1px solid;
+  padding:       5px;
+  font-size:     10px;
+  margin-bottom: 5px;
+  cursor:        pointer;
+  font-family:   verdana, tahoma, arial;
+}
+
+.OverDragContainer {
+	background-color: #eee;
+}
+
+.OverDragBox, .DragDragBox {
+  background-color: #ffff99;
+}
+
+.DragDragBox {
+  filter: alpha(opacity=50);
+}
+
+
+.miniDragBox {
+  float:  left;
+  margin: 0 5px 5px 0;
+  width:  500px;
+  height: 20px;
+}
+
+/* Misc Styles ------------------------------------------------------------- */
+  .fieldset {
+     border: 1pt solid #808080;
+     -webkit-border-radius: 5px;
+     -moz-border-radius:    5px;
+  }
+
+  .redText {
+     color: #800000;
+  }
+
+table#newuserinput {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 60em;
+	margin: 1.5em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+/* DM Data - Results List Sorting Styles ----------------------------------- */
+.mappoints_sortable            {
+   border-left:   1px solid #c6d5e1;
+   border-top:    1px solid #c6d5e1;
+   border-bottom: none;
+   margin:        0 auto 15px;
+   width:         100%;
+}
+.mappoints_sortable th         {background-color:#6298C7; color:#000000; border:1px solid #fff; border-right:none; text-align:center}
+.mappoints_sortable th span    {font-size:10px; padding:6px 8px 0px; line-height:20px;}
+.mappoints_sortable td         {padding:4px 6px 6px; border-bottom:1px solid #c6d5e1; border-right:1px solid #c6d5e1}
+.mappoints_sortable .head span {background:url(datamgr/images/sort.gif) left no-repeat; cursor:pointer; padding-left:18px}
+
+.mappoints_sortable .desc, 
+.mappoints_sortable .asc {
+   background-color: #2D6190;
+   color:            #ffffff;
+}
+
+.mappoints_sortable .desc span {background:url(datamgr/images/desc.gif) left no-repeat; cursor:pointer; padding-left:18px}
+.mappoints_sortable .asc span  {background:url(datamgr/images/asc.gif) left no-repeat; cursor:pointer; padding-left:18px}
+
+.mappoints_sortable .head:hover, 
+.mappoints_sortable .desc:hover, 
+.mappoints_sortable .asc:hover {
+   color: #fff;
+}
+
+.mappoints_sortable .evenrow td     {background:#fff}
+.mappoints_sortable .oddrow td      {background:#ecf2f6}
+.mappoints_sortable td.evenselected {background:#ecf2f6}
+.mappoints_sortable td.oddselected  {background:#dce6ee}
+
+
+textarea#citizenaccountupdatenotes 
+{
+	height: 100px;
+	width: 600px;
+}
+
+
+/*
+*
+{
+	font-family:'Open Sans', sans-serif !important;
+}
+*/
+
+

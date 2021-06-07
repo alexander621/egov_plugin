@@ -1,0 +1,79 @@
+<FORM METHOD=POST name="RegisterCommittee" ACTION="Insert_committee.asp" onsubmit="return CheckCommitteeField();">
+ <div style="font-size:10px; padding-bottom:5px;">
+	<img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterCommittee.reset();"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterCommittee.submit();" onclick="return CheckCommitteeField();"><%=langCreate%></a>
+</div>
+
+<table border="0" width="478" height="100"  class='tablelist' cellpadding='5' cellspacing='0'>
+<tr><th width="91" align=left><%=langProperty%></th><th width="284" align=left><%=langValue%></th></td> <tr>
+
+          <input type="hidden" name="orgid" value="<%= Session("OrgID") %>">
+
+	<td width="91" height="22"><b><%=langGroup%> Name</b></td>
+    <td width="284" height="22">
+    <input type=text name="groupname" size=42 maxlength=50> <font color="#FF0000">*</font></td>
+ 
+    </td>	  </tr>
+    <tr>
+	<td width="91" height="22"><b><%=langDescription%></b></td>
+    <td width="284" height="22" valign=middle>
+    <textarea name="groupdescription" rows=6 cols=42></textarea></td>
+   </tr>
+
+	<tr>
+   		<td width="91" height="22"><b>Group Type</b></td>
+		<td width="284" height="22" valign=middle>
+		<select name="grouptype">
+			<!--<option value=1>Security</option>-->
+			<option value="2" selected="selected">Department</option>
+			<!--<option value=3>Distribution List</option>-->
+		</select>
+		</td>
+   </tr>
+      
+</table>
+ <div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterCommittee.reset();"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterCommittee.submit();" onclick="return CheckCommitteeField();"><%=langCreate%></a></div>
+
+ <p><font color="#FF0000">* </font><%=lanRegister_requred%></p>
+<br>
+</FORM>    
+<%
+
+Sub ListOrganization
+	set conn = Server.CreateObject("ADODB.Connection")
+	conn.Open Application("DSN")
+	set rs = Server.CreateObject("ADODB.Recordset")
+	set rs.ActiveConnection = conn
+	rs.CursorLocation = 3 'adUseClient
+	rs.CursorType = 3 'adOpenStatic
+	openstr="select OrgID, OrgName from Organizations" 
+	'response.write openstr
+	rs.Open openstr,,, 2 'adCmdTable
+	response.write "<option value='0'>Choose One</option>"
+	rs.movefirst
+	Do while not rs.eof
+		response.write "<option value="&rs("orgid")&">"&rs("orgname")&"</option>"
+		rs.movenext
+	Loop 
+	rs.close
+	set rs=nothing
+	conn.close
+	set conn=nothing
+end sub 
+
+%>
+
+
+<script language="JavaScript">
+<!--
+	function CheckCommitteeField()
+	{
+		if (document.RegisterCommittee.groupname.value == "")
+		{
+			alert("Group Name is required");
+			document.RegisterCommittee.groupname.focus();
+			return false;				
+		}					
+		return true;
+	}
+//-->
+</script>

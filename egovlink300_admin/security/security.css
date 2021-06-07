@@ -1,0 +1,111 @@
+/* Security Style Sheet */
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+label
+{
+	font-weight: bold;
+}
+
+#content span#searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+#content {
+	width: 800px;
+	}
+
+.footerbox {
+	clear: both;
+	padding-top: 10px;
+	}
+
+#centercontent {	
+	width: 800px;	
+	font-family: verdana,sans-serif;
+	float: left;
+	margin-left: 15px;
+	}
+
+#centercontent h3 {
+	padding: 0;
+	margin: 0;
+	margin: 1em 0 3em 0;
+	}
+
+#centercontent h5 {
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+	}
+
+#content div.shadow {
+	width: 660px;
+	}
+
+table#securitydisplay 
+{
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 660px;
+	border: 1px solid #336699;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+#securitydisplay th {
+	/*font-size: .75em;*/
+	/*border-bottom: 1px solid black;*/
+	background-color: #93bee1;
+	}
+
+#securitydisplay caption {
+	font-weight: bold;
+	margin: 1em 0;
+	}
+
+#securitydisplay td.oddrow {
+	background-color: #FFFFFF
+	}
+
+#securitydisplay td.evenrow {
+	background-color: #E0E0E0;
+	}
+
+#securitydisplay td.featureparent {
+	background-color: #c0c0c0;
+	font-size: 10 px;
+	font-family: Verdana,Tahoma,Arial;
+	font-weight: bold; 
+	border-top: 2px solid black;
+	}
+
+p#securitycopybutton {
+	padding-left: 6em;
+	}
+
+#fromuserid
+{
+	margin-right: 10em;
+}

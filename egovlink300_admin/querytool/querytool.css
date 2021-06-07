@@ -1,0 +1,23 @@
+body {COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px;}
+td {COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px;}
+table.navigation {position: absolute;top: 90px; right:25px;}
+
+textarea.query {COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px;width:668px;Height:50px;}
+
+a.nav:link      {border-left:1px solid #000000; border-bottom:1px solid #000000; border-top:1px solid #000000; border-right:1px solid #000000; color:#0000ff; text-decoration:none;font-family: arial,tahoma; font-size: 12px; color: #000000;background-color: #e0e0e0;font-weight:bold;padding:1px;}
+a.nav:visited   {border-left:1px solid #000000; border-bottom:1px solid #000000; border-top:1px solid #000000; border-right:1px solid #000000; color:#0000ff; text-decoration:none;font-family: arial,tahoma; font-size: 12px; color: #000000;background-color: #e0e0e0;font-weight:bold;padding:1px;}
+a.nav:active    {border-left:1px solid #000000; border-bottom:1px solid #000000; border-top:1px solid #000000; border-right:1px solid #000000; color:#0000ff; text-decoration:none;font-family: arial,tahoma; font-size: 12px; color: #000000;background-color: #e0e0e0;font-weight:bold;padding:1px;}
+a.nav:hover     {border-left:1px solid #000000; border-bottom:1px solid #000000; border-top:1px solid #000000; border-right:1px solid #000000; color:#0000ff; text-decoration:none;font-family: arial,tahoma; font-size: 12px; color: #000000;background-color: #c0c0c0;font-weight:bold;padding:1px;}
+a.navh          {border-left:1px solid #000000; border-bottom:1px solid #000000; border-top:1px solid #000000; border-right:1px solid #000000; color:#0000ff; text-decoration:none;font-family: arial,tahoma; font-size: 12px; color: #000000;background-color: #ffffff;font-weight:bold;padding:1px;}
+
+/*EXCEL TABLE STYLES*/
+table.excel {}
+td.excelheader {font-weight:bold;background-color:#eeeeee;border-right: solid #000000 1px;font-family: verdana,sans-serif; font-size: 10px;border-bottom: solid #000000 1px;}
+td.exceldata {background-color:white;border-right: solid #c0c0c0 1px;border-bottom: solid #c0c0c0 1px;font-family: verdana,sans-serif; font-size: 10px;height:12px;}
+td.exceldata_error {background-color:white;border-right: solid #c0c0c0 1px;border-bottom: solid #c0c0c0 1px;font-family: verdana,sans-serif; font-size: 10px;height:12px;color:red;}
+td.excelheader_selected {color:#ffffff;font-weight:bold;background-color:#336699;border-right: solid #000000 1px;font-family: verdana,sans-serif; font-size: 10px;border-bottom: solid #000000 1px;}
+td.exceldata_selected {color:#ffffff;border-right: solid #c0c0c0 1px;background-color:#336699;border-bottom: solid #c0c0c0 1px;font-family: verdana,sans-serif; font-size: 10px;height:12px;}
+td.exceldata_highlight {color:#000000;border-right: solid #c0c0c0 1px;background-color:yellow;border-bottom: solid #c0c0c0 1px;font-family: verdana,sans-serif; font-size: 10px;height:12px;}
+
+.title {font-weight:bold;}
+

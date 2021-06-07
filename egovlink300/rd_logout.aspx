@@ -1,0 +1,1 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="rd_logout.aspx.cs" Inherits="rd_logout" %>

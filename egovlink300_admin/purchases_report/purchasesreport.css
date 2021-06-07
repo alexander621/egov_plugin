@@ -1,0 +1,32 @@
+/* Purchases report styles */
+
+td.purchasecell {
+	height: 26px;
+	}
+
+table#purchaseslist {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #336699;
+	width: 800px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#purchaseslist th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+span#searchresults
+{
+	color: red;
+	padding-left: 1em;
+}
+
+

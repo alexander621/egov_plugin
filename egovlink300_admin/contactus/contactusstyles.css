@@ -1,0 +1,53 @@
+/* Mobile Contact Us Stylesheet */
+
+div#bottombtnsholder {
+	margin-top: 2em;
+	}
+
+div#topbtnsholder {
+	margin: 2em 0 1em 0;
+	}
+
+div#mobilefeatureholder {
+	margin: 2em 0;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+div#screenmsgblock {
+	margin: 1em 0;
+	}
+
+div#contactusdisplaycount {
+	color: #ff0000; 
+	text-align: right;
+	}
+
+textarea#contactusdisplay {
+	width: 800px; 
+	height:200px;
+	color: black;
+	}
+
+table#tagtable {
+	left: 0;
+	top: 0;
+	margin: 0;
+	padding: 0;
+	margin-bottom: .6em;
+	}
+
+div#htmlonlycheck {
+	padding: 0;
+	margin: 0;
+	}
+
+
+

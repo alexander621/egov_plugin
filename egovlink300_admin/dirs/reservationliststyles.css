@@ -1,0 +1,121 @@
+body {
+	padding: 0;
+	margin: 0;
+	}
+
+input {
+	padding: 0;
+	margin: 0;
+	}
+
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+h3
+{
+	padding: 0;
+	margin: 1em 0 3em 0 !important;
+}
+
+div#reservationreportshadow {
+	background: #919191; 
+	width: 1000px;
+	margin-top: 20px;
+	}
+
+table#reservationreport {
+	width: 1000px;
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	top: 0 !important;
+	left: 0 !important;
+	margin-top: 2em !important;
+	margin-bottom: 3em !important;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#reservationreport th {
+    height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#reservationreport td {
+    height: 26px;
+	}
+
+table#reservationreport td.rentalnamecell {
+	padding-left: 1em;
+	}
+
+tr#totalsrow td {
+	border-top: 1px solid #336699;
+	font-weight: bold;
+	background-color: #cccccc;
+	}
+
+table.citizenreport {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 1000px !important;
+	top: 0 !important;
+	left: 0 !important;
+	margin-top: 2em !important;
+	margin-bottom: 3em !important;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table.citizenreport th {
+    height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#citizenlist
+{
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	top: 0 !important;
+	left: 0 !important;
+	margin-top: 2em !important;
+	margin-bottom: 3em !important;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+span#citizenaccountpicks
+{
+	display: none;
+}
+

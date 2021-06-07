@@ -1,0 +1,83 @@
+#map_wrapper {
+    position:fixed;
+    width:85%;
+    height:50%;
+    left:7.5%;
+    top:25%;
+    border:20px solid white;
+    padding-bottom:20px;
+    background-color:white;
+    border-radius:10px;
+    /*height: 400px; */
+    /*width:50%; */
+    /*margin-left:auto;*/
+    /*margin-right:auto;*/
+}
+#map_wrapper h3
+{
+	margin:0;
+	font-size: 14px !important;
+	color:black;
+	font-weight:bold;
+}
+#map_canvas {
+    width: 100%;
+    height: 100%;
+}
+#cover{
+      position:fixed;
+      top:0;
+      left:0;
+      background:rgba(0,0,0,0.6);
+      z-index:100001;
+      width:100%;
+      height:100%;
+    }
+    .closemodal
+    {
+	float:right;
+	margin:-10px;
+    }
+
+    #successMessage, #successMessage a
+    {
+    text-align: center;
+    font-size: 3vw !important;
+    line-height:3vw !important;
+    }
+    #successMessage img
+    {
+	    width:20%;
+	    max-width:200px;
+    }
+
+    @media screen and (max-height: 510px) 
+    {
+	#map_wrapper {
+    		position:fixed;
+    		width:100%;
+    		height:100%;
+    		left:0;
+    		top:0;
+		border:0;
+		border-radius:0;
+    	}
+	.closemodal
+	{
+		margin:0;
+	}
+    }
+    @media screen and (max-width: 800px) 
+    {
+    	#successMessage img
+    	{
+	    	width:40%;
+	    	max-width:900px;
+    	}
+    	#successMessage, #successMessage a
+    	{
+    		text-align: center;
+    		font-size: 5vw !important;
+    		line-height:5vw !important;
+    	}
+    }

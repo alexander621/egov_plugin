@@ -1,0 +1,45 @@
+<html>
+<head>
+<title></title>
+<meta http-equiv='Content-Type' content='text/html; charset=iso-8859-1'>
+<link rel='stylesheet' href='megamillions.css' type='text/css'>
+</head>
+<body bgcolor='#FFFFFF' text='#000000' leftmargin='0' topmargin='0' marginwidth='0' marginheight='0'>
+<div id='tempholder'></div>
+
+<script language='JavaScript' src='dhtmllib.js'></script>
+<script language='JavaScript' src='scroller.js'></script>
+
+<script language='JavaScript'>
+	var myScroller1 = new Scroller(0, 0, 175, 300, 0, 0);
+	myScroller1.setColors("#000066", "#FFFFFF", "#FFFFFF");
+	myScroller1.setFont("Arial,Verdana,Helvetica", 2);
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1686' target='_top'>MEGA MILLIONS JACKPOT CLIMBS TO ESTIMATED $135 MILLION! JACKPOT CONTINUES TO GROW AS MORE THAN 860,000 TICKETS WIN PRIZES</a></div><font color='#000000'>The Mega Millions jackpot is gaining momentum and creating excitement from coast to coast. A total of 868,448 tickets were winners in the Friday, September 8 drawing. Since no ticket matched all six n...</font><a href='aboutus/press_release_detail.asp?artid=1686' target='_top'> More &gt;&gt;</a>")
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1681' target='_top'>MEGA MILLIONS JACKPOT CLIMBS TO ESTIMATED $114 MILLION; Excitement Grows From Coast To Coast</a></div><font color='#000000'>Mega Millions players across the country are feeling the excitement as the jackpot continues to grow. When Tuesday's winning numbers were drawn, they turned 623,112 tickets into Mega Millions winners....</font><a href='aboutus/press_release_detail.asp?artid=1681' target='_top'> More &gt;&gt;</a>")
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1680' target='_top'>NEARLY 630,000 TICKETS WIN IN MEGA MILLIONS; Jackpot Grows To Estimated $95 Million</a></div><font color='#000000'>There is no shortage of excitement or winners in Mega Millions.  You only need to look at Friday's drawing for proof.  A total of 629,081 Mega Millions tickets in 12 states won prizes, including three...</font><a href='aboutus/press_release_detail.asp?artid=1680' target='_top'> More &gt;&gt;</a>")
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1670' target='_top'>MEGA MILLIONS EXCITEMENT AND NUMBER OF WINNERS GROWING; Jackpot Climbs To Estimated $83 Million As More Than 500,000 Tickets Win Prizes</a></div><font color='#000000'>Lucky players nationwide continue to win big with the Mega Millions game.  In Tuesday's Mega Millions drawing, a total of 515,202 tickets from coast to coast won prizes, including one ticket that came...</font><a href='aboutus/press_release_detail.asp?artid=1670' target='_top'> More &gt;&gt;</a>")
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1667' target='_top'>MEGA MILLIONS JACKPOT CLIMBS TO ESTIMATED $70 MILLION; More Than 465,000 Tickets Win Prizes In Friday`s Drawing</a></div><font color='#000000'>The excitement level is growing in Mega Millions and so is the number of winners.  In Friday's Mega Millions drawing, a total of 468,099 tickets won prizes, including three tickets that each won $250,...</font><a href='aboutus/press_release_detail.asp?artid=1667' target='_top'> More &gt;&gt;</a>")
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1662' target='_top'>MEGA MILLIONS JACKPOT JUMPS TO ESTIMATED $60 MILLION; More Than 450,000 Tickets Win Prizes In Tuesday`s Drawing</a></div><font color='#000000'>Mega Millions is heating up!  Players in the 12 Mega Millions states won big in the Tuesday, August 22, 2006 drawing, as a total of 453,598 tickets won prizes.  There was no jackpot winner, so the jac...</font><a href='aboutus/press_release_detail.asp?artid=1662' target='_top'> More &gt;&gt;</a>")
+	myScroller1.addItem("<div align='center'><a href='aboutus/press_release_detail.asp?artid=1191' target='_top'>JACKPOT HITS ESTIMATED $53 MILLION IN MEGA MILLIONS; EXCITEMENT GROWS FROM COAST TO COAST!</a></div><font color='#000000'>Mega Millions players across the country are feeling the excitement as the jackpot continues to grow. When Tuesday's winning numbers were drawn, they turned 342,708 tickets into Mega Millions winners....</font><a href='aboutus/press_release_detail.asp?artid=1191' target='_top'> More &gt;&gt;</a>")
+	myScroller1.setPause(0);
+	myScroller1.setSpeed(25);
+
+	function runmikescroll() 
+	{
+	  var layer;
+	  var mikex, mikey;
+	  layer = getLayer("placeholder");
+	  mikex = getPageLeft(layer);
+	  mikey = getPageTop(layer);
+	  myScroller1.create();
+	  myScroller1.hide();
+	  myScroller1.moveTo(mikex, mikey);
+	  myScroller1.setzIndex(100);
+	  myScroller1.show();
+	}
+
+	window.onload=runmikescroll
+</script>
+<div id="placeholder"></div>
+</body>
+</html>

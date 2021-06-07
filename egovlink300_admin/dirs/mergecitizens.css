@@ -1,0 +1,145 @@
+/* THis is the stypesheet for the mergecitizen.asp page */
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+label {
+	font-weight: bold;
+}
+
+div#keepinfo, div#mergeinfo {
+	margin-top: 1em;
+	width: 420px;
+	border: 1px solid black;
+	padding: 1em;
+	visibility: hidden;
+	}
+
+table.addresstable {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	padding-bottom: .5em;
+	margin-left: .4em;
+	}
+
+td.addresslabel {
+	width: 5em;
+	}
+
+span.mergepicktitle {
+	font-weight: bold;
+	font-size: 10pt;
+	/*margin-left: 3em;*/
+	}
+
+table.familytable {
+	position: relative;
+	top: 0;
+	left: .5em;
+	margin: 0;
+	padding: 0;
+	padding-bottom: .5em;
+	border: 1px solid black;
+	width: 380px;
+	margin-top: 1.5em;
+	/* give a rounded bottom */
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+  	-webkit-border-bottom-left-radius: 10px;
+  	-moz-border-radius-bottomleft: 10px;
+  	border-bottom-left-radius: 10px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table.familytable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table.familytable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table.familytable tr.altrow {
+	background-color: #ececec;
+	}
+
+input#savebutton {
+	font-weight: bold;
+	}
+
+span.searcharea {
+	/*margin-left: 4em;*/
+	}
+
+div#centercontent1 {
+	border: 1px solid blue;
+	width: 1040px;
+	}
+
+span.searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+table#mergemaptable	{
+	border: 1px solid black;
+	/* give a rounded bottom */
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+  	-webkit-border-bottom-left-radius: 10px;
+  	-moz-border-radius-bottomleft: 10px;
+  	border-bottom-left-radius: 10px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#mergemaptable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#mergemaptable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table#mergemaptable tr.altrow {
+	background-color: #ececec;
+	}

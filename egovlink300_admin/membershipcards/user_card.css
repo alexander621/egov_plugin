@@ -1,0 +1,72 @@
+  #membershipcard {
+     position: relative;
+     width:    300px;
+     height:   176px;
+  }
+
+  #displayMembershipCard,
+  #displayMembershipCard_print {
+     position: absolute;
+     left:     0px;
+     width:    300px;
+     height:   176px;
+  }
+
+  #displayMembershipCard {
+     border: 1px solid #000000;
+  }
+
+  #displayMembershipCard_print {
+     border: 1px solid #000000;
+  }
+
+  #card_title {
+     color:          #00463E;
+     font-family:    Helvetica,Verdana,Tahoma,Arial;
+     font-size:      14pt;
+     font-weight:    bold;
+     text-transform: uppercase;
+  }
+
+  #member_name {
+/*
+     background-color: #ffffff;
+     border:      1px solid #000000;
+     position:    absolute;
+     left:        0px;
+     top:         0px;
+     width:       100%;
+     height:      20pt;
+*/
+     font-size:   12pt;
+     font-family: Verdana,Tahoma,Arial;
+     font-weight: normal;
+     color:       #000000;
+     padding-top: 10px;
+  }
+
+  .userlayout_card_text {
+     text-align: center;
+  }
+
+  .profilePic {
+     width:       133px;
+     height:      100px;
+     border:      1pt solid #000000;
+     margin-left: 4px;
+  }
+
+  /*
+  .watermark_display { position: absolute; left:125pt; top:18pt; -moz-opacity:0.1; filter:alpha(opacity=20); z-index:-1; }
+  .watermark_print   { position: absolute; left:125pt; top:18pt; -moz-opacity:0.1; filter:alpha(opacity=20); z-index:-1; }
+  */
+  
+  .watermark_display { position: absolute; left:125pt; top:18pt; z-index:-1; }
+  .watermark_print   { position: absolute; left:125pt; top:18pt; z-index:-1; }
+
+  .userlayout_print_margins {
+     margin-top:    0px;
+     margin-left:   0px;
+     margin-right:  0px;
+     margin-bottom: 0px;
+  }

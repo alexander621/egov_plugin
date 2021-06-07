@@ -1,0 +1,817 @@
+/* Rentals Style Sheet */
+
+table tr.altrow {
+	background-color: #ececec;
+	}
+
+p.receiptheader {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	}
+
+div#rentalscategorypagetop {
+	width: 790px;
+	margin: 0;
+	padding: 0;
+	margin-left: 1em;
+	margin-bottom: 2em;
+	}
+
+div.rentalcategorygroup {
+	cursor: pointer;
+	margin-top: 1em;
+	margin-bottom: 1em; 
+	width: 760px;
+	}
+
+div.rentalcategorysingle {
+	margin-top: 1em;
+	margin-bottom: 1em; 
+	width: 760px;
+	}
+
+img.categoryimage {
+	display:inline;
+	border:1px solid black;
+	}
+
+div.categorydesc {
+	clear: left;
+	font-weight: bold;
+	margin-left: 1em;
+	}
+
+p.categorydesc {
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	}
+
+table.rentalcategory {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+img.templateimg {
+	padding: 0;
+	margin: 0;
+	height: 180px;
+	width: 240px;
+	}
+
+td.iconcell {
+	margin: 0;
+	padding: 0;
+	width: auto;
+	}
+
+p#selectedname {
+	font-size: 12pt;
+	font-weight: bold;
+	}
+
+table#selectchoice {
+	width: 600px;
+	border: 1px solid black;
+	margin-bottom: 2em;
+	}
+
+span.calendarimg {
+	cursor: pointer;
+	}
+
+tr#selectbutton td {
+	height: 30px;
+	}
+
+td#orcolumn {
+	font-size: 11pt;
+	font-weight: bold;
+	}
+
+td.selecttitle {
+	font-size: 10pt;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: left;
+	/*position: relative;
+	float: right; 
+	margin-right: 2em;*/
+	}
+
+div#screenMsg {
+	color: #ff0000; 
+	font-size: 16px; 
+	font-weight: bold;
+	position: relative;
+	margin: 1em 2em 1em 0;
+	}
+
+div#rentalresultsshadow {
+	width: 800px !important;
+	}
+
+table#rentalresults {
+	border: 1px solid black;
+	width: 800px;
+	}
+
+table#rentalresults th {
+	height: 26px;
+    font-size: 10px;
+    color: black;
+    border-bottom: 1px solid black;
+    background-color: #93bee1;
+	}
+
+table#rentalresults td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+span.schedulerentalname {
+	font-weight: bold;
+	font-size: 12pt;
+	}
+
+td.desccolumn {
+	width: 100%;
+	padding-left: 1em;
+	}
+
+div.cab {
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid blue;
+	}
+
+table.checkavailabilitybutton {
+	width: 100% !important;
+	}
+
+table.checkavailabilitybutton td {
+	text-align: center;
+	width: 100% !important;
+	}
+
+table.availablerentals {
+	margin-bottom: 1em;
+	width: 900px;
+	border: 1px solid gray !important;
+	}
+
+table.availablerentals td.iconcell {
+	padding-top: 1em;
+	}
+
+table.availablerentals td.rentalnamecell {
+	padding-top: .5em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana,sans-serif;
+	}
+
+table.availablerentals tr td.spacerrow {
+	height: 1em;
+	/*border-bottom: 1px solid grey;*/
+	}
+
+table.availablerentals tr td div.checkbutton {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+	}
+
+table.availablerentals tr td.availabledescription {
+	padding-right: .5em;
+	padding-bottom: 1em;
+	padding-left: .5em;
+	width: 80%;
+	}
+
+
+table.availablecategory {
+	margin-bottom: 1em;
+	width: 900px;
+	}
+
+table.availablecategory td.iconcell {
+	padding-top: 1em;
+	}
+
+table.availablecategory td.rentalnamecell {
+	padding-top: .5em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana,sans-serif;
+	}
+
+table.availablecategory tr td.spacerrow {
+	height: 1em;
+	/*border-bottom: 1px solid grey;*/
+	}
+
+table.availablecategory tr td div.checkbutton {
+	width: 100%;
+	text-align: left;
+	margin-top: .3em;
+	margin-bottom: 1em;
+	padding-left: .5em;
+	}
+
+table.availablecategory tr td.availabledescription {
+	padding-right: .5em;
+	padding-bottom: 1em;
+	padding-left: .5em;
+	width: 80%;
+	}
+
+
+td.imgcell2 {
+	text-align: center;
+	width: auto;
+	}
+	
+hr.spacerrow {
+	color: grey;
+	}
+
+div.facilityname {
+	margin-top: 1em;
+	border-top: 1px solid grey;
+	}
+
+td.datecolumn span.datedisplay {
+	font-weight: bold;
+	font-size: 11pt;
+	}
+
+td.datecolumn {
+	padding-left: 1em;
+	height: 26px;
+	}
+
+td.availabledatecolumn {
+	padding-left: 1em;
+	padding-bottom: 1em;
+	/*width: 100%;*/
+	}
+
+table.availablerentals tr td.selecttime {
+	width: 10em !important;
+	padding-right: .5em;
+	border: 1px solid green;
+	}
+
+input.selecttime {
+	margin-left: 4em;
+	}
+
+table.availablerentals tr.altrow {
+	background-color: #ececec;
+	}
+
+img.availabilityimg {
+	margin-left: .5em;
+	}
+
+div.rentalfacilityname {
+	margin-top: 1em;
+	margin-bottom: .5em;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana,sans-serif;
+	}
+
+div#page-title {
+	margin-top: 2em;
+	margin-bottom: 2em;
+}	
+
+div#page-title h1 {
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+	font-family: verdana,sans-serif;
+}
+
+div.pagedescription {
+	color: black;
+	font-family: verdana,sans-serif;
+	font-size: 14px;
+	max-width: 800px;
+	margin-bottom: 2em;
+}
+
+span#pickeddate {
+	font-weight: bold;
+	font-size: 12pt;
+	color: black;
+	}
+
+span.documentitle {
+	font-weight: bold;
+	margin-left: 3em;
+	}
+
+p#limitationmessage {
+	margin-left: 3em;
+	font-weight: bold;
+	font-size: 12pt;
+	width: 900px;
+	}
+
+p#checktimes {
+	margin-top: 2em;
+	}
+
+p#summarytitle {
+	font-weight: bold;
+	font-size: 12pt;
+	margin: 2em 0;
+	}
+
+p.selectedsummarydetails {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 10pt;
+	color: black;
+	margin: 1em 0;
+	margin-left: 2em;
+	}
+
+span.summarysubtitle {
+	font-weight: bold;
+	font-size: 12pt;
+	color: black;
+	}
+
+hr.summarydivider {
+	margin-right: 4em;
+	}
+
+div#summaryfees {
+	margin: 0;
+	padding: 0;
+	font-weight: bold;
+	font-size: 10pt;
+	color: black;
+	margin-bottom: 1em;
+	margin-left: 1em;
+	}
+
+table#summaryfeetable {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 0 1em 1em;
+	border: 1px solid black;
+	width: 600px;
+	}
+
+table#summaryfeetable th {
+    height: 26px;
+    font-size: 10px;
+    border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#summaryfeetable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table#summaryfeetable td.firstcol {
+	padding-left: 1em;
+	}
+
+table#summaryfeetable td.feetotal {
+	border-top: 1px solid black;
+	}
+
+table#summaryfeetable td.lastcol {
+	padding-right: 1em;
+	}
+
+table#summaryterms {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 0 1em 1em;
+	width: 780px;
+	}
+
+table#summaryterms td {
+    font-size: 10pt;
+	}
+
+table#summaryterms td.checkcol {
+	width: 2em;
+	}
+
+table#summaryterms td.termcol {
+	padding-left: 1em;
+
+	}
+
+span.summarytime {
+	padding-left: 2em;
+	}
+
+table#availablerentalcategory {
+	margin-top: 2em;
+	}
+
+
+span#receiptadmininfo {
+	position: relative;
+	float: right;
+	}
+
+span.receipttitles {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	font-family: verdana,Tahoma,Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	}
+
+div#receipttopright {
+	float: right;
+	margin-bottom: 1em;
+	width: 300px;
+	}
+
+p#transactiontotal {
+	text-align: right;
+	}
+
+div#receiptdetailtotal {
+	width: 100%;
+	text-align: right;
+	}
+
+table#receiptfeetotal {
+	position: relative;
+	top: 0;
+	left: 0;
+	border-top: 1px solid black;
+	width: 100%;
+	}
+
+table#receiptfeetotal td {
+	height: 20px;
+	}
+
+table#receiptfeetotal2 {
+    width:      100%;
+	border-top: 1px solid black;
+    margin-top: 20px;
+	}
+
+table#receiptdatesandfees {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	}
+
+table#receiptdatesandfees td {
+	height: 20px;
+	}
+
+table#receiptdatesandfees tr.feeseperator td {
+	height: 1em;
+	border-bottom: 1px solid black;
+	}
+
+table#receiptreservationfees {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#receiptreservationfees td {
+	height: 20px;
+	}
+
+table#refundfeestable {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#refundfeestable td {
+	height: 20px;
+	}
+
+td.receiptamount {
+	width: 7em;
+	}
+
+span#totalcharge {
+	padding-left: 4em !important;
+	}
+
+table#receiptpayments {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#receiptpayments td.amountcell {
+	width: 6em;
+	text-align: right;
+	}
+
+
+table#receiptpayments td.refundamountcell {
+	width: 6em;
+	text-align: left;
+	}
+
+table#receiptpayments td.totalpayment {
+	border-top: 1px solid black;
+	width: 6em;
+	text-align: right !important;
+	}
+
+p#documentcollection {
+	margin-bottom: 1em;
+	}
+
+div#ratesandchargesgroup {
+	font-weight: bold;
+	border: 1px solid black;
+	width: 750px;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	padding-top: 1em;
+	}
+
+table#ratesandcharges {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	width: 700px;
+	margin-top: .5em;
+	margin-left: .5em;
+	}
+
+table#ratesandcharges td {
+	height: 20px;
+	}
+
+table#ratesandcharges td.chargename {
+	padding-left: 1em;
+	color: black;
+	}
+
+.noreservemsg {
+	font-weight: bold;
+	font-size: 20px;
+	color: #f13;
+	}
+
+p.noreservemsg {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-top: .5em;
+	}
+
+div#accountchange {
+	width: 300px;
+	}
+
+table#accountchange {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	margin: 0;
+	padding: 0;
+	margin-top: 1em;
+	width: 300px!important;
+	}
+
+fieldset#reservationdetails {
+	padding: 2em;
+	padding-left: 3em;
+	text-align: left;
+	}
+
+div.group {
+	margin-left: 3em;
+	}
+
+td.billinginfolabel {
+	font-weight: bold;
+	}
+
+div.payflowmsgfail {
+	padding: 2em;
+	}
+
+div#receiptdocumentstart {
+	margin: 0;
+	padding: 0;
+	margin-top: 3em;
+	}
+
+p#receiptdocumentstitle {
+	font-weight: bold;
+	font-size: 12pt;
+	}
+
+div.receiptrentalname {
+	font-weight: bold;
+	font-size: 10pt;
+	margin-top: 1em;
+	margin-left: 3em;
+	}
+
+div.receiptrentaldoc {
+	margin-left: 5em;
+	text-decoration: none;
+	color: black;
+	}
+
+div#reservationdocs {
+	margin-bottom: 3em;
+	}
+
+p#nopermissionreceipt {
+	font-weight: bold;
+	margin-bottom: 3em;
+	}
+
+img.thumb {
+	position: relative;
+	width:80px;
+	height:60px;
+	cursor:pointer;
+	margin:0px;
+	padding:0px;
+	margin-right: 1em;
+	margin-bottom: 1em;
+	border-style: none;
+	}
+
+img.thumb:hover {
+	-webkit-transform: scale(3); 
+	-moz-transform: scale(3); 
+	-o-transform: scale(3);
+	transform: scale(3);
+	z-index: 1000;
+}	
+
+div.fullimg {
+	padding-left: 1em;
+	padding-top: .5em;
+	padding-bottom: 1em;
+	}
+
+div.fullimg .loading {
+	width: 24px;
+	height: 24px;
+	}
+
+td.rentalimgcell {
+	padding-left: 1em;
+	}
+
+div.imgrow {
+	display: inline;
+	}
+
+div.imageinstructions {
+	position: relative;
+	top: -1em;
+	z-index: 500;
+	}
+
+
+div#paymentform {
+	margin-left: 3em;
+	margin-bottom: 4em;
+	margin-top: 2em;
+	}
+
+table#chargeamounts {
+	font-family: Verdana;
+	}
+
+table#chargeamounts td.labelcol {
+	width: 15em;
+	font-weight: bold;
+	}
+
+div#chargediv {
+	width: 100%;
+	}
+
+p#notreservablemsg {
+	font-size: 14pt;
+	font-weight: bold;
+	color: red;
+	}
+
+
+table#declineddisplay td.declinedsectiontitle {
+	font-weight: bold !important;
+	text-align: left;
+	padding-left: 2em;
+	}
+
+input#useraddress {
+	width: 300px;
+}
+
+label {
+	font-weight: bold;
+	margin-right: .5em;
+}
+
+span#addressinsystemmsg
+{
+	color: #000;
+	font-size: larger;
+	margin-left: 1em;
+}
+
+span.addressnotfound
+{
+	color: #f00 !important;
+}
+
+span.addressfound
+{
+	color: #090 !important;
+}
+
+div.form-element {
+	margin: .5em 0 1em 0;
+}
+
+table.addressdisplay {
+	border: none;
+	margin-bottom: 2em;
+}
+
+table.addressdisplay td.labelcell {
+	width: 64px;
+	text-align: right;
+}
+
+input#userstate {
+	width: 35px;
+	text-transform: uppercase;
+}
+
+input#usercity {
+	width: 300px;
+}
+
+input#userzip {
+	width: 75px;
+}
+
+span.missingfield {
+	color: f00;
+	font-size: larger;
+}
+
+span#missingcitymsg {
+	display: none;
+}
+
+span#missingstatemsg {
+	display: none;
+}
+
+span#missingzipmsg {
+	display: none;
+}
+
+div.formelementdescription {
+	margin-left: 5.5em;
+}

@@ -1,0 +1,623 @@
+/*
+Site colors
+-------------------------------------------------------------
+E6E0D2
+  color: light brown
+  found: side menubar bg, section-header bg, horizontal menubar division bg, horizontal menubar mouse-over bg
+
+fffff1
+  color: white
+  found: section-text bg, left-side menubar mouse-over bg
+
+DADADA
+  color: gray
+  found: section-header-divider lines, horizontal menubar bg, footer bg
+
+images: (can be found in ../custom/images/cityname )
+  Page Header background: change top-image-bg.gif or top-image-bg.jpg
+  Left-Side Menubar background: search on "background:url".  change city to proper value then update the image (page-bg.gif).
+
+body behavior: (search for "body {behavior" and change the city to the proper value)
+-------------------------------------------------------------
+*/
+
+/*DEFAULT PAGE STYLES*/
+font.pagetitle { padding: 4px;  color:#000000; font-family: verdana,sans-serif; font-size: 14px; font-weight:bold; }
+font.datetagline { padding: 2px; COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.formtitle {COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+.title {
+	COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+
+div.footerbox {
+	background-color:#DADADA;
+	COLOR: #000000; 
+	TEXT-DECORATION: none; 
+	font-family: verdana,sans-serif; 
+	font-size: 10px;  
+	}
+td.box_header  {background-color:#DADADA;width:100%; color:#000000; font-family:verdana,sans-serif; font-size:12px; font-weight:bold; text-align:center;}
+
+div.box_header5 {font-weight:bold;background-color:#DADADA;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:100%;padding:2px;color:#000000;}
+
+div.box_header2 {
+	background-color:#DADADA;
+	color:#000000;
+	}
+
+div.box_header4 {
+	background-color:#DADADA;
+	color:#000000;
+	}
+
+.button  {COLOR: #000000; font-family: verdana,sans-serif;font-size:10px; font-weight:bold; background-color: #DADADA;}
+
+a:link { COLOR: #0000cc; TEXT-DECORATION: none;}
+a:visited { COLOR: #0000cc; TEXT-DECORATION: none;}
+a:active { COLOR: #0000cc; TEXT-DECORATION: none;}
+a:hover { COLOR: #0000cc; TEXT-DECORATION: underline;}
+	
+/*HOMEPAGE STYLES*/
+
+
+/*ACTION LINE STYLES*/
+input.actionbtn {BACKGROUND-COLOR:#DADADA; COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+input.action {text-align:left; background-color: #DADADA; COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; width:75px;}
+
+p.actionItem {COLOR: #3365a9; font-size: 10px; font-weight:normal; margin:0 0 0 6;}
+p.actionCategory {COLOR: #3365a9; font-size: 12px; font-weight:bold; margin:6 0 0 0;}
+
+
+/*PAYMENT STYLES*/
+input.paymentbtn {BACKGROUND-COLOR:#DADADA; COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+
+/*DOCUMENT STYLES*/
+font.searchlabel { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+font.searchlink { COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.documentfolder { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+
+/* tr.topbanner { background-color: #00FF00;	} */
+
+
+/* RECREATION RESERVATION CALENDAR */
+.legendlabeltitle      { background-color: #DADADA; color: #000000;	}
+.calfacilityselection  { background-color: #DADADA; }
+.caldateselect         { background-color: #DADADA; }
+.calfacilityselection  { background-color: #DADADA; }
+.calheader             { background-color: #DADADA; }
+/* RECREATION RESERVATION FORM */
+.reserveformtitle{background-color:#DADADA;	color: #000000;}
+.reserveformbutton {background-color: #DADADA; COLOR: #000; font-size:10px;}
+
+.categorytitle {font-size:14px;color:#000000;}
+A.categorytitle:active{COLOR: #3365a9; font-size:14px;}
+A.categorytitle:link{COLOR: #3365a9;  font-size:14px;}
+A.categorytitle:visited{COLOR: #3365a9; font-size:14px; }
+A.categorytitle:hover{TEXT-DECORATION: underline; COLOR: #000000; font-size:14px; }
+
+
+
+/* FACILITY LIST */
+A.subcategorymenu:active{COLOR: #3365a9; font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:link{COLOR: #3365a9;  font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+A.subcategorymenu:visited{COLOR: #3365a9;  font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:hover{TEXT-DECORATION: underline;COLOR: #000000;  font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+div.subcategorymenu {background-color:#a4b99d; border: solid #000000 1px; width:760 px; padding:5px;font-weight:bold;}
+font.subcategorymenuheader {COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+
+.facilitydesc
+{
+	font-size: 11px;
+	width: 600px;
+}
+.facilityname
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: black;
+}
+
+
+/* CLASS STYLES */
+.classdaterange {font-weight:bold; color: #000000; font-family: verdana, sans-serif;	background-color: #DADADA;}
+.classbutton  {COLOR: #000000; font-family: verdana,sans-serif;font-size:10px; font-weight:bold; background-color: #DADADA;	cursor:pointer; }
+#cart_table th { background-color: #000000;	color: #000000;	}
+
+
+
+
+/* Transaction reports styles */
+#content table.transactionreport {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	/*width: 750px; */
+	position: relative; 
+	top: -4px; 
+	left: -4px;
+	background-color: #FFFFFF;
+	}
+
+#content table.transactionreport td{
+	padding: 4;
+	}
+	
+#content div.transactionreportshadow { 
+	background: #919191; /* (919191 = dark grey) */
+	width: 750px;
+	margin: 20px 0;
+	}
+
+.transaction_header {font-weight:bold; background-color:#DADADA; padding:3px; color:#000000;}
+
+/* End of Transaction Report styles */
+
+/* GIFT */
+div.gift_header {font-weight:bold;background-color:#DADADA;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:700 px;padding:2px;color:#000000;}
+
+
+/* SKIPJACK PAYMENT FORM STYLES */
+input.skipjackbtn {
+	background-color: #DADADA;
+	color: #000000;
+	}
+
+
+/*CURRENTLY SELECTED FOLDER*/
+a.documentfolder:hover   {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:visited {color:#3365a9; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:active  {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:link    {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+
+/*NEW FOLDER/DOCUMENT STYLES*/
+#foldheader    {cursor: pointer; list-style-image:url('../docs/fold.gif'); list-style-type: none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;  }
+#foldinglist   {list-style-image:none; list-style-type: none; font-family: verdana,sans-serif; font-size: 10px;  }
+li.emptyfolder {color:#000000; font-family: verdana,sans-serif; font-size: 10px;}
+
+a.documentlist:link    {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:visited {color:#3365a9; text-decoration:none; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:active  {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:hover   {color:RED; text-decoration:underline; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+/*CALENDAR STYLES*/
+
+table#calendar {
+	border-left:1px solid #333333; 
+	border-top:1px solid #080808; 
+	}
+
+table#calendar th {
+	background-color: #DADADA;	
+	color: #000000;	
+	}
+
+tr#calendardayrow {
+	background-color: #E6E0D2;	
+	color: #000000;	
+	}
+
+table#eventlist {
+	border-left:1px solid #333333;	/* 333333 = very dark grey */
+	border-top:1px solid #080808;	/* fffff1 = grey */
+	}
+
+table#eventlist th {
+	background-color: #E6E0D2; 
+	color: #000000;	
+	}
+
+table#calendar td {
+	border-right:1px solid #333333; 
+	border-bottom:1px solid #080808; 
+	} 
+
+table#calendarheader td { 
+	border: 0;
+	}
+
+table#calendarheader a {
+	color: #000000;
+    }
+
+table#eventlist td {
+	border-right:1px solid #333333; 
+	border-bottom:1px solid #080808; 	
+	}
+
+.view_text_label {
+    color: #000000 !important;
+}
+
+/* Footer MENU STYLE*/
+/* this style is causing the afooter links to always be black 8/15/06
+font.footermenu, font.footermenu a, font.footermenu a:visited, font.footermenu a:hover { 
+	color:#000000; 
+	}
+*/
+
+font.footermenu { 
+	color:#000000; 
+	}
+
+
+a.afooter:active {
+	color:           #000000; 
+	text-decoration: none; 
+	font-family:     verdana,sans-serif; 
+	font-size:       10px; 
+	}
+a.afooter:link {
+	color:           #000000; 
+	text-decoration: none; 
+	font-family:     verdana,sans-serif; 
+	font-size:       10px; 
+	}
+a.afooter:visited {
+	color:           #000000;  
+	text-decoration: none;
+	font-family:     verdana,sans-serif; 
+	font-size:       10px; 
+	}
+a.afooter:hover {
+	color:           #000000;  
+	text-decoration: underline; /* leave this in */
+	font-family:     verdana,sans-serif; 
+	font-size:       10px; 
+	}
+
+/* FAQ */
+div.faqBody {
+	}
+
+div.faqBody h4 {
+	font-weight: bold;
+	font-size: 14px;
+	}
+
+/* This is to corect a strange behavior in FireFox */
+div.faqBody h4 a:hover {
+	margin: 0;
+	text-decoration: none;
+	color: #0000ff;
+	font-weight: bold;
+	}
+
+div.faqTitle {
+	background-color: #DADADA;
+	color: #000000;
+	}
+
+div.faqnav {
+	}
+	
+	
+/* for drop down menu */
+
+/* the horizontal menu starts here */
+div#listmenu {
+	margin: 0;
+	padding: 0;
+	width:100%; /* makes the div full width of screen */
+	float:left;
+	/*border-top:1px solid #069;	 draws line on top edge of div */
+	/*border-bottom:1px solid #069;	  draws line on bottom edge of div */
+	font-size: 1em;	/* SET FONT-SIZE HERE */
+	font-family: verdana,sans-serif; 
+	font-size: 10px; 
+	font-weight:bold;
+	background-color: #E6E0D2;/* colors the div */
+	/*margin-top:20px;  TEMPORARY - pushes the div away from the top of the browser for clarity in this example*/
+	}
+
+div#listmenu ul {
+	margin:0 0 0 30px;/* indents ul from edge of container - NOTE: diff value for IE in hacks below */
+	padding: 0;
+	border-top: 1px solid #000000;
+	}
+
+div#listmenu ul li {
+	margin: 0;
+	padding: 0;
+	float:left;	/* causes the list to align horizontally instead of stack */
+	position:relative; /* positioning context for the absolutely positioned drop-down */
+	list-style-type:none;	/* removes the bullet off each list item */
+	background-color:#DADADA; /*#35000a; /*sets the background of the menu items */
+	border-right:1px solid #DADADA;  /* creates dividing lines between the li elements */
+	width:250px;
+	z-index: 99;
+	}
+	
+	/*#  5282bd, 8caed6; 29415a*/
+	
+	
+div#listmenu li:first-child {
+	border-left:1px solid #DADADA; /*the first vertial line on the menu */
+	}
+
+div#listmenu li:hover { 
+	/*background-color:#FFF; /*sets the background of the menu items */
+	}
+
+div#listmenu a {
+	display:block;
+	padding:1px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color: #000000;	/* #000 sets the type color */
+	width:244px;  /* the width lines  and voice-family put in by Steve Loar - Makes the whole line a link, not just the text */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width:244px;
+	}
+div#listmenu a:hover {
+	/*background-color:#000;
+	color:#8caed6; */
+	cursor: default;
+	}
+
+div#listmenu ul li ul li a {
+	display:block;
+	/* padding:1px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color:#000000;	/* sets the type color */
+	background-color:#DADADA;
+	width:244px;  /* the width lines  and voice-family put in by Steve Loar - Makes the whole line a link, not just the text */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width:250px;
+	}
+
+div#listmenu ul li ul li a:hover {
+	background-color:#E6E0D2;
+	color:#000000;
+	cursor: pointer;
+	}
+
+/* the menu ends here */
+
+/* the drop-down starts here */
+div#listmenu ul li ul {
+	margin:0; 
+	padding: 0;
+	z-index:10; /* puts drop-down on top of div - Safari needs this as menu is 1px higher */
+	position:absolute; /* positions the drop-down ul in relation to its relatively positioned li parent */
+	width:250px; /*sets the width of the menu - in combo with the li's 100% width, makes the menu stack*/
+	border-right:0; /* stops SCBs drops having two right borders - they inherit the border, IE doesn't */
+	left:-1px; /*aligns the drop exactly under the menu */
+	/*width:250px;*/
+	}
+div#listmenu ul li ul li {
+	padding:0;
+	margin: 0;
+	width:250px; /* makes the list items fill the list container (ul) */
+	/*border-left:1px solid #069; /*  three sides of each drop-down item */
+	/* border-bottom:1px solid #069; */
+	/*border-right:1px solid #069;*/
+	}
+div#listmenu ul li ul li a {
+	padding: 0;
+	margin: 0;
+	/* padding:1px 6px; creates space each side of menu item's text */		
+	padding: 5px 6px 5px 6px;
+	border-bottom: 1px solid #000000;
+	border-right:1px solid #000000;
+	border-left:1px solid #000000;
+	}
+div#listmenu ul li ul li:first-child {
+	border-top:1px solid #efeff7; /*the top edge of the dropdown - (#efeff7 = light grey) */
+	}
+/* make the drop-down display as the menu is rolled over */
+div#listmenu ul li ul {display:none;} /* conceals the drop-down when menu not hovered */
+div#listmenu ul li:hover ul {display:block; } /* shows the drop-down when the menu is hovered */
+
+/* pop-out starts here */
+body div#listmenu ul li ul li ul  {
+	position:absolute; 
+	visibility:hidden; /* same effect as display:none in this situation */
+	top:-1px;
+	left:10em;
+	}
+div#listmenu ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* second level popouts start here*/
+div#listmenu ul li ul li:hover ul li ul {visibility:hidden;}
+div#listmenu ul li ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* THE HACK ZONE - */
+/* hack for IE (all flavors) so the menu has a vertical line on the left */
+* html div#listmenu ul {
+	float:left; /* makes the ul wrap the li's */
+	border-left:1px solid #000000; /* adds the rightmost menu vertical line to the ul */
+	margin-left:15px; /* IE doubles the given value above - why? */
+	}
+
+/* add a top line to drops and pops in IE browsers - can't read :first-child */
+* html  div#listmenu ul li ul {
+	border-top:1px solid #000000;
+	border-left:0px; /* stops the drop inheriting the ul border */
+	}
+/* the Tantek hack to feed IE Win 5.5-5.0 a lower value to get the pop-out to touch the drop-down */
+* html  div#listmenu ul li ul li ul { 
+  left:9.85em; 
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  left:10em;
+  } 
+/* and the "be nice to Opera" rule */
+html>body div#listmenu ul li ul li ul {
+  left:10em;
+} 
+
+/* an Opera-only hack to fix a redraw problem by invisibly extending the ul */
+/* the first-level drop stays open for 100px below the bottom but at least it works */
+/* this can be reduced to as little as 22px if you don't have pop-outs */
+/* the pop-out menu stays open for 22px below the bottom but at least it works */
+	@media all and (min-width: 0px){
+   body div#listmenu ul li ul {padding-bottom:100px;}
+   body div#listmenu ul li ul li ul {padding-bottom:22px;}
+   ul li ul li ul li ul li:hover {visibility:visible;} /* same effect as display:block in this situation */
+
+   }
+/*end Opera hack */
+/* END OF HACK ZONE */
+/* the drop-down ends here */
+/* END OF LIST-BASED MENU */
+
+body {behavior: url('http://www.egovlink.com/piscataway/csshover.htc');}
+
+/* Organization level style overriddes for the public default_page.asp */
+
+#wrapper {
+	background:url(../custom/images/piscataway/page_bg.jpg) repeat-y;
+	} 
+
+#subnav p {
+	border-bottom: 1px solid #fffff1;
+	background: #E6E0D2;
+	text-align: left;
+	font-weight: bold;
+	font-family: verdana;
+	font-size: 11px;
+	}
+
+#subnav p a {
+	color: #000000 !important;
+	}
+
+#subnav a:active {
+    color: #000000;
+}
+
+#subnav a:visited {
+	color: #000000;
+	}
+
+#subnav p a:hover {
+	color: #000000 !important;
+	background-color: #fffff1;
+	}
+
+#content h2  {
+	color: #000000;
+	border-top: 3px solid #DADADA;;
+	background: #E6E0D2; 
+	}
+
+#content h2 a {
+    color: #000000;
+}
+
+div.features {
+	background: #fffff1;
+	border-bottom: 3px solid #DADADA;
+	}
+
+/* End of organization overriddes for the public default_page.asp */
+
+/* Purchases Report Styles */
+#content table.purchasereport th {
+    HEIGHT: 18px;
+    FONT-SIZE: 11px;
+    color: #000000;
+    border-bottom: 1px solid #336699;  /* #336699 = blue/grey */
+    background-color: #DADADA;
+	}
+
+/* Pool Pass styles */
+#poolformtitle { 
+	background-color: #DADADA; 
+	color: #000000;
+	border-top: solid #000000 1px;
+	border-right: solid #000000 1px;
+	border-left: solid #000000 1px; 
+	}
+
+#poolforminputarea {	
+	background-color:#ececf2; /* (#ececf2 = light grey) */
+	border: solid #000000 1px; 
+	}
+
+.reserveforminputarea {
+	background-color:#ececf2;
+	}
+
+
+
+
+/* 8/17/06 */
+div.picktitle	{	background-color:#000033; }
+
+
+
+/* Pool Pass Styles End */
+
+/* Size of default page central block */
+p.hasimage {
+	height: 53px;
+	}
+
+
+/* Staff Directory Styles - List Screen ------------------------------------ */
+  .staff_directory_table #columnHeaders {
+     background-color: #DADADA;
+     border-bottom:    1pt solid #000000;
+  }
+
+  .staff_directory_table #columnHeaders th {
+     padding:    5px;
+     text-align: left;
+     color:      #000000;
+  }
+
+/* Staff Directory Styles - Details Screen --------------------------------- */
+  .staff_members_header {
+     background-color: #DADADA;
+     font-size:        12px;
+     color:            #000000;
+  }
+
+/* DM Data Styles ---------------------------------------------------------- */
+  .column .dragbox,
+  .column .section {
+     background: #ffffff;
+     border:     1px solid #DADADA;
+     margin:     5px 2px 5px;
+     padding:    0;
+     border-bottom-right-radius:     5px;
+     border-bottom-left-radius:      5px;
+     -moz-border-radius-bottomright: 5px;
+     -moz-border-radius-bottomleft:  5px;
+  }
+/*
+*** OVERRIDES THE STYLES ON THE WELCOME PAGE.  May need to change the id from "content" to "dm_content"???
+
+  #content h2 {
+     background:    none repeat scroll 0 0 #6298C7;
+     border-top:    0px solid #6298C7;
+     border-bottom: 1px solid #6298C7;
+     color:         #000000;
+     font-family:   Verdana;
+     font-size:     12px;
+     margin:        0;
+     padding:       5px;
+  }
+*/
+
+  .mappoints_sortable .desc, 
+  .mappoints_sortable .asc {
+/*     background-color: #2D6190; */
+     background-color: #2D6190;
+     color:            #000000;
+  }
+
+  .mappoints_sortable th {
+     background-color: #6298C7;
+     color:            #000000;
+     border:           1px solid #fff;
+     border-right:     none;
+     text-align:       center
+  }
+

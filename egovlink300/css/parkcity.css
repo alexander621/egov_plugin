@@ -1,0 +1,329 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-size:90%;	
+	background-color: #B9B9D0;
+	color: #000;
+	}
+
+#wrapper {
+	text-align: left;
+	width: 760px;
+	margin: 0 auto 0 auto;
+	background:url(../custom/images/parkcity/container_bg.gif) repeat;
+	padding:0;
+	}
+	
+#header h1 {
+	color: #7E7EA9;
+	/*border-bottom: 1px solid #8787AF;*/
+	font-size: 200%;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	background: url(../custom/images/parkcity/h1_bg.gif) no-repeat left;
+	padding: 0;
+	margin-bottom:-5px;
+	}		
+
+#nav {
+	width: 170px;
+	float: left;
+	margin-left: 14px;
+	padding: 10px 0 0 0;
+	/*background: #5282bd;*/
+	border-top: 0px solid #ffffff;
+					
+	}
+
+
+
+#subnav {
+	padding: 8px 0 0 0;
+	margin: 0;
+	}
+
+#subnav p {
+	text-align: center;
+	border-bottom: 1px solid #8A8AB0;
+	/*border-top: 1px solid #5282bd;*/
+	margin: 0;
+	padding: 0;
+	font-size: 0.85em;
+	font-weight: 400;
+	background: #ECECF2;
+	}
+	
+#subnavtop {
+	border-top: 1px solid #8A8AB0;
+	}
+	
+#subnav p a {
+	display: block;
+	padding: 5px 5px 5px 5px;
+	color: #8A8AB0;
+	text-decoration: none;
+	width: 170px;
+	}
+
+#subnav a:visited {
+	color: #6A6A9B;
+	text-decoration: none;
+	}
+
+#subnav p a:hover {
+	/*background: #E1E1EA;*/
+	color: #000;
+	text-decoration: none;
+	}
+
+#subnav a:active {
+	background: #8A8AB0;
+	color: #FFFFFF;
+	text-decoration: none;
+	}
+	
+
+#content {
+	margin-left: 210px;
+	margin-right: 18px;
+	padding: 10px;
+	/*width: 495px;
+	float: right;
+	padding: 0 30px 0 0;
+	margin: 0;*/	
+	}
+	
+	#contentIn {
+	margin-left: 10px;
+	margin-right: 18px;
+	padding: 10px;
+	/*width: 495px;
+	float: right;
+	padding: 0 30px 0 0;
+	margin: 0;*/
+	
+	
+	}
+				
+				#content p {
+					background: #ffffff;
+					margin:0px;
+					padding:  0 0 0 8px;
+					}
+					
+					#contentIn p {
+					background: #ffffff;
+					margin:0px;
+					padding:  8px 0 0 8px;
+					}
+				
+
+				#content h1, #contentIn h1 {
+					color: #7E7EA9;
+					border-bottom: 1px solid #8787AF;
+					font-size: 135%;
+					font-family: Georgia, "Times New Roman", Times, serif;
+					background: url(../custom/images/parkcity/h1_bg.gif) no-repeat left;
+					padding: 0;
+					margin-bottom:-5px;
+					}
+				
+				#content h2, #contentIn h2  {
+					color: #7E7EA9;
+					border-top: 1px solid #8787AF;
+					border-bottom: 1px solid #8787AF;
+					font-size: 115%;
+					font-family: Georgia, "Times New Roman", Times, serif;
+					background: #D7D7E3;
+					padding: 0px 0px 0px 2px;
+					}
+					#content h2 a {
+					color: #7E7EA9;
+					text-decoration:none;
+					}
+					
+
+	
+					#header {
+						height: 85px;
+						/*padding: 0;
+						margin: 0;*/
+						padding: 80px 0 0 31px;
+						background: url(../custom/images/parkcity/header_bg.gif) no-repeat top;
+						
+
+
+						}
+								#header img {
+									/*float: left;*/
+									border: none;
+									}
+				
+				
+	
+
+ 
+#footer {
+	/*height:15px;*/
+	clear: both;
+	margin: auto;
+	color: #000000;
+	text-align: center;
+	font-size: 10px;
+	/*background:url(../images/footer_bg.gif) no-repeat top;*/
+	/*padding:45px 0 0 0;*/
+	}
+	
+	#footer p {
+				padding: 5px 3px 3px 3px;
+				margin: 0;
+				line-height:140%;
+				}
+			
+			
+			/*
+			#footer ul {
+				list-style:none;
+				padding: 0;
+				margin: 0;
+				}
+				
+			#footer li {
+				display: inline;
+				padding: 0 7px 0 7px;
+				}
+			
+			#footer li a:link, a:visited, a:hover {
+				color: #000000;
+				}*/
+
+.spacer {
+	clear: both;
+	}
+	
+
+
+
+
+
+
+/* for drop down menu */
+
+/* the horizontal menu starts here */
+div#listmenu {
+	width:100%; /* makes the div full width */
+	float:left;
+	border-top:0px solid #069;	/* draws line on top edge of div */
+	border-bottom:0px solid #069;	 /* draws line on bottom edge of div */
+	font-size:0.8em;	/* SET FONT-SIZE HERE */
+	/*background-color:#CCF;  colors the div */
+	background: transparent;
+	/* margin-top:20px;  TEMPORARY - pushes the div away from the top of the browser for clarity in this example */
+	}
+div#listmenu ul {
+	margin:0 0 0 30px;/* indents ul from edge of container - NOTE: diff value for IE in hacks below */
+	}
+div#listmenu li {
+	float:left;	/* causes the list to align horizontally instead of stack */
+	position:relative; /* positioning context for the absolutely positioned drop-down */
+	list-style-type:none;	/* removes the bullet off each list item */
+	background-color:#ECECF2; /*sets the background of the menu items */
+	border-right:1px solid #B9B9D0; /* creates dividing lines between the li elements */
+	width: 150px;
+		text-align:center;
+	}
+
+div#listmenu li:first-child {
+	border-left:1px solid #B9B9D0; /*the first vertial line on the menu */
+	}
+div#listmenu li:hover { 
+	background-color:#FFF; /*sets the background of the menu items */
+	}
+div#listmenu a {
+  display:block;
+	padding:1px 6px 6px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color:#8A8AB0;	/* sets the type color */
+	}
+div#listmenu a:hover {
+	color:#000;
+	}
+/* the menu ends here */
+/* the drop-down starts here */
+div#listmenu ul li ul {
+	margin:0; 
+	z-index:10; /* puts drop-down on top of div - Safari needs this as menu is 1px higher */
+	position:absolute; /* positions the drop-down ul in relation to its relatively positioned li parent */
+	width:10em; /*sets the width of the menu - in combo with the li's 100% width, makes the menu stack*/
+	border-right:0; /* stops SCBs drops having two right borders - they inherit the border, IE doesn't */
+	left:-1px; /*aligns the drop exactly under the menu */
+	width: 150px;
+		text-align:center;
+	}
+div#listmenu ul li ul li {padding:0;
+	width:100%; /* makes the list items fill the list container (ul) */
+	border-left:1px solid #B9B9D0; /*  three sides of each drop-down item */
+	border-bottom:1px solid #B9B9D0;
+	border-right:1px solid #B9B9D0;
+	padding:1px 6px 6px 6px;
+	}
+div#listmenu ul li ul li a {padding:1px .5em;}
+div#listmenu ul li ul li:first-child {
+	border-top:1px solid #B9B9D0; /*the top edge of the dropdown */
+	}
+/* make the drop-down display as the menu is rolled over */
+div#listmenu ul li ul {display:none;} /* conceals the drop-down when menu not hovered */
+div#listmenu ul li:hover ul {display:block; } /* shows the drop-down when the menu is hovered */
+
+/* pop-out starts here */
+body div#listmenu ul li ul li ul  {
+	position:absolute; 
+	visibility:hidden; /* same effect as display:none in this situation */
+	top:-1px;
+	left:10em;
+	}
+div#listmenu ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* second level popouts start here*/
+div#listmenu ul li ul li:hover ul li ul {visibility:hidden;}
+div#listmenu ul li ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* THE HACK ZONE - */
+/* hack for IE (all flavors) so the menu has a vertical line on the left */
+* html div#listmenu ul {
+	float:left; /* makes the ul wrap the li's */
+	border-left:1px solid #B9B9D0; /* adds the rightmost menu vertical line to the ul */
+	margin-left:15px; /* IE doubles the given value above - why? */
+	}
+
+/* add a top line to drops and pops in IE browsers - can't read :first-child */
+* html  div#listmenu ul li ul {
+	border-top:1px solid #B9B9D0;
+	border-left:0px; /* stops the drop inheriting the ul border */
+	}
+/* the Tantek hack to feed IE Win 5.5-5.0 a lower value to get the pop-out to touch the drop-down */
+* html  div#listmenu ul li ul li ul { 
+  left:9.85em; 
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  left:10em;
+  } 
+/* and the "be nice to Opera" rule */
+html>body div#listmenu ul li ul li ul {
+  left:10em;
+} 
+
+/* an Opera-only hack to fix a redraw problem by invisibly extending the ul */
+/* the first-level drop stays open for 100px below the bottom but at least it works */
+/* this can be reduced to as little as 22px if you don't have pop-outs */
+/* the pop-out menu stays open for 22px below the bottom but at least it works */
+	@media all and (min-width: 0px){
+   body div#listmenu ul li ul {padding-bottom:100px;}
+   body div#listmenu ul li ul li ul {padding-bottom:22px;}
+   ul li ul li ul li ul li:hover {visibility:visible;} /* same effect as display:block in this situation */
+
+   }
+/*end Opera hack */
+/* END OF HACK ZONE */
+/* the drop-down ends here */
+/* END OF LIST-BASED MENU */

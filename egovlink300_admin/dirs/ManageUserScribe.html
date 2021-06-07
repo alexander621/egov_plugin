@@ -1,0 +1,93 @@
+<%
+dim conn,rs,strSQL,thisname,cmd,groupid,delimeter,sGroups,strResult,sBgcolor,sChecked0,sChecked1,sChecked2,bDisabled,CommitteeName,ResultID
+const howoften0="10000"
+const d0="No"
+const howoften1="0"
+const d1="Instantly"
+const howoften2="1"
+const d2="Daily"
+const howoften3="7"
+const d3="Weekly"
+const howoften4="30"
+const d4="Monthly"
+
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 
+rs.CursorType = 2 
+strSQL = "select s.subscribeid,s.name,s.source,us.howoften from subscribe s left join usersubscribe us on s.subscribeid =us.subscribeid and us.userid="&session("userid")
+'response.write strSQL
+rs.Open strSQL,,, 2 
+While Not rs.EOF
+schecked0=""
+schecked1=""
+schecked2=""
+schecked3=""
+schecked4=""
+'response.write "<br>newline="&rs("howoften")
+select case rs("howoften")
+case 0 
+sChecked1="checked"
+case 1
+sChecked2="checked"
+case 7
+sChecked3="checked"
+case 30
+sChecked4="checked"
+case else
+sChecked0="checked"
+end select
+
+sOptions=  sOptions & "<tr bgcolor=""" & sBgcolor & """>"
+sOptions=  sOptions & "<td>"&rs("name")&"</td>"&vbcrlf
+sOptions = sOptions & "<td><input type=radio name='howoften"&rs("subscribeid")&"' "&sChecked0&" value="&howoften0&" >&nbsp;</td>"&vbcrlf
+sOptions = sOptions & "<td><input type=radio name='howoften"&rs("subscribeid")&"' "&sChecked1&" value="&howoften1&" >&nbsp;</td>"&vbcrlf
+sOptions = sOptions & "<td><input type=radio name='howoften"&rs("subscribeid")&"' "&sChecked2&" value="&howoften2&">&nbsp;</td>"&vbcrlf
+sOptions = sOptions & "<td><input type=radio name='howoften"&rs("subscribeid")&"' "&sChecked3&" value="&howoften3&">&nbsp;</td>"&vbcrlf
+sOptions = sOptions & "<td><input type=radio name='howoften"&rs("subscribeid")&"' "&sChecked4&" value="&howoften4&">&nbsp;</td>"&vbcrlf
+sOptions = sOptions & "<td>&nbsp;</td>"&vbcrlf
+sOptions = sOptions & "</tr>"
+rs.movenext
+wend
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+%>
+<%
+if request.querystring("message")=1 then response.write "<br><font color=red><B>Successfully saved</B></font>"
+if request.querystring("message")=2 then response.write "Subscription Email is already sent to your email account"
+%>
+<form name="subscribe" action="insert_subscribe.asp" method="post" ID="subscribe">
+<TABLE cellpadding=5 width=100% cellspacing=0 class="tablelist" ID="Table1">
+<th align="left">Subscribed Items</th>
+<th  ><%=d0%></th>
+<th ><%=d1%></th>
+<th ><%=d2%></th>
+<th ><%=d3%></th>
+<th ><%=d4%></th>
+<th width=50%>&nbsp;</th>
+<%=sOptions%>
+</TABLE>
+<INPUT TYPE='submit' value='Subscribe'>
+</form>
+
+<br>
+
+<FORM METHOD=POST name=Subscribe  ACTION="PlaceAnOrder.asp">
+ <TABLE border="0" cellpadding="0" cellspacing="0">
+   <TR>
+    <TD>
+	
+  </TR>
+   <tr align=right>
+     <td>
+       <a href="javascript:document.all.Subscribe.submit();" >
+	  <br><img src='<%=RootPath%>images/go.gif' border=0> &nbsp;Subscribe Instantly!!
+	   </a>
+     </td>
+  </tr>
+  </table>
+  </form>

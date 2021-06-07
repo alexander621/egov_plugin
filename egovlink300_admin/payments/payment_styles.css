@@ -1,0 +1,133 @@
+/* Start of payment details page styles */
+
+div#paymentdetailstitle
+{
+	font-weight: bold;
+}
+
+div#paymentservicename
+{
+	font-weight: bold;
+	margin-top: 2em;
+}
+
+div#user_expand
+{
+	margin-bottom: .5em;
+	margin-top: 2em;
+	font-weight: bold;
+}
+
+table#contact_user 
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 1px solid black;
+}
+
+div#detail_expand
+{
+	margin-bottom: .5em;
+	margin-top: 2em;
+	font-weight: bold;
+}
+
+div#detailinfo
+{
+	border: 1px solid black;
+	margin: .5em 0;
+	padding: 1em;
+}
+
+table#detail_info 
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 1px solid black;
+}
+
+div#transaction_expand
+{
+	margin-bottom: .5em;
+	margin-top: 2em;
+	font-weight: bold;
+}
+
+table#transaction_info
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 1px solid black;
+}
+
+td.label
+{
+	width: 16em;
+}
+/* End of payment details page styles */
+
+
+/* Start of managemasterlist page styles */
+fieldset#scanentryfieldset
+{
+	margin-top: 2em;
+	margin-bottom: 2em;
+	/*-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;*/
+}
+
+table#searchpicks
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: 1em;
+	/*margin-bottom: 1em;*/
+}
+
+table#searchpicks td.searchlabel
+{
+	width: 13em
+}
+
+table#applicantdata
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 1px solid silver;
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+table#applicantdata td.datalabel
+{
+	width: 15em;
+	font-weight: bold;
+}
+
+span.requiredindicator
+{
+	color: red;
+}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+div#screenmsgbox
+{
+	margin-top: 2em;
+}
+
+/* End of managemasterlist page styles */

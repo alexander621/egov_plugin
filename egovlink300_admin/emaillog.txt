@@ -1,0 +1,137 @@
+################################################################################################
+NEW LOG: 5/8/2014 8:35:53 AM
+
+Session:
+OrgID:  0
+UserID:  0
+FullName:  
+PageSize:  20
+ShowStockTicker:  0
+Permissions:  
+RedirectPage:  
+
+Cookies:
+
+Form Data:
+
+Form Body:
+{
+  "Type" : "SubscriptionConfirmation",
+  "MessageId" : "7b75f32d-bf45-47d5-84fb-b3e737c91ac8",
+  "Token" : "2336412f37fb687f5d51e6e241d638b05b641deedbccc5e865769ef623dae6111870d4dbaf9cfb371d845d23c72557e77e0681aa1a5bcf65807d935688af0a4059901f87a66c4439cc4ce6080d4960a124df3d698ed516d5b730629e774604eb3f3c7f151c867df032eb2728519c1a61946134c6b479d6d0d6a6963e7d4423d7",
+  "TopicArn" : "arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email",
+  "Message" : "You have chosen to subscribe to the topic arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email.\nTo confirm the subscription, visit the SubscribeURL included in this message.",
+  "SubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=ConfirmSubscription&TopicArn=arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email&Token=2336412f37fb687f5d51e6e241d638b05b641deedbccc5e865769ef623dae6111870d4dbaf9cfb371d845d23c72557e77e0681aa1a5bcf65807d935688af0a4059901f87a66c4439cc4ce6080d4960a124df3d698ed516d5b730629e774604eb3f3c7f151c867df032eb2728519c1a61946134c6b479d6d0d6a6963e7d4423d7",
+  "Timestamp" : "2014-05-08T12:35:51.171Z",
+  "SignatureVersion" : "1",
+  "Signature" : "kj3VPdDwiu9cMykelO032bmCoFUOTjZLADZxe7Nx+QNLWqWu+iU5X6mLRx9zD5PzrgNqGGBv1QXKBsHcYcfC7XN1dlfeoeSZYJiQvVWm10tmvJBCPggoOPtA9EtSkbm97Jl0IGa+Nyqsukff87ZdLwZ2/8h5jvOT2x9XzdVyaT3QkT24OcvylIMdj1N3pv4eiQ0aWRCU3xSz5wgMVbIUPg1yA9iSN8STqo10Y5SvJ4N6wYM+cxi/DefkmBgmkc5BamQpzlx0rvI8HcVKz2fHg6khZEwqbckI6Ds1daN+/jgJkJ+tLxikbb5TCGIDaJMl5ehqVJaKcA/ISbxmRxDcFg==",
+  "SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-e372f8ca30337fdb084e8ac449342c77.pem"
+}
+
+Server Variables:
+ALL_HTTP:  HTTP_CONNECTION:Keep-Alive
+HTTP_CONTENT_LENGTH:1608
+HTTP_CONTENT_TYPE:text/plain; charset=UTF-8
+HTTP_ACCEPT_ENCODING:gzip,deflate
+HTTP_HOST:www.egovlink.com
+HTTP_USER_AGENT:Amazon Simple Notification Service Agent
+HTTP_X_AMZ_SNS_MESSAGE_TYPE:SubscriptionConfirmation
+HTTP_X_AMZ_SNS_MESSAGE_ID:7b75f32d-bf45-47d5-84fb-b3e737c91ac8
+HTTP_X_AMZ_SNS_TOPIC_ARN:arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email
+HTTP_X_AMZ_SNS_SUBSCRIPTION_ARN:arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email:623ad9f0-e482-4a70-ad46-3228f97fcb71
+
+ALL_RAW:  Connection: Keep-Alive
+Content-Length: 1608
+Content-Type: text/plain; charset=UTF-8
+Accept-Encoding: gzip,deflate
+Host: www.egovlink.com
+User-Agent: Amazon Simple Notification Service Agent
+x-amz-sns-message-type: SubscriptionConfirmation
+x-amz-sns-message-id: 7b75f32d-bf45-47d5-84fb-b3e737c91ac8
+x-amz-sns-topic-arn: arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email
+x-amz-sns-subscription-arn: arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email:623ad9f0-e482-4a70-ad46-3228f97fcb71
+
+APPL_MD_PATH:  /LM/W3SVC/1/ROOT/eclink/admin
+APPL_PHYSICAL_PATH:  D:\wwwroot\egov\egovlink300_admin\
+AUTH_PASSWORD:  
+AUTH_TYPE:  
+AUTH_USER:  
+CERT_COOKIE:  
+CERT_FLAGS:  
+CERT_ISSUER:  
+CERT_KEYSIZE:  
+CERT_SECRETKEYSIZE:  
+CERT_SERIALNUMBER:  
+CERT_SERVER_ISSUER:  
+CERT_SERVER_SUBJECT:  
+CERT_SUBJECT:  
+CONTENT_LENGTH:  1608
+CONTENT_TYPE:  text/plain; charset=UTF-8
+GATEWAY_INTERFACE:  CGI/1.1
+HTTPS:  off
+HTTPS_KEYSIZE:  
+HTTPS_SECRETKEYSIZE:  
+HTTPS_SERVER_ISSUER:  
+HTTPS_SERVER_SUBJECT:  
+INSTANCE_ID:  1
+INSTANCE_META_PATH:  /LM/W3SVC/1
+LOCAL_ADDR:  10.8.8.57
+LOGON_USER:  
+PATH_INFO:  /eclink/admin/handle_email_issues.asp
+PATH_TRANSLATED:  D:\wwwroot\egov\egovlink300_admin\handle_email_issues.asp
+QUERY_STRING:  
+REMOTE_ADDR:  72.21.217.96
+REMOTE_HOST:  72.21.217.96
+REMOTE_USER:  
+REQUEST_METHOD:  POST
+SCRIPT_NAME:  /eclink/admin/handle_email_issues.asp
+SERVER_NAME:  www.egovlink.com
+SERVER_PORT:  80
+SERVER_PORT_SECURE:  0
+SERVER_PROTOCOL:  HTTP/1.1
+SERVER_SOFTWARE:  Microsoft-IIS/7.5
+URL:  /eclink/admin/handle_email_issues.asp
+HTTP_CONNECTION:  Keep-Alive
+HTTP_CONTENT_LENGTH:  1608
+HTTP_CONTENT_TYPE:  text/plain; charset=UTF-8
+HTTP_ACCEPT_ENCODING:  gzip,deflate
+HTTP_HOST:  www.egovlink.com
+HTTP_USER_AGENT:  Amazon Simple Notification Service Agent
+HTTP_X_AMZ_SNS_MESSAGE_TYPE:  SubscriptionConfirmation
+HTTP_X_AMZ_SNS_MESSAGE_ID:  7b75f32d-bf45-47d5-84fb-b3e737c91ac8
+HTTP_X_AMZ_SNS_TOPIC_ARN:  arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email
+HTTP_X_AMZ_SNS_SUBSCRIPTION_ARN:  arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email:623ad9f0-e482-4a70-ad46-3228f97fcb71
+
+
+################################################################################################
+NEW LOG: 5/8/2014 8:39:03 AM
+
+Form Body:
+{
+  "Type" : "Notification",
+  "MessageId" : "d564c232-9479-5ac4-ac1f-89d7e95d3041",
+  "TopicArn" : "arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email",
+  "Message" : "{\"notificationType\":\"Complaint\",\"complaint\":{\"complainedRecipients\":[{\"emailAddress\":\"complaint@simulator.amazonses.com\"}],\"complaintFeedbackType\":\"abuse\",\"userAgent\":\"Amazon SES Mailbox Simulator\",\"timestamp\":\"2014-05-08T12:39:00.000Z\",\"feedbackId\":\"00000145dbd80bb4-bac97d20-d6ad-11e3-9270-2954fd3ef98b-000000\"},\"mail\":{\"timestamp\":\"2014-05-08T12:38:59.000Z\",\"source\":\"tfoster@eclink.com\",\"destination\":[\"tfoster@eclink.com\",\"bounce@simulator.amazonses.com\",\"complaint@simulator.amazonses.com\"],\"messageId\":\"00000145dbd80842-81722924-6ae0-42c1-88df-7dc3c51b1ca6-000000\"}}",
+  "Timestamp" : "2014-05-08T12:39:00.412Z",
+  "SignatureVersion" : "1",
+  "Signature" : "Utg0B9clVOCm6Ip3SVKrM3d/RICHtYRfx0KIQegyTTufvw2p9SoqRNDwgR14/9olyTaxExaf4e9jHN6uScMVpmsuazY5gd1sdv309VMTIqZsDtQwk7ykph5a9T2CaSmCPG2AUnSYEpKGS9eABkTeeJkr5kZrZBqWBocVK/jwM4GwXo1VcKSObGjJFSlzuL2SZ5yzfE3fvUwwp1/gxT2F+B1D5GGoOPVJcwf6wu3YCP7dY2JWHrcqQIcwQOp0vqRHLSScW1BGSjW161wEklttxVtm6VYMsNrrMT+8I8gtm6CmCLzQrP1CebCT7O/Uzlug3W5oaAPUGdvS0NOlS84IZA==",
+  "SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-e372f8ca30337fdb084e8ac449342c77.pem",
+  "UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email:623ad9f0-e482-4a70-ad46-3228f97fcb71"
+}
+
+
+################################################################################################
+NEW LOG: 5/8/2014 8:39:03 AM
+
+Form Body:
+{
+  "Type" : "Notification",
+  "MessageId" : "adf97552-792f-5148-8f38-3eb7040ba18a",
+  "TopicArn" : "arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email",
+  "Message" : "{\"notificationType\":\"Bounce\",\"bounce\":{\"bounceSubType\":\"General\",\"bounceType\":\"Permanent\",\"bouncedRecipients\":[{\"action\":\"failed\",\"status\":\"5.1.1\",\"diagnosticCode\":\"smtp; 550 5.1.1 user unknown\",\"emailAddress\":\"bounce@simulator.amazonses.com\"}],\"reportingMTA\":\"dsn; a8-24.smtp-out.amazonses.com\",\"timestamp\":\"2014-05-08T12:39:00.339Z\",\"feedbackId\":\"00000145dbd80b86-b9506d22-5457-4b13-bb18-30e2db083cb2-000000\"},\"mail\":{\"timestamp\":\"2014-05-08T12:38:59.000Z\",\"source\":\"tfoster@eclink.com\",\"messageId\":\"00000145dbd80842-81722924-6ae0-42c1-88df-7dc3c51b1ca6-000000\",\"destination\":[\"tfoster@eclink.com\",\"bounce@simulator.amazonses.com\",\"complaint@simulator.amazonses.com\"]}}",
+  "Timestamp" : "2014-05-08T12:39:00.369Z",
+  "SignatureVersion" : "1",
+  "Signature" : "C9MiC19KbvwR+1n6jvQZDdF5PSRqpiYJ1Q+8rD0rMC66DgtusUPRags/kX8dhxOGcNj2sIZFNnN3fQBTo4W2H6jlBv6rRip80Kjg6JdmO8JydC6J7nmDO+62hBJ/D3oqbtXMCYLPMR9wmSjI6CCdMf19N10QLlY2OH1AIEpljn5RWdi687P5JfArIWQXBU96X1XeGHbni6XG2+WuBA65B94U+Oca6ehKaglzwSO9xYn0a3oe0co5mdE8SSCNKjU7vGbzW8hc81FA1mPlcSzAVJE+tCJdO+FtfO0Esb32w/Zpl16eAWoPUaekfgX3HfllN9D2QAc5viz0i724WZ8crg==",
+  "SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-e372f8ca30337fdb084e8ac449342c77.pem",
+  "UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email:623ad9f0-e482-4a70-ad46-3228f97fcb71"
+}

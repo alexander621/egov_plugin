@@ -1,0 +1,85 @@
+<%
+' CALL NEW REGISTERATION FORM
+Call DisplayRegisterForm
+
+ 
+'--------------------------------------------------------------------------------------------------------------------------------
+' CUSTOM FUNCTIONS AND SUBROUTINES
+'--------------------------------------------------------------------------------------------------------------------------------
+
+
+'--------------------------------------------------------------------------------------------------
+'  SUB DISPLAYREGISTERFORM
+'--------------------------------------------------------------------------------------------------
+ SUB  DisplayRegisterForm %>
+
+		<FORM METHOD=POST name="UpdateUser" ACTION="insert_citizen.asp" >
+
+		 <div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="display_citizen.asp"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.UpdateUser.submit();">Create User</a></div>
+
+		<table border="0"   width="478" height="220"   class='tablelist' cellpadding='0' cellspacing='0'>
+		<tr><th width='10' height='23' align='justify'>&nbsp;</th>
+		<th width='123' height='23' align='left'><%=langProperty%></th>
+		<th width='346' height='23' align=left><%=langValue%></th></tr>
+
+		<%
+		' DECLARE ARRAYS FOR DATA INPUTS
+		l_length=array( 4,4,512,50, _
+					   50,50,50, _
+						255,255, _
+						50,50,50,50,50,50,50)
+		l_name=array("User ID","Org ID","Email","Password", _
+			  "First Name","Last Name","Business Name", _
+			  "Address Line 1","Address Line 2", _
+			  "City","State","Zip","Country","Home Phone","Work Phone","Fax Number")
+		b_update=array( 0,0,1,1, _
+					   1,1,1, _
+					 	1,1, _
+						1,1,1,1,1,1,1)
+		Dim i 
+		
+		' LOOP THRU EACH ITEM TO DISPLAY FORM
+		FOR j = 1 to UBOUND(l_name) 
+		
+			' CHECK TO SEE IF WE SHOULD UPDATE THIS FIELD
+			If b_update(j)>0 then
+				
+				'Checks for email field, want to display Username / Email.
+				If l_name(j)="Email" Then
+					response.write "<tr><td width='10' height='23' align='justify'>&nbsp;</td>"
+					response.write "<td width='123' height='23' align='left'>Username / "&l_name(j)&": </td>"
+				Else
+					response.write "<tr><td width='10' height='23' align='justify'>&nbsp;</td>"
+					response.write "<td width='123' height='23' align='left'>"&l_name(j)&": </td>"				
+				End If
+				
+				' WRITE TEXTAREA INPUT
+				If l_length(j)>100 Then
+				   response.write "<td width='346' height='23' align=left><textarea rows=2 cols=50 name="""&l_name(j)&"""></textarea></td></tr>"
+				Else
+				' WRITE TEXTBOX
+					
+					' WRITE PASSWORD MASK
+					If	l_name(j)="Password" Then
+						response.write "<td width='346' height='23' align=left><input type=password name="""&l_name(j)&""" value=""""  size="&l_length(j)&" maxlength="&l_length(j)&"></td></tr>"
+					Else
+					' NORMAL TEXTBOX
+						response.write "<td width='346' height='23' align=left><input type=text name=""" & l_name(j) & """ value=""""  size=" & l_length(j) & " maxlength=" & l_length(j) & "></td></tr>"
+					End If
+				
+				End If
+
+			End If
+
+		Next
+
+		' WRITE HIDDEN FIELD
+		response.write "<input type=hidden name=""orgid"" value=""" & session("orgid") & """>"
+
+
+		%>
+		</table>
+		<div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="display_citizen.asp"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.UpdateUser.submit();">Create User</a></div>
+
+		</form>
+<% end sub %>

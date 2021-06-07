@@ -1,0 +1,56 @@
+table#calendarbody {
+	width: 800px;
+	}
+
+table#calendar {
+	width: 800px !important;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	}
+
+ul.eventlist {
+	margin: 0;
+	padding: 0;
+	list-style:disc inside;
+	}
+
+ul.eventlist li {
+	margin: 0;
+	padding: 0;
+	/*padding-left: 5px;*/
+	text-indent: -1em;
+	padding-left: 1.2em;
+	}
+
+.view_text_label {
+    color: #000000;
+}
+
+
+#eventlist, #calendar
+{
+	top: 0 !important;
+	left: 0 !important;
+	border-top: 1px solid black !important;	
+	border-bottom: 1px solid black !important;
+}
+
+.calendartitle
+{
+	font-weight: bold;
+	font-size: larger;
+}
+
+span.calendarheadertext
+{
+	color: black;
+}
+
+
+
+	@media screen and (max-width:480px)
+	{
+		table#calendar {
+			width: 95% !important;
+		}
+	}

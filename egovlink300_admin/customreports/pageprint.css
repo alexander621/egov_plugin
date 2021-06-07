@@ -1,0 +1,15 @@
+#idControls { display: none !important; }
+
+.noprint, table#pageheader, table#logheader, .button  { display: none !important; }
+
+th	{ background-color: #ffffff !important;	}
+
+.page_break_before { page-break-before: always; }
+
+/*
+tr	{ background-color: #ffffff !important; }
+
+th, td	{
+	background-color: #ffffff !important;
+	}
+*/

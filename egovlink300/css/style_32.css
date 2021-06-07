@@ -1,0 +1,505 @@
+/*DEFAULT PAGE STYLES*/
+font.pagetitle { padding: 4px;  color:#001769; font-family: verdana,sans-serif; font-size: 14px; font-weight:bold; }
+font.datetagline { padding: 2px; COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.formtitle {COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+.title {
+	COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+
+/*
+div.footerbox {
+	background-color:#a4b99d;
+	COLOR: #000000; 
+	TEXT-DECORATION: none; 
+	font-family: verdana,sans-serif; 
+	font-size: 10px;  
+	}*/
+/*div.footerbox {background-color:#001769;} dark color*/
+div.footerbox {background-color:#094FA0;} /* light color*/
+
+td.box_header  {background-color:#094FA0;width:100%; color:#000000; font-family:verdana,sans-serif; font-size:12px; font-weight:bold; text-align:center;}
+/*
+div.box_header2 {font-weight:bold;background-color:#094FA0;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width: 400px;padding:2px;color:#FFFFFF;}
+div.box_header4 {font-weight:bold;background-color:#094FA0;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:600 px;padding:2px;color:#FFFFFF;}
+*/
+
+div.box_header2 {
+	background-color:#094FA0;
+	color:#FFFFFF;
+	}
+
+div.box_header4 {
+	background-color:#094FA0;
+	color:#FFFFFF;
+	}
+
+div.box_header5 {font-weight:bold;background-color:#094FA0;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:100%;padding:2px;color:#FFFFFF;}
+
+.button  {COLOR: #ffffff; font-family: verdana,sans-serif;font-size:10px; font-weight:bold; background-color: #001769;}
+
+a:link { COLOR: #001769; TEXT-DECORATION: none;}
+a:visited { COLOR: #001769; TEXT-DECORATION: none;}
+a:active { COLOR: #001769; TEXT-DECORATION: none;}
+a:hover { COLOR: #000000; TEXT-DECORATION: underline;}
+	
+/*HOMEPAGE STYLES*/
+
+
+/*ACTION LINE STYLES*/
+input.actionbtn {BACKGROUND-COLOR:#001769; COLOR: #FFFFFF; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+input.action {text-align:left; background-color: #001769; COLOR: #FFFFFF; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; width:75px;}
+
+p.actionItem {COLOR: #001769; font-size: 10px; font-weight:normal; margin:0 0 0 6;}
+p.actionCategory {COLOR: #000000; font-size: 12px; font-weight:bold; margin:6 0 0 0;}
+
+
+/*PAYMENT STYLES*/
+input.paymentbtn {BACKGROUND-COLOR:#2E1999; COLOR: #FFFFFF; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+
+/*DOCUMENT STYLES*/
+font.searchlabel { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+font.searchlink { COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; }
+font.documentfolder { COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+
+tr.topbanner { background-color: #001769;	}
+
+
+/* RECREATION RESERVATION CALENDAR */
+.legendlabeltitle {	background-color: #094FA0; color: #000000;	}
+.calfacilityselection  {background-color:#094FA0; }
+.caldateselect  {background-color:#094FA0;}
+.calfacilityselection  {background-color:#094FA0;}
+.calheader {background-color:#094FA0;}
+/* RECREATION RESERVATION FORM */
+.reserveformtitle{background-color:#094FA0;	color: #ffffff;}
+.reserveformbutton {background-color: #001769; COLOR: #ffffff; font-size:10px;}
+
+.categorytitle {font-size:14px;color:#001769;}
+A.categorytitle:active{COLOR: #001769; font-size:14px;}
+A.categorytitle:link{COLOR: #001769;  font-size:14px;}
+A.categorytitle:visited{COLOR: #001769; font-size:14px; }
+A.categorytitle:hover{TEXT-DECORATION: underline; COLOR: #000000; font-size:14px; }
+
+
+
+/* FACILITY LIST */
+A.subcategorymenu:active{COLOR: #001769; font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:link{COLOR: #001769;  font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+A.subcategorymenu:visited{COLOR: #001769;  font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:hover{TEXT-DECORATION: underline;COLOR: #000000;  font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+div.subcategorymenu {background-color:#a4b99d; border: solid #000000 1px; width:760 px; padding:5px;font-weight:bold;}
+font.subcategorymenuheader {COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+
+.facilitydesc
+{
+	font-size: 11px;
+	width: 600px;
+}
+.facilityname
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: black;
+}
+
+
+/* CLASS STYLES */
+.classdaterange {font-weight:bold; color: white; font-family: verdana, sans-serif;	background-color: #094FA0;}
+.classbutton  {COLOR: #ffffff; font-family: verdana,sans-serif;font-size:10px; font-weight:bold; background-color: #001769;	cursor:pointer; }
+#cart_table th { background-color: #001769;	color: white;	}
+
+
+
+
+/* Transaction reports styles */
+#content table.transactionreport {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	/*width: 750px; */
+	position: relative; 
+	top: -4px; 
+	left: -4px;
+	background-color: #FFFFFF;
+	}
+
+#content table.transactionreport td{
+	padding: 4;
+	}
+	
+#content div.transactionreportshadow { 
+	background: #919191; 
+	width: 750px;
+	margin: 20px 0;
+	}
+
+.transaction_header {font-weight:bold; background-color:#094FA0; padding:3px; color:#FFFFFF;}
+
+/* End of Transaction Report styles */
+
+/* GIFT */
+div.gift_header {font-weight:bold;background-color:#094FA0;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:700 px;padding:2px;color:#FFFFFF;}
+
+
+/* SKIPJACK PAYMENT FORM STYLES */
+input.skipjackbtn {
+	background-color: #001769;
+	color: #fff;
+	}
+
+
+/*CURRENTLY SELECTED FOLDER*/
+a.documentfolder:hover {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:visited {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:active {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:link {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;}
+
+/*NEW FOLDER/DOCUMENT STYLES*/
+#foldheader {cursor: pointer; list-style-image:url('../docs/fold.gif'); list-style-type: none;font-family: verdana,sans-serif; font-size: 12px; font-weight:bold;  }
+#foldinglist {list-style-image:none; list-style-type: none; font-family: verdana,sans-serif; font-size: 10px;  }
+li.emptyfolder {color:#000000; font-family: verdana,sans-serif; font-size: 10px;}
+
+a.documentlist:link {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:visited {color:#000000; text-decoration:none; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:active {color:#000000; text-decoration:none;font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:hover {color:RED; text-decoration:underline; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+/*CALENDAR STYLES*/
+
+table#calendar {
+	border-left:1px solid #333333; 
+	border-top:1px solid #666666; 
+	}
+
+table#calendar th {
+	background-color: #094FA0;	
+	color: #FFFFFF;	
+	}
+
+tr#calendardayrow {
+	background-color: #001769;	
+	color: #ffffff;	
+	}
+
+table#eventlist {
+	border-left:1px solid #333333;	
+	border-top:1px solid #666666;	
+	}
+
+table#eventlist th {
+	background-color: #001769; 
+	color: #FFFFFF;	
+	}
+
+table#calendar td {
+	border-right:1px solid #333333; 
+	border-bottom:1px solid #666666; 
+	} 
+
+table#calendarheader td { 
+	border: 0;
+	}
+
+table#eventlist td {
+	border-right:1px solid #333333; 
+	border-bottom:1px solid #666666; 	
+	}
+
+
+
+/* Footer MENU STYLE*/
+/* this style is causing the afooter links to always be black 8/15/06
+font.footermenu, font.footermenu a, font.footermenu a:visited, font.footermenu a:hover { 
+	color:#000000; 
+	}
+*/
+font.footermenu { 
+	color:#ffffff; 
+	}
+	
+
+a.afooter:active {
+	color: #ffffff; 
+	text-decoration: none; 
+	font-family: verdana,sans-serif; 
+	font-size: 10px; 
+	}
+a.afooter:link {
+	color: #ffffff; 
+	text-decoration: none; 
+	font-family: verdana,sans-serif; 
+	font-size: 10px; 
+	}
+a.afooter:visited {
+	color: #ffffff;  
+	text-decoration: none;
+	font-family: verdana,sans-serif; 
+	font-size: 10px; 
+	}
+a.afooter:hover {
+	color: #000000;  
+	text-decoration: underline; /* leave this in */
+	font-family: verdana,sans-serif; 
+	font-size: 10px; 
+	}
+
+
+/* for drop down menu */
+
+/* the horizontal menu starts here */
+div#listmenu {
+	margin: 0;
+	padding: 0;
+	width:100%; /* makes the div full width of screen */
+	float:left;
+	/*border-top:1px solid #069;	 draws line on top edge of div */
+	/*border-bottom:1px solid #069;	  draws line on bottom edge of div */
+	font-size: 1em;	/* SET FONT-SIZE HERE */
+	font-family: verdana,sans-serif; 
+	font-size: 10px; 
+	font-weight:bold;
+	background-color: #001769;
+	/*background-color:#636563; /* colors the div */
+	/*margin-top:20px;  TEMPORARY - pushes the div away from the top of the browser for clarity in this example*/
+	}
+
+div#listmenu ul {
+	margin:0 0 0 30px;/* indents ul from edge of container - NOTE: diff value for IE in hacks below */
+	padding: 0;
+	border-top: 1px solid #000000;
+	}
+
+div#listmenu ul li {
+	margin: 0;
+	padding: 0;
+	float:left;	/* causes the list to align horizontally instead of stack */
+	position:relative; /* positioning context for the absolutely positioned drop-down */
+	list-style-type:none;	/* removes the bullet off each list item */
+	background-color:#094FA0; /*#688757; /*sets the background of the menu items */
+	/*background-color: #636563; */
+	/*color: #8caed6;*/
+	border-right:1px solid #000;  /* creates dividing lines between the li elements */
+	width:250px;
+	z-index: 99;
+	}
+	
+	/*#  5282bd, 8caed6; 29415a*/
+	
+	
+div#listmenu li:first-child {
+	border-left:1px solid #069; /*the first vertial line on the menu */
+	}
+
+div#listmenu li:hover { 
+	/*background-color:#FFF; /*sets the background of the menu items */
+	}
+
+div#listmenu a {
+	display:block;
+	padding:1px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color: #ffffff;	/* #000 sets the type color */
+	width:244px;  /* the width lines  and voice-family put in by Steve Loar - Makes the whole line a link, not just the text */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width:244px;
+	}
+div#listmenu a:hover {
+	/*background-color:#FFF;
+	color:#8caed6; */
+	cursor: default;
+	}
+
+div#listmenu ul li ul li a {
+	display:block;
+	/* padding:1px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color:#fff;	/* sets the type color */
+	background-color:#001769;
+	width:244px;  /* the width lines  and voice-family put in by Steve Loar - Makes the whole line a link, not just the text */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width:250px;
+	}
+
+div#listmenu ul li ul li a:hover {
+	background-color:#cccccc;
+	color:#000000;
+	cursor: pointer;
+	}
+
+/* the menu ends here */
+
+/* the drop-down starts here */
+div#listmenu ul li ul {
+	margin:0; 
+	padding: 0;
+	z-index:10; /* puts drop-down on top of div - Safari needs this as menu is 1px higher */
+	position:absolute; /* positions the drop-down ul in relation to its relatively positioned li parent */
+	width:250px; /*sets the width of the menu - in combo with the li's 100% width, makes the menu stack*/
+	border-right:0; /* stops SCBs drops having two right borders - they inherit the border, IE doesn't */
+	left:-1px; /*aligns the drop exactly under the menu */
+	/*width:250px;*/
+	}
+div#listmenu ul li ul li {
+	padding:0;
+	margin: 0;
+	width:250px; /* makes the list items fill the list container (ul) */
+	/*border-left:1px solid #069; /*  three sides of each drop-down item */
+	/* border-bottom:1px solid #069; */
+	/*border-right:1px solid #069;*/
+	}
+div#listmenu ul li ul li a {
+	padding: 0;
+	margin: 0;
+	padding:1px 6px; /*creates space each side of menu item's text */
+	/*padding:1px .5em; */
+	border-bottom: 1px solid #efeff7;
+	border-right:1px solid #efeff7;
+	border-left:1px solid #efeff7;
+	}
+div#listmenu ul li ul li:first-child {
+	border-top:1px solid #efeff7; /*the top edge of the dropdown */
+	}
+/* make the drop-down display as the menu is rolled over */
+div#listmenu ul li ul {display:none;} /* conceals the drop-down when menu not hovered */
+div#listmenu ul li:hover ul {display:block; } /* shows the drop-down when the menu is hovered */
+
+/* pop-out starts here */
+body div#listmenu ul li ul li ul  {
+	position:absolute; 
+	visibility:hidden; /* same effect as display:none in this situation */
+	top:-1px;
+	left:10em;
+	}
+div#listmenu ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* second level popouts start here*/
+div#listmenu ul li ul li:hover ul li ul {visibility:hidden;}
+div#listmenu ul li ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* THE HACK ZONE - */
+/* hack for IE (all flavors) so the menu has a vertical line on the left */
+* html div#listmenu ul {
+	float:left; /* makes the ul wrap the li's */
+	border-left:1px solid #000; /* adds the rightmost menu vertical line to the ul */
+	margin-left:15px; /* IE doubles the given value above - why? */
+	}
+
+/* add a top line to drops and pops in IE browsers - can't read :first-child */
+* html  div#listmenu ul li ul {
+	border-top:1px solid #069;
+	border-left:0px; /* stops the drop inheriting the ul border */
+	}
+/* the Tantek hack to feed IE Win 5.5-5.0 a lower value to get the pop-out to touch the drop-down */
+* html  div#listmenu ul li ul li ul { 
+  left:9.85em; 
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  left:10em;
+  } 
+/* and the "be nice to Opera" rule */
+html>body div#listmenu ul li ul li ul {
+  left:10em;
+} 
+
+/* an Opera-only hack to fix a redraw problem by invisibly extending the ul */
+/* the first-level drop stays open for 100px below the bottom but at least it works */
+/* this can be reduced to as little as 22px if you don't have pop-outs */
+/* the pop-out menu stays open for 22px below the bottom but at least it works */
+	@media all and (min-width: 0px){
+   body div#listmenu ul li ul {padding-bottom:100px;}
+   body div#listmenu ul li ul li ul {padding-bottom:22px;}
+   ul li ul li ul li ul li:hover {visibility:visible;} /* same effect as display:block in this situation */
+
+   }
+/*end Opera hack */
+/* END OF HACK ZONE */
+/* the drop-down ends here */
+/* END OF LIST-BASED MENU */
+
+body {behavior: url('http://www.egovlink.com/sanluis/csshover.htc');}
+
+/* Organization level style overriddes for the public default_page.asp */
+
+#wrapper {
+	background:url(../custom/images/sanluis/page-bg.gif) repeat-y;
+	} 
+
+#subnav p {
+	border-bottom: 1px solid #000000;
+	background: #bac6d2; 
+	
+	}
+
+#subnav p a {
+	color: #000000;
+	}
+
+#subnav a:visited {
+	color: #000000;
+	}
+
+#subnav p a:hover {
+	color: #FFFFFF;
+	}
+
+#content h2  {
+	color: #FFFFFF;
+	border-top: 3px solid #bac6d2;
+	background: #094fa0; 
+	/* background: #1b3601; */
+	}
+
+div.features {
+	background: #bac6d2; /*ebd789*/
+	border-bottom: 3px solid #001769;
+	}
+
+/* End of organization overriddes for the public default_page.asp */
+
+/* Purchases Report Styles */
+#content table.purchasereport th {
+    HEIGHT: 18px;
+    FONT-SIZE: 11px;
+    color: #ffffff;
+    border-bottom: 1px solid #336699;
+    background-color: #094FA0;
+	}
+
+/* Pool Pass styles */
+#poolformtitle { 
+	background-color: #094FA0; 
+	color: #ffffff;
+	border-top: solid #000000 1px;
+	border-right: solid #000000 1px;
+	border-left: solid #000000 1px; 
+	}
+
+#poolforminputarea {	
+	background-color:#ececf2; 
+	border: solid #000000 1px; 
+	}
+
+.reserveforminputarea {
+	background-color:#ececf2;
+	}
+
+
+
+
+/* 8/17/06 */
+div.picktitle	{	background-color:#094FA0; }
+
+
+
+/* Pool Pass Styles End */
+
+/* Size of default page central block */
+p.hasimage {
+	height: 53px;
+	}

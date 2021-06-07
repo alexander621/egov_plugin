@@ -1,0 +1,124 @@
+/* Permits Style Sheet */
+
+p.receiptheader {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+	}
+
+div#permitslistpagetop {
+	width: 790px;
+	margin: 0;
+	padding: 0;
+	margin-left: 1em;
+	margin-bottom: 2em;
+	}
+
+div#permitsearchpagetop {
+	width: 790px;
+	margin: 0;
+	padding: 0;
+	margin-left: 1em;
+	margin-bottom: 2em;
+	}
+
+table#permitlocationsearch {
+	top: 0;
+	left: 0;
+	margin-left: 1em;
+	margin-bottom: 2em;
+	}
+
+table#permitresults {
+	border: 1px solid black;
+	width: 900px;
+	margin-left: 1em;
+	}
+
+table#permitresults tr.altrow {
+	background-color: #ececec;
+	}
+
+table#permitresults th {
+	height: 26px;
+    font-size: 10px;
+    color: black;
+    border-bottom: 1px solid black;
+    background-color: silver;
+	}
+
+table#permitresults td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+span.keyinfo {
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+span.detaildata {
+	font-weight: bold;
+	}
+
+table.viewdetails {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 790px;
+	}
+
+table.viewdetails th {
+	height: 20px;
+	font-weight: bold;
+	border-top: 1px solid black;
+	}
+
+table.viewdetails td {
+	height: 16px;
+	}
+
+table.viewdetails th, table.viewdetails td.bordercell {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+table.viewdetails th.firstcell {
+	border-left: 1px solid black;
+	}
+
+table.viewdetails td.firstcell {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+table.viewdetails td.labelcell {
+	width: 12em;
+	}
+
+table.viewdetails td.COcell {
+	padding-left: 2em;
+	}
+
+table.viewdetails caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table.viewdetails td.onlycell {
+	border-bottom: 1px solid black;
+	}
+
+div#permitnotes {
+	margin-bottom: 4em !important;
+	}
+
+p#pageendbuffer {
+	margin-bottom: 2em !important;
+	}
+

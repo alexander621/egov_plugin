@@ -1,0 +1,2067 @@
+body {
+	padding: 0;
+	margin: 0;
+	}
+
+p.viewpermit {
+	padding: 0;
+	margin: 0;
+	padding-bottom: .7em;
+	}
+
+div.permittypecontent {
+	width: 900px !important;
+	}
+
+div#newpermitcentercontent {
+	/*width: 1000px;*/
+	}
+
+textarea#publicdescription {
+	width: 740px;
+	height: 120px;
+	}
+
+textarea#additionalfooterinfo, textarea#permittitlebottom {
+	width: 740px;
+	height: 60px;
+	}
+
+textarea.customfields {
+	width: 630px;
+	height: 200px;
+	}
+
+textarea#internalcomment, textarea#externalcomment {
+	width: 630px;
+	height: 200px;
+	}
+
+
+textarea#permitfooter, textarea#tempcotoptext, textarea#cotoptext, textarea#cobottomtext, textarea#tempcobottomtext {
+	width: 740px;
+	height: 120px;
+	}
+
+textarea#permitsubfooter {
+	width: 740px;
+	height: 80px;
+	}
+
+textarea#permittitle, textarea#permitsubtitle, textarea#tempcotitle, textarea#tempcosubtitle, textarea#cotitle, textarea#cosubtitle {
+	width: 360px;
+	height: 40px;
+	}
+
+textarea#tempcocoderef, textarea#cocoderef, textarea#tempcoapproval, textarea#coapproval {
+	width: 360px;
+	height: 40px;
+	}
+
+textarea#tempcofooter, textarea#tempcosubfooter, textarea#cofooter, textarea#cosubfooter {
+	width: 500px;
+	height: 40px;
+	}
+
+textarea#tempcoaddress, textarea#coaddress {
+	width: 360px;
+	height: 100px;
+	}
+
+textarea#permitrighttitle {
+	width: 300px;
+	height: 100px;
+	}
+
+div#constructiontypesshadow {
+	width: 1000px;
+	}
+
+table#constructiontypes {
+	border: 1px solid #336699;
+	width: 1000px;
+	}
+
+
+
+table#constructiontypes .leftcol {
+	border-right: 1px solid #336699;
+	}
+
+table#constructiontypes td.permitnumbercolumn 
+{
+	padding-left: .5em;
+	padding-right: 1em;
+}
+
+table#categorytypes {
+	border: 1px solid #336699;
+	}
+
+table#categorytypes th {
+	height: 26px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	cursor: pointer;
+	}
+
+table#categorytypes td {
+	height: 26px;
+	}
+
+table#categorytypes .leftcol {
+	border-right: 1px solid #336699;
+	}
+	
+table#categorytypes .feemethod {
+	padding-left: .5em;
+	}
+
+tr.altrow {
+	background-color: #eeeeee;
+	}
+
+td.ratetitle {
+	border-top: 1px solid #336699;
+	border-bottom: 1px solid #336699;
+	}
+
+td.labelcolumn {
+	width: 15em;
+	}
+
+td.datacolumn {
+	padding-left: 1em;
+	}
+
+table#permitcontact td {
+	height: 26px;
+	margin-bottom: 2em;
+	}
+
+table#permitcontactinfo td {
+	height: 26px;
+	}
+
+table#permitcontactinfo td.labelcolumn {
+	width: 15em;
+	}
+
+table#feemultipliertypes {
+	border: 1px solid #336699;
+	}
+
+table#feemultipliertypes th {
+	height: 26px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#feemultipliertypes td {
+	height: 26px;
+	}
+
+div#feemultipliershadow {
+	}
+
+table#ratesinput {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+
+fieldset#fixturestep {
+	margin-top: 1em;
+	}
+
+table#feelist, table#inspectionlist, table#attachmentlist, table#reviewlist {
+	margin-bottom: 2em !important;
+	}
+
+table#feetable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 1em !important;
+	}
+
+table#feetable th {
+	font-weight: bold;
+	font-size: 9pt;
+	border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#feetable td {
+	height: 26px;
+	}
+
+table#feetable td.firstcell {
+	padding-left: 1em;
+	}
+
+table#feetable tr.altrow {
+	background-color: #eeeeee;
+	}
+
+table#inspectiontable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 1em;
+	}
+
+table#inspectiontable th {
+	font-weight: bold;
+	font-size: 9pt;
+	border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#inspectiontable td {
+	height: 26px;
+	}
+
+table#inspectiontable td.firstcell {
+	padding-left: 1em;
+	}
+
+table#inspectiontable tr.altrow {
+	background-color: #eeeeee;
+	}
+
+table#reviewtable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 1em;
+	}
+
+table#reviewtable th {
+	font-weight: bold;
+	font-size: 9pt;
+	border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#reviewtable td {
+	height: 26px;
+	}
+
+table#reviewtable td.firstcell {
+	padding-left: 1em;
+	}
+
+table#reviewtable tr.altrow {
+	background-color: #eeeeee;
+	}
+
+table#reviewalerttable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 1em;
+	}
+
+table#reviewalerttable th {
+	font-weight: bold;
+	font-size: 9pt;
+	border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#reviewalerttable td {
+	height: 26px;
+	}
+
+table#reviewalerttable td.firstcell {
+	padding-left: 1em;
+	}
+
+table#reviewalerttable tr.altrow {
+	background-color: #eeeeee;
+	}
+
+table#licensetable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	margin-top: 1em;
+	}
+
+table#licensetable th {
+	font-weight: bold;
+	border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#licensetable td {
+	height: 26px;
+	}
+
+table#licensetable td.firstcell {
+	padding-left: 1em;
+	}
+
+table#licensetable tr.altrow {
+	background-color: #eeeeee;
+	}
+
+div#content span#searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+div#searchtip {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+	}
+
+
+table#permitaddressinfo td {
+	height: 26px;
+	}
+
+span.toomuch {
+	color: red;
+	font-weight: bold;
+	}
+
+input#edituser {
+	visibility: hidden;
+	}
+
+input#newuser {
+	visibility: hidden;
+	}
+
+input#newcontractor {
+	visibility: hidden;
+	}
+
+input#neworganization {
+	visibility: hidden;
+	}
+
+span.keyinfo {
+	font-size: 1.2em;
+	font-weight: bold;
+	}
+
+span.detaildata {
+	font-weight: bold;
+	}
+
+table#permitdetail {
+	width: 750px;
+	margin-bottom: 2em;
+	margin-top: .5em;
+	}
+
+table#permitdetail td {
+	padding-left: 1em;
+	}
+
+table#LDtable {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	}
+
+div#jobinfo {
+	line-height: 25px;
+	}
+
+table td.LDtagcell {
+	width: 10em;
+	}
+
+table#permitcontact {
+	width: 750px;
+	}
+
+table#permitcontact td {
+	padding-left: 1em;
+	}
+
+table#permitcontact td.contactlabel {
+	width: 12em;
+	}
+
+table#contractorlist td {
+	padding: 0;
+	margin: 0;
+	}
+
+table#contractorlist td.contactpick {
+	width: 1em;
+	}
+
+input#savebutton {
+	font-weight: bold;
+	}
+
+div#content { 
+	padding-right: 0; 
+	width: 0;
+	}
+
+div#permitaddresspickcontent {	
+	width: 600px;	
+	font-family: verdana,sans-serif;
+	float: left;
+	margin-left: 15px;
+	padding-right: 15px;
+	}
+
+table.feetable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	}
+
+table.feetable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table.feetable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table.feetable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table.feetable tr.altrow {
+	background-color: #ececec;
+	}
+
+/* #content table { position: relative; top: -4px; left: -4px; width: 100%; background: #fff;} */
+
+p.tabpage {
+	 margin-bottom: 2em; 
+	}
+
+
+table#manualfeetable td.manualfeelabel {
+	width: 8em;
+	}
+
+table#permitnumbertable {
+	width: 250px;
+	}
+
+table#permitnumbertable td.rowlabel {
+	width: 12em;
+	}
+
+table#hourlyratefeetable {
+	border: 1px solid #000;
+	}
+
+table#hourlyratefeetable th {
+    height: 26px;
+    color: #003366;
+    border-bottom: #336699 1px solid;
+    background-color: #93bee1;
+	}
+
+table#hourlyratefeetable td {
+    height: 26px;
+	}
+
+div.hourlyratefeeshadow {
+	width: 550px;
+	}
+
+textarea.headertextarea {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: Verdana,Tahoma,Arial;
+	width:550px;
+	height:80px;
+	behavior: none;
+	}
+
+table td.firstheadercell {
+	width: 100px;
+	}
+
+div#invoiceheader img {
+	float: left;
+	}
+
+div#invoiceheadertext {
+	text-align: center;
+	font-weight: bold;
+	}
+
+span#invoicedate {
+	margin-left: 60%;
+	}
+
+div#invoicestatusline {
+	text-align: center;
+	font-weight: bold;
+	font-size: 10pt;
+	}
+
+hr {
+	clear: both;
+	}
+
+div#billingcontact {
+	border: 1px solid black;
+	width: 40%;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+
+div#permitlocation {
+	float: right;
+	border: 1px solid black;
+	width: 40%;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+
+table#invoiceitems {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+
+table#invoiceitems td {
+	height: 20px;
+    font-size: 10px;
+	}
+
+table#invoiceitems td.totalline {
+	border-top: 1px solid black;
+	}
+
+table#invoiceitems th.totalline {
+	border-top: 2px solid black;
+	}
+
+div#includedfixturetop {
+	margin-bottom: .4em;
+	padding: 0;
+	}
+
+span#includedfixturebuttons {
+	margin-left: 5em;
+	}
+
+table#invoicelist {
+	margin-bottom: 2em !important;
+	}
+
+table#invoicelist td.totalline {
+	border-top: 1px solid black;
+	}
+
+table#paymentlist td {
+	height: 26px;
+	}
+
+table#paymentlist td.totalline {
+	border-top: 1px solid black;
+	font-weight: bold;
+	}
+
+table#invoiceitems td.feedesccell {
+	width: 440px;
+	padding-left: 5px;
+	}
+
+span#invoicetotaldisplayline {
+	font-weight: bold;
+	font-size: 12pt;
+	}
+
+
+/*	Permit type edit page styles */
+table#permittypefeetable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	}
+
+table#permittypefeetable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypefeetable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table#permittypefeetable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table#permittypefeetable tr.altrow {
+	background-color: #ececec;
+	}
+
+
+table#permittypereviewtable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	}
+
+table#permittypereviewtable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypereviewtable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypereviewtable td {
+    height: 26px;
+	}
+
+table#permittypereviewtable tr.altrow {
+	background-color: #ececec;
+	}
+
+table#permittypereviewalerttable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	}
+
+table#permittypereviewalerttable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypereviewalerttable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypereviewalerttable td {
+    height: 26px;
+	}
+
+table#permittypereviewalerttable tr.altrow {
+	background-color: #ececec;
+	}
+
+table#permittypeinspectiontable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	}
+
+table#permittypeinspectiontable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypeinspectiontable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypeinspectiontable td {
+    height: 26px;
+	}
+
+table#permittypeinspectiontable tr.altrow {
+	background-color: #ececec;
+	}
+
+table#permittypeinspectionalerttable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	}
+
+table#permittypeinspectionalerttable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypeinspectionalerttable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypeinspectionalerttable td {
+    height: 26px;
+	}
+
+table#permittypeinspectionalerttable tr.altrow {
+	background-color: #ececec;
+	}
+/*	End of permit type edit page styles */
+
+table#invoicesummary {
+	position: relative;
+	top: 0; 
+	left: 0;
+	width: 550px;
+	}
+
+table#invoicesummary td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table#reviewdetails {
+	width: 700px;
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#priorreviewnotes {
+	position: relative;
+	top: 0; 
+	left: 0;
+	}
+
+table#priorreviewnotes td {
+    height: 26px;
+    font-size: 14px;
+	border-bottom: 1px solid black;
+	}
+
+div#reviewnotes {
+	padding:0;
+	margin-top:5px;
+	width: 590px;
+	border-top:1px solid #000000;
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	}
+
+div#reviewnotes_expand {
+	margin-top: 1em;
+	cursor: pointer;
+	}
+
+div#newreviewnotes {
+	width: 660px;
+	padding:5px;
+	margin-top:5px;
+	padding-left: 2em;
+	border:1px solid #000000;
+	}
+
+div#newreviewnotes_expand {
+	cursor: pointer;
+	}
+
+table#permitpriornotes {
+	position: relative;
+	top: 0; 
+	left: 0;
+	}
+
+table#permitpriornotes td {
+    height: 26px;
+    font-size: 14px;
+	border-bottom: 1px solid black;
+	}
+
+div#priornotes_expand {
+	margin-top: 1em;
+	}
+
+div#priornotes {
+	padding:0;
+	margin-top: 5px;
+	margin-bottom: 2em !important;
+	border-top:1px solid #000000;
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	}
+
+table#priorinspectionnotes {
+	position: relative;
+	top: 0; 
+	left: 0;
+	}
+
+table#priorinspectionnotes td {
+    height: 26px;
+    font-size: 10px;
+	border-bottom: 1px solid black;
+	}
+
+div#inspectionnotes {
+	padding:0;
+	margin-top:5px;
+	width: 590px;
+	border-top:1px solid #000000;
+	border-left:1px solid #000000;
+	border-right:1px solid #000000;
+	}
+
+div#inspectionnotes_expand {
+	margin-top: 1em;
+	cursor: pointer;
+	}
+
+div#newinspectionnotes {
+	width: 580px;
+	padding:5px;
+	margin-top:5px;
+	border:1px solid #000000;
+	}
+
+div#newinspectionnotes_expand {
+	cursor: pointer;
+	}
+
+table#showpicks {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 500px;
+	}
+
+table#showpicks td {
+	height: 20px;
+	}
+
+table#showpermittypepicks {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 700px;
+    font-size: 10px;
+	}
+
+table#showpermittypepicks td {
+	height: 20px;
+    font-size: 10px;
+	}
+
+table#showpermittypetcopicks, table.showdoc {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 700px;
+    font-size: 10px;
+	}
+
+table#showpermittypetcopicks td, table.showdoc td {
+	height: 20px;
+    font-size: 10px;
+	}
+
+table#showpermittypecopicks {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 700px;
+    font-size: 10px;
+	}
+
+table#showpermittypecopicks td {
+	height: 20px;
+    font-size: 10px;
+	}
+
+table#inspectiondetails {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+table#inspectiondetails td {
+	height: 26px;
+	}
+
+table#inspectiondetails td.firstcol {
+	padding: 0;
+	margin: 0;
+	width: 115px;
+	}
+
+table#inspectiondetails td.datecol {
+	padding: 0;
+	margin: 0;
+	}
+
+table#inspectiondetails td.timecol {
+	padding: 0;
+	margin: 0;
+	text-align: right;
+	}
+
+table#inspectiondetails td.timefields {
+	padding: 0;
+	margin: 0;
+	}
+
+span.calendarimg {
+	cursor: pointer;
+	}
+
+span.permittypeeditlabels {
+	font-weight: bold;
+	}
+
+/* Begin styles for the permit document */
+
+body#permitbody {
+	font-size: 9pt;
+	}
+
+table#permitheader {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+    font-size: 10pt;
+	}
+
+table#permitheader td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+span#permittitle {
+	font-family: arial;
+	font-size: 14pt;
+	font-weight: bold;
+	}
+
+span#permitsubtitle {
+	font-weight: bold;
+	font-size: 12pt;
+	}
+
+span#permitnolabel	{
+	font-family: arial;
+	font-size: 12pt;
+	font-weight: bold;
+	}
+
+span#permitno {
+	font-family: arial;
+	font-size: 16pt;
+	font-weight: bold;
+	}
+
+span#permittitlebottom {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 10pt;
+	}
+
+table#permitbody {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+    font-size: 10pt;
+	border: 1px solid black;
+	}
+
+table#permitbody td {
+    font-size: 10pt;
+	height: 20px;
+	}
+
+table#permitbody td.permitbodylabel {
+	width: 13em;
+	padding-left: 1em;
+	font-weight: bold;
+	font-size: 10pt;
+	}
+
+span.permitbodylabel {
+	font-weight: bold;
+	font-size: 10pt;
+	}
+
+table#permitbody tr.permitsectionstart td {
+	border-top: 1px solid black !important;
+	margin-top: 3em;
+	}
+
+table#permitfixturelist {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+    font-size: 9pt;
+	margin-top: 1em;
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	}
+
+table#permitfixturelist td {
+    font-size: 9pt;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	}
+
+p#permitfooter {
+	font-size: 8pt;
+	}
+
+span#permitrighttitle {
+	font-size: 9pt;
+	}
+
+
+span.approvingofficial {
+	font-size: 9pt;
+	}
+
+span#permitnotes {
+	font-size: 9pt;
+	}
+
+p#permitsubfooter {
+	font-weight: bold !important;
+	font-size: 9pt !important;
+	}
+
+table#permitsignatureline {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+    font-size: 9pt;
+	}
+
+textarea#approvingofficial {
+	width: 300px;
+	height: 60px;
+	font-size: 10pt;
+	}
+
+td.approvingofficial {
+	width: 10em;
+	font-size: 10pt;
+	}
+
+/* End of styles for the permit document */
+
+span#permitinspectionbanner {
+	font-weight: bold;
+	font-size: 18pt;
+	margin-bottom: 8em;
+	}
+
+table#inspectiondetailsreport {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+    font-size: 10px;
+	margin-top: 1em;
+	width: 900px;
+	margin-bottom: 4em;
+	}
+
+td.inspectiondetailheader {
+	font-size: 14pt;
+	font-weight: bold;
+	}
+
+td.inspectiondetails {
+	font-weight: bold;
+	}
+
+td.inspectiondetaillabel {
+	padding-left: 1em;
+	width: 13em;
+	}
+
+td.inspectiondetailcentercol {
+	border-left: 1px solid black;
+	}
+
+div.filterselection {
+	padding:5px; 
+	margin: 0;
+	margin-bottom: 2em;
+	margin-right: 5px;
+	}
+
+div.reportselection {
+	padding:5px; 
+	margin: 0;
+	margin-bottom: 2em;
+	margin-right: 5px;
+	}
+
+td.reviewerlistlabel {
+	width: 11em;
+	padding-left: 1em;
+	}
+
+table.viewdetails {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+table#permitpayments {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+    font-size: 10pt;
+	}
+
+table.viewdetails th {
+	height: 20px;
+	font-weight: bold;
+	border-top: 1px solid black;
+	}
+
+table.viewdetails td {
+	height: 16px;
+	}
+
+table.viewdetails th, table.viewdetails td.bordercell {
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+table.viewdetails th.firstcell {
+	border-left: 1px solid black;
+	}
+
+table.viewdetails td.firstcell {
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+table.viewdetails td.labelcell {
+	width: 12em;
+	}
+
+table.viewdetails td.COcell {
+	padding-left: 2em;
+	}
+
+table.viewdetails caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table.viewdetails td.onlycell {
+	border-bottom: 1px solid black;
+	}
+
+div.newpage {
+	margin: 0;
+	padding: 0;
+	}
+
+table th.sortable {
+	cursor: pointer;
+	}
+
+table#inspectorlist {
+	border: 1px solid #336699;
+	}
+
+table#inspectorlist th {
+	height: 26px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	cursor: pointer;
+	}
+
+table#inspectorlist td {
+	height: 26px;
+	}
+
+table#inspectorlist .leftcol {
+	border-right: 1px solid #336699;
+	}
+
+div#inspectorlistshadow {
+	width: 900px;
+	}
+
+table#inspectorroute {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	width: 1000px;
+	}
+
+table#inspectorroute th {
+	height: 26px;
+    font-size: 10px;
+    color: black;
+    border-bottom: 1px solid black;
+	border-right: 1px solid black;
+    background-color: #ffffff;
+	}
+
+table#inspectorroute td {
+	height: 26px;
+    font-size: 10px;
+	border-bottom: 1px solid black;
+	border-right: 1px solid black;
+	}
+
+#permitalert {background: red; color: white; text-align: center; font-weight: bold;line-height: 23px;}
+span#permitalert {
+	color: red;
+	font-size: 11pt;
+	font-weight: bold;
+	display: block;
+	width: 30em;
+	position: relative;
+	float: right;
+	clear: both;
+	}
+
+div#buttondiv {
+	position: relative;
+	float: left;
+	clear: both;
+	margin-bottom: 1em;
+	}
+
+span#permitalertmsg {
+	color: red;
+	font-size: 11pt;
+	font-weight: bold;
+	}
+
+div#inspectionreportbody {
+	width: 950px;
+	border: 1px solid black;
+	font-family: verdana,sans-serif;
+	float: left;
+	margin-left: 15px;
+	margin-bottom: 3em;
+	padding-left: 2em;
+	}
+
+table#inspectiontable {
+	border: 1px solid #336699;
+	width: 900px;
+	position: relative; 
+	top: -4px;
+	left: -4px;
+	}
+
+table#inspectiontable th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#inspectionreport {
+	border: 1px solid #336699;
+	}
+
+table#inspectionreport td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#inspectionreport th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+div#inspectiontableshadow {
+	width: 900px;
+	}
+
+div#invoicesummarypagebreak {
+	margin: 0;
+	padding: 0;
+	}
+
+p#criticaldates {
+	clear: both;
+	margin-top: 1em;
+	}
+
+table#permitlocationsearch {
+	width: 660px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: .5em;
+	}
+
+table#locationentry {
+	width: 660px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: .5em;
+	}
+
+div#issuedpermitreportshadow {
+	width: 1100px;
+	}
+
+table#issuedpermitreport {
+	border: 1px solid #336699;
+	width: 1100px;
+	}
+
+table#issuedpermitreport th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#issuedpermitreport td {
+	height: 16px;
+    font-size: 10px;
+	}
+
+div#revenuereportshadow {
+	width: 900px;
+	}
+
+table#revenuereport th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#revenuereport td {
+	height: 16px;
+    font-size: 10px;
+	}
+
+table#revenuereport {
+	border: 1px solid #336699;
+	width: 900px;
+	}
+
+div#impactfeereportshadow {
+	width: 1000px;
+	}
+
+table#impactfeereport th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#impactfeereport td {
+	height: 16px;
+    font-size: 10px;
+	}
+
+table#impactfeereport {
+	border: 1px solid #336699;
+	width: 1000px;
+	}
+
+tr.totalrow td {
+	font-weight: bold;
+	background-color:#cccccc;
+	border-top: 1px solid black;
+	}
+
+tr.issuedsubtotalrow td {
+	border-bottom: 1px solid black;
+	}
+
+div#inspectionmsg {
+	font-weight: bold;
+	color: black;
+	margin-bottom: 1em;
+	padding-left: .5em;
+	}
+
+td.subtotal {
+	border-top: 1px solid black;
+	}
+
+tr.reportgrouprow td {
+	font-weight: bold;
+	border-top: 1px solid black;
+	}
+
+table#coheader {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	font-family: arial;
+    font-size: 10pt;
+	}
+
+table#coheader td {
+	height: 26px;
+	font-family: arial;
+    font-size: 10pt;
+	}
+
+table#coheader td#coaddress {
+	width: 260px;
+	}
+
+span#cotitle {
+	font-family: arial;
+	font-size: 14pt;
+	font-weight: bold;
+	}
+
+span#cosubtitle {
+	font-weight: bold;
+	font-family: arial;
+	font-size: 12pt;
+	}
+
+table.codisplay {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+	font-family: arial;
+    font-size: 12pt;
+	}
+
+table.codisplay td {
+	height: 20px;
+	font-family: arial;
+    font-size: 12pt;
+	}
+
+span.tempcoandcolabel {
+	font-family: arial;
+	font-size: 12pt;
+	font-weight: normal;
+	}
+
+td.firstcocell {
+	width: 60%;
+	}
+
+p.cobodydetails {
+	width: 100%;
+	border: 1px solid black;
+	padding: 1em;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	font-family: 'Times New Roman';
+	font-size: 12pt;
+	}
+
+p.codetails {
+	width: 100%;
+	margin-top: 3em;
+	margin-bottom: 3em;
+	font-family: arial;
+	font-size: 12pt;
+	}
+
+p.cofooter {
+	width: 100%;
+	font-family: arial;
+	font-size: 14pt;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid black;
+	padding-bottom: 1em;
+	}
+
+p.cosubfooter {
+	width: 100%;
+	font-family: arial;
+	font-size: 12pt;
+	font-weight: bold;
+	text-align: center;
+	}
+
+p#feetypetotals {
+	width: 772px;
+	border: 1px solid black;
+	padding: 1em;
+	margin-top: 1em;
+	margin-bottom: 0;
+	font-family: arial;
+	font-size: 10pt;
+	font-weight: normal;
+	}
+
+span.feetypetotal {
+	text-decoration: underline;
+	margin-left: .5em;
+	margin-right: 2em;
+	}
+
+table#statereport td {
+	height: 20px;
+	font-family: arial;
+    font-size: 10pt;
+	}
+
+table#statereport td.firstcol {
+	padding-left: 1em;
+	font-weight: bold;
+	}
+
+div#stategroupscountshadow {
+	width: 300px;
+	}
+
+table#stategroupscount {
+	border: 1px solid #336699;
+	width: 300px;
+	}
+
+table#stategroupscount th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#stategroupscount td {
+	height: 20px;
+	font-family: arial;
+    font-size: 10pt;
+	}
+
+fieldset.permittype legend {
+	font-family: arial;
+    font-size: 11pt;
+	font-weight: bold;
+	margin-bottom: 1em;
+	}
+
+p#requiredlicenses {
+	font-size: 10pt;
+	font-weight: bold;
+	margin-left: .5em;
+	}
+
+div.contactlicenses {
+	float: right;
+	margin-left: 3em;
+	padding-right: 3em;
+	}
+
+span#applicantdetails {
+	padding-top: 2em;
+	}
+
+table#contractoruserlist {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+	font-family: arial;
+    font-size: 9pt;
+	border: 1px solid black;
+	width: 775px;
+	}
+
+table#contractoruserlist th {
+	height: 20px;
+    font-size: 9pt;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#contractoruserlist th.pickcol {
+	width: 7em;
+	}
+
+table#contractoruserlist th.selectcol {
+	width: 5em;
+	}
+
+table#contractoruserlist td {
+	height: 26px;
+	font-family: arial;
+    font-size: 10pt;
+	}
+
+span#printdaterange {
+	text-align: right;
+	display: inline;
+	position: relative;
+	float: right;
+	visibility: hidden;
+	}
+
+p#pagetitle {
+	width: 1100px;
+	}
+
+table#applicantpick {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	}
+
+table#permittypedocumenttable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	width: 500px;
+	}
+
+table#permittypedocumenttable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypedocumenttable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypedocumenttable td {
+    height: 26px;
+	}
+
+table#permittypedocumenttable tr.altrow {
+	background-color: #ececec;
+	}
+
+table#permittypedetailfieldstable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	margin-bottom: 1.5em;
+	width: 500px;
+	}
+
+table#permittypedetailfieldstable th {
+    HEIGHT: 26px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#permittypedetailfieldstable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypedetailfieldstable td {
+    height: 26px;
+	}
+
+table#permittypedetailfieldstable tr.altrow {
+	background-color: #ececec;
+	}
+
+a.permitattachments:link {
+	color: blue;
+	text-decoration: underline !important;
+	}
+
+a.permitattachments:visited {
+	color: blue;
+	text-decoration: underline !important;
+	}
+
+a.permitattachments:hover {
+	color: blue;
+	text-decoration: underline !important;
+	}
+
+a.permitattachments:active {
+	color: blue;
+	text-decoration: underline !important;
+	}
+
+div#functionlinks {
+	}
+
+div.widecontent {
+	width: 1024px !important;
+	}
+
+span.pagelabel {
+	margin-right: 2em;
+	font-weight: bold;
+	}
+
+textarea#valuelist {
+	width: 160px;
+	height: 100px;
+	}
+
+table#screenMsgtable {
+	width: 100%;
+	}
+
+table#screenMsgtable td {
+	height: 2em;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	margin-right: 3em;
+	}
+
+table#permittypecustomfieldstable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	width: 800px;
+	}
+
+table#permittypecustomfieldstable th {
+    height: 26px;
+    color: #003366;
+    border-bottom: #336699 1px solid;
+    background-color: #93bee1;
+	}
+
+table#permittypecustomfieldstable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	}
+
+table#permittypecustomfieldstable td {
+    height: 26px;
+	}
+
+table#permittypecustomfieldstable tr.altrow {
+	background-color: #ececec;
+	}
+
+table#inspectionreport td.firstcol, table#issuedpermitreport td.addresscol, table#issuedpermitreport td.addresscol {
+	padding-left: .5em;
+	}
+
+table#revenuereport td.addresscol, table#impactfeereport td.addresscol {
+	padding-left: .5em;
+	}
+
+table.contractorlisting {
+	position: relative !important;
+	top: 0 !important;
+	left: 0 !important;
+	}
+
+div#idControls
+{
+	margin-left: 1em;
+	margin-top: .5em;
+}
+
+/* NEW STYLES */
+.ui-datepicker-trigger{
+    border:none;
+    background:none;
+}
+		div#content {width:auto;}
+
+		#notcentercontent {padding:10px;}
+		#centercontent {width: 100%; margin:0;}
+		#centercontent form, #centercontent .gutters {margin: 10px;}
+		.yui-nav li a {font-size: 14px;background: #eee !important; border-top-left-radius:3px; border-top-right-radius:3px; padding: .4em 1em .4em 1em }
+		.yui-nav li a:hover {background: #ccc !important;}
+		.yui-nav li.selected a {background: #2C5F93 !important;}
+		.yui-nav {border-color: #2C5F93 !important;}
+		.yui-nav li a em {border: 0 !important;}
+
+		div#constructiontypesshadow { width:auto;background:none !important;}
+		table#constructiontypes { width:100%;}
+		#centercontent.col3 {float:left; width:75%}
+		.col1 { padding: 10px; width: 22%; float: left;}
+		.col1 fieldset {width: 100%;}
+
+
+		.tablelist td { height: 40px; }
+#content * { font-family:'Open Sans', sans-serif !important; }
+			input, select, input.button, button, p { font-size: 14px !important; }
+#content
+{
+	padding:0;
+	font-size: inherit !important;
+}
+#content .fa {
+    font: normal normal normal 14px/1 FontAwesome !important; 
+}
+#content a .fa, #content button.ui-datepicker-trigger .fa {
+    font-size: 18px !important; 
+}
+#content font, #content td, #content select, #content th, #content textarea
+{
+	font-size:14px;
+}
+#content th
+{
+	font-weight:normal;
+}
+#content input[type="checkbox"]
+{
+	width:15px;
+	height:15px;
+}
+#content>tbody>tr>td
+{
+	padding: 0 6px 0 6px;
+}
+.dropbtn {
+    background-color: #2C5F93;
+    color: white;
+    padding: 4px 16px 4px 16px;
+    font-size: 16px;
+    border: none;
+    margin-right:10px;
+    margin-bottom:5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left:40px;
+
+}
+.dropdown.right {float:right;}
+#bottom .dropdown
+{
+	display:none;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 280px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown.right .dropdown-content {
+    margin-left:-198px;
+	margin-top:-5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn, .ui-state-active {
+    background-color: #2C5F93 !important;
+    
+}
+.btn-red
+{
+	background-color: red !important;
+}
+.ui-button, .ui-button:hover, .ui-button:active, .ui-button:focus { background-color: #2C5F93 !important; color:white !important; margin-bottom:5px !important; padding: .4em 1em !important; }
+.dd-green, .dd-green:hover, .dd-green:active, .dd-green:focus
+{
+	background-color: green !important;
+}
+.ui-button:disabled {
+	background-color: #ccc !important;
+	color:#999 !important;
+	margin-bottom:5px !important;
+	cursor: not-allowed !important;
+}
+.ui-icon-white {
+  background-image: url("../images/ui-icons_ffffff_256x240.png");
+}
+#accordion .ui-accordion-content,
+#accordion2 .ui-accordion-content,
+#defaultsearchaccord .ui-accordion-content
+{
+	height:auto !important;
+}
+
+
+table.searchoptions tr td {  width:100%;}
+table.searchoptions tr td:first-child { font-weight:bold; width:auto; white-space:nowrap;}
+/* Tooltip container */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 320px;
+  background-color: #555;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  /* Position the tooltip text */
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -30px;
+
+  /* Fade in tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.dropdown a .tooltiptext { margin-left: -200px; }
+
+/* Tooltip arrow */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -140px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+div#successmessage
+{
+	visibility:initial !important;
+	display:none;
+	left:50%;
+	position:fixed;
+	margin-left:-150px;
+	top:50%;
+	margin-top:-75px;
+}
+.showiniframe {display:none;}
+#content div.shadow {background:none;}
+
+.red {color: red;}
+.wficon {width:14px;height:14px;}
+.btn-yellow, .btn-yellow:hover:not([disabled]) {background:yellow;color:black;}

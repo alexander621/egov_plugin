@@ -1,0 +1,191 @@
+<%
+dim pagesize, totalpages,RA,totalrecords,groupname,thisname,currentpage,conn,rs,groupmode,strSQL,CName
+Dim AdditonURL,numstartid,numendid,i,deleteurl,EventOrNot,Str_Bgcolor,username,password,str_image,editurl,FullName
+
+thisname=request.servervariables("script_name")
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 
+rs.CursorType = 3 
+
+if trim(request.querystring("userid"))="" then
+	'response.write "<br>No userid is entered, end program here"
+	response.end
+else
+	strSQL = "select * from egov_users u, organizations o where u.orgid=o.orgid and userid="&clng(trim(request.querystring("userid")))
+end If
+
+rs.Open strSQL
+
+if rs.recordcount=0 then
+	response.write "The user you requested does not exist in our database, or user's organization doesn't exist<br />"
+	response.end
+end If
+
+rs.movefirst
+
+call DisplayIndividual
+
+'rs.close
+'strSQL = "select *  from UsersExtended u where userid="&clng(trim(request.querystring("userid")))
+'rs.Open strSQL
+'if rs.recordcount>0 or Session("UserID") = clng(trim(request.querystring("userid"))) then
+'call ExtendedProperty
+'end if
+
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+
+
+
+'------------------------------------------------------------------------------------------------------------------------------------------
+' CUSTOM FUNCTIONS AND SUBROUTINES
+'------------------------------------------------------------------------------------------------------------------------------------------
+
+'--------------------------------------------------------------------------------------------------
+' SUB  EXTENDEDPROPERTY
+'--------------------------------------------------------------------------------------------------
+sub  ExtendedProperty
+	response.write "<br>"
+	if HasPermission("CanEditUser") or Session("UserID") = clng(trim(request.querystring("userid"))) then 
+		'response.write "&nbsp;<img src=../images/cut.gif><a HREF=javascript:openWin2('admin/extended/index.asp?iOfaction=6&UserID="&clng(trim(request.querystring("userid")))&"','_blank')>&nbsp;"&langEditExtendedProperty&"</a>"
+	end if
+	'response.write "&nbsp;<B>"&langExtendedProperty&"</B>&nbsp;"
+
+	'response.write "<a href='admin/extended/index.asp?iOfaction=6&UserID="&clng(trim(request.querystring("userid")))&"')>Edit</a>"
+	response.write "<table border=0   width=478 height=10   class='tablelist' cellpadding='0' cellspacing='0'>"
+	for i=0 to rs.recordcount-1 
+	response.write "	<tr>"
+	response.write "	<td width='10' height='23' align='justify'>&nbsp;</td>"
+	response.write "	<td width='133' height='23' align='justify'>"&rs("property")&"</td>"
+	response.write "    <td width='336' height='23'>&nbsp;"&rs("value")&"</td>"
+	response.write "    </tr>"
+	rs.movenext
+	next
+	response.write "</table>"
+end sub
+
+
+'--------------------------------------------------------------------------------------------------
+' SUB  DISPLAYINDIVIDUAL
+'--------------------------------------------------------------------------------------------------
+sub  DisplayIndividual %>
+		<table border="0" width="478" height="20" class="tablelist" cellpadding="5" cellspacing="0">
+		  <tr>
+			<th align="left" colspan="2"><%=langUserInfo%></th>
+		  </tr>
+
+			<!--<tr>
+			
+			<td width="133" height="23" valign="top">User ID</td>
+			<td width="336" height="23">&nbsp;<%=rs("userid")%></td>
+			</tr>
+			<tr>
+			
+			<td width="133" height="23" valign="top">Organization ID</td>
+			<td width="336" height="23">&nbsp;<%=rs("orgid")&" <i>(Organizaiton Name:<b>"&rs("orgname")&")</b></i>" %></td>
+			</tr>//-->
+
+			<% if not isnull(rs("useremail")) and trim(rs("useremail"))<>"" then %>
+			<tr>
+			<td width="133" height="23" valign="top"><%=langUsername%>:</td>
+			<td width="336" height="23"><%=rs("useremail")%></td>
+			  </tr>
+
+			<%
+			else
+			 response.write "<script>document.all.backto.innerHTML=""<img src='../images/arrow_2back.gif' align='absmiddle'>&nbsp;&nbsp;<A HREF=display_contact.asp>"&langBackToContactDisplay&"</a>""</script>"
+			end if %>  
+
+			<tr>
+			  <td width="133" height="23" valign="top"><%=langFullName%>:</td>
+			<td width="336" height="23"><%=rs("userfname")%>&nbsp;<%=rs("userlname")%></td>
+			</tr>
+
+
+		<% if not isnull(rs("userbusinessname")) and trim(rs("userbusinessname"))<>"" then %>
+			<tr>
+			
+			<td width="133" height="23" valign="top"><%=langcompanyname%>:</td>
+			<td width="336" height="23"><%=rs("userbusinessname")%></td>
+			  </tr>
+		<% end if %> 
+
+		<% if not isnull(rs("useraddress")) and trim(rs("useraddress"))<>"" then %>
+			<tr>
+			
+			<td width="133" height="23" valign="top"><%=langHomeAddress%>:</td>
+			<td width="336" height="23"><%= Trim(rs("userstreetnumber") & " " & Replace(rs("useraddress"), vbCrLf, "<br>")) %></td>
+			  </tr>
+		<% end if %> 
+
+		<% if not isnull(rs("userhomephone")) and trim(rs("userhomephone"))<>"" then %>
+			<tr>
+			
+			<td width="133" height="23" valign="top"><%=langHomePhone%>:</td>
+			<td width="336" height="23"><%=FormatPhone(rs("userhomephone"))%></td>
+			  </tr>
+		<% end if %> 
+
+
+
+		<% if not isnull(rs("userworkphone")) and trim(rs("userworkphone"))<>"" then %>
+			<tr>
+			
+			<td width="133" height="23" valign="top"><%=langBusinessPhone%></td>
+			<td width="336" height="23"><%=FormatWorkPhone(rs("userworkphone"))%></td>
+			  </tr>
+		<% end if %> 
+
+
+		<% if not isnull(rs("userfax")) and trim(rs("userfax"))<>"" then %>
+			<tr>
+			
+			<td width="133" height="23" valign="top"><%=langFaxNumber%>:</td>
+			<td width="336" height="23"><%=FormatPhone(rs("userfax"))%></td>
+			  </tr>
+		<% end if %> 
+
+		<% if not isnull(rs("useremail")) and trim(rs("useremail"))<>"" then %>
+			<tr>
+			
+			<td width="133" height="23" valign="top"><%=langTypeEmail%>:</td>
+			<td width="336" height="23"><%=rs("useremail")%></td>
+			 </tr>
+		<% end if %> 
+
+
+		</table>
+<% end sub %>
+
+<script language=javascript>
+<!--
+	function openWin2(url, name) 
+	{
+		popupWin = window.open(url, name,"resizable,width=500,height=450");
+}
+//-->
+</script>
+
+<%
+Function FormatPhone( Number )
+  If Len(Number) = 10 Then
+    FormatPhone = "(" & Left(Number,3) & ") " & Mid(Number, 4, 3) & "-" & Right(Number,4)
+  Else
+    FormatPhone = Number
+  End If
+End Function
+
+Function FormatWorkPhone( Number )
+  If Len(Number) > 0 Then
+    FormatWorkPhone = "(" & Left(Number,3) & ") " & Mid(Number, 4, 3) & "-" & Mid(Number,7,4)
+	If Len(Number) > 10 Then
+		FormatWorkPhone = FormatWorkPhone & " ext. " & Mid(Number,11,4)
+	End If 
+  End If
+End Function
+%>

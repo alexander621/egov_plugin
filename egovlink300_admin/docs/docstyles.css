@@ -1,0 +1,65 @@
+body {
+	padding: 0;
+	margin: 0;
+	}
+
+input {
+	padding: 0;
+	margin: 0;
+	}
+
+div.filterselection {
+	padding:5px; 
+	margin: 0;
+	margin-bottom: 2em;
+	margin-right: 5px;
+	}
+
+p#folderpath {
+	margin-top: 1em;
+	}
+
+p#actionfield {
+	margin-bottom: 3em;
+	}
+
+p#buttons {
+	margin-bottom: 4em;
+	}
+
+table#screenMsgtable {
+	width: 100%;
+	margin-bottom: .5em;
+	}
+
+table#screenMsgtable td {
+	height: 2em;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+table#documentlinks {
+	margin-top: 2em;
+	}
+
+table#searchbox {
+	margin-left: 4em;
+	}
+
+table#publicaccesscontainer {
+	width: 625px;
+	}
+
+div.demo1 {
+	width: 80%;
+	background: #FFF;
+	padding: 10px;
+	margin-left: 5em;
+	}

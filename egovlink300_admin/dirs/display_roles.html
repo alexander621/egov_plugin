@@ -1,0 +1,221 @@
+<%
+dim pagesize, totalpages,RA,totalrecords,groupname,thisname,currentpage,conn,rs,groupmode,strSQL,CName,AdditonURL,numstartid,numendid,i,deleteurl,EventOrNot,Str_Bgcolor,username,password,str_image,editurl,FullName,l_length,l_name,b_update,j,fld,cmd,ResultID,strSuccess
+HowManyRolesDisplayed=0
+pagesize=Session("PageSize")
+totalpages=1
+
+thisname=request.servervariables("script_name")
+if not isempty(request.querystring("currentpage")) then
+CurrentPage=cint(request.querystring("currentpage"))
+else
+currentpage=1
+end if
+
+ DisplayRecords()
+
+%>
+<%
+sub  DisplayRecords()
+thisname=request.servervariables("script_name")
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 
+rs.CursorType = 3 
+'response.write "<br>GroupID="&request.querystring("groupid")
+GroupMode=2
+'response.write "<br>display All<br>"
+strSQL = "select roleid, rolename,roledescription from roles where orgid="&Session("OrgID")&" order by rolename"
+rs.Open strSQL
+ 
+'------- the following code dealing with the recordcount=0-------
+if rs.recordcount=0 then
+rs.close
+	CName=langTabCommittees&":&nbsp;"&langDiaplyRoles
+
+call statistics(CName)
+
+call navagatorbar(0)
+exit sub
+end if
+
+
+'--------------------------------------------------------------------
+rs.movefirst
+totalrecords = rs.RecordCount
+TotalPages = (totalrecords \ pagesize) + 1  '\means integer/integer
+			if TotalPages < 1 then TotalPages = 1
+if isNumeric(CurrentPage) then
+				if CurrentPage < 1 then CurrentPage = 1
+				if CurrentPage > TotalPages then CurrentPage = TotalPages
+			else
+				CurrentPage = 1
+end if
+numstartid	= (CurrentPage-1) * PageSize
+numendid	= IIf(numstartid + PageSize < totalrecords, numstartid+pagesize- 1, totalrecords - 1)
+'response.write "<br>totalrecords="&totalrecords&"  numberstartid="&numstartid&" numendid="&numendid
+'response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages
+'==========================================================================================
+RA=rs.GetRows
+CName=langTabCommittees&":&nbsp;"&langDiaplyRoles
+
+call statistics(CName)
+call navagatorbar(1)
+
+
+'==========  the following will display the whole table=========================================
+
+response.write "<table border=0 cellpadding=5 cellspacing=0 width='100%' class='tablelist'>"
+deleteurl="delete_roles.asp?previousURL="&thisname&"&Extra="&request.querystring
+
+
+response.write "<form name=DeleteRole method=post action='"&deleteurl&"'>"
+response.write "<tr><th align=left >"
+
+
+
+if HasPermission("CanEditRoles") then
+	response.write "<input class=""listCheck"" type=checkbox name=""chkSelectAll"" onClick=""selectAll('DeleteRole', this.checked, 'delete')"">"
+end if
+response.write "&nbsp;</th><th align=left>"&langRole&"</th><th align='left'  width='60%'>&nbsp;"&langDescription&"</th>"
+if HasPermission("CanEditRoles") then
+	response.write "<th align=left>"&langEditPermissions&"</th>"
+else
+	response.write "<th>&nbsp;</th>"
+end if
+response.write "</tr>"
+
+
+'--------------------------------------------------------------------------
+for i = numstartid to numendid
+
+
+
+'-- alternateviely show different color-----
+EventOrNot=(i+2) mod 2
+if EventOrNot=0 then
+Str_Bgcolor=""
+else
+Str_Bgcolor="#eeeeee"
+end if
+'-------------------------------------------
+str_image="<img src='../images/newrole.gif'>"
+'-----------------------------------------
+'GroupNumber=entry(RA(0,i))
+editurl="update_role.asp?roleid="&RA(0,i)
+
+if HasPermission("CanEditRoles") Then
+	HowManyRolesDisplayed=HowManyRolesDisplayed+1
+	response.write 	"<tr bgcolor="&Str_Bgcolor&"><td width='36' align=center>"
+	if HasPermission("CanEditRoles") then
+	response.write  "<input type=checkbox name=delete  value="&RA(0,i)&">"
+	end if
+	response.write str_image&"</td>"
+
+	response.write " <td>"&RA(1,i)
+	if HasPermission("CanEditRoles") then
+	response.write "&nbsp;<a href='"&editurl&"'><img src='../images/edit.gif' align='absmiddle' border=0></a>"
+	end if
+	response.write "</td>"
+	response.write "<td align='left'>&nbsp;"&RA(2,i)&"</td>"
+	response.write "<td>"
+	if HasPermission("CanEditRoles") then
+	response.write	"<a href=""javascript:openWin1('ManageRolePermission.asp?roleid="&RA(0,i)&"','_blank')""><img src='../images/newpermission.gif' width=14 align='absmiddle' border=0></a>"
+	end if
+
+response.write "</td>"
+response.write "</tr>"
+End if
+'rs.movenext
+next     
+'----------------------------------------------------------------------------
+if HowManyRolesDisplayed=0 then
+	response.write "<tr style=""height:25px;""><td colspan=5>No roles that you can view!</td></tr>"
+end if
+response.write "</form></table>"
+'=======  end of displaying the whole table================================================
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+end sub 
+%>
+
+<%
+function entry(groupid)
+' -100 means total records
+' if a groupid>0 it will show individual group
+set conn2 = Server.CreateObject("ADODB.Connection")
+conn2.Open Application("DSN")
+set rs2 = Server.CreateObject("ADODB.Recordset")
+set rs2.ActiveConnection = conn2
+rs2.CursorLocation = 3 
+rs2.CursorType = 3 
+if groupid=-100 then
+strSQL2= "select count(userid) as totaluser from usersgroups" 
+else
+strSQL2= "select count(userid) as totaluser from usersgroups ug where ug.groupid="&groupid
+end if
+rs2.Open strSQL2
+AllUsers=rs2("totaluser")
+rs2.close
+conn2.close
+set rs=nothing
+set conn2=nothing
+entry=AllUsers
+end function 
+
+sub statistics(CName)
+response.write "<table><tr>"& _
+"<td><font size='+1'><b>"&CName&"</b></font><br><img src='../images/arrow_2back.gif' align='absmiddle'>&nbsp;<a href='display_committee.asp'>"&langBackToCommittee&"</td>"& _
+ "</tr></table><br><br>"
+end sub
+
+sub  navagatorbar(record)
+	if groupmode=1 then
+	AdditonURL=""
+	else
+	AdditonURL="groupid="&request.querystring("groupid")&"&"
+	end if
+	response.write "<div style='font-size:10px; padding-bottom:5px;'>"
+if currentpage>1 then 
+		response.write "<A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)&"'>"
+		response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>"&langPrev&" "&pagesize&"</A>"
+		else
+		response.write "<!A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)&"'>"
+		response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>"& _
+		"<font color=#999999>"&langPrev&" "&pagesize&"</font></A>"
+		end if
+    	
+'		response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages
+		if currentpage<totalpages then 
+		response.write "&nbsp;&nbsp;<A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)&"'>"&langNext&" "&pagesize
+		else
+		response.write "&nbsp;&nbsp;<!A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)&"'>"& _
+		"<font color=#999999>"&langNext&" "&pagesize&"</font>" 
+		end if
+	    response.write 	"<img src='../images/arrow_forward.gif' align='absmiddle' border=0></a>"
+'------- the following is the additional convenient links showing on the top of table---
+'------- the following is the additional convenient links showing on the top of table---
+if HasPermission("CanEditRoles") then
+response.write	"&nbsp;&nbsp;<img src='../images/newrole.gif' width='16' height='16' align='absmiddle'>&nbsp;<a href='register_role.asp'>"&langNewRole&"</a> &nbsp;&nbsp;&nbsp;&nbsp;"  %>
+<% if record>0  then %>
+ <img src="../images/small_delete.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.DeleteRole.submit();" onClick="javascript: return confirm('<%=langWanttoDeleteRole%>');"><%=langDelete%></a>
+<% end if 		
+end if
+'------- end of convenient links showing on the top of table---
+end  sub
+
+function IIf(bCheck, sTrue, sFalse)
+		if bCheck then IIf = sTrue Else IIf = sFalse
+end function 
+
+%>
+
+<script language=javascript>
+	function openWin1(url, name) {
+  popupWin = window.open(url, name,
+"resizable,width=550,height=450");
+}
+</script>

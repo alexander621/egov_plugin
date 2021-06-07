@@ -1,0 +1,1548 @@
+.rounded-corners (@radius: 5px)
+{
+    -webkit-border-radius: @radius;
+    -moz-border-radius: @radius;
+    -ms-border-radius: @radius;
+    -o-border-radius: @radius;
+    border-radius: @radius;
+}
+
+@myTest {
+color: #ff0000;
+}
+
+
+/*--------------------------------------------------------------------------------
+BEGIN: Classes and Events
+----------------------------------------------------------------------------------*/
+#classdetailsnotice 
+{
+    font-weight: bold;
+    padding-left: 2.5%;  /* (20px / 800px) * 100 */
+}
+
+.classes_breadcrumbs 
+{
+    background-color: #eeeeee;
+    border-top: 1pt solid #c0c0c0;
+    border-bottom: 1pt solid #c0c0c0;
+    margin-top: 10px;
+    padding: 10px 0 10px 10px;
+    font-size: 0.875em;  /* 14 / 16 */
+/*    color: #800000; */
+}
+
+.classes_breadcrumbs a 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    padding: 3px 5px 3px 5px;
+/*    color: #800000 !important; */
+}
+
+.classes_breadcrumbs a:hover 
+{
+    background-color: #c0c0c0;
+    border: 1pt solid #808080;
+    text-decoration: none !important;
+}
+
+.classes_discountdesc 
+{
+    margin-top: 2px;
+	color: #ff0000;
+}
+
+/* -- class_categories.aspx -- */
+#categorylist 
+{
+    border: 0pt solid #ff0000;
+    list-style: none;
+    padding: 0;
+    margin: 10px 10px;
+}
+
+.fieldset_classes
+{
+    border: 1pt solid @myTest;
+    .rounded-corners;
+    background-color: #eeeeee;
+}
+
+.fieldset_classes legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+.fieldset_classes legend:hover 
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.fieldset_subcategories 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    margin: 10px 0px;
+    padding-left: 2.5%;  /* (20px / 800px) * 100 */
+    padding-right: 30px;
+    background: #ffffff url(bg_btn_bar.png) no-repeat 98% center;
+}
+
+.fieldset_subcategories:hover 
+{
+    background-color: #c0c0c0;
+    border: 1pt solid #404040;
+    cursor: pointer;
+}
+
+.fieldset_subcategories legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.0em;  /* 14 / 16 */
+    color: #800000;
+}
+
+.mobile_subcategories
+{
+    display: none;
+}
+
+.subcategoryinfo 
+{
+    border: 0pt solid #ff0000;
+}
+
+.categoryimage 
+{
+    border: 1pt solid #404040;
+    .rounded-corners;
+    margin: 0px 5px 5px 5px;
+}
+
+.subcategorysubtitle 
+{
+    /* font-size: 0.875em;  /* 14 / 16 */
+    font-weight: bold;
+}
+
+/* -- class_list.aspx -- */
+.classlist 
+{
+    background-color: #eeeeee;
+    border-top: 1pt solid #c0c0c0;
+    padding: 10px;
+}
+
+.fieldset_subcategories_classlist
+{
+    border: 0pt solid #ff0000;
+    /*border-top: 1pt solid #c0c0c0;*/
+    margin: 10px 0px 5px 0px;
+    padding: 10px 5px 0px 5px;
+    background-color: #ffffff;
+}
+
+.mobile_subcategories_classlist 
+{
+    display: none;
+}
+
+
+/* BEGIN: Class/Events: Search (Categories) -- */
+#searchMenuDiv 
+{
+	display: inline;
+    position: absolute;
+    float: right;
+    margin-left: 250px;
+}
+
+#searchBoxText 
+{
+	float: left;
+	width: 100px;
+    margin: 1px 10px 1px 1px;
+    padding: 2px 0px 2px 4px;
+    background: #ffffff url('./../images/search.jpg') no-repeat 98% center;
+	border: 1pt solid #808080;
+    .rounded-corners;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+#searchBox
+{
+	display: block;
+    position: absolute;
+    float: right;
+    margin-top: 20px;
+}
+
+#classesSearchBox 
+{
+    position: relative;
+    float: right;
+    z-index: 1001;
+    white-space: nowrap;
+    /* margin: 0px 10px 0 0; */
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+	border: 1pt solid #808080;
+    .rounded-corners;
+    background-color: #c0c0c0;
+	text-align: left;
+    font-family: Verdana, sans-serif;
+    font-size: 0.75em;  /* 12 / 16 */
+}
+
+#classesSearchResultsText 
+{
+	margin: 5px 0px 10px 2.5%;
+    font-size: 1.25em;
+    color: #ff0000;
+}
+
+.classesKeywordSearchText 
+{
+    font-size: 1.25em;
+    font-weight: bold;
+    font-style: italic;
+}
+/* END: Class/Events: Search (Categories) -- */
+
+#viewpick 
+{
+    text-align: right;
+}
+
+.classOptionItem_mobile 
+{
+    display: none;
+}
+
+.classinfo_classlist
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background: #ffffff url(bg_btn_bar.png) no-repeat 98% center;
+    margin-bottom: 10px;
+    padding: 2px 5px;
+}
+
+.classinfo_classlist:hover 
+{
+    background-color: #c0c0c0;
+    border: 1pt solid #404040;
+    cursor: pointer;
+}
+
+.classinfo_classlist legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+.categoryDateLine
+{
+    padding: 5px 0px 0px 10px;
+    font-weight: bold;
+}
+
+.classes_daysofweek 
+{
+    padding-left: 20px;
+    font-style: italic;
+    font-size: 1em;
+}
+
+.categoryInfo 
+{
+    padding: 10px 30px 10px 5px;
+}
+
+.registrationLine 
+{
+    margin-top: 10px;
+}
+
+.registrationLineTable 
+{
+	border: 0pt solid #000000;
+}
+
+.registrationLineTable td 
+{
+	padding: 2px;
+}
+
+.enrolledInClasses 
+{
+	border: 1pt solid #c0c0c0;
+    .rounded-corners;
+	background-color: #eeeeee;
+	margin-left: 10px;
+}
+
+.enrolledInClasses td 
+{
+	white-space: nowrap;
+}
+
+.enrolledInLabel 
+{
+	color: #ff0000;
+}
+
+/* -- class_details.aspx -- */
+.classdetails_fieldset 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    margin: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.classdetails_fieldset legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+.continueRegistrationDiv 
+{
+    margin: 10px;
+}
+
+.continueRegistrationButton
+{
+	cursor: pointer;
+}
+
+.classdetails 
+{
+    background-color: #eeeeee;
+    border-top: 1pt solid #c0c0c0;
+    border-bottom: 1pt solid #c0c0c0;
+    padding-bottom: 10px;
+}
+
+#offeringActivities 
+{
+    width: 98%;
+    border: 1pt solid #808080;
+    .rounded-corners;
+    margin: 5px 0 5px 10px;
+    padding-bottom: 5px;
+}
+
+#offeringActivities thead td 
+{
+    background-color: #c0c0c0;
+    border-bottom: 1pt solid #808080;
+    text-align: center;
+    font-weight: bold;
+    padding: 4px;
+}
+
+#offeringActivities tbody td 
+{
+    text-align: center;
+    padding: 2px;
+}
+
+.offeringActivities_row_dark td
+{
+    background-color: #eeeeee;
+}
+
+.offeringActivities_row_light td
+{
+    background-color: #ffffff;
+}
+
+.offeringActivities_activityno 
+{
+    text-align: left !important;
+}
+
+.classdetails_table,
+.classdetails_table td
+{
+    color: #000000;
+    font-family: Verdana, Sans-Serif;
+    font-size: 11px;
+}
+
+.classdetails_label 
+{
+	font-weight: bold;	
+}
+
+#classdetails_classfeeline 
+{
+    margin-top: 10px;
+}
+
+#classdetails_classfee_list 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+}
+
+#classdetails_classfee_list .classdetails_label
+{
+    text-align: right;
+}
+
+#classdetails_externalurl 
+{
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+#classdetails_externalurl a 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background: #eeeeee url(bg_btn_bar.png) no-repeat 98% center;
+    padding: 4px 20px 4px 4px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.125em;  /* 18 / 16 */
+}
+    
+#classdetails_externalurl a:hover 
+{
+    border-color: #808080;
+    background-color: #c0c0c0;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.classdetails_membershiprequired 
+{
+    font-style: italic;
+}
+
+.classdetails_message
+{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.classes_regstart_table 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+}
+
+.classes_regstart_label 
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.pointofcontact_info_table
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+}
+
+.pointofcontact_info_label
+{
+    font-weight: bold;
+}
+
+#classdetails_location 
+{
+	padding: 10px;
+	font-size: 12px;
+}
+
+#map_canvas 
+{
+	border: 1pt solid #808080;
+    .rounded-corners;
+	width: 90%;
+	height: 400px;
+	margin: 5px auto 10px auto;
+}
+
+#location_getDirectionsButton 
+{
+    cursor: pointer;
+}
+
+.class_signup_filledStatus 
+{
+    margin: 10px 0px 10px 10px;
+    font-size: 1.125em;
+    color: #ff0000;
+}
+
+.class_signup_fieldset_waivers
+{
+    background-color: #ffe4e1 !important;
+}
+
+.classdetails_waiverText 
+{
+    margin: 10px 10px 10px 10px;
+}
+
+.waivertitle {
+    color: black;
+    font-family: verdana,sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.waivertitle2 {
+    color: black;
+    font-family: verdana,sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 5px 0;
+}
+
+.classdetails_waiver 
+{
+    margin-top: 5px;
+}
+
+.classdetails_waiver a
+{
+    display: block;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background: #eeeeee url(bg_btn_bar.png) no-repeat 98% center;
+    padding: 10px 20px 10px 10px;
+    text-align: center;
+    font-size: 1em;
+}
+
+.classdetails_waiver a:hover
+{
+    border: 1pt solid #808080;
+    background-color: #c0c0c0;
+    text-decoration: none;
+}
+
+/* -- class_signup.aspx -- */
+#class_signup_returnButtonDetails,
+#class_signup_returnButtonClassList
+{
+    margin: 10px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.class_signup_fieldset,
+.class_signup_fieldset_waivers 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    margin: 10px;
+    padding: 5px 5px 5px 5px;
+}
+
+.class_signup_fieldset legend,
+.class_signup_fieldset_waivers legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+#class_signup_dates 
+{
+    font-family: Verdana, sans-serif;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.class_signup_message
+{
+    margin-top: 10px;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    font-weight: bold;
+    color: #ff0000;
+}
+
+#class_signup_details 
+{
+    margin: 10px 0 0 10px;
+    padding: 2px;
+}
+
+#class_signup_age_restriction 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+    padding: 2px;
+    font-size: 0.875em;  /* 14 / 16 */
+}
+
+.class_signup_ageRestrictDate 
+{
+    font-size: 0.875em;  /* 14 / 16 */
+    color: #800000;
+}
+
+.age_restrictions_label 
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+.class_signup_gender_restriction 
+{
+    padding-top: 1px;
+}
+
+#class_signup_selectfamilymembers 
+{
+    margin: 5px 0px 0px 20px;
+}
+
+#updateFamilyMembersButton 
+{
+    cursor: pointer;
+}
+
+#notinlist 
+{
+    font-size: 0.75em;  /* 12 / 16 */
+    color: #ff0000;
+}
+
+#classFees 
+{
+    margin-top: 10px;
+}
+
+#classEmergencyInfo 
+{
+    background-color: #ffe4e1;
+    margin: 20px;
+}
+
+#emergencyInfoMsg 
+{
+    font-size: 1.125em;
+}
+
+#classEmergencyInfoTable 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+    margin: 10px 0px 0px 20px;
+    padding: 2px;
+    font-size: 0.875em;  /* 14 / 16 */
+}
+
+#classEmergencyInfo caption
+{
+    margin: 5px 0px 5px 0px;
+    text-align: left;
+    font-family: Verdana, sans-serif;
+    font-size: 1.125em;
+    font-weight: bold;
+
+}
+
+.classEmergencyInfoLabel 
+{
+    font-weight: bold;
+}
+
+#classFeesPrices 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+    padding: 2px;
+    font-size: 0.875em;  /* 14 / 16 */
+}
+
+.noPricingOptions 
+{
+    font-weight: bold;
+    color: #ff0000;
+}
+
+.requiredField 
+{
+	color: #ff0000;
+}
+
+#volunteerCoachInfo 
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #eeeeee;
+    padding: 2px;
+}
+
+.coachFieldsLabel
+{
+	white-space: nowrap;
+}
+
+.coachLargeInputField 
+{
+    width: 300px;
+}
+
+.class_waivername 
+{
+    margin-top: 5px;
+    font-size: 0.875em;  /* 14 / 16 */
+    font-weight: bold;
+}
+
+.class_waivername 
+{
+    width: 90%;
+    margin: 0px auto 0px auto;
+}
+
+.class_termstext 
+{
+    background-color: #eeeeee;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    margin: 5px auto 5px auto;
+    padding: 5px;
+    width: 90%;
+    height: 100px;
+    overflow: auto;
+}
+
+#addToCartButton 
+{
+    cursor: pointer;
+}
+
+/* -- Class/Events: class_cart.aspx -- */
+#classSignUpButton,
+#classListButton,
+#completeButton 
+{
+	cursor: pointer;
+}
+
+#cartPageHeader 
+{
+    padding: 10px;
+}
+
+#cartDetails 
+{
+    background-color: #eeeeee;
+    border-top: 1pt solid #c0c0c0;
+    border-bottom: 1pt solid #c0c0c0;
+    padding-bottom: 10px;
+}
+
+/* -- Cart Table -- */
+#cartTable 
+{
+    border: 1pt solid #808080;
+    .rounded-corners;
+    width: 100%;
+}
+
+#cartTable thead td 
+{
+    background-color: #c0c0c0;
+    border-bottom: 1pt solid #808080;
+    font-weight: bold;
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+}
+
+#cartTable thead .cartTableColumn1 
+{
+    border-top-left-radius: 5px;
+    text-align: left;
+}
+
+#cartTable thead .cartTableColumnLast 
+{
+    border-top-right-radius: 5px;
+}
+
+#cartTable tbody td 
+{
+    border-top: 1pt solid #eeeeee;
+    border-right: 1pt solid #eeeeee;
+    padding: 4px;
+    text-align: center;
+}
+
+#cartTable .cartTableClassName 
+{
+    text-align: left !important;
+}
+
+#cartTable .cartTablePrice 
+{
+    text-align: right !important;
+}
+
+#cartTable .cartTableRemoveButton 
+{
+    background: url("bg_btn_bar.png") no-repeat scroll 98% center #eeeeee;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+	height: 100%;
+	padding: 6px 4px 6px 4px;
+    cursor: pointer;
+}
+
+#cartTable .cartTableRemoveButton:hover 
+{
+    background-color: #c0c0c0;
+    border: 1pt solid #404040;
+}
+
+#cartTable .cartTableFooterColumn1 
+{
+    background-color: #c0c0c0;
+    border-top: 1pt solid #808080;
+      border-bottom-left-radius: 5px;
+    padding: 4px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#cartTable .cartTableFooterColumnTotal 
+{
+    background-color: #c0c0c0;
+    border-top: 1pt solid #808080;
+      border-bottom-right-radius: 5px;
+    padding: 4px;
+    text-align: right;
+}
+
+/* -- Cart Table: Account Credit -- */
+#cartTableAccountCredit
+{
+    margin-top: 10px;
+    border: 1pt solid #808080;
+    .rounded-corners;
+    width: 100%;
+}
+
+#cartTableAccountCredit thead td 
+{
+    background-color: #c0c0c0;
+    border-bottom: 1pt solid #808080;
+    font-weight: bold;
+    margin: 0px;
+    padding: 4px;
+    text-align: center;
+}
+
+#cartTableAccountCredit thead .cartTableColumn1 
+{
+    width: 90%;
+    border-top-left-radius: 5px;
+    text-align: left;
+}
+
+#cartTableAccountCredit thead .cartTableColumnLast 
+{
+    border-top-right-radius: 5px;
+}
+
+#cartTableAccountCredit tbody td 
+{
+    border-top: 1pt solid #eeeeee;
+    padding: 4px;
+}
+
+#columnApplyCredit 
+{
+    text-align: right;
+    font-weight: bold;
+}
+
+#columnApplyCreditAmount 
+{
+    text-align: right;
+}
+
+#columnAmountOnAccount 
+{
+    text-align: right;
+}
+
+#cartTableAccountCredit .cartTableFooterColumn1 
+{
+    background-color: #c0c0c0;
+    border-top: 1pt solid #808080;
+      border-bottom-left-radius: 5px;
+    padding: 4px;
+    font-weight: bold;
+    text-align: right;
+}
+
+#cartTableAccountCredit .cartTableFooterColumnTotal 
+{
+    background-color: #c0c0c0;
+    border-top: 1pt solid #808080;
+      border-bottom-right-radius: 5px;
+    padding: 4px;
+    text-align: right;
+}
+
+.cartBottomButtonRow 
+{
+    margin-top: 5px;
+}
+
+#cartTimeoutMsg 
+{
+    margin: 10px;
+    text-align: center;
+    font-size: 1em;
+    color: #ff0000;
+}
+
+#cartTimeoutMsgNoTransaction 
+{
+    margin: 10px;
+    font-size: 1.125em;
+    font-weight: bold;
+}
+
+#cartNoItems 
+{
+    margin: 10px;
+    font-size: 1em;
+    color: #ff0000;
+}
+
+/* -- Class/Events: class_paymentform.aspx -- */
+#paymentFormDiv
+{
+	margin: 10px;
+	background-color: #eeeeee;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+}
+
+.fieldset_paymentform 
+{
+	margin: 10px;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+}
+
+.fieldset_paymentform legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+/* -- Class/Events: Payment Form (class_paymentform.aspx) -- */
+#chargeAmounts 
+{
+    text-align: right;
+}
+
+#chargeAmounts .labelcol 
+{
+    padding-right: 2em;
+}
+
+#chargeAmounts .totalchargesdisplay 
+{
+    font-weight: bold;
+    border-top: 1pt solid #000000;
+}
+
+#billingInfoMsg 
+{
+    background-color: #ffe4e1;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.personInfoLabel 
+{
+    white-space: nowrap;
+    font-weight: bold;
+    vertical-align: top;
+}
+
+#creditCardNumberMsg
+{
+    padding: 4px;
+    font-style: italic;
+    color: #ff0000;
+}
+
+#processPaymentButtonMsg 
+{
+    padding: 5px;
+    font-size: 1.25em;
+    color: #ff0000;
+}
+
+#processPaymentButton 
+{
+    margin: 5px;
+}
+
+#COMPLETE_PAYMENT 
+{
+    padding: 5px;
+    cursor: pointer;
+}
+
+#paymentFormIPMsg 
+{
+    margin: 10px;
+    text-align: center;
+    font-size: 1.125em;
+}
+
+/* -- Class/Events: ProcessFailure.aspx -- */
+
+.processFailureFieldset
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    margin: 10px;
+    padding: 10px;
+}
+
+.processFailureFieldset legend
+{
+    border: 1pt solid #c0c0c0;
+    .rounded-corners;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+.processFailureErrorMsg 
+{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.25em;
+    color: #ff0000;
+}
+
+/* -- Class/Events: Receipt (class_receipt.aspx) -- */
+#receiptTransactionsFieldset
+{
+    background-color: #eeeeee;
+}
+
+#classReceipt 
+{
+    font-size: 0.875em;
+}
+
+#receiptHeader 
+{
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.receiptLabel 
+{
+    font-weight: bold;
+    @myTest;
+}
+
+.receiptAttendee 
+{
+    font-size: 1.125em;
+    color: #800000;
+}
+
+.receiptSubTotal 
+{
+    text-align: right;
+    font-size: 1.125em;
+    color: #800000;
+}
+
+#receiptPayeeInfo 
+{
+    float: left;
+    /* border: 1pt solid #008000; */
+    width: auto;
+}
+
+#receiptPayeeAccountInfo 
+{
+    float: right;
+    border: 1pt solid #c0c0c0;
+    .rounded-corners(10px);
+    display: inline;
+    width: auto;
+    margin-top: 0px;
+    padding: 6px;
+}
+
+.receiptPayeeHeader 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.receiptPayeeTable td 
+{
+    padding: 4px;
+    white-space: nowrap;
+}
+
+.receiptPayeeAmounts 
+{
+    text-align: right;
+}
+
+.receiptTotalRow td
+{
+    font-weight: bold;
+}
+
+.receiptTotalRow .receiptPayeeAmounts
+{
+    border-top: 1pt solid #808080;
+}
+
+.receiptPayeeAccountInfoTotal 
+{
+    margin: 5px 5px 10px 5px;
+    text-align: right;
+}
+
+.receiptAccountInfoTotalLabel 
+{
+    font-weight: bold;
+}
+
+#receiptTransactionsHeader 
+{
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.receiptTransactionsTable td,
+.receiptTransactions td 
+{
+    padding: 4px;
+}
+
+.receiptCustomRegistration 
+{
+    margin: 5px;
+}
+
+/*--------------------------------------------------------------------------------
+END: Classes and Events
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) 
+{
+    /* -- Class/Events: Search (Categories) -- */
+    #searchBox 
+    {
+    	width: 300px;
+    	margin-top: 37px;
+    }
+    
+	#searchBoxText 
+    {
+        height: 25px;
+        margin: 2px 10px 2px 0px;
+        padding-top: 7px;
+        font-size: 1em;
+    }
+    
+    #classesSearchBox 
+    {
+        padding: 10px;
+        font-size: 1em;  /* 12 / 16 */
+    }
+    
+    #txtsearchphrase,
+    #searchButton 
+    {
+    	font-size: 1.25em;
+    }
+    
+    /* Classes and Events: BreadCrumbs */
+    .classes_breadcrumbs 
+    {
+        display: none;
+    }
+    
+    /* Classes and Events: class_categories.aspx */
+    #content 
+    {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    #categorylist 
+    {
+        border-bottom: 1pt solid #404040;
+        margin: 10px 0;
+    }
+
+    .fieldset_classes 
+    {
+        border: 0pt solid #000000;
+        background-color: #ffffff;
+        margin: 0px;
+        padding: 0px;
+    }
+    
+    .fieldset_classes legend,
+    .fieldset_subcategories
+    {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .mobile_subcategories
+    {
+        display: block;
+        background: #eeeeee url(bg_btn_bar.png) no-repeat 98% center;
+        border-top: 1pt solid #404040;
+        padding: 10px 0 10px 10px;
+        font-size: 1.25em;
+        font-family: Verdana, sans-serif;
+    }
+    
+    .mobile_subcategories:hover 
+    {
+        background-color: #c0c0c0;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    .subcategoryinfo 
+    {
+        border: 1pt solid #ff0000;
+        height: 50px;
+        overflow: hidden;
+    }
+    
+    .categoryimage 
+    {
+        display: none;
+    }
+
+    /* Classes/Events: class_list.aspx */
+    .classlist 
+    {
+        border-top: 1pt solid #808080;
+        border-bottom: 1pt solid #808080;
+        padding: 0;
+    }
+    
+    .fieldset_subcategories_classlist
+    {
+        display: none;
+        padding: 0px;
+        margin: 0px;
+    }
+    
+    .mobile_subcategories_classlist 
+    {
+        display: block;
+        padding: 10px 0 10px 0;
+        margin-top: 10px;
+        font-family: Verdana, sans-serif;
+        font-size: 1.25em;  /* 20 / 16 */
+        color: #800000;
+        text-align: center;
+    }
+    
+    #viewpick
+    {
+        text-align: center;
+        padding: 10px 0;
+    }
+    
+    #dropdown_viewpick 
+    {
+        font-size: 1.125em;
+    }
+    
+    .classOptionItem_mobile 
+    {
+        display: block;
+        background: #ffffff url(bg_btn_bar.png) no-repeat 98% center;
+        border-top: 1pt solid #808080;
+        padding: 10px 0 10px 10px;
+    }
+    
+    .classOptionItem_mobile:hover 
+    {
+        background-color: #c0c0c0 !important;
+        cursor: pointer;
+    }
+    
+    .className_mobile 
+    {
+        font-size: 1.25em;
+    }
+    
+    .categoryDateLine_mobile 
+    {
+        font-size: 1em;
+        color: #800000;
+    }
+    
+    .classes_daysofweek 
+    {
+        font-size: 1em;
+        font-style: normal;
+    }
+    
+    .classOptionItem 
+    {
+        display: none;
+    }
+    
+    /* Classes/Events: class_details.aspx */
+    .continueRegistrationButton 
+    {
+        font-size: 1.25em;  /* 20 / 16 */
+    }
+    
+    #classdetails_location 
+    {
+    	font-size: 1em;  /* 16 / 16 */
+	}
+
+    #map_canvas
+    {
+    	height: 250px;
+    }
+    
+    #location_getDirectionsButton 
+    {
+        font-size: 1.25em;
+    }
+    
+    /*-- Classes and Events: class_signup.aspx --*/
+    #class_signup_returnButtonDetails,
+    #class_signup_returnButtonClassList,
+    #updateFamilyMembersButton 
+    {
+        font-size: 1.25em;
+    }
+    
+    /*-- class_cart.aspx --*/
+    #cartPageHeader 
+    {
+    	text-align: center;
+    }
+    
+    #classSignUpButton,
+    #classListButton,
+    #completeButton 
+    {
+    	font-size: 1.5em;
+    	margin: 5px;
+    }
+    
+    #cartTable .cartTableRemoveButton 
+    {
+        
+    	padding: 10px 4px 10px 4px;
+        font-size: 1.25em;
+    }
+    
+    .cartBottomButtonRow 
+    {
+        text-align: center;
+    }
+    
+    /* -- class_paymentform.aspx -- */
+    #processPaymentButton
+    {
+        text-align: center;
+    }
+    
+    /* -- class_receipt.aspx -- */
+    #receiptPayeeInfo,
+    #receiptPayeeAccountInfo
+    {
+        float: none;
+        display: block;
+        width: auto;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 768px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 768px) 
+{
+    #classdetails_availability,
+    #classdetails_driving_instructions 
+    {
+        display: none;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 768px
+----------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 640px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 640px) 
+{
+    #searchBox 
+    {    	
+    	margin-left: -160px;
+    }
+    
+    #classesSearchBox #txtsearchphrase
+    {
+        width: 70%;
+    }
+    
+    #cartTable .cartTableRemoveButton 
+    {
+        background: url("") no-repeat scroll 98% center #eeeeee;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 640px
+----------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 480px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) 
+{
+    /* -- Classes and Events: Search -- */
+    #searchBox 
+    {
+    	width: 270px;
+    	margin-left: -210px;
+    }
+    
+    #searchBoxText 
+    {
+    	width: 30px;
+        /* display: none; */
+    }
+    
+    #searchBoxText span
+    {
+        display: none;
+    }
+    
+    #classesSearchBox 
+    {
+    	float: right;
+        width: 100%;
+    }
+    
+    #classesSearchBox #txtsearchphrase
+    {
+        width: 60%;
+    }
+    
+    /* -- Classes and Events -- */
+    #classdetailsnotice 
+    {
+        text-align: center;
+    }
+    
+    /* -- Classes and Events: class_details.aspx -- */
+    .continueRegistrationDiv 
+    {
+        text-align: center;
+    }
+    
+    /* -- Classes and Events: class_signup.aspx -- */
+    .coachLargeInputField 
+    {
+        width: 90%;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 480px
+----------------------------------------------------------------------------------*/

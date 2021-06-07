@@ -1,0 +1,207 @@
+
+<FORM METHOD=POST name="RegisterContact" ACTION="Insert_ContactUser.asp" onsubmit="return CheckMemberRegister();" onSubmit="return checkInput()">
+<div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterContact.reset();"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterContact.submit();" onclick="return  CheckMemberRegister();"><%=langCreate%></a></div>
+<table border="0" width="478" height="480"  class='tablelist' cellpadding='5' cellspacing='0'>
+<tr><th width="143" align=left><%=langProperty%></th><th width="336" align=left><%=langValue%></th></td> <tr>
+	   <tr>
+	<td width="143" height="23"><%=langFirstname%></td>
+    <td width="336" height="23">
+    <input type=text name="firstname" size=25 maxlength=25><font color="#FF0000">*</font></td>
+	    </tr>
+        <tr>
+	<td width="143" height="19"><%=langMiddleInitial%></td>
+    <td width="336" height="19">
+    <input type=text name="middleinitial" size=1 maxlength=1></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23"><%=langLastName%></td>
+    <td width="336" height="23">
+    <input type=text name="lastname" size=25 maxlength=25><font color="#FF0000">*</font></td>
+	    </tr>
+        <tr>
+	<td width="143" height="19"><%=langNickname%></td>
+    <td width="336" height="19">
+	  <input type=text name="nickname" size=25 maxlength=25></td>
+	    </tr>
+	  <!tr>
+	<!td width="143" height="23"></td>
+    <!td width="336" height="23"><input type=hidden name=orgid value=<%=Session("OrgID")%>>
+	   <!select name='orgid'></SELECT>
+	  
+	  </td>
+	  </tr>
+	  <tr>
+	<td width="143" height="23"><%=langTypeEmail%></td>
+    <td width="336" height="23">
+    <input type=text name="email" size=50 maxlength=50> </td>
+	  </tr>
+	    <tr>
+	<td width="143" height="22"><%=langTypeEmail%>&nbsp;(Alternate)</td>
+    <td width="336" height="22">
+    <input type=text name="email2" size=50 maxlength=50></td>
+	  </tr>
+	   <tr>
+	<td width="143" height="22"><%=langcompanyname%></td>
+    <td width="336" height="22">
+    <input type=text name="companyname" size=50 maxlength=50></td>
+        </tr>
+	    <tr>
+	<td width="143" height="22"><%=langJobTitle%></td>
+    <td width="336" height="22">
+	  <input type=text name="jobtitle" size=50 maxlength=50></td>
+	  </tr>
+        <tr>
+	<td width="143" height="22"><%=langDepartment%></td>
+    <td width="336" height="22">
+    <input type=text name="department" size=50 maxlength=50></td>
+        </tr>
+		
+	    <tr>
+	<td width="143" height="22"><%=langHomeAddress%></td>
+    <td width="336" height="22">
+	  <input type=text name="homeaddress" size=50 maxlength=250></td>
+	  </tr>
+        <tr>
+	<td width="143" height="22"><%=langBusinessAddress%></td>
+    <td width="336" height="22">
+	  <input type=text name="businessaddress" size=50 maxlength=250></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23"><%=langHomePhone%></td> 
+    <td width="336" height="23">
+    <input type=text name="homenumber" size=20 maxlength=20>
+
+	</td>
+	    </tr>
+        <tr>
+	<td width="143" height="23"><%=langBusinessPhone%></td> 
+    <td width="336" height="23">
+    <input type=text name="businessnumber" size=20 maxlength=20> </td>
+	    </tr>
+        <tr>
+	<td width="143" height="23"><%=langMobileNumber%></td> 
+    <td width="336" height="23">
+    <input type=text name="mobilenumber" size=20 maxlength=20> </td>
+	    </tr>
+        <tr>
+	<td width="143" height="22"><%=langPagerNumber%></td>
+    <td width="336" height="22">
+    <input type=text name="pagernumber" size=20 maxlength=20></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23"><%=langFaxNumber%></td> 
+    <td width="336" height="23">
+    <input type=text name="faxnumber" size=20 maxlength=20> </td>
+	    </tr>
+    <tr>
+	<td width="143" height="22"><%=langBirthday%></td>
+    <td width="336" height="22">
+    <input type=text name="birthday" size=10 maxlength=10><I><%=langDateFormat%></I></td>
+	  </tr>
+    <tr>
+	<td width="143" height="22"><%=langWebPage%></td>
+    <td width="336" height="22">
+    <input type=text name="webpage" size=50 maxlength=250></td>
+	  </tr>
+</table>
+<div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterContact.reset();"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterContact.submit();" onclick="return  CheckMemberRegister();"><%=langCreate%></a></div>
+</FORM>    
+ <p><font color="#FF0000">* </font><%=lanRegister_requred%></p>
+<%
+sub ListOrganization
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 'adUseClient
+rs.CursorType = 3 'adOpenStatic
+openstr="select OrgID,OrgName from Organizations" 
+'response.write openstr
+rs.Open openstr,,, 2 'adCmdTable
+rs.movefirst
+while not rs.eof
+response.write "<option value="&rs("orgid")&">"&rs("orgname")&"</option>"
+rs.movenext
+wend
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+end sub %>
+
+
+<script language="JavaScript">
+
+
+
+function CheckMemberRegister()
+				{
+			if (document.RegisterContact.firstname.value == "")
+					{
+						alert("<%=langFirstname&" "&lanRegister_requred%>");
+						document.RegisterContact.firstname.focus();
+					return false;				
+					}					
+
+					if (document.RegisterContact.lastname.value == "")
+					{
+						alert("<%=langlastname&" "&lanRegister_requred%>");
+						document.RegisterContact.lastname.focus();
+					return false;				
+					}					
+					return true;
+				}
+
+ function validateDate(str)
+    {
+        var re;
+        re = /^(0[1-9]|1[012]|[1-9])\/(3[01]|0[1-9]|[1-9]|[12]\d)\/\d{2}$/;        
+        if (re.test(str) == true)
+		{
+          //  alert('Valid date');
+			return true;
+			}
+        else
+        {
+            alert('Invalid date');
+     //       document.all.RegisterNormal.birthday.focus();
+			return false
+        }
+    }
+
+
+ function validatePhoneNumber(str)
+    {
+        var re;
+   re = /^\(?\d{3}\)?([-\/\.])?\d{7}(-\d{4})?$/;       
+        if (re.test(str) == true)
+		{
+          //  alert('Valid date');
+			return true;
+			}
+        else
+        {
+            alert("<%=langInvalidPhone%>");
+     //       document.all.RegisterContact.birthday.focus();
+			return false
+        }
+    }
+
+	function validateUserName(str)
+    {
+        var re;
+        re = /^[0-9a-zA-Z_-]{4,20}$/;
+        if (re.test(str) == true)
+		{
+          //  alert('Valid date');
+			return true;
+			}
+        else
+        {
+            alert('<%=langUserNameRequired%>');
+            document.all.RegisterContact.username.focus();
+			return false
+        }
+    }
+//--> 
+</script>

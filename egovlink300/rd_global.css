@@ -1,0 +1,1009 @@
+﻿body {
+   margin:  0;
+   padding: 0;
+}
+
+img {
+   max-width: 100%;
+}
+
+.fieldset 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.fieldset legend
+{
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+#wrapper_header,
+#wrapper_content,
+#wrapper_footer {
+   border:     0pt solid #000000;
+   font-style: normal;
+   font-size:  100%;
+}
+
+#header,
+#nav-wrap,
+#welcome_info,
+#content,
+#wrapper_footer {
+   border: 0pt solid #ff0000;
+}
+
+#wrapper_body,
+#wrapper_header,
+#header,
+#wrapper_footer {
+   width: 100%;  /* 800px */
+}
+
+/*--------------------------------------------------------------------------------
+BEGIN: Navigation
+----------------------------------------------------------------------------------*/
+/* -- Navigation: Main Menu -- */
+#nav-wrap
+{
+    background-color: #eeeeee;
+    border-top: 1pt solid #000000;
+    border-bottom: 1pt solid #000000;
+}
+
+#menu-icon 
+{
+    /* display: block; /* show menu icon */
+    width: 190px;  /* width is 200px, but with padding-right we need to adjust it. */
+    margin-left: 2.5%; /* (20px / 800px) * 100 */
+    padding: 4px 0 4px 10px;
+    background-color: #c0c0c0;
+    border-left: 1pt solid #000000;
+    border-right: 1pt solid #000000;
+	  border-top-left-radius: 10px;
+	  border-top-right-radius: 10px;
+	  -moz-border-radius-topleft: 10px;
+	  -moz-border-radius-topright: 10px;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+    font-size: 0.75em;
+    cursor: pointer;
+}
+
+#navmenu 
+{
+	display: none; /* visibility will be toggled with jquery */
+    width: 200px;
+    margin: 0 0 0 2.5%;  /* (20px / 800px) * 100 */
+    padding: 0;
+	position: absolute;
+	z-index: 100;
+	list-style: none;
+	background-color: #c0c0c0;
+	border-left: 1pt solid #000000;
+    border-right: 1pt solid #000000;
+    border-bottom: 1pt solid #000000;
+       border-bottom-left-radius: 5px;
+       border-bottom-right-radius: 5px;
+       -moz-border-radius-bottomleft: 5px;
+       -moz-border-radius-bottomright: 5px;
+       -webkit-border-bottom-left-radius: 5px;
+       -webkit-border-bottom-right-radius: 5px;
+}
+
+#navmenu li 
+{
+    border-top: 1pt solid #000000;
+}
+
+#navmenu li a 
+{
+    display: block;
+    text-decoration: none;
+    padding: 5px 5px 5px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 0.75em;  /* 12 / 16 */
+}
+
+#navmenu li a:hover 
+{
+    background-color: #404040;
+    color: #ffffff;
+}
+
+/* -- Navigation: Submenu -- */
+/* BEGIN: these are the option in the submenu bar: Quick links, categories, etc */
+#submenu_nav 
+{
+    margin: 10px 10px 10px 0;
+    text-align: right;
+}
+
+#submenu_options
+{
+	list-style: none;
+	margin: 0;
+    white-space: nowrap;
+}
+
+#submenu_options li
+{
+	display: inline;
+	padding: 2px 2px 2px 4px;
+	cursor: pointer;
+	border-top: 1pt solid #808080;
+    border-right: 1pt solid #808080;
+    border-bottom: 1pt solid #808080;
+    background-color: #c0c0c0;
+      background: -moz-linear-gradient(top,#eeeeee,#c0c0c0);  /* Firefox */
+      background: -webkit-gradient(linear,left top,left bottom, from(#eeeeee), to(#c0c0c0));  /* Safari, Chrome */
+      filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#c0c0c0');  /* Internet Explorer (<= 5) */
+      -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#c0c0c0')';  /* Internet Explorer (8) */
+    font-family: Verdana, sans-serif;
+    font-size: 0.75em;  /* 12 / 16 */
+}
+
+#submenu_options li:hover 
+{
+    background: #eeeeee;
+}
+
+.submenu_option_selected
+{
+    background: #ffffff !important;
+}
+
+#firstOption 
+{
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+    border-left: 1pt solid #808080;
+    border-right: 0pt solid #808080 !important;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	-moz-border-radius-topleft: 5px;
+	-moz-border-radius-bottomleft: 5px;
+}
+
+.lastOption 
+{
+    border-right: 1pt solid #808080;
+	border-top: 1pt solid #808080;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	-moz-border-radius-topright: 5px;
+	-moz-border-radius-bottomright: 5px;
+}
+
+.submenu_dropdown
+{
+    display: inline;
+    background: url('./rd_classes/submenu-dropdown_arrow.png') no-repeat 0px center;
+    margin-left: 4px;
+}
+/* END: these are the option in the submenu bar: Quick links, categories, etc */
+
+/* BEGIN: these are the dropdrown lists/details for each option in the submenu bar  */
+#submenu_nav_lists 
+{
+    position: absolute;
+    float: right;
+    width: 100%;
+    text-align: right;
+}
+
+#submenu_lists 
+{
+    position: relative;
+    float: right;
+    min-width: 200px;
+    margin: 2px 12px 0 0;
+    font-family: Verdana, sans-serif;
+}
+
+#submenu_quicklinks_list,
+#submenu_categories_list
+{
+    display: none;
+	border: 1pt solid #808080;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	background-color: #ffffff;
+	text-align: left;
+	margin-top: -2px;
+}
+
+/* -- Submenu: Option Lists -- */
+/* -- included: Quick Links, Class/Events: Categories... -- */
+#loggedinlinks_list,
+#subcategorymenu_list 
+{
+	list-style: none;
+	margin: 0px;
+	padding: 4px 0 4px 0;
+    font-family: Verdana, sans-serif;
+    font-size: 0.75em;  /* 12 / 16 */
+}
+
+#loggedinlinks_list li a,
+#subcategorymenu_list li a 
+{
+    display: block;
+    border-top: 1pt solid #ffffff;
+    border-bottom: 1pt solid #ffffff;
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 0px;
+}
+
+#loggedinlinks_list li a:hover,
+#subcategorymenu_list li a:hover 
+{
+    border-top: 1pt solid #808080;
+    border-bottom: 1pt solid #808080;
+    background-color: #c0c0c0;
+    text-decoration: none;
+}
+
+/* END: these are the dropdrown lists/details for each option in the submenu bar  */
+
+/*--------------------------------------------------------------------------------
+END: Navigation
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Content
+----------------------------------------------------------------------------------*/
+#wrapper_content 
+{
+    border: 0pt solid #ff0000;
+}
+
+#content 
+{
+    border: 0pt solid #000000;
+    /*margin-left: 2.5%;  /* (20 / 800) * 100 ) */
+    /*padding: 0 5px 0 5px;*/
+    padding: 0px;
+    font-family: Verdana,sans-serif;
+    font-size: 0.75em;  /* 12 / 16 */
+}
+/*--------------------------------------------------------------------------------
+END: Content
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Footer
+----------------------------------------------------------------------------------*/
+
+#wrapper_footer 
+{
+    width: 100%;
+}
+
+#footer_fadeline_top 
+{
+    background-color: #666666;
+    height: 0.25em;
+}
+
+#footer_fadeline_bottom 
+{
+    background-color: #ffffff;
+    height: 0.25em;
+}
+
+#footer
+{
+    background-color: #c0c0c0;
+    text-align: center;
+    color: #000000;
+    font-family: Verdana,sans-serif;
+    font-size: 0.6875em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#footer a 
+{
+    color: #000000;
+}
+
+#bottom_navigation 
+{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.625em;
+}
+
+#bottom_navigation a 
+{
+    white-space: nowrap;
+}
+
+#google_translator 
+{
+    margin-top: 0.625em;
+}
+
+/*--------------------------------------------------------------------------------
+END: Footer
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+END: General Styles
+----------------------------------------------------------------------------------*/
+
+/* Used to display the floating messages next to fields used in form validation */
+.msg        
+{
+    display: none; 
+    position: absolute; 
+    z-index: 200; 
+    background: url('../images/msg_arrow.GIF') left center no-repeat; 
+    padding-left: 7px; 
+    font: 12px Verdana, Arial, Helvetica, sans-serif; 
+    color: #000000;
+}
+
+.msgcontent 
+{
+    display: block; 
+    background: #f3e6e6; 
+    border: 2px solid #924949; 
+    border-left: none; 
+    padding: 5px; 
+    min-width: 150px; 
+    max-width: 250px; 
+    font: 12px Verdana, Arial, Helvetica, sans-serif; 
+    color: #000000;
+}
+
+/* rd_user_login.aspx */
+#returnButtonActionLine 
+{
+	margin: 5px;
+	cursor: pointer;
+}
+
+#loginContainer 
+{
+	width: 420px;
+	margin: 10px auto 10px auto;
+}
+
+#loginMsg_doNotKnock,
+#loginDisplayMsg 
+{
+	background-color: #efefef;
+	border: 1pt solid #c0c0c0;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+}
+
+#loginDisplayMsg 
+{
+	font-weight: bold;
+}
+
+#loginMsg_dnk_title 
+{
+	margin-bottom: 5px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.login_fieldset 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.login_fieldset legend
+{
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+#loginMsg 
+{
+/*
+    border: 1pt solid #000000;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #dd0000;
+    margin: 5px;
+    padding: 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: #ffff00;
+*/
+    border: 1px solid #924949;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background: #f3e6e6;
+    margin: 10px;
+    padding: 5px; 
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    color: #000000;
+}
+
+#loginMsgProcessing 
+{
+    text-align: right;
+    font-size: 1em;
+    color: #ff0000;
+}
+
+#userLoginTable 
+{
+	margin: 10px auto 10px auto;
+}
+
+#userLoginTable th 
+{
+	white-space: nowrap;
+	text-align: left;
+	padding: 2px;
+}
+
+#userLoginTable td 
+{
+	padding: 2px;
+}
+
+.userLoginOtherLink
+{
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    /* background: #ffffff url(rd_classes/bg_btn_bar.png) no-repeat 98% center; */
+    background: #eeeeee url('rd_classes/bg_btn_bar.png') no-repeat 98% center;
+    height: 25px;
+    padding: 8px 0px 0px 10px;
+    margin: 5px 0px 0px 0px;
+    font-size: 1em;  /* 16 / 16 */
+}
+
+.userLoginOtherLink:hover 
+{
+    border: 1pt solid #404040;
+    background-color: #c0c0c0;
+    cursor: pointer;    
+}
+
+#problemTextDiv 
+{
+    display: none;
+}
+
+#signInButton 
+{
+    cursor: pointer;
+}
+
+/* rd_forgot_password.aspx */
+#forgotpwd_error 
+{
+    margin: 20px 0px 20px 0px;
+}
+
+#forgotpwd_error span
+{
+	background-color: #ff0000;
+	border: 1pt solid #404040;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+	margin: 10px;
+	padding: 5px;
+	font-weight: bold;
+	color: #ffff00;
+}
+
+.forgotpwd_fieldset 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.forgotpwd_fieldset legend
+{
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;  /* 20 / 16 */
+    color: #800000;
+}
+
+#passwordMsg 
+{
+	margin-bottom: 10px;
+}
+
+#forgotPassword #email
+{
+	width: 300px;
+}
+
+#lookupButton
+{
+    cursor: pointer;
+}
+
+#loginButton 
+{
+    margin: 10px;
+    cursor: pointer;
+}
+
+/*-- rd_classes/ProcessFailure.aspx --*/
+#processDeclinedDetails 
+{
+    margin-top: 10px;
+}
+
+#processDeclinedReason 
+{
+    margin-bottom: 10px;
+}
+
+.processDeclinedTable 
+{
+    margin-top: 10px;
+}
+
+.processDeclinedSectionTitle
+{
+    font-family: Verdana, Sans-Serif;
+    font-size: 1.25em;
+    font-weight: bold;
+}
+
+
+
+/* rd_register.aspx */
+/*
+#registerInfo 
+{
+    font-size: 1em;
+    margin: 10px;
+}
+
+#registerWelcomeMsg 
+{
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#registerRegistrationMsg,
+#registerTransactionMsg 
+{
+    margin-bottom: 10px;
+}
+
+#registerFields 
+{
+    border-top: 1pt solid #c0c0c0;
+    background-color: #eeeeee;
+    padding: 10px;
+}
+
+.register_fieldset 
+{
+    background-color: #ffffff;
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 5px 5px 5px 5px;
+}
+
+.register_fieldset legend
+{
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #ffffff;
+    padding: 2px 5px;
+    font-family: Verdana, sans-serif;
+    font-size: 1.25em;
+    color: #800000;
+}
+
+#registerErrorMsg 
+{
+    border: 1pt solid #000000;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #ff0000;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: #ffff00;
+}
+
+#requiredFieldMsg 
+{
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    background-color: #eeeeee;
+    margin: 10px;
+    padding: 10px;
+    font-size: 1em;
+    color: #000000;
+}
+
+#registrationTable 
+{
+    margin-top: 10px;
+    font-size: 1em;
+}
+
+#registrationTable td 
+{
+    padding: 2px;
+}
+
+.requiredField 
+{
+    color: #ff0000;
+}
+
+.registerLabel 
+{
+    white-space: nowrap;
+    text-align: right;
+    font-weight: bold;
+}
+
+.registerInputFieldLarge 
+{
+    width: 300px;
+}
+
+#registerAddressInfo 
+{
+    padding-top: 10px;
+}
+
+.registerAddresses 
+{
+    white-space: nowrap;
+}
+
+#residentLargeAddressFields
+{
+    white-space: normal;
+    background-color: #eeeeee;
+    border: 1pt solid #c0c0c0;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    padding: 10px;
+    text-align: left;
+}
+
+#registerProblemField
+{
+    display: none;
+}
+
+#registerSubmitButton 
+{
+    margin: 10px 0px 10px 0px;
+    cursor: pointer;
+}
+
+#registerAddressErrorMsg 
+{
+    background-color: #ffe4e1;
+    border: 1pt solid #000000;
+      border-radius: 5px;
+      -moz-border-radius: 5px;
+      -webkit-border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    text-align: left;
+}
+
+#registerAddressErrorMsg strong 
+{
+    color: #ff0000;
+}
+
+#registerDisplayAddressEntered 
+{
+    color: #ff0000;
+}
+
+#oldstnumber,
+#stname 
+{
+    display: none;
+}
+
+#registerValidateAddressButton,
+#registerValidPickButton,
+#registerInvalidPickButton,
+#registerCancelPickButton 
+{
+    cursor: pointer;
+}
+*/
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 719px) 
+{
+	/* -- Main Navigation -- */
+	#menu-icon
+	{
+		background: #c0c0c0 url('./rd_classes/menu-icon_white.png') no-repeat 10px center;
+        width: 160px;
+        padding: 8px 0 8px 40px;
+        font-size: 1.25em;
+	}
+	
+	#navmenu li a
+	{
+		font-size: 1em;
+		padding: 10px;
+	}
+	
+	/* -- SubMenu -- */
+	#submenu_options 
+	{
+		padding: 4px 5px 4px 5px;
+	}
+	
+	#submenu_options li 
+	{
+		font-size: 1em;
+    	padding: 4px 2px 4px 5px;
+	}
+	
+	#submenu_options li:hover 
+	{
+	    /* We are setting the background to the gradient on the "hover" on mobile devices
+           because when the button is pressed it keeps the "hover-color" selected on the button. */
+	    background: -moz-linear-gradient(top,#eeeeee,#c0c0c0);  /* Firefox */
+	    background: -webkit-gradient(linear,left top,left bottom, from(#eeeeee), to(#c0c0c0));  /* Safari, Chrome */
+	    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#c0c0c0');  /* Internet Explorer (<= 5) */
+	    -ms-filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr='#eeeeee',endColorstr='#c0c0c0')';  /* Internet Explorer (8) */
+	}
+	
+	#submenu_lists
+	{
+	    margin: 0 12px 0 0;
+	}
+	
+	/* -- Submenu: Option Lists -- */
+    /* -- included: Quick Links, Class/Events: Categories... -- */
+	#loggedinlinks_list,
+    #subcategorymenu_list 
+    {
+        font-size: 1em;
+    }
+    
+	#loggedinlinks_list li a,
+    #subcategorymenu_list li a  
+	{
+	    padding: 8px;
+    }
+    
+    /* -- Footer -- */
+    #bottom_navigation 
+    {
+        display: none;    
+    }
+    
+    /* -- user_login.aspx -- */
+    #userLoginTable #email,
+    #userLoginTable #password 
+    {
+        height: 25px;
+        font-size: 1em;
+    }
+    
+    #signInButton 
+    {
+        font-size: 1.5em;  /* 20 / 16 */
+    }
+    
+    .userLoginOtherLink 
+    {
+        height: 35px;
+        padding: 14px 0px 0px 10px;
+        font-size: 1.25em;  /* 20 / 16 */
+    }
+    
+    /*-- rd_register.aspx --*/
+    #registerWelcomeMsg,
+    #registerErrorMsg,
+    #requiredFieldMsg 
+    {
+        text-align: center;
+    }
+    
+    #registrationTable input,
+    #registrationTable select 
+    {
+        font-size: 1.25em;
+    }
+    
+    #registerButtonDiv 
+    {
+        text-align: center;
+    }
+    
+    #registerSubmitButton 
+    {
+        font-size: 1.5em;
+    }
+    
+    .inputFieldHighlight 
+    {
+        background-color: #FFE4E1;
+        border-color: #ff0000;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 640px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 640px) 
+{
+    .registerInputFieldLarge,
+    #registrationTable select
+    {
+        width: 90%;
+    }
+    
+    .registerLabel 
+    {
+        white-space: normal;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 640px
+----------------------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 480px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 480px) 
+{
+    /* -- Navigation: Submenu -- */
+    #submenu_lists 
+    {
+        min-width: 90%;
+    }
+    
+    #submenu_options 
+    {
+        text-align: center;
+    }
+    
+    .submenu_dropdown 
+    {
+        display: none;
+    }
+    
+    /* -- Content -- */
+    #content
+    {
+        margin-left: 0px;
+    }
+    
+    /* -- user_login.aspx -- */
+    #loginContainer 
+    {
+    	width: 100%;
+    }
+    
+    .forgotpwd_fieldset  
+    {
+    	font-size: 1.25em;
+    }
+    
+    #forgotPassword #email
+    {
+    	width: auto;
+    	height: 1.25em;
+    	font-size: 1.52
+	}
+		fieldset legend, #receiptTransactionsFieldset
+		{
+			width:95% !important;
+		}
+		.offeringActivitiesContainer, .cartTableContainer
+		{
+			overflow:scroll;
+			width:300px;
+			margin-left:auto;
+			margin-right:auto;
+
+		}
+		.respTable td
+		{
+			display:block;
+		}
+		#classEmergencyInfo
+		{
+			margin-left:0 !important;
+			margin-right:0 !important;
+		}
+		#cartDetails>fieldset, #receiptTransactionsFieldset,  #receiptTransactionsFieldset>fieldset
+		{
+			margin:0;
+			padding:0;
+		}
+		#userLoginTable input[type="text"], 
+		#userLoginTable input[type="password"]
+		{
+			width:100% !important;
+		}
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 480px
+----------------------------------------------------------------------------------*/

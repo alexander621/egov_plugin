@@ -1,0 +1,167 @@
+
+
+#receiptlinks, #topbuttons, #idControls, #topprintbutton, table#pageheader, table#logheader, #mainmenuitems, #topbackbutton, #rostershowtype {
+	display: none !important;
+	}
+
+.noprint, .menu, .class_separator, .button {
+	display: none !important;
+	}
+
+hr.teambreak {
+	display: none !important;
+	}
+
+div.filterselection {
+	display: none !important;
+	}
+
+#content { 
+	padding: 0; 
+	width: 600px; 
+	}
+
+#content table { 
+	position: relative; 
+	top: 0; 
+	left: 0; 
+	width: 600px; 
+	background: #fff;
+	}
+
+table#accountchange {
+	margin: 0;
+	padding: 0;
+	margin-top: 1em;
+	width: 300px;
+	}
+
+#topright {
+	float: right;
+	margin-bottom: 6px;
+	padding-right: 160px;
+	}
+
+#cart_table th {
+	background-color: #fff;
+	color: #000;
+	}
+
+#content table#classcount {
+	width: 300px;
+	}
+
+div.class_start {
+	page-break-before: always;
+	}
+
+div.rentalsstart {
+	page-break-before: always !important;
+	}
+
+table#receiptpayments {
+	padding: 0;
+	margin: 0;
+	width: 350px;
+	}
+
+#receipttopright {
+	float: right;
+	margin-bottom: 1em;
+	}
+
+#content table.receiptdetails {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	}
+
+table.receiptdetails td {
+	height: 2em;
+	}
+
+table.receiptdetails td.times {
+	height: 4em;
+	}
+
+table.receiptdetails td.firstcell {
+	padding-left: 1em;
+	width: 400px;
+	}
+
+div#receiptdetailtotal {
+	width: 100%;
+	text-align: right;
+	}
+
+p.receiptnotes {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	margin-bottom: 1em;
+	}
+
+p.rosterdetails {
+	padding: 0;
+	margin: 0;
+	padding-left: 2em;
+	}
+
+table#rosterprinttable {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	width: 100%;
+	border: 1px solid #000000;
+	}
+
+table#rosterprinttable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	cursor: pointer;
+	}
+
+table#rosterprinttable tr.altrow {
+	background-color: #ececec;
+	}
+
+div.class_time {
+	page-break-after: always !important;
+	}
+
+p.receiptteamdisplay {
+	page-break-before: always !important;
+	}
+
+table#receiptdatesandfees {
+	width: 100%;
+	}
+
+table#receiptreservationfees {
+	width: 100%;
+	}
+
+table#receiptfeetotal,
+table#receiptfeetotal2 {
+	width: 100%;
+	}
+
+#receiptfeetotal2 {
+	border-top: 1px solid #000000;
+    }
+
+#receiptRowPayments,
+#receiptRowTotalPaid,
+#receiptRowTotalRefunds {
+    border-bottom: 1px solid #808080;
+    }
+/*
+table.showtimes {
+	width: 100% !important;
+	}
+*/

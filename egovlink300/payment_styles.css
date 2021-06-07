@@ -1,0 +1,28 @@
+/* Payments Style Sheet */
+
+div#notfoundmsg
+{
+	text-align: left;
+	width: 100% !important;
+	font-size: larger !important;
+	font-weight: bold !important;
+	color: red !important;
+	margin-top: 1em !important;
+}
+
+div#alreadyrenewedmsg
+{
+	text-align: left;
+	width: 100% !important;
+	font-size: larger !important;
+	font-weight: bold !important;
+	color: red !important;
+	margin-top: 1em !important;
+}
+
+#findmebtn
+{
+	padding: 0 2em !important;
+}
+
+

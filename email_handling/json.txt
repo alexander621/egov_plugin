@@ -1,0 +1,15 @@
+{ 
+	"Type" : "Notification", 
+	"MessageId" : "de6f2042-1e6f-56e3-a7a0-6c7c00383eed", 
+	"TopicArn" : "arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email", 
+	"Message" :
+	"{\"notificationType\":\"Bounce\",\"bounce\":{\"bounceType\":\"Transient\",\"bounceSubType\":\"General\",\"bouncedRecipients\":[{\"emailAddress\":\"bounce@simulator.amazonses.com\",\"action\":\"failed\",\"status\":\"5.1.0\",\"diagnosticCode\":\"smtp;
+	554 5.1.0 Sender
+	denied\"}],\"timestamp\":\"2017-05-02T19:05:13.151Z\",\"feedbackId\":\"0100015bca8d5a66-d656f9b1-c54f-446d-b8c1-23f67f41f042-000000\",\"remoteMtaIp\":\"74.203.66.67\",\"reportingMTA\":\"dsn;a8-200.smtp-out.amazonses.com\"},\"mail\":{\"timestamp\":\"2017-05-02T19:05:06.000Z\",\"source\":\"noreplies@eclink.com\",\"sourceArn\":\"arn:aws:ses:us-east-1:805260467785:identity/eclink.com\",\"sourceIp\":\"54.86.37.137\",\"sendingAccountId\":\"805260467785\",\"messageId\":\"0100015bca8d4001-14d2e40e-5d78-444b-9de1-14ef0a75e160-000000\",\"destination\":[\"bounce@simulator.amazonses.com\"]}}",
+	"Timestamp" : "2014-07-14T18:06:15.311Z", 
+	"SignatureVersion" : "1", 
+	"Signature" : "EQvYzdazF3TK2DKfnHK9/sHChphH6VSQnEF7YnpdHPmM5V4QGJiPt9P8+GI5HoVsL1cpKR5dW5CbDlgST9Y64mHi7FIhdRubIjJR5CaRNyy4VRpAwEau/mzBCh3kwUH52XE2vFeR2XqCUJVN/UQcwEAfEFYGm9CaZJKwsCvDLBtB/UpX5X+0kTdk/QmSlEnVtRyjBoYFV/BGXUZBcskwPn6PgylDCYBnPJLdBBGTP4k9OsNYDrBfVhivPcpjOc4w82gT1Ikhy+HJ2OAeGOC8w6WTqJJC6i0wGutanpG+F4oo6XvbCkmaxcODrB2hWtOg5mzZkH5Zvw5vv81dvz/jEg==", 
+	"SigningCertURL" : "https://sns.us-east-1.amazonaws.com/SimpleNotificationService-e372f8ca30337fdb084e8ac449342c77.pem", 
+	"UnsubscribeURL" : "https://sns.us-east-1.amazonaws.com/?Action=Unsubscribe&SubscriptionArn=arn:aws:sns:us-east-1:805260467785:Automate_Egov_Email:e4190415-2cbf-4a41-a9da-5b4ac47b30f5" 
+
+}

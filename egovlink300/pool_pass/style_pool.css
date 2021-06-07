@@ -1,0 +1,167 @@
+/* RECREATION RESERVATION FORM */
+#content {
+			width: 760px;
+		}
+
+#centercontent {	width: 760px;	
+					font-family: verdana,sans-serif;
+					float: left;
+				}
+
+
+#leftcontent {	width: 500px;	
+					font-family: verdana,sans-serif;
+					float: left;
+				}
+
+#poolformtitle { 
+				background-color: #8a8ab0; 
+				/* background-color:#9999CD; */
+				border-top: solid #000000 1px;
+				border-right: solid #000000 1px;
+				border-left: solid #000000 1px; 
+				padding:5px;
+				font-weight:bold;
+				font-family: verdana,sans-serif;
+				font-size:12px;
+				margin: 0;
+				color: #ffffff;
+			}
+
+.reserveformtitle { 
+					background-color: #8a8ab0; 
+					color: #fff;
+				}
+
+#poolforminputarea {	background-color:#ececf2; 
+						border: solid #000000 1px; 
+						padding:5px;
+						padding-right: 15px;
+						padding-bottom: 20px;
+					}
+
+.reserveforminputarea {
+						background-color:#ececf2;
+						}
+
+.reserveformbutton { 
+					background-color: #8a8ab0; 
+					color: #fff;
+					cursor: pointer;
+					}
+
+#poolfooter { 
+				margin: 0;
+				padding: 20px;
+			}
+
+#poolformfooter a { color: white;  
+					text-align: center;
+				}
+
+#poolformfooter a:hover { 
+							text-decoration: none;
+						}
+
+#rightpicks {
+				float: right;
+				border: 1px solid black;
+				width: 200px;
+				margin-top: 1em;
+			}
+
+div#rightpicks_altlayout {
+                float:       right;
+                border:      1px solid black;
+                width:       250px;
+                font-family: verdana,sans-serif;
+                font-size:   12px;
+                text-align:  left;
+                         }
+
+div.picktitle	{
+				background-color:#8a8ab0; 
+				padding:5px;
+				font-weight:bold;
+				font-family: verdana,sans-serif;
+				font-size:12px;
+				margin: 0;
+				color: #fff;
+			}
+
+div.pickchoice {	background-color:#ececf2; 
+						border-top: solid #000000 1px; 
+				}
+div.rate	{
+			border: 1px solid orange;
+			text-align: right;
+		}
+dir.rate input { text-align: left; }
+span.poolrate	{
+				text-align: right;
+				margin-left: 5px;
+				border: 1px solid red;
+			}
+
+table.picktable           { width: 190px; }
+table.picktable_altlayout { width: 250px; }
+
+td.pickprice { text-align: right; }
+
+div.reserveforminputarea p { 
+	margin: 0; 
+	padding: 10px 0 5px 10px; 
+	}
+
+div.reserveforminputarea table {
+	margin-top: 10px; 
+	}
+
+
+p#periodpick { float: right; }
+
+#loginButton {
+   width:      75px;
+   text-align: center;
+   }
+
+#registerButton {
+   width:      150px;
+   text-align: center;
+   }
+
+#membershipTerms legend{
+   color: #800000;
+   }
+
+#membershipTypes {
+   font-size:   10pt;
+   font-weight: bold;
+   }
+
+#membershipDropdownOptions {
+   float:        right;
+   padding-left: 5px;
+   }
+
+#continueButton {
+   margin-top: 10px;
+   width:      200px;
+   text-align: center;
+   }
+
+form #continueButton
+{
+   margin-top: 10px !important;
+   float:right;
+}
+
+#membershipRenewals {
+   width: 540px
+   }
+
+#renewalCell {
+   font-size:   8pt;
+   font-family: verdana,sans-serif; 
+   color:       #ffffff
+   }

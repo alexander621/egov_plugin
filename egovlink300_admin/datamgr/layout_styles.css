@@ -1,0 +1,131 @@
+/* Layout Styles ------------------------------------------------------------ */
+  .column {
+     margin-right: 0.5%;
+     height:       50px;
+     background:   #c0c0c0;
+     border:       1pt dotted #808080;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;
+     /*float:        left;*/
+  }
+
+  .column .dragbox,
+  .column .section {
+     background: #ffffff;
+     border:     1px solid #800000;
+     margin:     5px 2px 5px;
+     padding:    1px;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;
+  }
+
+  .column .dragbox h2,
+  .column .section h2 {
+     margin:        0;
+     font-size:     12px;
+     padding:       5px;
+     background:    #f0f0f0;
+     color:         #000000;
+     border-bottom: 1px solid #eeeeee;
+     font-family:   Verdana;
+  }
+
+  .column .dragbox h2 {
+	 cursor: move;
+  }
+
+  .dragbox-content td,
+  .section-content td {
+     /* min-height:   100px; */
+     font-family:  'Lucida Grande', Verdana;
+     font-size:    0.9em;
+     line-height:  1.5em;
+     padding-left: 2px;
+  }
+
+  .layoutfieldset {
+     background:    #ffffff;
+     border:        1pt dotted #808080;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;
+  }
+
+  .layoutfieldset_noborder {
+     background: #ffffff;
+	 border:     0pt solid #ffffff;
+  }
+
+  .layoutfieldset legend,
+  .layoutfieldset_noborder legend {
+     background:    #ffffff;
+     font-size:     12pt;
+     font-weight:   bold;
+     color:         #800000;
+     padding:       0px 2px;
+  }
+
+
+/* Misc Styles ---------------------------------------------------------------- */
+  .fieldset {
+     border: 1pt solid #808080;
+     -webkit-border-radius: 5px;
+     -moz-border-radius:    5px;
+  }
+
+  .redText {
+     color: #800000;
+  }
+
+  .approvalStatus {
+     color: #ff0000;
+  }
+
+  .accountinfo,
+  .ownerinfo {
+     border: 1pt solid #808080;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;     
+  }
+
+  .accountInfo_fieldname,
+  .ownerInfo_fieldname {
+     font-weight: bold;
+  }
+
+  .subCategorySaveButton {
+     padding:    5px 5px;
+     margin:     5px 5px;
+     text-align: center;
+  }
+
+  #subCategoriesList {
+     /* border:  1pt solid #808080; */
+     padding: 2px 2px;
+  }
+
+  #subcategory_instructions {
+     color:         #800000;
+     margin-top:    10px;
+     margin-bottom: 10px;
+  }
+
+  .norecords {
+     padding-top: 10px;
+     color:       #800000;
+     font-weight: bold;
+  }
+
+  .mappoints_sortable .desc, 
+  .mappoints_sortable .asc {
+/*     background-color: #2D6190; */
+     background-color: #2D6190;
+     color:            #ffffff;
+  }
+
+  .mappoints_sortable th {
+     background-color: #6298C7;
+     color:            #000000;
+     border:           1px solid #fff;
+     border-right:     none;
+     text-align:       center
+  }

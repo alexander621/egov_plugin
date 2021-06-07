@@ -1,0 +1,19 @@
+﻿.grid-row {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  color: inherit;
+  background-color: #eee;
+  font-family: Arial;
+  font-weight: bold;
+}
+.grid-row a btn {
+  width: 70px; 
+  padding: 5px;
+}
+.container .grid-row {
+  border-radius: 6px;
+}
+.grid-row .container {
+  max-width: 100%;
+}

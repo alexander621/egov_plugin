@@ -1,0 +1,26 @@
+ #pool_report_links, #topbuttons, #idControls, #topprintbutton, table#pageheader, table#logheader, #mainmenuitems, #topbackbutton {
+	   display: none !important;
+	}
+
+/*
+ .noprint, .menu, .class_separator, .button {
+	  display: none !important;
+	}
+
+#content { 
+	padding: 0; 
+	width: 600px; 
+	}
+
+#content table { 
+	position: relative; 
+	top: 0; 
+	left: 0; 
+	width: 600px; 
+	background: #fff;
+	}
+*/
+
+div.page_start {
+ 	page-break-before: always;
+}

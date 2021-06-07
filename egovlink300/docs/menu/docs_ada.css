@@ -1,0 +1,11 @@
+/* The styles for the documents ADA page */
+
+li.foldheader {
+	list-style-image:url('../open.gif'); 
+	list-style-type: none;
+	font-family: verdana,sans-serif; 
+	font-size: 12px; 
+	font-weight:bold;  
+	}
+
+

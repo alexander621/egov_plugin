@@ -1,0 +1,456 @@
+.not_used {
+	COLOR: #ffcc66; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px; }
+P, li, .main {
+	COLOR: #000000; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px }
+.title {
+	COLOR: #cc0000; font-family: verdana,sans-serif; font-size: 14px; padding-left:5px; font-weight:bold }
+.date, .crumb, .email {
+	COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 10px; padding-left:10px; font-weight:bold }
+.indent20 {
+	padding-left:20px } 
+.nav_bg {
+	BACKGROUND: #ffffff; width: 209px; font-size: 11px; font-weight:bold; padding-left:0px; padding-bottom:3px; padding-top:3px }
+.verdana {
+	COLOR: #000000; font-family: verdana,sans-serif; font-size: 11px; }
+	
+.bluebutton {
+	BACKGROUND: #95acdb; COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold }
+
+a:active {
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 12px; }
+a:LINK {
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 12px; }
+a:visited {
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 12px; }
+a:hover {
+	COLOR: #666666; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 12px; }
+
+A.side:active{
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; padding-left:7px}
+A.side:link{
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; padding-left:7px}
+A.side:visited{
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; padding-left:7px}
+A.side:hover{
+	COLOR: #000099; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; padding-left:7px}
+
+A.top:active{
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; }
+A.top:link{
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; }
+A.top:visited{
+	COLOR: #cc0000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; }
+A.top:hover{
+	COLOR: #000000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 11px; }
+
+A.afooter:active{
+	COLOR: #FFFFFF; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px; }
+A.afooter:link{
+	COLOR: #FFFFFF; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px; }
+A.afooter:visited{
+	COLOR: #FFFFFF;  font-family: verdana,sans-serif; font-size: 10px; }
+A.afooter:hover{
+	COLOR: #FFFFFF;  font-family: verdana,sans-serif; font-size: 10px; }
+
+.subtitle {
+	COLOR: #2E1999; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+.subtitle2 {
+	COLOR: #cc0000; font-family: verdana,sans-serif; font-size: 12px; font-weight:bold }
+font.subtitleOld {
+	COLOR: #cc0000; font-family: verdana,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+
+font.footermenu {color:#FFFFFF;}
+
+/*BUTTONS*/
+
+input.action {text-align:left; background-color: #95acdb; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold; width:75px; cursor:pointer;}
+input.action_100 {background-color: #95acdb; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+div.groupSmall {
+	background-color: #e0e0e0;
+	border: 1px solid #000000; 
+	width: 368px;
+	padding: 15px;
+	margin-bottom: 4em;
+	}
+	
+div.groupSmall400 {
+	background-color: #e0e0e0;
+	border: 1px solid #000000; 
+	width: 384px;
+	padding: 15px 0 15px 20px;
+	margin-bottom: 3em;
+	}
+
+div.box_header2 {
+	font-weight: bold;
+	background-color: #2E1999;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000; 
+	width: 394px;
+	padding: 2px;
+	color: #FFFFFF;
+	margin: 0;
+	}
+
+div.box_header3 {padding:0; background-image:url('/img/button_finish.gif'); font-weight:bold;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:400px;padding:2px;color:#FFFFFF;}
+
+div.box_header4 {
+	font-weight: bold;
+	background-color: #2E1999;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000; 
+	width: 594px;
+	padding: 2px;
+	color:#FFFFFF;
+	margin: 0;
+	}
+
+div.groupSmall4 {
+	background-color:#e0e0e0;
+	border: 1px solid #000000; 
+	width: 594px;
+	padding: 2px;
+	}
+
+div.group {
+	background-color: #e0e0e0;
+	padding: 15px;
+	border: 1px solid #000000; 
+	width: 568px;
+	}
+
+div.box_header5 {font-weight:bold;background-color:#2E1999;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:100%;padding:2px;color:#FFFFFF;}
+
+div.groupSmall2 {
+	background-color: #e0e0e0;
+	border: 1px solid #000000; 
+	width: 578px;
+	padding: 15px 0 15px 20px;
+	margin-bottom: 3em;
+	}
+
+
+div.faqBody {
+	background-color: #e0e0e0;
+	border: 1px solid #000000; 
+	margin-left: 20px;
+	/* width + padding = 500 */
+	width: 470px;
+	padding-left: 15px;
+	padding-right: 15px;
+	}
+
+div.faqBody h4 {
+	font-weight: bold;
+	font-size: 1.5em;
+	margin: 0;
+	}
+
+/* This is to corect a strange behavior in FireFox */
+div.faqBody h4 a:hover {
+	margin: 0;
+	text-decoration: none;
+	color: #000000;
+	font-size: 1em;
+	font-weight: bold;
+	}
+
+/*
+div.faqBody p {
+	border: 1px solid red;
+	}
+*/
+
+div.faqTitle {
+	font-weight: bold;
+	background-color: #2E1999;
+	border-top: 1px solid #000000;
+	border-left: 1px solid #000000;
+	border-right: 1px solid #000000; 
+	/* width + padding = 500 */
+	width: 496px;
+	padding: 2px;
+	color: #FFFFFF;
+	margin-left: 20px;
+	}
+
+div.faqnav {
+	margin-bottom: 1em;
+	margin-top: 2em;
+	text-align: center;
+	}
+
+
+table.box {width:250px;height:150px;}
+td.box_content {padding:0px; border-style:solid;border-color:#000000;border-width:1px;font-family: arial,tahoma;font-size: 12px;color: #000000;}
+td.box_header  {background-color:#2E1999;width:100%; color:#FFFFFF; font-family:verdana,sans-serif; font-size:12px; font-weight:bold; text-align:center;}
+td.box_edge {background-color:#2E1999;}
+td.label {font-weight:bold;}
+
+font.copyright {COLOR: #000000; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px; }
+div.footerboxOld {height:100%;  background-color:#2E1999;COLOR: #FFFFFF; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px;  }
+div.footerbox {background-color:#2E1999;COLOR: #FFFFFF; TEXT-DECORATION: none; font-family: verdana,sans-serif; font-size: 10px;  }
+
+div.warning {font-size:10px;width:600px;font-weight:bold;color:yellow;background-color:red;padding:10px;border: solid #000000 1px;margin-top:10px;margin-bottom:10px;}
+
+
+/* PAYMENT DEFAULT STYLES  */
+font.paymentreturnlink {font-size:14px;font-weight:bold;}
+td.receipt {font-weight:bold; text-align: right;}
+div.box  {border: solid #000000 1px;width:600px;}
+
+font.footer {COLOR: #FFFFFF;  font-family: verdana,sans-serif; font-size: 10px; }
+
+/* FACILITY LIST */
+A.subcategorymenu:active{COLOR: #000000; font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:link{COLOR: #000000;  font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+A.subcategorymenu:visited{COLOR: #000000;  font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:hover{TEXT-DECORATION: underline;COLOR: #000000;  font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+div.subcategorymenu {background-color:#e0e0e0; border: solid #000000 1px; width:760px; padding:5px;font-weight:bold;}
+font.subcategorymenuheader {font-family: verdana,sans-serif; font-size: 10px;font-weight:bold; }
+table.template {width:700px;}
+.templateimg {margin: 0px 20px 20px 20px;}
+.bottomrow {padding: 20px 0px 0px 00px;}
+
+
+/* RECREATION CATEGORIES */
+.categorytitle {font-family: verdana,sans-serif;font-size:18px;font-weight:bold;}
+font.categorysubtitle {font-family: verdana,sans-serif;font-size:14px;font-weight:bold;}
+font.categorydescription {font-family: verdana,sans-serif;font-size:12px;}
+img.categoryimage {border: 1px solid #000000;height:100px;width:100px;margin:0 10px 10px 10px;}
+div.categorygroup {cursor: pointer;margin-bottom:10px; width:760px;}
+A.categorytitle:active{COLOR: #000000; font-family: verdana,sans-serif;font-size:18px;font-weight:bold;}
+A.categorytitle:link{COLOR: #000000;  font-family: verdana,sans-serif;font-size:18px;font-weight:bold;}
+A.categorytitle:visited{COLOR: #000000; font-family: verdana,sans-serif;font-size:18px;font-weight:bold; }
+A.categorytitle:hover{TEXT-DECORATION: underline;COLOR: #000000; font-family: verdana,sans-serif;font-size:18px;font-weight:bold; }
+
+
+/* RECREATION RESERVATION CALENDAR */
+.calheader {
+	background-color:#e0e0e0;
+	font-family: verdana,sans-serif;
+	font-size:11px;
+	padding-left:5px;
+	text-align: center;
+	}
+.calfacilityselection {
+	background-color: #9999CD;
+	font-family: verdana,sans-serif;
+	font-size: 12px; 
+	position: relative; 
+	top: -4px; 
+	left: -4px; 
+	width: 760px;
+	}
+.caldateselect  {background-color:#9999CD;font-family: verdana,sans-serif;font-size:12px;}
+
+.calrealday  {background-color:#224202;font-family: verdana,sans-serif;font-size:12px;width:180px;}
+.calfillerday  {background-color:#999999;font-family: verdana,sans-serif;font-size:12px;width:180px;}
+
+.legendlabel {font-family: verdana,sans-serif; font-size: 10px;font-weight:bold;}
+
+.legendlabeltitle {
+	font-family: verdana,sans-serif; 
+	font-size: 10px;
+	font-weight:bold;
+	background-color: #9999CD;
+	color: #000000;
+	}
+
+.callegendopen {background-color:#006633;height:15px;width:15px; }
+.callegendreserved {background-color:#990033;height:15px;width:15px; }
+.callegendonhold {background-color:#FFFF66;height:15px;width:15px; }
+.callegendholiday {background-color:#0000FF;height:15px;width:15px; }
+.dropshadow { background-color: #919191;width:760px; }
+
+table tr.dayofmonth {
+	 background-color: #000000;
+	 color: #ffffff;
+	 font-weight: bold;
+	 height: 25px;
+	 }
+
+table tr.dayofmonth td {
+	height: 25px;
+	text-align: center;
+	}
+
+table tr.caltimes {
+	background-color: #e0e0e0;
+	color: #ffffff;
+	font-size: 8px;
+	}
+
+div.open {
+	font-size: 10px;
+	cursor: pointer;
+	background-color: #006633;
+	color: #ffffff;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	}
+
+div.onhold {color:#000000;font-size:10px;cursor:pointer;background-color:#990033;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.reserved {font-family: verdana,sans-serif;cursor:not-allowed;color:#ffffff;font-size:10px;background-color:#990033;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.closed {font-family: verdana,sans-serif;cursor:not-allowed;color:#ffffff;font-size:10px;background-color:#c0c0c0;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.call {font-family: verdana,sans-serif;cursor:not-allowed;color:#ffffff;font-size:10px;background-color:#006633;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+div.holiday {font-family: verdana,sans-serif;cursor:not-allowed;color:#ffffff;font-size:10px;background-color:#0000FF;color:#FFFFFF;height:100%;padding-top:10px;padding-bottom:10px;}
+
+
+A.open:active{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; background-color: #006633;}
+A.open:link{COLOR: #FFFFFF;  font-family: verdana,sans-serif;font-size:10px; background-color: #006633;}
+A.open:visited{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; background-color: #006633; }
+A.open:hover{TEXT-DECORATION: underline;COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; background-color: #006633; }
+
+A.onhold:active{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px;}
+A.onhold:link{COLOR: #FFFFFF;  font-family: verdana,sans-serif;font-size:10px;}
+A.onhold:visited{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+A.onhold:hover{TEXT-DECORATION: underline;COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+
+A.reserved:active{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px;}
+A.reserved:link{COLOR: #FFFFFF;  font-family: verdana,sans-serif;font-size:10px;}
+A.reserved:visited{COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+A.reserved:hover{TEXT-DECORATION: underline;COLOR: #FFFFFF; font-family: verdana,sans-serif;font-size:10px; }
+
+
+/* RECREATION RESERVATION FORM */
+.reserveformtitle{background-color:#9999CD; border-top: solid #000000 1px;border-right: solid #000000 1px;border-left: solid #000000 1px; width:760px;padding:5px;font-weight:bold;font-family: verdana,sans-serif;font-size:12px;}
+.reserveforminputarea {background-color:#e0e0e0; border: solid #000000 1px; width:760px;padding:5px;margin-bottom:10px;padding-bottom: 10px;}
+.reservationformlabel {font-family: verdana,sans-serif; font-size: 10px;font-weight:bold;text-align:right; }
+.reservationformselect {font-family: verdana,sans-serif; font-size: 10px; }
+.reserveformbutton {text-align:left; background-color: #9999cd; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 14px; font-weight:bold;}
+/* .reserveformbutton {text-align:left; background-color: #9999cd; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 14px; font-weight:bold; width:300px;} */
+
+/* FACILITY MANAGEMENT PAGES */
+.facilitymain
+{
+	font-size: 12px;
+	width: 795px;
+	color: black;
+	font-family: verdana,sans-serif;
+}
+.facilitytitle
+{
+	font-weight: bold;
+	font-size: 18px;
+	color: black;
+	font-family: verdana,sans-serif;
+}
+.facilitylist
+{
+	font-family: verdana,sans-serif;
+	font-size: 12px;
+	width: 795px;
+}
+.facilityname
+{
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana,sans-serif;
+}
+.facilitydesc
+{
+	font-size: 12px;
+	width: 795px;
+	color: black;
+	font-family: verdana,sans-serif;
+}
+DIV
+{
+	font-family: verdana,sans-serif;
+	font-size: 12px;
+}
+.reserve_link
+{
+	padding: 10px;
+	width: 795px;
+}
+P
+{
+	font-size: 12px;
+	font-family: verdana,sans-serif;
+}
+td
+{
+	font-family: verdana,sans-serif;
+	font-size: 12px;
+}
+
+/* commented out 8/15/06
+ .afooter {color:Black;font-size:10px;}*/
+
+.footer {color:Black;font-size:10px;}
+
+
+/* CLASS STYLES */
+.classdesc {padding: 10px; width: 795px; }
+.classdetailslink {padding-left: 10px;padding-top: 10px; width: 795px; }
+.classdaterange {font-weight:bold; color: white; width: 795px; border-top: 1px solid black;border-bottom: 1px solid black;font-size: 100%;font-family: Georgia, "Times New Roman", Times, serif;	background-color: #8A8AB0;	padding: 0 0 1px 2px;	}
+.classdirectionsinput {font-size: 10px; color: black; font-family: verdana,sans-serif;padding:5px;}
+.classdetails {width: 795px;padding:5px;BORDER: 1px solid #000000;}
+.classbutton  {COLOR: #ffffff; font-family: verdana,sans-serif;font-size:10px; font-weight:bold; background-color: #8A8AB0;	cursor:pointer; }
+.classdetaillabel {font-weight:bold;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+.classdetailvalue {font-size: 10px; color: black; font-family: verdana,sans-serif;}
+.searchsummary  {padding: 10px;font-weight:bold;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+.searchhit {background-color:yellow;}
+.infoonly {padding: 10px;font-weight:bold;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+
+
+/* CLASS WAIVERS */
+.waiverbox {
+	border: 2px solid #ff0000;
+	padding: 5px;
+	margin-bottom: 10px;
+	}
+
+.waiver {padding:5px; margin-bottom:10px; width: 600px;}
+.waivertitle {padding:5px 0 5px 0; font-weight:bold;font-size: 18px; color: black; font-family: verdana,sans-serif;}
+.waivertitle2 {padding:5px 0 5px 0; font-weight:bold;font-size: 12px; color: black; font-family: verdana,sans-serif;}
+.waivername {font-weight:bold;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+.waiverdescription {font-weight:normal;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+.waiverlink {padding-left:10px;color:blue; font-weight:normal;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+a.waiverlink:active{COLOR: blue; font-family: verdana,sans-serif;font-size:10px;}
+a.waiverlink:link{COLOR: blue;  font-family: verdana,sans-serif;font-size:10px;}
+a.waiverlink:visited{COLOR: blue; font-family: verdana,sans-serif;font-size:10px; }
+a.waiverlink:hover{TEXT-DECORATION: underline;COLOR: blue; font-family: verdana,sans-serif;font-size:10px; }
+
+.classterm {
+	padding: 5px; 
+	margin-bottom: 10px; 
+	width: 795px;
+	}
+
+.classterms {
+	font-weight: normal;
+	font-size: 10px; 
+	color: black; 
+	font-family: verdana,sans-serif;
+	width: 700px;
+	margin-left: 5px;
+	height: 100px;
+	}
+
+.classtermchecklng {font-weight:normal;font-size: 10px; color: black; font-family: verdana,sans-serif;}
+
+
+/* INSTUCTOR STYLES */
+.instructorname {font-weight:bold;font-size: 14px; color: black; font-family: verdana,sans-serif;}
+.instructorbio {font-size: 10px; color: black; font-family: verdana,sans-serif;}
+legend  {font-size: 12px;color: black; font-family: verdana,sans-serif;}
+fieldset  {font-size: 12px;color: black; font-family: verdana,sans-serif;}
+
+
+input.buttonmailinglist {text-align:center; background-color: #224202; COLOR: #ffffff; font-family: verdana,sans-serif; font-size: 10px; font-weight:bold;}
+
+/* Subscriptions styling */
+table#subscribe {
+	margin-left: 3em;
+	}
+
+table#subscribe fieldset {
+	padding-left: 1em;
+	}

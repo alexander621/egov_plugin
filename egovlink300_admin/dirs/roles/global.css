@@ -1,0 +1,51 @@
+<!--
+body  {border-bottom:0px solid #003366; margin:0px 0px;}
+td {font-family:Verdana,Tahoma; font-size:11px;}
+input {font-family:Verdana,Tahoma,Arial; font-size:11px;}
+textarea {font-family:Verdana,Tahoma,Arial; font-size:11px;}
+
+.nomargin {margin:-4px;}
+.listcheck {margin:-4px 0px; padding:0px;}
+
+.maincell {padding:5px;}
+.hdr {font-family:Verdana,Tahoma; font-size:14px;}
+.disclaimer {font-family:Arial,Tahoma; font-size:10px; padding-top:5px;}
+
+.messagehead    {border:1px solid #336699;}
+.messagehead th {border-bottom:1px solid #336699; font-size:10px; color:#003366; background-color:#93bee1;}
+
+.tablelist    {border:1px solid #336699;}
+.tablelist th {border-bottom:1px solid #336699; font-size:10px; color:#003366; background-color:#93bee1;}
+.tablelist td {border-bottom:1px solid #aabbff;}
+
+.tableadmin    {border:1px solid #336699;}
+.tableadmin th {border-bottom:1px solid #336699; font-size:10px; color:#003366; background-color:#93bee1;}
+
+.quicklink  {padding-bottom:6px;}
+.title      {padding-bottom:2px;}
+
+.agenda     {margin-bottom: 5px;}
+.agenda li  {padding: 2px;}
+
+a:link     {color:#0000bb; text-decoration:none;}
+a:visited  {color:#0000bb; text-decoration:none;}
+a:active   {color:#0000bb; text-decoration:none;}
+a:hover    {color:#0000ff; text-decoration:underline;}
+
+.tabp          {padding-right:3px;}
+a.tab:link     {color:#000033; text-decoration:none; font-family:Tahoma,Arial; font-size:10px; font-weight:bold;}
+a.tab:visited  {color:#000033; text-decoration:none; font-family:Tahoma,Arial; font-size:10px; font-weight:bold;}
+a.tab:active   {color:#000033; text-decoration:none; font-family:Tahoma,Arial; font-size:10px; font-weight:bold;}
+a.tab:hover    {color:#000033; text-decoration:none; font-family:Tahoma,Arial; font-size:10px; font-weight:bold;}
+
+a.header:link     {color:#003366; text-decoration:none; font-size:10px;}
+a.header:visited  {color:#003366; text-decoration:none; font-size:10px;}
+a.header:active   {color:#003366; text-decoration:none; font-size:10px;}
+a.header:hover    {color:#ffffff; text-decoration:none; font-size:10px;}
+
+.section {font-family:Tahoma,Verdana; font-size:11px; background-color:#ffffff; padding:5px; line-height:16px;}
+.section_hdr {font-size:10px; font-weight:bold; color:#003366;}
+
+.menu     {background-color:#336699;}
+.submenu  {background-color:#93bee1; border-bottom:1px solid #336699; height:30px;}
+//-->

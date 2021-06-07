@@ -1,0 +1,1403 @@
+/* Classes Style Sheet */
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	-webkit-transition: all .3s ease-in-out;
+	-moz-transition: all .3s ease-in-out;
+	-o-transition: all .3s ease-in-out;
+	transition: all .3s ease-in-out;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+label {
+	font-weight: bold;
+}
+
+.instructorlist {
+	width: 310px;
+	}
+
+#searchtip {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+	}
+
+#content {
+	width: 800px;
+	}
+
+#content span#searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+#content span#searchteamresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+span#receiptadmininfo {
+	position: relative;
+	float: right;
+	}
+
+.footerbox {
+	clear: both;
+	padding-top: 10px;
+	}
+
+#centercontent {	
+	width: 800px;	
+	font-family: verdana,sans-serif;
+	float: left;
+	margin-left: 15px;
+	}
+
+div.widetabs {
+	/* This is to make the edit class tabs wider */
+	width: 1000px !important;
+	}
+
+div.widetabnav {
+	width: 1013px;
+	}
+
+tr#occurstabletitle {
+	height: 26px;
+	}
+
+#centercontent h3 {
+	padding: 0;
+	margin: 0;
+	}
+
+#centercontent h5 {
+	padding: 0;
+	margin: 0;
+	font-size: 1.2em;
+	}
+
+span.receipttitles {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	font-family: verdana,Tahoma,Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	}
+
+#leftdetail {
+	width: 380px;
+	float: left;
+	padding-top: 10px; 
+	}
+
+#rightdetail {
+	width: 375px;
+	float: right;
+	padding-top: 10px;
+	padding-right: 10px;
+	}
+
+#leftprice {
+	width: 760px;
+	float: left;
+	padding-top: 10px;
+	}
+
+#rightprice {
+	width: 375px;
+	float: right;
+	margin-top: 10px;
+	}
+
+table#classcount {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 300px;
+	}
+
+table#classcount th {
+    HEIGHT: 20px;
+    FONT-SIZE: 9px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+div#classcount { 
+	/* This is a shadow */
+	background: #919191; 
+	width: 300px;
+	padding: 0;
+	margin: 0;
+	}
+
+table#tableavail {
+	margin: 0;
+	padding: 0;
+	margin-top: 6px;
+	width: 450px;
+	/*border: 1px dotted blue;*/
+	}
+
+#tableavail th {
+	font-size: .75em;
+	border-bottom: 1px solid black;
+	}
+
+#tableavail caption {
+	font-weight: bold;
+	margin: 1em 0;
+	}
+
+#pricetable {
+	float: left; 
+	margin: 5px 0;
+	width: 600px;
+	}
+
+#pricetable td.pricetd {
+	width: 120px;
+	}
+
+#pricetable td.priceentrytd {
+	width: 70px;
+	}
+
+table#droppricetable {
+	float: left; 
+	margin: 10px 0;
+	width: 600px;
+	}
+
+table#droppricetable td.pricetd {
+	width: 120px;
+	}
+
+table#droppricetable td.priceentrytd {
+	width: 70px;
+	}
+
+table#droppricetable td.signcol {
+	width: 1em;
+	}
+
+span#displaytotalpaid {
+	border-top: 1px solid #000000;
+	}
+
+span#displaytotalprice {
+	border-top: 1px solid #000000;
+	}
+
+table#droppricename {
+	float: left; 
+	margin: 10px 0;
+	width: 600px;
+	}
+
+table#droppricename td.pricetd {
+	width: 120px;
+	}
+
+#dropnotes {
+	margin: 0;
+	padding: 0;
+	margin-top: 2em;
+	width: 300px;
+	}
+
+#dropnotes td#notestag {
+	width: 60px;
+	}
+
+/*#pricetable td.pricemember {
+	width: 400px;
+	}*/
+
+#content table tr.alt_row { 
+	background: #eee; 
+	}
+#cart_table {
+	top: 0;
+	left: 0;
+	border: 1px solid #000000;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+#cart_table th {
+	background-color: #93bee1;
+	border-bottom: 1px solid black;
+	}
+
+table#cart_table tr#carttotal td {
+	border-top: 1px solid black;
+	}
+
+#cart_table tr.alt_row { 
+	background: #eee; 
+	}
+
+#cart_table .firstcartcell {
+	padding: 0;
+	padding-top: 1em;
+	padding-right: 1em;
+	padding-left: .5em;
+	width: 20px;
+	}
+
+#bottombuttons {
+	margin-top: 15px;
+	float: right;
+	}
+
+#topbuttons {
+	float: right;
+	}
+
+#topprintbutton {
+	margin-bottom: 2em;
+	}
+
+#userinfo {
+	margin-bottom: 10px;
+	}
+
+#topright {
+	float: right;
+	margin-bottom: 1em;
+	}
+
+#receipttopright {
+	float: right;
+	margin-bottom: 1em;
+	}
+
+p#transactiontotal {
+	text-align: right;
+	}
+
+td.amountcell {
+	width: 6em;
+	text-align: right;
+	}
+
+table#receiptpayments td.amountcell {
+	width: 6em;
+	text-align: right;
+	}
+
+td.totalpayment {
+	border-top: 1px solid black;
+	width: 6em;
+	text-align: right;
+	}
+
+#content table#receiptuserinfo {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 2em;
+	width: 220px;
+	}
+
+#content table#signupuserinfo {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 500px;
+	}
+
+.filledstatus {
+	color: red;
+	font-weight: bold;
+	font-size: 1.2em;
+	}
+
+textarea#instrbio {
+	height: 80px;
+	width: 600px;
+	behavior: none;
+	}
+
+/* Styles for the Editing pages */
+textarea {
+	behavior: url(maxlength.htc);
+	}
+
+textarea#classdescription, textarea#searchkeywords, textarea#receiptnotes, textarea#dropinpurchasenotes {
+	width: 740px;
+	height: 60px;
+	behavior: none;
+	}
+
+textarea#classdescription {
+	height: 120px;
+	}
+
+textarea#messagebody {
+	height: 240px;
+	width: 710px;
+	}
+
+textarea#subscriptionbody {
+	height: 250px;
+	width: 600px;
+	}
+	
+ 
+span.pickerday {
+	cursor: pointer;
+	}
+
+span.pickerday:hover {
+	background-color: #898989;
+	color: #fff;
+	}
+
+
+span.calendarimg {
+	cursor: pointer;
+	}
+
+div.rightbuttons {
+	position: relative;
+	float: right;
+	padding: 0;
+	margin: 0;
+	}
+
+div.classeditrightbuttons {
+	position: relative;
+	float: right;
+	padding: 0;
+	margin: 0;
+	margin-right: 12em;
+	}
+
+div.categories {
+	float: left;
+	padding: 0;
+	margin: 0;
+	margin-right: 1em;
+	}
+
+input.assignbuttons {
+	cursor:pointer;
+	margin-bottom: 10px;
+	}
+
+table.classlist {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 600px;
+	}
+
+table.classlist th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	cursor: pointer;
+	}
+
+span.classname {
+	text-indent: -20px;
+	}
+
+td.classname {
+	padding-left: 20px;
+	}
+
+span.rosterclassname {
+	padding-left: 20px;
+	width: 280px;
+	text-indent: -10px;
+	}
+
+td.rosterclassname {
+	width: 300px;
+	}
+
+#content div#subscriptionshadow { 
+	width: 845px;
+	background: #919191; 
+	}
+
+table#subscription {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 845px;
+	}
+
+table#subscription th {
+	background-color: #93bee1;
+	border-bottom: 1px solid #666;
+	}
+
+table.locationlist {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 650px;
+	}
+
+table.locationlist th {
+	background-color: #93bee1;
+	}
+
+table.instructortable {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 650px;
+	}
+
+table.instructortable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	cursor: pointer;
+	}
+
+input#addref {
+	margin-bottom: 1em;
+	}
+
+table#ongoingtime {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 260px;
+	}
+
+table#ongoingtime th {
+	font-weight: normal;
+	text-align: left;
+	font-size: 9pt;
+	}
+
+table#ongoingtime caption {
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: left;
+	}
+
+table#pricingtable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	}
+
+table#pricingtable caption {
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: left;
+	height: 26px;
+	}
+
+table#pricingtable th {
+	font-weight: bold;
+	font-size: 9pt;
+	height: 26px;
+	background-color: silver;
+	border-bottom: 1px solid black;
+	}
+
+table#pricingtable td {
+	height: 26px;
+	}
+
+table#pricingtable td.type {
+	padding-left: 1em;
+	}
+
+table#seriestime {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 10px;
+	width: 100%;
+	border: 1px solid black;
+	}
+
+table#seriestime caption {
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: left;
+	}
+
+table#seriestime th {
+	font-weight: bold;
+	font-size: 9pt;
+	border-bottom: 1px solid black;
+	background-color: silver;
+	}
+
+table#seriestime td {
+	height: 26px;
+	}
+
+table#seriestime td.ref {
+	padding-left: 1em;
+	}
+
+table#seriestime td.firstday {
+	border-left: 1px solid black;
+	}
+
+table#seriestime th.firstday {
+	border-left: 1px solid black;
+	}
+
+table#seriestime tr.altrow {
+	background-color: #eeeeee;
+	}
+
+fieldset.edit {
+	clear: both;
+	margin: 10px 0;
+	}
+
+#newchild, #addchild {
+	margin-bottom: 10px;
+	padding: 5px;
+	}
+
+#addsingle {
+	padding: 2px 0 3px 0;
+	}
+
+#childbutton {
+	float: right;
+	}
+
+#childrenlist {
+	margin-top: 30px;
+	}
+
+table#children {
+	padding: 0;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 0;
+	width: 750px;
+	}
+
+table#children th {
+	font-weight: bold;
+	text-align: center;
+	font-size: 9pt;
+	}
+
+table#children th#classname {
+	text-align: left;
+	}
+
+table#children.alt_row { 
+	background: #eee; 
+	}
+
+table#criticaldates {
+	width: 600px;
+	}
+
+div#cancelreason {
+	position: relative;
+	float: right;
+	width: 450px;
+	margin: 5px 0;
+	}
+
+div#locationdiv {
+	border: 1px solid green;
+	}
+
+span#imgalttag {
+	margin-right: 3px;
+	}
+
+span#imgurltag {
+	margin-right: 21px;
+	}
+
+/* End of Editing Styles */
+
+div.filterselection {
+	padding:5px; 
+	margin: 5px 5px 10px 5px;
+	}
+
+td.label {
+	font-weight: bold;
+	}
+
+input.waiver {
+	width: 350px;
+	}
+
+span.discounttext {
+	margin-left: 8em;
+	}
+
+div.seasonshadow {
+	background: #919191;
+	width: 700px;
+	}
+
+table#seasonlist {
+	width: 700px;
+    border: 1px solid #336699;
+	}
+
+table#seasonlist th {
+    height: 24px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	text-align: center;
+	}
+
+table#seasonlist .namecell {
+	text-align: left;
+	padding-left: 1em;
+	}
+
+table#seasonlist td {
+    height: 26px;
+	}
+
+table#newinstructor {
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	margin-top: 1em;
+	}
+
+table#newinstructor td {
+	margin: 0;
+	padding: 0;
+	height: 2em;
+	}
+
+table#newinstructor th {
+	height: 2em;
+	}
+
+table#rosterlist {
+	top: 0;
+	left: 0;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#rosterlist td.classname {
+	padding-left: 1em;
+	}
+
+table#rosterlist tr.altrow {
+	background-color: #eeeeee;
+	}
+
+table#rosterlist th {
+	text-align: center;
+	}
+
+table#offeringprices {
+	margin-top: 1em;
+	width: 150px;
+	}
+
+table#offeringactivities {
+	margin-top: 1em;
+	border: 1px solid black;
+	}
+
+table#offeringactivities tr.altrow {
+	background-color: #eeeeee;
+	}
+
+table#offeringactivities th {
+	text-align: center;
+	font-weight: bold;
+	font-size: 9pt;
+	height: 26px;
+	background-color: silver;
+	border-bottom: 1px solid black;
+	}
+
+table#offeringactivities td {
+	text-align: center;
+	height: 1.5em;
+	}
+
+#familymemberid {
+	margin-top: 1em;
+	}
+
+form#PurchaseForm, form#FormClassOffering {
+	margin: 0;
+	padding: 0;
+	}
+
+p.offeringdetails {
+	margin: .8em 0;
+	}
+
+div#updatebutton {
+	margin-top: 1em;
+	}
+
+table.receiptdetails {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	}
+
+table.receiptdetails td {
+	height: 2em;
+	}
+
+table.receiptdetails td.times {
+	height: 4em;
+	}
+
+table.receiptdetails td.firstcell {
+	padding-left: 1em;
+	width: 400px;
+	}
+
+table.receiptdetails td.teamnamecell {
+	padding-left: 1em;
+	}
+
+div#receiptdetailtotal {
+	width: 100%;
+	text-align: right;
+	border-top: 1px solid black !important;
+	}
+
+p.receiptnotes {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 1em;
+	padding-left: 2em;
+	margin-bottom: 1em;
+	}
+
+p.rosterdetails {
+	padding: 0;
+	margin: 0;
+	padding-left: 2em;
+	}
+
+textarea.headertextarea {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: Verdana,Tahoma,Arial;
+	width:550px;
+	height:50px;
+	behavior: none;
+	}
+
+textarea.footertextarea {
+	FONT-SIZE: 10px;
+	FONT-FAMILY: Verdana,Tahoma,Arial;
+	width:550px;
+	height:150px;
+	behavior: none;
+	}
+
+textarea#recpagemessage {
+	font-size: 13px;
+	font-family: Verdana,Tahoma,Arial;
+	font-style: normal;
+	line-height: 1.3em;
+	width: 700px;
+	height: 200px;
+	behavior: none;
+	}
+
+textarea#refundpolicy {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 13px; 
+	font-style: normal;
+	line-height: 1.5em;
+	width: 600px;
+	height: 300px;
+	behavior: none;
+	}
+
+textarea#privacypolicy {
+	font-family: Arial, Helvetica, sans-serif; 
+	font-size: 12px; 
+	font-style: normal;
+	line-height: 1.2em;
+	width: 600px;
+	height: 600px;
+	behavior: none;
+	}
+
+table td.firstheadercell {
+	width: 100px;
+	}
+
+table.rostertable {
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+    border: 1px solid #336699;
+	}
+
+table.rostertable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	cursor: pointer;
+	}
+
+table.rostertable tr.altrow {
+	background-color: #ececec;
+	}
+
+textarea.removalnotes {
+	width: 350px;
+	height: 6em;
+	}
+
+div#rostershowtype {
+	margin: 0;
+	padding: 0;
+	}
+
+table#rosterprinttable {
+	position: relative; 
+	top: 0; 
+	left: 0;
+	width: 100%;
+	border: 1px solid #000000;
+	}
+
+table#rosterprinttable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	cursor: pointer;
+	}
+
+table#rosterprinttable tr.altrow {
+	background-color: #ececec;
+	}
+
+#content table#attendancesheet {
+	width: 100%;
+	}
+
+#content table#attendancesheet tr.altrow {
+	background-color: #ececec;
+	}
+
+#content table#attendancesheet th {
+	height: 2em;
+	background-color: #93bee1;
+	}
+
+#content table#attendancesheet td {
+	height: 2em;
+	}
+
+div#waivernote {
+	clear: right;
+	padding-left: 1em;
+	}
+
+span#imgalttabdesc {
+	margin-left: 10em;
+	}
+
+input.datefield {
+	width: 70px;
+	}
+
+span.pricecheck {
+	padding: 0;
+	margin: 0;
+	display: none;
+	}
+
+table td.earlyreglabel {
+	width: 10em;
+	}
+
+table td.privacypolicy {
+	padding-left: 9em;
+	}
+
+table#regattateamlist {
+	border: 1px solid #336699;
+	}
+
+table#regattateamlist th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	text-align: center;
+	}
+
+table#regattateamlist td {
+	height: 20px;
+	font-family: arial;
+    font-size: 10pt;
+	}
+
+table#captaindata {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	font-family: arial;
+    font-size: 9pt;
+	width: 500px;
+	}
+
+td#captainlabel {
+	width: 80px;
+	}
+
+table#captaininfoentry {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 800px;
+	margin-bottom: 2em;
+	}
+
+table#teammemberentry {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 600px;
+	margin-bottom: 2em;
+	}
+
+table#regattapricetable {
+	position: relative;
+	top: 0; 
+	left: 0;
+	padding: 0;
+	margin: 0;
+	width: 500px;
+	margin-bottom: 2em;
+	}
+
+tr.teammembertotalrow td {
+	border-top: 1px solid #336699;
+    background-color: #cccccc;
+	font-weight: bold;
+	}
+
+table.receiptmerchandiseitems {
+	position: relative;
+	top: 0 !important; 
+	left: 0 !important;
+	width: 500px !important;
+	padding: 0;
+	margin: 0;
+	}
+
+tr.receiptmerchandiseitemheader th {
+	border-bottom: 1px solid black;
+	font-weight: bold;
+	height: 20px;
+	}
+
+table.receiptmerchandiseitems td {
+	height: 15px;
+	}
+
+td.merchandiselabelcolumn {
+	padding-left: 1em !important;
+	}
+
+td.receiptshippinglabel {
+	width: 270px !important;
+	}
+
+span.teamnamelabel {
+	font-family: arial;
+    font-size: 9pt;
+	font-weight: bold;
+	margin-right: 2em;
+	}
+
+p#teameditsave {
+	padding-left: 9em;
+	}
+
+input#editteamname {
+	margin-left: 3em;
+	}
+
+table#regattateamnametable {
+	width: 250px;
+	}
+
+p.classeditdescription {
+	font-size: 10pt;
+	}
+
+table#rentalschedule {
+	position: relative;
+	top: 0;
+	left: 0;
+	border: 1px solid #336699;
+	margin-bottom: 1em;
+	}
+
+table#rentalschedule td {
+	height: 20px;
+	}
+
+table#rentalschedule th {
+	height: 26px;
+    font-size: 10pt;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+input#savebutton {
+	font-weight: bold;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+div.captaindetails {
+	margin-left: 6em;
+	}
+
+p.teamactivitynotes {
+	padding: 0;
+	margin: 0;
+	border-bottom: 1px solid #000000;
+	padding-bottom: 1em;
+	margin-bottom: 2em;
+	}
+
+
+div#receiptfeeitemline {
+	width: 100%;
+	text-align: right;
+	}
+
+input#edituserbtn {
+	visibility: hidden;
+	}
+
+div#namesearch {
+	padding: 0;
+	margin: 0;
+	margin-bottom: .5em;
+	}
+
+input#updatefamilymembersbtn {
+	visibility: hidden;
+	}
+
+span.nomatch {
+	color: red;
+	font-weight: bold;
+	}
+
+#registrantselection {
+	padding: 1em;
+	}
+
+span#receiptnotes {
+	font-weight: bold;
+	}
+
+table#rostertable {
+	top: 0;
+	left: 0;
+	margin-top: 1em;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+
+
+/* Start of Drop In Registration Specific Styles */
+
+fieldset#scanentryfieldset
+{
+	margin-bottom: 2em;
+}
+
+fieldset#personinfofieldset
+{
+	margin-bottom: 2em;
+}
+
+p#idnotfound
+{
+	color: red;
+	font-weight: bold;
+	font-size: larger;
+}
+
+table#purchaserinfo
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+table#purchaserinfo th 
+{
+	margin: 0;
+	padding: 0;
+	height: 26px;
+    font-size: 10pt;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+}
+
+table#purchaserinfo td 
+{
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid black;*/
+}
+
+table#purchaserinfo td#purchaserdetails
+{
+	padding: 2em;
+	border-left: 1px solid black;
+}
+
+table#purchaserinfo td#purchaserphoto
+{
+	padding: 1em;
+}
+
+table#purchaserinfo td#accountbalance
+{
+	font-weight: bold;
+	text-align: center;
+}
+
+span#purchasername
+{
+	font-weight: bold;
+	font-size: larger;
+}
+
+p#activitynotfound
+{
+	color: red;
+	font-weight: bold;
+	font-size: larger;
+}
+
+table#activityinfo
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+table#activityinfo th 
+{
+	margin: 0;
+	padding: 0;
+	height: 26px;
+    font-size: 10pt;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+}
+
+table#activityinfo td 
+{
+	margin: 0;
+	padding: 0;
+	height: 26px;
+}
+
+table#activityinfo td.availableclassname
+{
+	padding-left: 1em;
+}
+
+table#activityinfo tr#purchasetotalrow td
+{
+	border-top: 1px solid black;
+	height: 26px;
+	background-color: #cccccc;
+	font-weight: bold;
+}
+
+div#purchasecomplete
+{
+	margin-top: 2em;
+}
+
+input#scanagainbtn
+{
+	font-weight: bold;
+	padding: 1em 2em;
+	margin-top: 1em;
+}
+
+span#photounavailable
+{
+	font-weight: bold;
+	color: red;
+}
+
+/* End of Drop In Registration Specific Styles */
+
+.noWrapTD 
+{
+   white-space: nowrap;
+}
+
+table#multiemailinput
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+div#classcountdisplay
+{
+	margin: 1em 2em 2em 0 !important;
+	font-size: larger;
+	font-weight: bold;
+}
+
+table #multititledisplay
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 3em 0 !important;
+}
+
+div#rosterlistbuttons
+{
+	margin: 2em 0 1em 0 !important;
+	width: 900px !important;
+}
+
+td.multimaillabel
+{
+	padding-left: 1em;
+}
+
+select#classtimeid
+{
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+table#categorylist, table#categorydetails {
+	-webkit-border-bottom-right-radius: 10px;
+	-moz-border-radius-bottomright: 10px;
+	border-bottom-right-radius: 10px;
+	-webkit-border-bottom-left-radius: 10px;
+	-moz-border-radius-bottomleft: 10px;
+	border-bottom-left-radius: 10px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+input.moveupbtn {
+	margin-bottom: 4px;
+}

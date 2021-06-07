@@ -1,0 +1,1 @@
+<iframe src="https://player.vimeo.com/video/<%=replace(request.querystring("q"),"https://vimeo.com/","")%>" style="width:100%;height:100%" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>

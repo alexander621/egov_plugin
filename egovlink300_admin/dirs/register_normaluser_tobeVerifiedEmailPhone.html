@@ -1,0 +1,300 @@
+<FORM METHOD=POST name="RegisterNormal" ACTION="Insert_NormalUser.asp" onsubmit="return CheckMemberRegister();" onSubmit="return checkInput()">
+<table border="0" width="478" height="480"  class='tablelist' cellpadding='5' cellspacing='0'>
+	    <tr>
+	<td width="143" height="23">Choose a username</td>
+    <td width="336" height="23">
+    <input type=text name="username" size=15 maxlength=15> <font color="#FF0000">*</font></td>
+	  </tr>
+	    <tr>
+	<td width="143" height="23">Choose a password</td>
+    <td width="336" height="23">
+    <input type=text name="password" size=15 maxlength=15> <font color="#FF0000">*</font></td>
+	  </tr>
+	    <tr>
+	<td width="143" height="23">First Name</td>
+    <td width="336" height="23">
+    <input type=text name="firstname" size=25 maxlength=25><font color="#FF0000">*</font></td>
+	    </tr>
+        <tr>
+	<td width="143" height="19">Middle Initial</td>
+    <td width="336" height="19">
+    <input type=text name="middleinitial" size=10 maxlength=1></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23">Last Name</td>
+    <td width="336" height="23">
+    <input type=text name="lastname" size=25 maxlength=25><font color="#FF0000">*</font></td>
+	    </tr>
+        <tr>
+	<td width="143" height="19">Nickname</td>
+    <td width="336" height="19">
+	  <input type=text name="nickname" size=25 maxlength=25></td>
+	    </tr>
+	  <tr>
+	<td width="143" height="23">Organization </td>
+    <td width="336" height="23">
+	   <select name='orgid'><% ListOrganization %></SELECT>
+	  
+	  </td>
+	  </tr>
+	  <tr>
+	<td width="143" height="23">Email Address</td>
+    <td width="336" height="23">
+    <input type=text name="email" size=50 maxlength=50> </td>
+	  </tr>
+	    <tr>
+	<td width="143" height="22">Email Address(2)</td>
+    <td width="336" height="22">
+    <input type=text name="email2" size=50 maxlength=50></td>
+	  </tr>
+	    <tr>
+	<td width="143" height="22">Job Title</td>
+    <td width="336" height="22">
+	  <input type=text name="jobtitle" size=50 maxlength=50></td>
+	  </tr>
+        <tr>
+	<td width="143" height="22">Your Department</td>
+    <td width="336" height="22">
+    <input type=text name="department" size=50 maxlength=50></td>
+        </tr>
+	    <tr>
+	<td width="143" height="22">Home Address</td>
+    <td width="336" height="22">
+	  <input type=text name="homeaddress" size=50 maxlength=250></td>
+	  </tr>
+        <tr>
+	<td width="143" height="22">Business Address</td>
+    <td width="336" height="22">
+	  <input type=text name="businessaddress" size=50 maxlength=250></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23">Home Phone</td> 
+    <td width="336" height="23">
+    <input type=text name="homenumber" size=10 maxlength=10></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23">Business Number</td> 
+    <td width="336" height="23">
+    <input type=text name="businessnumber" size=19 maxlength=40> </td>
+	    </tr>
+        <tr>
+	<td width="143" height="23">Mobile Number</td> 
+    <td width="336" height="23">
+    <input type=text name="mobilenumber" size=19 maxlength=40> </td>
+	    </tr>
+        <tr>
+	<td width="143" height="22">Page Number</td>
+    <td width="336" height="22">
+    <input type=text name="pagernumber" size=19 maxlength=20></td>
+	    </tr>
+        <tr>
+	<td width="143" height="23">Fax Number</td> 
+    <td width="336" height="23">
+    <input type=text name="faxnumber" size=19 maxlength=40> </td>
+	    </tr>
+    <tr>
+	<td width="143" height="22">Birthday</td>
+    <td width="336" height="22">
+    <input type=text name="birthday" size=19 maxlength=20> (A small image)</td>
+	  </tr>
+    <tr>
+	<td width="143" height="22">Web Page (URL)</td>
+    <td width="336" height="22">
+    <input type=text name="webpage" size=42 maxlength=40></td>
+	  </tr>
+      
+</table>
+<INPUT TYPE="submit" value='Submit Now'>
+</FORM>    
+ <p><font color="#FF0000">* </font>Means that field is required</p>
+<%
+sub ListOrganization
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 'adUseClient
+rs.CursorType = 3 'adOpenStatic
+openstr="select OrgID,OrgName from Organizations" 
+'response.write openstr
+rs.Open openstr,,, 2 'adCmdTable
+response.write "<option value='0'>Choose One</option>"
+rs.movefirst
+while not rs.eof
+response.write "<option value="&rs("orgid")&">"&rs("orgname")&"</option>"
+rs.movenext
+wend
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+end sub %>
+
+
+    <SCRIPT LANGUAGE="JavaScript"> 
+	function checkInput() 
+	{ 
+    var homephone = document.RegisterNormal.homenumber.value;
+      if ( !isPhone( homephone ) ) 
+	  {
+		{
+        alert( "invalid Home phone number:\n" + phone );
+	   	document.RegisterNormal.homenumber.focus();
+        valid = false;
+		}
+      return valid;
+      }
+
+    var businessnumber = document.RegisterNormal.businessnumber.value;
+      if ( !isPhone( businessnumber ) ) 
+	  {
+		{
+        alert( "invalid Business phone number:\n" + phone );
+	   	document.RegisterNormal.businessnumber.focus();
+        valid = false;
+		}
+      return valid;
+      }
+
+
+    var mobilenumber = document.RegisterNormal.mobilenumber.value;
+      if ( !isPhone( mobilenumber ) ) 
+	  {
+		{
+        alert( "invalid Mobile phone number:\n" + phone );
+	   	document.RegisterNormal.mobilenumber.focus();
+        valid = false;
+		}
+      return valid;
+      }
+
+    var faxnumber = document.RegisterNormal.faxnumber.value;
+      if ( !isPhone( faxnumber ) ) 
+	  {
+		{
+        alert( "invalid fax phone number:\n" + phone );
+	   	document.RegisterNormal.faxnumber.focus();
+        valid = false;
+		}
+      return valid;
+      }
+
+    var email1=document.RegisterNormal.email.value;
+	emailCheck(this.email.value)
+
+
+    }
+
+
+    function isPhone( str )
+		{
+	     var regexp = /^((\((\d{3})\)|(\d{3}))[- ]?)?(\d{3})[- ]?(\d{4})$/;
+       if ( regexp.exec( str ) ) 
+		  {
+         // one of $3 or $4 will be null:
+         window.document.myForm.phone.value =
+           RegExp.$3 + RegExp.$4 + RegExp.$5 + RegExp.$6;
+         return true;
+        }
+       return false;
+     }     
+
+function emailCheck (emailStr) {
+var emailPat=/^(.+)@(.+)$/
+/* The following string represents the pattern for matching all special
+   characters.  We don't want to allow special characters in the address. 
+   These characters include ( ) < > @ , ; : \ " . [ ]    */
+var specialChars="\\(\\)<>@,;:\\\\\\\"\\.\\[\\]"
+/* The following string represents the range of characters allowed in a 
+   username or domainname.  It really states which chars aren't allowed. */
+var validChars="\[^\\s" + specialChars + "\]"
+/* The following pattern applies if the "user" is a quoted string (in
+   which case, there are no rules about which characters are allowed
+   and which aren't; anything goes).  E.g. "jiminy cricket"@disney.com
+   is a legal e-mail address. */
+var quotedUser="(\"[^\"]*\")"
+/* The following pattern applies for domains that are IP addresses,
+   rather than symbolic names.  E.g. joe@[123.124.233.4] is a legal
+   e-mail address. NOTE: The square brackets are required. */
+var ipDomainPat=/^\[(\d{1,3})\.(\d{1,3})\.(\d{1,3})\.(\d{1,3})\]$/
+/* The following string represents an atom (basically a series of
+   non-special characters.) */
+var atom=validChars + '+'
+/* The following string represents one word in the typical username.
+   For example, in john.doe@somewhere.com, john and doe are words.
+   Basically, a word is either an atom or quoted string. */
+var word="(" + atom + "|" + quotedUser + ")"
+// The following pattern describes the structure of the user
+var userPat=new RegExp("^" + word + "(\\." + word + ")*$")
+/* The following pattern describes the structure of a normal symbolic
+   domain, as opposed to ipDomainPat, shown above. */
+var domainPat=new RegExp("^" + atom + "(\\." + atom +")*$")
+var matchArray=emailStr.match(emailPat)
+if (matchArray==null) {
+ 	alert("Email address seems incorrect (check @ and .'s)")
+	return false
+}
+var user=matchArray[1]
+var domain=matchArray[2]
+
+// See if "user" is valid 
+if (user.match(userPat)==null) {
+    // user is not valid
+    alert("The username doesn't seem to be valid.")
+    return false
+}
+
+/* if the e-mail address is at an IP address (as opposed to a symbolic
+   host name) make sure the IP address is valid. */
+var IPArray=domain.match(ipDomainPat)
+if (IPArray!=null) {
+    // this is an IP address
+	  for (var i=1;i<=4;i++) {
+	    if (IPArray[i]>255) {
+	        alert("Destination IP address is invalid!")
+		return false
+	    }
+    }
+    return true
+}
+
+// Domain is symbolic name
+var domainArray=domain.match(domainPat)
+if (domainArray==null) {
+	alert("The domain name doesn't seem to be valid.")
+    return false
+}
+
+/* domain name seems valid, but now make sure that it ends in a
+   three-letter word (like com, edu, gov) or a two-letter word,
+   representing country (uk, nl), and that there's a hostname preceding 
+   the domain or country. */
+
+/* Now we need to break up the domain to get a count of how many atoms
+   it consists of. */
+var atomPat=new RegExp(atom,"g")
+var domArr=domain.match(atomPat)
+var len=domArr.length
+if (domArr[domArr.length-1].length<2 || 
+    domArr[domArr.length-1].length>3) {
+   // the address must end in a two letter or three letter word.
+   alert("The address must end in a three-letter domain, or two letter country.")
+   return false
+}
+
+// Make sure there's a host name preceding the domain.
+if (len<2) {
+   var errStr="This address is missing a hostname!"
+   alert(errStr)
+   return false
+}
+
+// If we've gotten this far, everything's valid!
+return true;
+}
+//  End -->
+
+
+
+     </SCRIPT>
+  

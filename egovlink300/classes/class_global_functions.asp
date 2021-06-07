@@ -1,0 +1,1 @@
+<% response.redirect "../rd_classes/class_categories.aspx" %>

@@ -1,0 +1,66 @@
+/* Layout 1 */
+.layout1_card_color          { background-color: #990000; }
+.layout1_card_outline        { border: 1pt dotted #000000; }
+
+.layout1_card_logo_display   { position: absolute; left:130pt; -moz-opacity:0.1; filter:alpha(opacity=10); z-index:-1; }
+.layout1_card_logo_print     { position: absolute; left:138pt; -moz-opacity:0.1; filter:alpha(opacity=20); z-index:-1; }
+.layout1_card_title          { color: #990000; font-family: Times,Verdana,Tahoma,Arial; font-size: 15pt; font-weight:bold; line-height: 1.6 }
+.layout1_card_label          { color: #000000; font-family: Times,Verdana,Tahoma,Arial; font-size: 10pt; font-weight:bold; }
+.layout1_card_text           { color: #000000; font-family: Times,Verdana,Tahoma,Arial; font-size: 11pt; font-weight:normal; }
+
+/*.layout1_member_name_text    { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 20pt; font-weight:normal; } */
+.layout1_member_name_text    { font-family: Times,Verdana,Tahoma,Arial; font-size: 15pt; font-weight:normal; }
+.layout1_expiredate_text     { color: #990000; font-family: Times,Verdana,Tahoma,Arial; font-size: 10pt; font-weight:bold;}
+.layout1_relationship_text   { color: #000000; font-family: Times,Verdana,Tahoma,Arial; font-size: 12pt; font-weight:bold; }
+.layout1_img_outline         { border-style: solid; border-width: 1pt; bordercolor: #000000}
+
+.layout1_print_margins { margin-top: 267px; margin-left: 15px; }
+
+.layout1_card_status_valid   {color: #008000; font-family: Verdana,Tahoma,Arial; font-size: 32pt; font-weight:bold; }
+.layout1_card_status_invalid {color: #FF0000; font-family: Verdana,Tahoma,Arial; font-size: 32pt; font-weight:bold; }
+
+.layout1_scan_member_name_text    { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 32pt; font-weight:normal; }
+.layout1_scan_expires_date_label  { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 26pt; font-weight:bold; }
+.layout1_scan_expiredate_text     { color: #990000; font-family: Verdana,Tahoma,Arial; font-size: 26pt; font-weight:bold;}
+
+/* Layout 2 */
+.layout2_card_color          { background-color: #990000; }
+.layout2_card_outline        { border-style: dotted; border-width: 0pt; bordercolor: #EFEFEF}
+
+.layout2_card_logo_display   { position: absolute; left:180px; -moz-opacity:0.1; filter:alpha(opacity=10); z-index:-1; }
+.layout2_card_logo_print     { position: absolute; left:188px; -moz-opacity:0.1; filter:alpha(opacity=20); z-index:-1; }
+/*.layout2_card_title          { color: #000000; font-family: impact,Verdana,Tahoma,Arial; font-size: 20pt; font-weight:bold; line-height: 1.6 }*/
+.layout2_card_title          { color: #000000; font-family: impact,Verdana,Tahoma,Arial; font-size: 20pt; font-weight:normal; }
+.layout2_card_label          { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 10pt; font-weight:bold; }
+.layout2_card_text           { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 10pt; font-weight:normal; border-radius: 5px 5px 5px 5px;}
+#img_outline                 { border: 1pt solid #000000; border-radius: 5px 5px 5px 5px; width: 480px; height: 360px; margin: 2px 2px;}
+
+/*
+.layout2_member_name_text    { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 14pt; font-weight:bold; }
+.layout2_year_card_text      { color: #FFFFFF; font-family: Verdana,Tahoma,Arial; font-size: 8pt; font-weight:normal; }
+.layout2_expiredate_text     { color: #990000; font-family: Verdana,Tahoma,Arial; font-size: 14pt; font-weight:bold;}
+*/
+.layout2_member_name_text    { font-family: Verdana,Tahoma,Arial; font-size: 12pt; font-weight:bold; }
+.layout2_year_card_text      { font-family: Verdana,Tahoma,Arial; font-size: 8pt; font-weight:normal; }
+.layout2_expiredate_text     { font-family: Verdana,Tahoma,Arial; font-size: 6pt; font-weight:normal; }
+.layout2_img_outline         { border-style: solid; border-width: 1pt; bordercolor: #000000}
+
+/* .print_margins_layout2 { margin-top: 270pt; margin-left: 15pt; } */
+
+.layout2_print_margins { margin-top: 0px; margin-left: 0px; margin-right: 0px; margin-bottom: 0px; }
+
+/*
+originals
+.layout2_card_status_valid   {color: #008000; font-family: Verdana,Tahoma,Arial; font-size: 32pt; font-weight:bold; }
+.layout2_card_status_invalid {color: #FF0000; font-family: Verdana,Tahoma,Arial; font-size: 32pt; font-weight:bold; }
+
+.layout2_scan_member_name_text    { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 32pt; font-weight:normal; }
+.layout2_scan_expires_date_label  { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 26pt; font-weight:bold; }
+.layout2_scan_expiredate_text     { color: #990000; font-family: Verdana,Tahoma,Arial; font-size: 26pt; font-weight:bold;}
+*/
+.layout2_card_status_valid   {color: #008000; font-family: Verdana,Tahoma,Arial; font-size: 24pt; font-weight:bold; }
+.layout2_card_status_invalid {color: #FF0000; font-family: Verdana,Tahoma,Arial; font-size: 24pt; font-weight:bold; }
+
+.layout2_scan_member_name_text    { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 26pt; font-weight:normal; }
+.layout2_scan_expires_date_label  { color: #000000; font-family: Verdana,Tahoma,Arial; font-size: 16pt; font-weight:bold; }
+.layout2_scan_expiredate_text     { color: #990000; font-family: Verdana,Tahoma,Arial; font-size: 16pt; font-weight:bold;}

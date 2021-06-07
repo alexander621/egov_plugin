@@ -1,0 +1,271 @@
+/* Facility Management css input by Steve Loar */
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+#content { padding: 20px; width: 95%; font-size: 11px; font-family: Verdana,Tahoma; }
+
+#content table tr { height: 26px; }
+
+#content table tr.alt_row { background: #eee; }
+
+#content div#functionlinks { padding-bottom: 9px; }
+
+#content div#functionlinks2 { padding-bottom: 9px; }
+
+#content th {text-align: center; font-size: 11px; font-family: Verdana,Tahoma; }
+
+#content h1 {font-size: 13px; margin-bottom: 0; padding-bottom: 0;}
+
+#content table tr td.action { width: 130px;}
+
+#content p a {font-size: 11px; font-family: Verdana,Tahoma;}
+
+#content div.shadow { background: #919191; margin-bottom: 20px; }
+
+#content textarea {height:100px; width:600px;}
+
+#content textarea#waiver_desc { height: 90px; width: 360px; }
+
+#content textarea.elements { height:100px; width:400px; }
+
+#content table tr td.imageinput { text-align: right; padding-right: 15px; }
+
+#content table tr td a { margin-right: 5px; }
+
+#content table tr td a.selectimage { padding-right:215px; }
+
+#content textarea.message { height:60px; width:250px; }
+
+#content table.tablereport {
+	 width: 760px;
+    BORDER-RIGHT: 1px solid #336699;
+    BORDER-TOP: 1px solid #336699;
+    BORDER-LEFT: 1px solid #336699;
+    BORDER-BOTTOM: 1px solid #336699;
+	}
+
+#content table.tablereport th {
+    HEIGHT: 24px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM:  1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+#content table.tablereport td {
+    height: 26px;
+	}
+
+#content table.globalreporttable {
+	padding: 0;
+	top: 0;
+	left: 0;
+	margin: .5em 0 2em 0 !important;
+	border: 1px solid #336699;
+	width: 760px;
+	/* give a drop shadow
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;  */
+	}
+
+#content table.globalreporttable th {
+    HEIGHT: 26px;
+    font-weight: bold;
+    color: black;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #ccc;
+	cursor: default;
+	}
+
+#content table.globalreporttable tr.totalrow td {
+	border-bottom: 1px solid #336699 !important;
+	}
+
+#content table.globalreporttable tr#rectotalrow td {
+	background-color: #ccc;
+	}
+
+#content table th.numbers {
+	text-align: right;
+	}
+
+#content table td.namecell {
+	width: 250px;
+	}
+
+#content span.searchelement {
+	padding-left: 60px;
+	}
+
+/*input.button {
+	cursor: pointer;
+	}
+*/
+
+#topbuttons {
+	position: relative;
+	float: right;
+	}
+
+#searchtip {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+	}
+
+#content span#searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+.reserveformtitle {
+    FONT-SIZE: 12px;
+	font-weight: bold;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #8a8ab0;
+	font-family: Verdana,Tahoma;
+	padding: 5px ;
+	margin-top: 10px;
+	}
+
+.reserveforminputarea {
+    border: #336699 1px solid;
+	font-family: Verdana,Tahoma;
+	FONT-SIZE: 10px;
+	margin-bottom: 20px;
+	}
+
+.reserveforminputarea p {
+	margin-left: 10px;
+	FONT-SIZE: 10px;
+	}
+
+.reserveforminputarea table {
+	margin: 0;
+	padding: 0;
+	}
+
+.reserveforminputarea table th {
+	text-align: center;
+	}
+
+#receiptcontent { 
+	padding: 20px; 
+	width: 600px; 
+	font-size: 11px; 
+	font-family: Verdana,Tahoma; 
+	}
+
+#receiptcontent table { 
+	position: relative; 
+	top: -4px; 
+	left: -4px; 
+	width: 100%; 
+	background: #fff; 
+	border: 1px solid black; 
+	}
+
+#receiptcontent table tr { 
+	height: 26px;
+	}
+
+#receiptcontent div.shadow { 
+	margin: 0; 
+	padding: 0; 
+	background: #919191; 
+	margin-bottom: 20px;
+	}
+
+#receiptcontent table th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	text-align: left;
+	}
+
+#receiptlinks { 
+	padding: 0;
+	margin: 0;
+	padding-bottom: 14px; 
+	}
+
+#content table#searchtable {
+	margin-bottom: 10px;
+	width: 740px;
+	}
+
+#content table#searchtable td {	
+	height: 20px; 
+	}
+
+.familylist {	
+	padding-left: 25px; 
+	padding-bottom: 10px; 
+	}
+
+table#tablelist {
+	width: 760px;
+	}
+
+#content fieldset#search {
+	width: 725px;
+	}
+
+div.ratetype {
+	padding: 0;
+	margin: 0;
+	width: 250px;
+	margin-left: 20px;
+	margin-top: 4px;
+	vertical-align: bottom;
+	}
+
+div.typecount {
+	position: relative;
+	float: right;
+	text-align: right;
+	width: 100px;
+	margin-top: -1em;
+	}
+
+#content table tr.totalrow td {
+	border-top: #336699 1px solid;
+	}
+
+#content table tr td.amount {
+	width: 120px;
+	text-align: right;
+	}
+
+#content table tr th.nametitle {
+	text-align: left;
+	}
+
+input#globalreportprint {
+	margin-left: 2em;
+	}
+
+fieldset#search {
+	margin: 2em 0;
+	}
+

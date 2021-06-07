@@ -1,0 +1,10 @@
+﻿#wrapper_header,
+#wrapper_footer
+{
+    display: none !important;
+}
+
+#classReceipt 
+{
+    font-size: 0.625em;
+}

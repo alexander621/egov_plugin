@@ -1,0 +1,290 @@
+<html>
+<head>
+<title>VintaSoft Web TWAIN ActiveX Demo</title>
+<script language="JavaScript" type="text/javascript">
+
+var previewImagePath
+
+// Acquire image from scanner.
+function ScanImage(showUI)
+{
+	VSTwain1.StartDevice()
+	
+	//VSTwain1.IsLoggingEnabled = 1
+	//VSTwain1.LogFilePath = "d:\\vstwain.log"
+	 var User;
+  var Domain;
+  var RegCode;
+
+  //User    = "Jerry Felix";
+  //Domain  = "egovlink.com";
+  //RegCode = "74F85955BBA574EBB983FE2F8EF479EB928CABF18C14ACB8BEC7715B484E95C86BB464D1151069EFBF19BD3094963A4642E78EA1EAD55CC8AFF321B09B62016CFF1AC3EA30FC03413FA72DCBD774E009ABA053A5151405F0355522C0277E053C23868C0CED1DE34766CD5C4EFCBA3EDDB1C6D3EF3685853973CE69067FCCE9EA407A1537D47A04CD6D62398FC2A9AE823E01ABECF8FEE61B443D50FCF443EFB9";
+
+  User    = "EC Link";
+  Domain  = "www.egovlink.com";
+  RegCode = 'A0B5582BA4CC988742C3920E996E5B5EC2FA83BBEDC487A036A6F8C505E4934700E4FE3862EE8E3EECE001B52B7D508BF97194CE0D83D8C635A9D8588126C02DFD69A8DFCEF35710F138571492E78858FF9D5391AC07999BD8DEE5B58DD494DC71016088917E0C25F9C6CF9E53EB823F977ABC216FF3C08A5E2FC37DB2478352638FB1F18725CAD94A843E96410196A7A61887C49AD6119C474BC0FCBF34E52D';
+
+  VSTwain1.Register( User, Domain, RegCode );
+	
+	VSTwain1.MaxImages = 1
+	VSTwain1.AutoCleanBuffer = 1
+	
+	if (VSTwain1.SelectSource() == 1)
+	{
+	  VSTwain1.ShowUI = showUI
+	  
+	  if (showUI == 0)
+	  {
+	    VSTwain1.DisableAfterAcquire = 1
+	  
+  	    VSTwain1.OpenDataSource()
+	    VSTwain1.PixelType = 2    // 0-bw, 1-gray, 2-rgb (ActiveX does not allow to upload RGB images in evaluation version)
+	    VSTwain1.UnitOfMeasure = 0
+	    VSTwain1.Resolution = 200
+	  }
+	  
+	  VSTwain1.Acquire();
+	  
+	}
+}
+
+// Upload to FTP
+function UploadToFtpServer()
+{
+	// document.Form1.BUpload.disabled = 1
+	// document.Form1.BCancel.disabled = 0
+	// var ftpServer = String(document.Form1.ftpServer.value)
+	// var ftpUser = String(document.Form1.ftpUser.value)
+	// var ftpPassw = String(document.Form1.ftpPassw.value)
+	// VSTwain1.SetFtpServerParams(ftpServer,21,ftpUser,ftpPassw,"")
+	// if (VSTwain1.ErrorCode != 0)
+	// {
+	//   alert(VSTwain1.ErrorString)
+	//   document.Form1.BUpload.disabled = 0
+	//   document.Form1.BCancel.disabled = 1
+	// }
+	// else
+	// {
+	//   VSTwain1.SetFtpServerAdvParams(1,20)
+	//   var ftpPath = String(document.Form1.ftpPath.value)
+	//   if (VSTwain1.SaveImageToFtp(0,ftpPath) == 0)
+	//   {
+	//     alert(VSTwain1.ErrorString)
+	//     document.Form1.BUpload.disabled = 0
+	//     document.Form1.BCancel.disabled = 1
+	//   }
+	//   else setTimeout("FtpUploadStatus()",10)
+	// }
+}
+function CancelUploadToFtpServer()
+{
+ 	VSTwain1.FtpCancel = 1
+	document.Form1.BUpload.disabled = 0
+	document.Form1.BCancel.disabled = 1
+}
+function FtpUploadStatus()
+{
+	var statString = VSTwain1.FtpStateString
+	if (VSTwain1.FtpState == 10)
+	  statString = statString + " Uploaded " + String(VSTwain1.FtpBytesUploaded) + " bytes from " + String(VSTwain1.FtpBytesTotal) + " bytes."
+	window.status = statString
+	if ((VSTwain1.FtpState == 13) || (VSTwain1.FtpErrorCode != 0))
+	{
+	  if (VSTwain1.FtpErrorCode == 0)
+	    alert('Image is uploaded successfully!')
+	  else
+	    alert(VSTwain1.FtpErrorString)
+	  document.Form1.BUpload.disabled = 0
+	  document.Form1.BCancel.disabled = 1
+	}
+	else
+	  setTimeout("FtpUploadStatus()",10)
+}
+
+// Upload to HTTP
+function UploadToHttpServer()
+{
+	// document.Form2.BUpload.disabled = 1
+	// document.Form2.BCancel.disabled = 0
+	// var httpUrl = String(document.Form2.httpUrl.value)
+	// VSTwain1.SetHttpServerParams(httpUrl, "", 5)
+	// if (VSTwain1.ErrorCode != 0)
+	// {
+	//   alert(VSTwain1.ErrorString)
+	//   document.Form2.BUpload.disabled = 0
+	//   document.Form2.BCancel.disabled = 1
+	// }
+	// else
+	// {
+	//   var httpTextField1 = String(document.Form2.httpTextField1.value)
+	//   var httpTextField1Value = String(document.Form2.httpTextField1Value.value)
+	//   var httpTextField2 = String(document.Form2.httpTextField2.value)
+	//   var httpTextField2Value = String(document.Form2.httpTextField2Value.value)
+	//   var httpFileField = String(document.Form2.httpFileField.value)
+	//   var httpFileFieldValue = String(document.Form2.httpFileFieldValue.value)
+	//   VSTwain1.SetHttpFormField(httpTextField1,httpTextField1Value)
+	//   VSTwain1.SetHttpFormField(httpTextField2,httpTextField2Value)
+	//   if (VSTwain1.SaveImageToHttp(0,httpFileField,httpFileFieldValue) == 0)
+	//   {
+	//     alert(VSTwain1.ErrorString)
+	//     document.Form2.BUpload.disabled = 0
+	//     document.Form2.BCancel.disabled = 1
+	//   }
+	//   else setTimeout("HttpUploadStatus()",10)
+	// }
+}
+function CancelUploadToHttpServer()
+{
+ 	VSTwain1.HttpCancel = 1
+	document.Form2.BUpload.disabled = 0
+	document.Form2.BCancel.disabled = 1
+}
+function HttpUploadStatus()
+{
+	// var statString = VSTwain1.HttpStateString
+	// if (VSTwain1.HttpState == 4)
+	//   statString = statString + " Uploaded " + String(VSTwain1.HttpBytesUploaded) + " bytes from " + String(VSTwain1.HttpBytesTotal) + " bytes."
+	// window.status = statString
+	// if ((VSTwain1.HttpState == 6) || (VSTwain1.HttpErrorCode != 0))
+	// {
+	//   if (VSTwain1.HttpErrorCode == 0)
+	//   {
+	//     if (VSTwain1.HttpResponseCode == 200)
+	//     {
+	//       alert('Image is uploaded successfully!')
+	//       alert(VSTwain1.HttpResponseString)
+	//     }
+	//     else
+	//       alert('Response code (' + VSTwain1.HttpResponseCode + '): ' + VSTwain1.HttpResponseString)
+	//   }
+	//   else
+	//     alert('Error string: ' + VSTwain1.HttpErrorString)
+	    
+	//   document.Form2.BUpload.disabled = 0
+	//   document.Form2.BCancel.disabled = 1
+	// }
+	// else
+	//   setTimeout("HttpUploadStatus()",10)
+}
+
+// Page load/unload
+function OnPageLoad()
+{
+	// C:/Users/SLoar/AppData/Local/Temp/
+	previewImagePath = VSTwain1.GetPathToTempDir() + "test.jpg"
+	setTimeout("applyChanges()", 200)
+}
+function OnPageUnload()
+{
+	VSTwain1.StopDevice()
+}
+
+// Preview acquired image
+function preview(){
+  setTimeout("applyChanges()",200)
+}
+function applyChanges(){
+  var field = document.getElementById("previewImage")
+  field.src = ""
+  field.src = previewImagePath
+  field.width = 350
+  field.height = 270
+}
+</script>
+<script language="JavaScript" type="text/javascript" event="PostScan(flag)" for="VSTwain1">
+<!--
+	if (flag != 0)
+	{
+	  if (VSTwain1.ErrorCode != 0) alert(VSTwain1.ErrorString)
+	}
+	else
+	{
+	  imgPath = previewImagePath
+  	  if (VSTwain1.SaveImage(0,imgPath) == 0)
+	  {
+	    alert(VSTwain1.ErrorString)
+	    alert("Please try to scan black-white or gray images!")
+	  }
+	  else preview()
+	}
+	//document.getElementById("previewImage").src = VSTwain1.GetPathToTempDir() + "test.jpg";
+// -->
+</script>
+</head>
+
+<body onload="JavaScript:OnPageLoad()" onunload="JavaScript:OnPageUnload()">
+  <object id="VSTwain1" width="1" height="1"
+	  classid="CLSID:1169E0CD-9E76-11D7-B1D8-FB63945DE96D"
+	  codebase="">
+  </object>
+
+  <center>
+  
+  <img src="" name="previewImage" id="previewImage" width="350" height="270" alt="Scanned image" />
+  <br /><br />
+  <form action="">
+  <input id="button1" style="LEFT: 17px; WIDTH: 241px; TOP: 363px; HEIGHT: 29px" onclick="JavaScript:ScanImage(1)" type="button" size="34" value="Get an Image with Device Dialog" name="button1" />&nbsp;&nbsp;
+  <input id="button2" style="WIDTH: 241px; HEIGHT: 28px" onclick="JavaScript:ScanImage(0)" type="button" size="41" value="Get an Image without Device Dialog" name="button2" />
+  </form>
+
+  <hr width="80%" />
+  <br />
+
+  <form name="Form1" action="">
+  <table width="500" border="0" cellpadding="0">
+  <tr>
+    <td width="100">FTP server:</td>
+    <td width="400"><input type="text" size="50" value="ftp.test.com" name="ftpServer" /></td>
+  </tr>
+  <tr>
+    <td>FTP user:</td>
+    <td><input type="text" size="50" value="guest" name="ftpUser" /></td>
+  </tr>
+  <tr>
+    <td>FTP password:</td>
+    <td><input type="password" size="50" value="" name="ftpPassw" /></td>
+  </tr>
+  <tr>
+    <td>FTP path:</td>
+    <td><input type="text" size="50" value="/imgs/test.jpg" name="ftpPath" /></td>
+  </tr>
+  </table><br />
+  <input id="button3" style="LEFT: 17px; WIDTH: 241px; TOP: 363px; HEIGHT: 29px" onclick="JavaScript:UploadToFtpServer()" type="button" size="34" value="Upload image onto FTP server" name="BUpload" />&nbsp;&nbsp;
+  <input id="button4" style="LEFT: 17px; WIDTH: 100px; TOP: 363px; HEIGHT: 29px" onclick="JavaScript:CancelUploadToFtpServer()" type="button" size="34" value="Cancel" name="BCancel" disabled="disabled" />
+  </form>
+
+  <hr width="80%" />
+  <br />
+
+  <form name="Form2" action="">
+  <table width="500" border="0" cellpadding="0" align="center">
+  <tr>
+    <td>HTTP Url:</td>
+    <td colspan=3><input type="text" size="55" value="http://www.vintasoft.com/cgi-bin/vstwain-demo-upload.cgi" name="httpUrl" /></td>
+  </tr>
+  <tr>
+    <td>File field:</td>
+    <td><input type="text" size="20" value="file" name="httpFileField" /></td>
+    <td>Value:</td>
+    <td><input type="text" size="30" value="demo.jpg" name="httpFileFieldValue" /></td>
+  </tr>
+  <tr>
+    <td>Text field 1:</td>
+    <td><input type="text" size="20" value="" name="httpTextField1" /></td>
+    <td>Value:</td>
+    <td><input type="text" size="30" value="" name="httpTextField1Value" /></td>
+  </tr>
+  <tr>
+    <td>Text field 2:</td>
+    <td><input type="text" size="20" value="" name="httpTextField2" /></td>
+    <td>Value:</td>
+    <td><input type="text" size="30" value="" name="httpTextField2Value" /></td>
+  </tr>
+  </table><br />
+  <input id="button5" style="LEFT: 17px; WIDTH: 241px; TOP: 363px; HEIGHT: 29px" onclick="JavaScript:UploadToHttpServer()" type="button" size="34" value="Upload image onto HTTP server" name="BUpload" />&nbsp;&nbsp;
+  <input id="button6" style="LEFT: 17px; WIDTH: 100px; TOP: 363px; HEIGHT: 29px" onclick="JavaScript:CancelUploadToHttpServer()" type="button" size="34" value="Cancel" name="BCancel" disabled="disabled" />
+  </form>
+  
+  </center>
+</body>
+</html>

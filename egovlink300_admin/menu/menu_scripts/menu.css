@@ -1,0 +1,84 @@
+/* --- menu styles ---
+note:
+	not all browsers render styles the same way so try out your style sheet
+	on different browsers before publishing;
+*/
+
+/* level 0 inner */
+.m0l0iout {
+	font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+	font-size: 12px;
+	text-decoration: none;
+	margin: 4px 0 0 8px;
+	color: #FFFFFF;
+}
+.m0l0iover {
+	font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+	font-size: 12px;
+	margin: 5px 0 0 8px;
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+/* level 0 outer */
+.m0l0oout {
+	text-decoration : none;
+	background-color: #2C5F93;
+	/*border: 1px solid #336699;*/
+}
+.m0l0oover {
+	text-decoration : none;
+	background-color: #2C5F93;
+	/*border: 1px solid #336699;*/
+}
+
+/* level 1 inner */
+.m0l1iout {
+	font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+	font-size: 12px;
+	margin: 4px 0 0 17px;
+	color: #FFFFFF;text-decoration: none;
+}
+.m0l1iover {
+	font-family: sans-serif, Tahoma, Verdana, Geneva, Arial, Helvetica;
+	font-size: 12px;
+	margin: 4px 0 0 17px;
+	color: #FFFFFF;text-decoration: none;
+}
+
+/* level 1 outer */
+.m0l1oout {
+	text-decoration : none;
+	background-color: #5286BB;
+	border: 1px solid #336699;
+	padding: 0;
+}
+.m0l1oover {
+	text-decoration : none;
+	background-color: #1A4D81;
+	background-image: url('../img/lev1_arrow.gif');
+	background-repeat: no-repeat;
+	border: 1px solid #336699;
+	padding: 0;
+}
+
+A:link
+{
+    COLOR: #0000bb;
+    TEXT-DECORATION: none
+}
+A:visited
+{
+    COLOR: #0000bb;
+    TEXT-DECORATION: none
+}
+A:active
+{
+    COLOR: #0000bb;
+    TEXT-DECORATION: none
+}
+A:hover
+{
+    COLOR: #0000ff;
+     TEXT-DECORATION: none
+}

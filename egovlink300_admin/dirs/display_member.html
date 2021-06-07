@@ -1,0 +1,384 @@
+<%
+	dim pagesize, totalpages,RA,totalrecords,groupname,thisname,currentpage,conn,rs,groupmode,strSQL,CName,AdditonURL
+	Dim numstartid,numendid,i,deleteurl,EventOrNot,Str_Bgcolor,username,password,str_image,editurl,FullName
+
+	'groupmode=1, display individual group
+	'groupmode=2, display all member
+
+	'pagesize=Session("PageSize")
+	pagesize = GetUserPageSize( Session("UserId") ) ' Steve Loar 2/5/2007
+
+	'totalpages=1
+	HowManyMembersDisplayed=0
+	thisname=request.servervariables("script_name")
+
+	if not isempty(request.querystring("currentpage")) then
+		CurrentPage=clng(request.querystring("currentpage"))
+	else
+		currentpage=1
+	end if
+	' the above value will be provided by the display_committee.asp
+	'page size, RA, pagerecord, currentpage values must be declared to global variables.
+
+	DisplayRecords()
+
+
+'--------------------------------------------------------------------------------------------------
+' Sub DisplayRecords()
+'--------------------------------------------------------------------------------------------------
+Sub DisplayRecords()
+	Dim iShowCount
+
+	iShowCount = 0
+	
+	thisname=request.servervariables("script_name")
+
+	set conn = Server.CreateObject("ADODB.Connection")
+	conn.Open Application("DSN")
+	set rs = Server.CreateObject("ADODB.Recordset")
+	set rs.ActiveConnection = conn
+	rs.CursorLocation = 3 
+	rs.CursorType = 3 
+	'response.write "<br>GroupID="&request.querystring("groupid")
+
+	if trim(request.querystring("groupid"))<>"" then
+		'response.write "<br>display one group<br>"
+		GroupMode=1
+		strSQL = "select u.userid, firstname,lastname, isnull(email,'') as email, username,password, isnull(locationid,0) as locationid, isclasssupervisor, groupname "
+		strSQL = strSQL & " from users u, usersgroups ug, groups g where u.userid=ug.userid and g.groupid=ug.groupid and u.orgid = "&Session("OrgID")
+		If Not IsRootAdmin( Session("UserId") ) Then
+			strSQL = strSQL & " and isrootadmin <> 1 "
+		End If 
+		strSQL = strSQL & " and ug.groupid="&clng(request.querystring("groupid"))&" order by lastname"
+	else
+		GroupMode=2
+		'response.write "<br>display All users<br>"
+		strSQL = "select userid, firstname,lastname,isnull(email,'') as email, username,password, isnull(locationid,0) as locationid, isclasssupervisor from users u "
+		strSQL = strSQL & " where (username  is not null) and username<>'' "
+		If Not IsRootAdmin( Session("UserId") ) Then
+			strSQL = strSQL & " and isrootadmin <> 1 "
+		End If 
+		strSQL = strSQL & " and u.orgid="&Session("OrgID")&" order by lastname"
+	end If
+	
+	rs.Open strSQL
+	'------- the following code dealing with the recordcount=0-------
+	if rs.recordcount=0 then
+		rs.close
+		if groupmode=1 then
+			strSQL="select groupname from groups where groupid="&clng(request.querystring("groupid"))
+			rs.Open strSQL
+			CName="Department:&nbsp;"&rs("groupname") 
+			groupname=rs("groupname")	
+			rs.close
+		else
+			CName="Department:&nbsp;"&langDiaplyMember 
+		end if
+		call statistics(CName, groupmode)
+		call navagatorbar(0)
+		response.write "<br /><br /><div class=""shadow"">"
+		response.write "<table border=0 cellpadding=5 cellspacing=0 width='100%' class='tablelist'>"
+		response.write "<tr><th align=left width='30%'>&nbsp;&nbsp;&nbsp;&nbsp;"&langUser&"</th><th  align='center'>&nbsp;"&langTypeEmail&"</th></tr>"
+		response.write "<tr><td align=left colspan=2>&nbsp;&nbsp;<FONT SIZE=1 COLOR=red><B>"&langNoRecords&"</B></FONT></td></tr>"
+		response.write "</table></div>"
+		exit sub
+	end if
+	'--------------------------------------------------------------------
+	rs.movefirst
+	totalrecords = rs.RecordCount
+	TotalPages = (totalrecords \ pagesize) + 1  '\means integer/integer
+
+	if totalrecords Mod pagesize=0 and TotalPages>0 then TotalPages=TotalPages-1
+
+	if totalrecords <= pagesize then TotalPages=1
+
+	if TotalPages < 1 then TotalPages = 1
+
+	if isNumeric(CurrentPage) then
+		if CurrentPage < 1 then CurrentPage = 1
+		if CurrentPage > TotalPages then CurrentPage = TotalPages
+	else
+		CurrentPage = 1
+	end if
+	numstartid	= (CurrentPage-1) * PageSize
+	If numstartid + PageSize < totalrecords Then
+		numendid = numstartid + pagesize - 1
+	Else
+		numendid = totalrecords - 1
+	End If 
+	'numendid	= IIf(numstartid + PageSize < totalrecords, numstartid+pagesize- 1, totalrecords - 1)
+'	response.write "<br>totalrecords="&totalrecords&"  numberstartid="&numstartid&" numendid="&numendid
+'	response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages & "<br /><br />"
+	'==========================================================================================
+	RA=rs.GetRows
+	if groupmode=1 then
+		CName = "Department:&nbsp;" & RA(8,i)
+		groupname = RA(8,i)
+	else
+		CName = "Department:&nbsp;" & langDiaplyMember
+	end If
+	
+	call statistics(CName, groupmode)
+	call navagatorbar(1)
+
+	response.write "<br /><br />"
+	response.write "<div class=""shadow"">"
+	'==========  the following will display the whole table=========================================
+	response.write "<table border=0 cellpadding=5 cellspacing=0 width='100%' id=""userlist"">"
+	deleteurl="delete_multipleuser.asp?previousURL="&thisname&"&Extra="&request.querystring
+	response.write "<form name=DeleteMember method=post action='"&deleteurl&"'>"
+	response.write "<tr><th align=left>"
+
+	If UserHasPermission( Session("UserId"), "edit users" )  and request.querystring("groupid")="" Then 
+		response.write "<input class=""listCheck"" type=checkbox name=""chkSelectAll"" onClick=""selectAll('DeleteMember', this.checked, 'delete')"">"
+	End If 
+	response.write "&nbsp;</th><th align=left width='30%'>" & langUser & "</th>"
+	If OrgHasFeature( "class supervisors" ) Then
+		response.write "<th align=""left"">Class Supervisor</th>"
+	End If 
+	If OrgHasFeature( "admin locations" ) Then
+		response.write "<th align=""left"">Location</th>"
+	End If 
+	response.write "<th align='center' colspan=2>&nbsp;"&langTypeEmail&"</th>"
+'	If UserHasPermission( Session("UserId"), "edit users" ) Then 
+		response.write "<th align=left>Edit Groups</th>"
+'	End If 
+	response.write "</tr>"
+
+	'--------------------------------------------------------------------------
+	j = numstartid		' For alt row colors
+	i = numstartid  ' 0, 20, 40 usually
+	iShowCount = i
+	'for i = numstartid to numendid
+	Do While iShowCount <= numendid
+		'-- alternateviely show different color-----
+		EventOrNot=(j+2) mod 2
+		if EventOrNot=0 then
+			Str_Bgcolor = "#FFFFFF"	' white
+		else
+			Str_Bgcolor = "#EEEEEE"	' grey
+		end if
+		'-------------------------------------------
+		username=RA(4,i)
+		password=RA(5,i)
+		if (isnull(username)) or (username="") then
+			str_image="<img src='../images/newcontact.gif'>"
+		else
+			str_image="<img src='../images/newuser.gif'>"
+		end if
+		'-----------------------------------------
+		'GroupNumber=entry(RA(0,i))
+		editurl="display_individual.asp?userid=" & RA(0,i)
+		FullName=trim(RA(2,i))&",&nbsp;" & trim(RA(1,i))
+
+		If UserHasPermission( Session("UserId"), "edit users" ) And Not IsRootAdmin( RA(0,i) ) Then
+			j = j + 1
+			
+			HowManyMembersDisplayed = HowManyMembersDisplayed + 1
+			response.write 	"<tr bgcolor="&Str_Bgcolor&"><td width=""36"" align=""center"">"
+			if UserHasPermission( Session("UserId"), "edit users" )  and request.querystring("groupid")="" then
+				response.write  "<input type=""checkbox"" name=""delete""  value=""" & RA(0,i) & """ />"
+			end if
+			response.write str_image&"</td>"
+'			response.write " <td><a href='"&editurl&"'>"&FullName&"</a>(" & iShowCount & ")</td>"
+			response.write " <td><a href='"&editurl&"'>"&FullName&"</a></td>"
+			If OrgHasFeature( "class supervisors" ) Then
+				response.write "<td align=""center""><input type=""checkbox"" name=""issupervisor"" value=""" & RA(0,i) & """"
+				If RA(7,i) Then 
+					response.write " checked=""checked"" "
+				End If 
+				response.write " onClick='ChangeSupervisor(" & RA(0,i) & ");' /></td>"
+			End If 
+			If OrgHasFeature( "admin locations" ) Then
+				response.write "<td nowrap=""nowrap"">" & GetUserLocation( RA(6,i) ) & "</td>"
+			End If 
+			response.write "<td align='center'>"
+			If RA(3,i) <> "" Then 
+				response.write "<a href=""mailto:" & RA(3,i) & """><img src=""../images/newmail_small.gif"" border=0></a>"
+			Else
+				response.write "&nbsp;"
+			End If 
+			response.write "</td><td>&nbsp;" & RA(3,i) & "</td>"
+
+			'response.write    "<td align='center'>&nbsp;"&RA(3,i)&"</td>"
+	
+'			if UserHasPermission( Session("UserId"), "edit users" )  then
+'
+				response.write "<td><i><a href=javascript:openWin2('ManageMemberGroup.asp?userid="&RA(0,i)&"','_blank')>"&langEdit&"</a></i></td>"
+'			end if
+			response.write "</tr>"
+			'rs.movenext
+			iShowCount = iShowCount + 1
+		End If
+		i = i + 1
+	'next     
+	Loop 
+	'----------------------------------------------------------------------------
+	If HowManyMembersDisplayed=0 Then
+		response.write "<tr style=""height:25px;""><td colspan=""5"">No users that you can view!</td></tr>"
+	End If
+
+	response.write "</form></table>"
+	response.write "</div>"
+	call navagatorbar(1)
+	'=======  end of displaying the whole table================================================
+	rs.close
+	set rs=nothing
+	conn.close
+	set conn=nothing
+End Sub 
+
+
+'--------------------------------------------------------------------------------------------------
+' Function entry(groupid)
+'--------------------------------------------------------------------------------------------------
+Function entry(groupid)
+	' -100 means total records
+	' if a groupid>0 it will show individual group
+	set conn2 = Server.CreateObject("ADODB.Connection")
+	conn2.Open Application("DSN")
+	set rs2 = Server.CreateObject("ADODB.Recordset")
+
+	set rs2.ActiveConnection = conn2
+	rs2.CursorLocation = 3 
+	rs2.CursorType = 3 
+
+	if groupid=-100 then
+		strSQL2= "select count(ug.userid) as totaluser from usersgroups ug inner join groups g on ug.userid=u.userid and u.orgid="&Session("OrgID")
+	else
+		strSQL2= "select count(ug.userid) as totaluser from usersgroups ug inner join groups g on ug.userid=u.userid and u.orgid="&Session("OrgID")&" where ug.groupid="&groupid
+	end If
+	
+	rs2.Open strSQL2
+	AllUsers=rs2("totaluser")
+	rs2.close
+	conn2.close
+	set rs=nothing
+	set conn2=nothing
+	entry=AllUsers
+end function 
+
+
+'--------------------------------------------------------------------------------------------------
+' Sub statistics(CName, iGroupMode)
+'--------------------------------------------------------------------------------------------------
+Sub statistics(CName, iGroupMode)
+'	commented out 10/10/06 - SJL
+	response.write "<table><tr>"
+	response.write "<td><font size='+1'><b>"&CName&"</b></font><br />"
+	If iGroupMode = 1 Then 
+		response.write "<img src='../images/arrow_2back.gif' align='absmiddle'>&nbsp;<a href='display_committee.asp'>Back to Department List</td>"
+	End If 
+	response.write "</tr></table><br />"
+'	response.write "<td><h3>Security: Edit Users</h3><br />"
+end sub
+
+
+'--------------------------------------------------------------------------------------------------
+' Sub navagatorbar(record)
+'--------------------------------------------------------------------------------------------------
+Sub navagatorbar(record)
+	if groupmode=1 then
+		AdditonURL="groupid="&request.querystring("groupid")&"&"
+	else
+		AdditonURL=""
+	end if
+	response.write "<div style='font-size:10px; padding-bottom:5px;'>"
+
+	if currentpage>1 then 
+		response.write "<A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)&"'>"
+		response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>"&langPrev&" "&pagesize&"</A>"
+	else
+		response.write "<!A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)&"'>"
+		response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>"& _
+		"<font color=#999999>"&langPrev&" "&pagesize&"</font></A>"
+	end if
+    	
+'		response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages
+	if currentpage<totalpages then 
+		response.write "&nbsp;&nbsp;<A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)&"'>"&langNext&" "&pagesize
+	else
+		response.write "&nbsp;&nbsp;<!A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)&"'>"& _
+		"<font color=#999999>"&langNext&" "&pagesize&"</font>" 
+	end if
+    response.write 	"<img src='../images/arrow_forward.gif' align='absmiddle' border=0></a>"
+
+	'------- the following is the additional convenient links showing on the top of table---
+	if request.querystring("groupid")<>"" then
+		'-------------------------- for group display
+		' response.write "**groupnamee="&groupname&"<br>"
+'		if HasPermission("CanEditCommittee") OR HasPermission("CanEdit"&groupname) then
+			response.write	"&nbsp;&nbsp;<img src='../images/newgroup.gif' width='16' height='16' align='absmiddle'>&nbsp;&nbsp;"
+			response.write "<a HREF=javascript:openWin2('ManageCommitteeMember.asp?groupid="&request.querystring("groupid")&"','_blank')>"&langEdit&" "&langmemberShip&"</A>"
+'		end if
+		'-----------------------------------	
+	else
+		'-------------------------- for all users, delete or add them
+'		 if UserHasPermission( Session("UserId"), "edit users" ) then 
+			response.write	"&nbsp;&nbsp;<img src='../images/newuser.gif' width='16' height='16' align='absmiddle'>&nbsp;<a href='register_normaluser.asp'>"&langNewMember&"</a> &nbsp;&nbsp;&nbsp;&nbsp;"%>
+			<% if record > 0  then %>
+				 <img src="../images/small_delete.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.DeleteMember.submit();" onClick="javascript: return confirm('<%=langWanttoDeleteMember%>');"><%=langDelete%></a>
+			<% end if %>		
+<%'		end if
+		'-----------------------
+	end if
+
+	'------- end of convenient links showing on the top of table---
+End Sub 
+
+
+'--------------------------------------------------------------------------------------------------
+' Function IIf(bCheck, sTrue, sFalse)
+'--------------------------------------------------------------------------------------------------
+Function IIf(bCheck, sTrue, sFalse)
+	if bCheck then IIf = sTrue Else IIf = sFalse
+end Function
+
+
+'--------------------------------------------------------------------------------------------------
+' Function IsRootAdmin( iUserId )
+'--------------------------------------------------------------------------------------------------
+Function IsRootAdmin( iUserId )
+	Dim sSql, oIsRoot, blnReturnValue
+
+	' SET DEFAULT
+	blnReturnValue = False
+
+	' If the root is viewing this, then let them see their own record, otherwise No.
+	If Session("UserID") <> iUserId Then
+		sSql = "select count(userid) as root_count from users where orgid = " & Session("OrgID") & " and userid = " & iUserId & " and isrootadmin = 1"
+
+		Set oIsRoot = Server.CreateObject("ADODB.Recordset")
+		oIsRoot.Open  sSQL, Application("DSN"), 3, 1
+		
+		If CInt(oIsRoot("root_count")) > 0 Then
+			' the ORGANIZATION HAS the FEATURE
+			blnReturnValue = True
+		End If
+		
+		oIsRoot.close 
+		Set oIsRoot = Nothing
+	 
+	End If 
+
+	IsRootAdmin = blnReturnValue
+End Function 
+
+
+%>
+
+<script language=javascript>
+	function openWin1(url, name) 
+	{
+		popupWin = window.open(url, name,
+			"resizable,width=550,height=450");
+	}
+</script>
+
+<script language=javascript>
+	function openWin2(url, name) 
+	{
+		popupWin = window.open(url, name,
+			"resizable,width=380,height=300");
+	}
+</script>

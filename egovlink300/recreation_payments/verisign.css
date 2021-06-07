@@ -1,0 +1,30 @@
+/* verisign PAYMENT FORM STYLES */
+
+INPUT.skipjackbtn {
+	background-color: #336699;
+	color: #FFFFFF;
+	font-weight: bold;
+	}
+
+p.smallnote {
+	font-size: 10px;
+	}
+
+div#paymentform {
+	margin-left: 3em;
+	margin-bottom: 4em;
+	margin-top: 2em;
+	}
+
+table#chargeamounts {
+	font-family: Verdana;
+	}
+
+table#chargeamounts td.labelcol {
+	width: 15em;
+	font-weight: bold;
+	}
+
+div#chargediv {
+	width: 100%;
+	}

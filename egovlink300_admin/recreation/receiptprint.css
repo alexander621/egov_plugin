@@ -1,0 +1,86 @@
+
+
+#receiptlinks, #topbuttons, #backbutton {
+	display: none;
+	}
+
+.noprint, .menu, .button {
+	display: none;
+	}
+
+#content { 
+	padding: 0; 
+	width: 600px; 
+	}
+
+#content table { 
+	position: relative; 
+	top: 0; 
+	left: 0; 
+	width: 600px; 
+	background: #fff;
+	}
+
+#content table tr { 
+	height: 20px; 
+	}
+
+#content fieldset#search {
+	width: 570px;
+	}
+
+#topright {
+	float: right;
+	margin-bottom: 6px;
+	padding-right: 160px;
+	}
+
+#cart_table th {
+	background-color: #fff;
+	color: #000;
+	}
+
+#content table#classcount {
+	width: 300px;
+	}
+
+#content table.instructortable {
+	left: 0; 
+	width: 600px; 
+	background: #fff;
+	}
+
+#content table#searchtable {
+	width 450px;
+	}
+
+table#pageheader {
+	display: none;
+	}
+
+table#logheader {
+	display: none;
+	}
+
+div.m0l0iout {
+	display: none;
+	border: 0 none #ffffff;
+	}
+
+div.m0l0iover {
+	display: none;
+	border: 0 none #ffffff;
+	}
+
+div.m0l0oout {
+	display: none;
+	border: 0 none #ffffff;
+	}
+
+div.m0l0oover
+	display: none;
+	border: 0 none #ffffff;
+	}
+
+
+

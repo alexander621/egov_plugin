@@ -1,0 +1,1495 @@
+body {
+	padding: 0;
+	margin: 0;
+	}
+
+input {
+	padding: 0;
+	margin: 0;
+	}
+
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+div#idControls 
+{
+	padding-top: .5em;
+	padding-left: .8em
+}
+
+div.filterselection {
+	padding:5px; 
+	margin: 0;
+	margin-bottom: 2em;
+	margin-right: 5px;
+	}
+
+div.rentalsearchselection {
+	padding: 3px; 
+	margin: 0;
+	margin-bottom: 2em;
+	width: 920px !important;
+	}
+
+fieldset#searchfieldset {
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	padding-bottom: .5em;
+    -webkit-border-radius: 5px;
+    -moz-border-radius:    5px;
+	}
+
+table#rentalsearch {
+	width: 900px;
+	margin-left: 1em;
+	margin-bottom: .5em !important;
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#rentalsearch td.labelcolumn {
+	width: 10em !important;
+	}
+
+table#rentalsearch td.labelcolumn2 {
+	width: 6em !important;
+	}
+
+table#rentalsearch td.pickcolumn {
+	width: 37em !important;
+	}
+
+table#reservationtempinfo {
+	width: 944px;
+	}
+
+table#reservationtempinfo td.labelcolumn {
+	width: 11em !important;
+	}
+
+table#reservationtempinfo td.labelcolumn2 {
+	width: 6em !important;
+	}
+
+table#reservationtempinfo td.pickcolumn {
+	width: 37em !important;
+	}
+
+span.calendarimg {
+	cursor: pointer;
+	}
+
+textarea#description {
+	width: 740px;
+	height: 600px;
+	behavior: none;
+	}
+
+textarea#shortdescription {
+	width: 740px;
+	height: 40px;
+	behavior: none;
+	}
+
+textarea#capacity {
+	width: 500px;
+	height: 40px;
+	behavior: none;
+	}
+
+textarea#receiptnotes {
+	width: 740px;
+	height: 100px;
+	behavior: none;
+	}
+
+textarea#terms {
+	width: 740px;
+	height: 100px;
+	behavior: none;
+	}
+
+textarea#privatenotes {
+	width: 740px;
+	height: 100px;
+	behavior: none;
+	}
+
+textarea#purchasenotes {
+	width: 400px !important;
+	height: 80px !important;
+	behavior: none;
+	}
+
+textarea#categorydescription {
+	width: 740px;
+	height: 100px;
+	behavior: none;
+	}
+
+table.rentaltable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-left: .75em;
+	margin-right: .5em;
+	}
+
+table.rentaltable th {
+    height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table.rentaltable caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table.rentaltable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table.rentaltable tr.altrow {
+	background-color: #ececec;
+	}
+	
+div.btn-group {
+	margin: 20px 0;
+}	
+
+table#screenMsgtable {
+	width: 100%;
+	}
+
+table#screenMsgtable td {
+	height: 2em;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+p#rentalnamecontainer {
+	margin-bottom: 2em;
+	}
+
+div.helpmsg {
+	margin-bottom: 2em;
+	}
+
+div#rentalslistshadow {
+	width: 700px !important;
+	margin-top: 2em;
+}
+	
+input#newcategorybutton {
+	margin-top: 20px;
+}
+
+table#rentalslist {
+	margin-top: 10px;
+	left: 0;
+	top: 0;
+	border: 1px solid #336699;
+	width: 700px;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#rentalslist th {
+	height: 26px;
+	font-size: 10px;
+	color: #003366;
+	border-bottom: 1px solid #336699;
+	background-color: #93bee1;
+	/*cursor: pointer;*/
+}
+
+table#rentalslist td {
+	height: 26px;
+	font-size: 10px;
+}
+
+table#rentalslist td.firstcol {
+	padding-left: 1em;
+	}
+
+table.seasondays {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-left: .75em;
+	margin-right: 1em !important;
+	margin-top: 2em;
+	margin-bottom: 2em;
+	width: 770px !important;
+	}
+
+table.seasondays th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table.seasondays caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table.seasondays td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table.seasondays td.rentaldowname {
+	padding-left: 2em;
+	}
+
+table.seasondays tr.altrow {
+	background-color: #ececec;
+	}
+
+table#rentalratestable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	width: 100%;
+	border: 1px solid black;
+	}
+
+table#rentalratestable caption {
+	font-weight: bold;
+	font-size: 9pt;
+	text-align: left;
+	height: 26px;
+	}
+
+table#rentalratestable th {
+	font-weight: bold;
+	font-size: 9pt;
+	height: 26px;
+	background-color: silver;
+	border-bottom: 1px solid black;
+	}
+
+table#rentalratestable td {
+	height: 26px;
+	font-size: 9pt;
+	}
+
+table#rentalratestable td.type {
+	padding-left: 1em;
+	}
+
+p.ratesubtitles {
+	font-weight: bold;
+	font-size: 11px;
+	}
+
+p.ratedaysubtitles {
+	font-weight: bold;
+	font-size: 14px;
+	}
+
+p#usagenote {
+	padding-bottom: 2em;
+	}
+
+table#copydaytable {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	width: 100%;
+	border: 1px solid black;
+	}
+
+table#copydaytable th {
+	font-weight: bold;
+	font-size: 9pt;
+	height: 26px;
+	background-color: #93bee1;
+	border-bottom: 1px solid #336699;
+	}
+
+table#copydaytable td {
+	height: 26px;
+	font-size: 9pt;
+	}
+
+span#nomatch {
+	color: red;
+	font-weight: bold;
+	}
+
+div#rentalresultsshadow {
+	width:      950px !important;
+    margin-top: 5px;
+/*	margin-top: 2em; */
+	}
+
+table#rentalresults {
+	border: 1px solid #336699;
+	width: 950px;
+	}
+
+table#rentalresults th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#rentalresults td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#rentalresults td.firstcol {
+	padding-left: 1em;
+	}
+
+table#rentalresults td.firstcol2ndrow {
+	padding-left: 2em;
+	}
+
+table#rentalfeetable {
+	width: 770px !important;
+	}
+
+input#edituserbtn {
+	visibility: hidden;
+	}
+
+table#reservationtempinfo {
+	margin-left: 2em;
+	}
+
+table#reservationtempinfo td {
+	height: 26px;
+	}
+
+table#reservationtempinfo td.tempinfolabel {
+	width: 11em;
+	}
+
+table#reservationtempinfo td.tempinfolabel2 {
+	width: 7em;
+	}
+
+table#reservationtempinfo td.datacolumn {
+	width: 15em;
+	}
+
+table#reservationtempdates {
+	/*border-bottom: 1px solid #336699;*/
+	border-top: 1px solid #336699;
+	}
+
+table#reservationtempdates th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+/*    border-bottom: 1px solid #336699;*/
+    background-color: #93bee1;
+	}
+
+table#reservationtempdates th.firstcell {
+	border-left: 1px solid #336699;
+	}
+
+table#reservationtempdates th.lastcell {
+	border-right: 1px solid #336699;
+	}
+
+table#reservationtempdates td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#reservationtempdates tr.dateline td {
+	border-top: 1px solid #336699;
+	}
+
+table#reservationtempdates td.firstcell {
+	border-left: 1px solid #336699;
+	padding-left: 1em;
+	}
+
+table#reservationtempdates td.firstcell_nopadding {
+	border-left: 1px solid #336699;
+	}
+
+table#reservationtempdates td.lastcell {
+	border-right: 1px solid #336699;
+	}
+
+
+table#reservationtempdates td.tempseparator {
+	border-top: 1px solid #336699;
+/*	border-bottom: 1px solid  #336699;*/
+	}
+
+table#reservationtempdates td.tempseparatorlast {
+	border-top:       1px solid #336699;
+    height:           1px;
+    background-color: #efefef;
+/*	border-bottom: 1px solid  #336699;*/
+	}
+
+table#reservationtempdates td.tablebottom {
+	border-bottom: 1px solid  #336699;
+	padding-bottom: 1em;
+	}
+
+table#reservationgeneral {
+	margin-bottom: 2em;
+	}
+
+table#reservationgeneral td.leftcell {
+	width: 12em;
+	}
+
+table#datesandfees {
+	border: 1px solid #336699;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	}
+
+table#comeandgotimes {
+	margin-top: .5em;
+	margin-left: .5em;
+	width: 20em;
+	}
+
+table.altrow tr {
+	background-color: #ececec;
+	}
+
+table#datesandfees td.subtotalscell {
+	height: 26px;
+	border-bottom: 1px solid #336699;
+	}
+
+table#datesandfees td.totalscell {
+	height: 26px;
+	border-top: 1px solid #336699;
+	}
+
+table#datesandfees td.subheadercell {
+	height: 20px;
+	border-bottom: 1px solid #336699;
+	}
+
+p#holdflag {
+	margin: 0;
+	padding: 0;
+	margin-left: 10em;
+	font-size: larger;
+	font-weight: bold;
+	margin-bottom: 1em;
+}
+	
+p.flagselection {
+	margin: 0;
+	padding: 0;
+	font-size: larger;
+	font-weight: bold;
+	margin-bottom: 1.5em;
+}	
+
+div#adddate {
+	margin-top: 1em;
+	}
+
+div#reservationlistshadow {
+	width: 990px !important;
+	margin-top: 2em;
+	}
+
+table#reservationlist {
+	top: 0;
+	left: 0;
+	border: 1px solid #336699;
+	width: 1090px !important;
+	margin-top: 1em;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#reservationlist th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#reservationlist td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#reservationlist td.firstcol {
+	padding-left: 1em;
+	}
+
+span.locationname {
+	margin-left: 1em;
+	}
+
+
+table#venueinfo td {
+	height: 20px;
+    font-size: 10px;
+	}
+
+table#venueinfo td.firstcol {
+	width: 4em;
+	}
+
+
+
+/* Receipt styles */
+#receipttopright {
+	float: right;
+	margin-bottom: 1em;
+	}
+
+hr {
+	clear: both;
+	}
+
+p#transactiontotal {
+	text-align: right;
+	}
+
+span.receipttitles {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 1em;
+	font-family: verdana,Tahoma,Arial,sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	}
+
+table#receiptuserinfo {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#accountchange {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#receiptpayments {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#receiptpayments td.amountcell {
+	width: 6em;
+	text-align: right;
+	}
+
+table#receiptpayments td.refundamountcell {
+	width: 6em;
+	text-align: left;
+	}
+
+table#receiptpayments td.totalpayment {
+	border-top: 1px solid black;
+	width: 6em;
+	text-align: right;
+	}
+
+
+div#rentalreceiptpaymentshadow { 
+	background: #919191; 
+	width: 900px !important;
+	margin-top: 10px;
+	}
+
+table#rentalreceiptpayment {
+	width: 900px !important;
+	top: 0;
+	left: 0;
+	border: 1px solid #666;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#rentalreceiptpayment td.totalpaid {
+	padding-right: 1em;
+	}
+
+table#rentalreceiptpayment tr.tablelist th {
+	height: 30px;
+	}
+
+table#rentalreceiptpayment tr.totalrow td {
+	height: 26px;
+	}
+
+
+div#receiptdetailtotal {
+	width: 100%;
+	text-align: right;
+	border-top: 1px solid black !important;
+	}
+
+table#receiptdatesandfees {
+	position: relative;
+	top: 0;
+	left: 0;
+	border-bottom: 1px solid black;
+	}
+
+table#receiptdatesandfees td {
+	height: 20px;
+	}
+
+table#receiptreservationfees {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#receiptreservationfees td {
+	height: 20px;
+	}
+
+table#refundfeestable {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#refundfeestable td {
+	height: 20px;
+	}
+
+td.receiptamount {
+	width: 7em;
+	}
+
+span#totalcharge {
+	padding-left: 4em !important;
+	}
+
+table#receiptfeetotal {
+	position:   relative;
+	top:        0;
+	left:       0;
+	border-top: 1px solid black;
+	}
+
+table#receiptfeetotal td {
+	height: 20px;
+	}
+
+table#receiptfeetotal2 {
+	padding: 0;
+	margin: 0;
+	border-top: 1px solid black;
+    margin-top: 20px;
+	border-bottom: 2px solid black;
+	}
+
+div.receiptsection 
+{
+	margin-top: 1em;
+}
+
+table#receiptprocessingfees {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#receiptprocessingfees td {
+	height: 20px;
+	}
+
+span#receiptadmininfo {
+	position: relative;
+	float: right;
+	}
+/* End of receipt styles */
+
+table#refundpayments {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 40em;
+	}
+
+ td.displaytotalpaid {
+	border-top: 1px solid black;
+	}
+
+td.displayheaderpaid {
+	border-bottom: 1px solid black;
+	}
+
+table#refunddatesandfees {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+table#refunddatesandfees td.totalscell {
+	border-top: 1px solid black;
+	}
+
+span#refundtotaldisplay {
+	padding-left: 1.5em;
+	}
+
+table#summaryeventinfo {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 40em;
+	margin-top: 1em;
+	}
+
+table#summaryeventinfo td {
+	height: 20px;
+	}
+
+table#summaryeventinfo td.summaryeventinfolabel {
+	width: 10em;
+	}
+
+/* Rental Schedules page */
+
+div.rentalschedule {
+	font-family: verdana,helvetica,arial,sans-serif;
+	padding: 1em;
+	margin-bottom: 2em;
+	border-bottom: 1px solid black;
+	}
+
+span.schedulerentalname {
+	width: 100%;
+	font-size: 16pt;
+	border-bottom: 1px solid black;
+	}
+
+div.showdate {
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-bottom: .5em;
+	}
+
+span.itemtitle{
+	position: relative;
+	float: right;
+	padding-right: 2em;
+	}
+
+span.showdate {
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	margin-right: 6em;
+	}
+
+span.showdayname {
+	font-family: verdana,helvetica,arial,sans-serif;
+	font-size: 12pt;
+	font-weight: bold;
+	}
+
+table.showtimes {
+	position: relative;
+	top: 0 !important;
+	left: 0 !important;
+	width: 740px !important;
+	}
+
+table.showtimes td.timedisplay {
+	width: 15em;
+	}
+
+table.showtimes td.reservationtype {
+	width: 15em;
+	}
+
+table.showtimes td.reservationid {
+	width: 5em;
+	}
+
+div.rentaltimes {
+	margin-left: 3em;
+	}
+
+/* End of Rental Schedules page */
+
+/* Start of Class Date Selection page */
+
+p.activitydisplay {
+	margin-bottom: 1em;
+	margin-top: 1em;
+	font-weight: bold;
+	font-size: larger;
+	}
+
+span.timedisplay {
+	margin-left: 3em;
+	font-weight: bold;
+	}
+
+span.daysdisplay {
+	margin-left: 3em;
+	font-weight: bold;
+	}
+
+table.reservationtempdates {
+	/*border-bottom: 1px solid #336699;*/
+	border-top: 1px solid #336699;
+	}
+
+table.reservationtempdates th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+/*    border-bottom: 1px solid #336699;*/
+    background-color: #93bee1;
+	}
+
+table.reservationtempdates th.firstcell {
+	border-left: 1px solid #336699;
+	}
+
+table.reservationtempdates th.lastcell {
+	border-right: 1px solid #336699;
+	}
+
+table.reservationtempdates td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table.reservationtempdates tr.dateline td {
+	border-top: 1px solid #336699;
+	}
+
+table.reservationtempdates td.firstcell {
+	border-left: 1px solid #336699;
+	padding-left: 1em;
+	}
+
+table.reservationtempdates td.firstcell_nopadding {
+	border-left: 1px solid #336699;
+	}
+
+table.reservationtempdates td.checkboxcell {
+	border-left: 1px solid #336699;
+	}
+
+table.reservationtempdates td.datecell {
+	padding-left: 1em;
+	}
+
+table.reservationtempdates td.lastcell {
+	border-right: 1px solid #336699;
+	}
+
+table.reservationtempdates td.tempseparator {
+	border-top: 1px solid #336699;
+/*	border-bottom: 1px solid  #336699;*/
+	}
+
+table.reservationtempdates td.tempseparatorlast {
+	border-top:       1px solid #336699;
+    height:           1px;
+    background-color: #efefef;
+/*	border-bottom: 1px solid  #336699;*/
+	}
+
+table#reservationclassinfo {
+	width: 800px;
+	margin-left: 2em;
+	}
+
+table#reservationclassinfo td {
+	height: 20px;
+	}
+
+table#reservationclassinfo td.labelcolumn {
+	width: 11em !important;
+	}
+
+table#reservationclassinfo td.datacolumn {
+	width: 37em !important;
+	}
+
+/* End of Class Date Selection page */
+
+/* rental receipt payment report */
+
+tr.totalrow td {
+	border-top: 1px solid black;
+	}
+
+/* End of rental receipt payment report */
+
+tr.totalrow td {
+	font-weight: bold;
+	background-color:#cccccc;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+table#alerttable {
+	position: relative;
+	top: 0; 
+	left: 0;
+    border: 1px solid #336699;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	}
+
+table#alerttable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#alerttablevv caption {
+	font-weight: bold;
+	text-align: left;
+	padding: 5px;
+	font-size: 12px;
+	}
+
+table#alerttable td {
+    height: 26px;
+    font-size: 10px;
+	}
+
+table#alerttable tr.altrow {
+	background-color: #ececec;
+	}
+
+table#alerttable td.firstcell {
+	padding-left: 1em;
+	}
+
+div#catagorypicks {
+	margin-left: 2em;
+	}
+
+div#imagedisplay {
+	margin: 2em;
+	padding: 1em;
+	}
+
+p#imagedisplayclose {
+	margin-top: 1em;
+	margin-left: 3em;
+	}
+
+span.mainimagetext {
+	font-weight: bold;
+	font-size: 10pt;
+	}
+
+input#savebutton {
+	font-weight: bold;
+	}
+
+table#periodpicks {
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 650px;
+	}
+
+table#periodpicks td {
+	height: 25px;
+	}
+
+table#periodpicks td.labelcolumn {
+	width: 10em;
+	}
+
+div#rentalscountshadow {
+	width: 700px !important;
+	}
+
+table#rentalscount {
+	border: 1px solid #336699;
+	width: 700px;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#rentalscount th {
+	height: 26px !important;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	cursor: pointer;
+	}
+
+table#rentalscount td {
+	height: 26px !important;
+    font-size: 10px;
+	}
+
+table#rentalscount td.firstcol {
+	padding-left: 1em;
+	}
+
+table#rentalscount th.firstcol {
+	padding-left: 1em;
+	}
+
+table#rentalscount td.locationcol {
+	font-weight: bold;
+	padding-left: 12em;
+}
+
+table#rentalscount td.monthtotalrow {
+	border-bottom: 1px solid black;
+	border-top: 1px solid black;
+	}
+
+table#rentalscount td.finalmonthsum {
+	border-top: 1px solid black;
+	}
+
+table#rentalscount td.moneycell {
+	padding-right: 1em;
+	}
+
+fieldset#rentalstotalreport {
+	position: relative;
+	top: 0;
+	left 0;
+	width: 670px;
+	}
+
+div.filterselection {
+	padding: 0;
+	margin:  0;
+	}
+
+
+div#rentalacctdistshadow { 
+	background: #919191; 
+	width: 900px !important;
+	margin-top: 20px;
+	}
+
+table#rentalacctdist {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	width: 900px !important;
+	}
+
+table#rentalacctdist th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	}
+
+table#rentalacctdist td {
+    height: 30px;
+	}
+
+table#rentalacctdist tr#totalrow td {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	}
+
+span#lastnamelike {
+	margin-left: 15em;
+	}
+
+div#categoryimgtag {
+	margin: 0;
+	padding: 0;
+	margin-left: 11em;
+	}
+
+tr.keyreservationdata td {
+	height: 3em;
+	}
+
+span.reservationdata {
+	font-weight: bold;
+	font-size: 12pt;
+	font-family: arial;
+	}
+
+p.limitationmessage {
+	margin-left: 3em;
+	}
+
+
+
+/* Simple Reservations styles - Start */
+
+div.rentalcategorygroup {
+	cursor: pointer;
+	margin-top: 1em;
+	margin-bottom: 1em; 
+	width: 760px;
+	}
+
+table.rentalcategory {
+	position: relative;
+	top: 0;
+	left: 0;
+	}
+
+div.categorydesc {
+	clear: left;
+	font-weight: bold;
+	margin-left: .5em;
+	padding-top: .5em;
+	}
+
+p.categorydesc {
+	font-weight: normal;
+	padding: 0;
+	margin: 0;
+	margin-top: .5em;
+	margin-bottom: 1em;
+	}
+
+p#rentalpagedescription {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	}
+
+table tr.categoryrow td {
+	border: 1px solid black;
+	}
+
+table.availablecategory {
+	margin-bottom: 1em;
+	width: 900px;
+	}
+
+table.availablecategory td.iconcell {
+	padding-top: 1em;
+	}
+
+table.availablecategory td.rentalnamecell {
+	padding-top: .5em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana,sans-serif;
+	text-decoration: none;
+	}
+
+table.availablecategory tr td.spacerrow {
+	height: 1em;
+	/*border-bottom: 1px solid grey;*/
+	}
+
+table.availablecategory tr td div.checkbutton {
+	width: 100%;
+	text-align: left;
+	margin-top: .3em;
+	margin-bottom: 1em;
+	padding-left: .5em;
+	}
+
+table.availablecategory tr td.availabledescription {
+	padding-right: .5em;
+	padding-bottom: 1em;
+	padding-left: .5em;
+	width: 80%;
+	}
+
+table#availablerentalcategory {
+	margin-top: 2em;
+	}
+
+span.availableschedulerentalname {
+	font-weight: bold;
+	font-size: 12pt;
+	}
+
+table.availablerentals {
+	margin-bottom: 1em;
+	width: 900px;
+	border: 1px solid gray !important;
+	}
+
+table.availablerentals td.iconcell {
+	padding-top: 1em;
+	}
+
+table.availablerentals td.rentalnamecell {
+	padding-top: .5em;
+	padding-left: 1em;
+	padding-bottom: 1em;
+	font-weight: bold;
+	font-size: 14px;
+	color: black;
+	font-family: verdana,sans-serif;
+	}
+
+table.availablerentals tr td.spacerrow {
+	height: 1em;
+	}
+
+table.availablerentals tr td div.checkbutton {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 1em;
+	}
+
+table.availablerentals tr td.availabledescription {
+	padding-right: .5em;
+	padding-bottom: 1em;
+	padding-left: .5em;
+	/*width: 80%;*/
+	}
+
+p#selectedname {
+	font-size: 12pt;
+	font-weight: bold;
+	}
+
+table#selectchoice {
+	width: 600px;
+	border: 1px solid black;
+	margin-bottom: 2em;
+	}
+
+td.datecolumn span.datedisplay {
+	font-weight: bold;
+	font-size: 11pt;
+	}
+
+td.datecolumn {
+	padding-left: 1em;
+	padding-top: .5em;
+	height: 26px;
+	}
+
+td.availabledatecolumn {
+	padding-left: 1em;
+	padding-top: .5em;
+	padding-bottom: 1em;
+	width: 100%;
+	}
+
+input.selecttime {
+	margin-left: 4em;
+	}
+
+table.availablerentals tr.altrow {
+	background-color: #ececec;
+	}
+
+td.desccolumn {
+	width: 100%;
+	padding-left: 1em;
+	}
+
+tr#selectbutton td {
+	height: 30px;
+	padding-bottom: 1em;
+	}
+
+span#pickeddate {
+	font-weight: bold;
+	font-size: 12pt;
+	color: black;
+	}
+
+
+p.noreservemsg {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	margin-top: .5em;
+	font-weight: bold;
+	font-size: larger;
+	}
+
+.fieldset, #dateTimesTable {
+   background-color: #efefef;
+}
+
+.dateSelectionLegendText {
+  background-color: #ffffff;
+  color:            #800000;
+  font-size:        14pt;
+}
+
+.dateTimesTable td {
+   white-space:      nowrap;
+   background-color: #efefef;
+}
+
+/* Simple Reservations styles - End */
+
+/* BEGIN: Rental Summary Report Styles */
+#rentalsummary_searchoptionsTable {
+   background-color: #efefef !important;
+}
+
+#rentalsummary_searchoptionsTable .labelcolumn {
+   font-weight:   bold;
+   white-space:   nowrap;
+   padding-right: 10px;
+}
+
+#rentalSummaryTable {
+   width:  100%;
+   border: 1px solid #336699;
+}
+
+table#rentalSummaryTable th {
+	height:           26px !important;
+    font-size:        10px;
+    color:            #003366;
+    border-bottom:    1px solid #336699;
+    background-color: #93bee1;
+	cursor:           pointer;
+    white-space:      nowrap;
+}
+
+table#rentalSummaryTable td {
+	height:    26px !important;
+    font-size: 10px;
+}
+
+.rentalSummary_newRow td {
+   border-top: 1pt solid #000000;
+}
+
+.td_nowrap {
+   white-space: nowrap;
+}
+
+.rentalSummary_subTotalRow td {
+   border-top:       1pt solid #000000;
+   background-color: #c0c0c0;
+   text-align:       center;
+   font-weight:      bold;
+}
+
+#sc_fromDateCalPop,
+#sc_toDateCalPop {
+   cursor: pointer;
+}
+
+.requiredField {
+   color: #ff0000;
+}
+
+
+
+/* END: Rental Summary Report Style */
+
+tr#rentalreceiptsummary td 
+{
+	border-top: 2px solid black;
+	padding-top: 1em;
+	font-size: larger;
+	font-weight: bold;
+}
+
+tr#rentalreceiptbalancedue td, tr#refunddue td
+{
+	border-top: 2px solid black;
+	padding-top: 1em;
+}
+
+input#refundbutton
+{
+	border: 1px solid #777777;
+	background: #D4503F;
+	color: white;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+}
+
+input#refundbutton:hover 
+{ 
+	background-color: #666; 
+}
+
+div#reservationlistbuttons
+{
+	margin-top: 1em;
+}
+
+.ui-datepicker { font-size: 9pt !important; }
+

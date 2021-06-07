@@ -1,0 +1,222 @@
+<%
+dim pagesize, totalpages,totalrecords,groupmode
+dim thisname,Currentpage,rs,strSQL,conn,numstartid,numendid,strDirectory,conn2,rs2,strSQL2,AllUsers,totalUsers,strUser,totalContacts,strContact,AdditonURL,deleteurl
+dim RA,i,GroupNumber,editurl,temp,Str_Bgcolor,HowManyCommitteeDisplayed
+HowManyCommitteeDisplayed=0
+'groupmode=1, display individual group
+'groupmode=2, display all member
+pagesize=Session("PageSize")
+totalpages=1
+
+thisname=request.servervariables("script_name")
+if not isempty(request.querystring("currentpage")) then
+CurrentPage=cint(request.querystring("currentpage"))
+else
+currentpage=1
+end if
+%>
+<%  
+' the above value will be provided by the display_committee.asp
+'page size, RA, pagerecord, currentpage values must be declared to global variables.
+DisplayCommitteeRecords
+dim bCanEdit
+'dim rs,conn,strSQL,totalrecords,totalpages,pagesize,Currentpage,numstartid,numendid,deleteurl,groupnumber,
+%>
+<%
+sub DisplayCommitteeRecords()
+bCanEdit= HasPermission("CanEditCommittee")
+thisname=request.servervariables("script_name")
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 
+rs.CursorType = 3 
+'strSQL = "select g.groupname, sum(u.userid) as entry from groups g, usersgroups as u where u.groupid=g.groupid group by g.groupname"
+strSQL = "select groupid,orgid,groupname,groupdescription  from groups g where g.orgid="&Session("OrgID")&" order by groupname"
+'response.write strSQL
+rs.Open strSQL
+'------- the following code dealing with the recordcount=0-------
+if rs.recordcount=0 then
+rs.close
+'call statistics
+call navagatorbar(0)
+exit sub
+end if
+'--------------------------------------------------------------------
+rs.movefirst
+totalrecords = rs.RecordCount
+TotalPages = (totalrecords \ pagesize) + 1  '\means integer/integer
+if totalrecords Mod pagesize=0 and TotalPages>0 then TotalPages=TotalPages-1
+			if TotalPages < 1 then TotalPages = 1
+if isNumeric(CurrentPage) then
+				if CurrentPage < 1 then CurrentPage = 1
+				if CurrentPage > TotalPages then CurrentPage = TotalPages
+			else
+				CurrentPage = 1
+end if
+numstartid	= (CurrentPage-1) * PageSize
+numendid	= IIf(numstartid + PageSize < totalrecords, numstartid+pagesize- 1, totalrecords - 1)
+'response.write "<br>totalrecords="&totalrecords&"  numberstartid="&numstartid&" numendid="&numendid
+'response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages
+'==========  the following will display the whole table====
+RA=rs.GetRows()
+call statistics
+call navagatorbar(1)
+response.write "<table border=0 cellpadding=5 cellspacing=0 width='100%' class=""tablelist"">"
+deleteurl="delete_committee.asp"
+response.write "<form name=DeleteCommittee method=post action='"&deleteurl&"'>"
+
+response.write "<tr style=""height:25px;""><th align=left>"
+if HasPermission("CanEditCommittee") then
+  response.write "<input class=""listcheck"" type=checkbox name=""chkSelectAll"" onClick=""selectAll('DeleteCommittee', this.checked, 'delete')"">"
+else
+  response.write "&nbsp;"
+end if
+response.write vbCrLf & "</th><th width=""1"">&nbsp;</th><th align=left width=""30%"">"&langDirectory&"</th><th align=left width='60%'>"&langDescription&"</th><th align='center'>"&langEntries&"</th></tr>"
+
+for i = numstartid to numendid
+'-- alternateviely show different color-----
+'-------------------------------------------
+GroupNumber=entry(RA(0,i))
+editurl="display_member.asp?groupid="&RA(0,i)
+
+temp="<br>CanView"&RA(2,i)
+'response.write "<br>I ="&Session("Permissions")&" temp="&temp
+
+if  HasPermission("CanView"&RA(2,i)) or HasPermission("CanEdit"&RA(2,i)) or bCanEdit then 
+HowManyCommitteeDisplayed=HowManyCommitteeDisplayed+1
+if Str_Bgcolor="#ffffff" then Str_Bgcolor="#eeeeee" else Str_Bgcolor="#ffffff"
+response.write 	"<tr bgcolor="&Str_Bgcolor&">"
+if HasPermission("CanEditCommittee") then
+  response.write  "<td><input  class=""listcheck"" type=checkbox  name=delete value="""&RA(0,i)&"""></td>"
+else
+  response.write  "<td>&nbsp;</td>"
+end if
+
+response.write  "<td style=""padding:0px;""><img src='../images/newgroup.gif' border='0'>&nbsp;</td>"
+
+response.write "<td>"
+response.write  "<a href='"&editurl&"'>"&RA(2,i)&"</a>"
+if  bCanEdit or HasPermission("CanEdit"&RA(2,i)) then 
+response.write  "&nbsp;&nbsp;<a HREF=Update_committee.asp?groupid="&RA(0,i)&"><img src='../images/edit.gif' align='absmiddle' border=0></A>"
+end if
+response.write "</td>"
+
+response.write "<td>"&left(RA(3,i),100)&"</td>"
+response.write    "<td align='center'>&nbsp;"&GroupNumber
+'if  bCanEdit then response.write  "&nbsp;&nbsp;<a HREF=ManageCommitteeAccess.asp?groupid="&RA(0,i)&" ><img width=14 src='../images/newpermission.gif' border='0'></A>"
+response.write "</td></tr>"
+'--------------------------------------
+end if
+next     
+if HowManyCommitteeDisplayed=0 then
+response.write "<tr style=""height:25px;""><td colspan=5>No directories.</td></tr>"
+end if
+response.write "</form></table>"
+'=======  end of displaying the whole table==================
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+end sub 
+%>
+
+<%
+function entry(groupid)
+' -100 means total records
+' if a groupid>0 it will show individual group
+set conn2 = Server.CreateObject("ADODB.Connection")
+conn2.Open Application("DSN")
+set rs2 = Server.CreateObject("ADODB.Recordset")
+set rs2.ActiveConnection = conn2
+rs2.CursorLocation = 3 
+rs2.CursorType = 3 
+if groupid=-100 then
+strSQL2= "select count(userid) as totaluser from users u where username  is not null and username<>'' and u.orgid="&Session("OrgID")
+else
+strSQL2= "select count(ug.userid) as totaluser from usersgroups ug inner join users u on u.userid=ug.userid where ug.groupid="&groupid&" and u.orgid="&Session("OrgID")
+end if
+if groupid=-200 then
+strSQL2= "select count(userid) as totaluser from users u  where ((username is null) or username='') and u.orgid="&Session("OrgID") 
+end if
+rs2.Open strSQL2
+AllUsers=rs2("totaluser")
+rs2.close
+conn2.close
+set rs2=nothing
+set conn2=nothing
+entry=AllUsers
+end function 
+
+sub statistics
+'response.write "<table border=0><tr>"& _
+' "<td><font size='+1' ><b>"&langTabCommittees&":&nbsp;"&langDiaplyCommittee&"</b></font><br>"&totalrecords&" "&langCommittees&", "&entry(-100)&" "&langUsers&", "&entry(-200)&" "&langContacts&" </td></tr>"
+ 'response.write "<td height=27>&nbsp;&nbsp;</td></tr></table>"
+if totalrecords>1 then
+strDirectory=langCommittees
+else
+strDirectory=langCommittee
+end if
+totalUsers=entry(-100)
+if totalUsers>1 then
+strUser=langUsers
+else
+strUser=langUser
+end if
+totalContacts=entry(-200)
+if totalContacts>1 then
+strContact=langContacts
+else
+strContact=langContact
+end if
+if bCanEdit then
+ response.write "<script>document.all.dir_info.innerHTML = """ & totalrecords&" "&strDirectory&", "&totalUsers&" "&strUser&", "&totalContacts&" "&strContact & """</script>"
+ end if
+end sub
+
+sub  navagatorbar(record)
+	response.write "<div style='font-size:10px; padding-bottom:5px;'>"
+if currentpage>1 then 
+		response.write "<A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)&"'>"
+		response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>&nbsp;"&langPrev&" "&pagesize&"</A>"
+		else
+		response.write "<!A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage-1)&"'>"
+		response.write "<img src='../images/arrow_back.gif' align='absmiddle' border=0>&nbsp;"& _
+		"<font color=#999999>"&langPrev&" "&pagesize&"</font></A>"
+		end if
+    	
+'		response.write "<br>currentpage="&currentpage&"  totalpages="&TotalPages
+		if currentpage<totalpages then 
+		response.write "&nbsp;&nbsp;<A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)&"'>"&langNext&" "&pagesize
+		else
+		response.write "&nbsp;&nbsp;<!A HREF='"&thisname&"?"&AdditonURL&"currentpage="&(currentpage+1)&"'>"& _
+		"<font color=#999999>"&langNext&" "&pagesize&"</font>" 
+		end if
+	  response.write 	"&nbsp;<img src='../images/arrow_forward.gif' align='absmiddle' border=0></a>" & vbCrLf
+'------- the following is the additional convenient links showing on the top of table---
+if HasPermission("CanRegisterCommittee") or bCanEdit then 
+response.write	"&nbsp;&nbsp;&nbsp;&nbsp;<img src='../images/newgroup.gif' width='16' height='16' align='absmiddle'>&nbsp;<a href='register_committee.asp'>"&langNewCommittee&"</a> &nbsp;&nbsp;&nbsp;&nbsp;" 
+ end if 
+ %>
+<% if record>0 and bCanEdit then %>
+
+<img src="../images/small_delete.gif" align="absmiddle" border=0>&nbsp;<a  href="javascript:document.all.DeleteCommittee.submit();" onClick="javascript: return confirm('<%=langWanttoDelete%>');"><%=langDelete%></a>
+<% end if
+
+
+ response.write "</div>"
+'------- end of convenient links showing on the top of table-------------------------------------
+end  sub
+
+function IIf(bCheck, sTrue, sFalse)
+		if bCheck then IIf = sTrue Else IIf = sFalse
+end function 
+%>
+
+<script language=javascript>
+	function openWin2(url, name) {
+  popupWin = window.open(url, name,
+"resizable,width=500,height=250");
+}
+</script>

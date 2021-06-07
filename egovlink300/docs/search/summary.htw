@@ -1,0 +1,33 @@
+<html>
+<head>
+	<link href="search.css" rel="stylesheet">
+<style type="text/css">
+	<!--
+	hr {size:1px; color: black;}
+	-->
+</style> 
+</head>
+
+<body bgcolor="#FFFFFF">
+<!--Begin Page Header -->
+  <div style="padding-left:22px; padding-top:9px;"><b><font style="font-family:Verdana,Arial; font-size:18px;">Search</font></b></div>
+  &nbsp;&nbsp;&nbsp;&nbsp; <img src='../../images/arrow_2back.gif' align='absmiddle'>&nbsp;<a href='../main.asp'>Back To Documents Main</a> 
+<!--End Page Header -->
+
+<table>
+  <tr>
+    <td><b>Summary for:</b> <a href="<%CiUrl%>"><%CiUrl%></a>
+    <p>Short excerpts immediately before and after each match within the document listed above are displayed below.
+    <p align="right"><a href="<%CiUserParam3%>">New Search</a></p></td>
+  </tr>
+  <hr>
+  <table>
+    <tr>
+      <td>
+        <%begindetail%>
+        <%enddetail%>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

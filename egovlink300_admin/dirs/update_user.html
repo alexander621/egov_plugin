@@ -1,0 +1,212 @@
+<%
+'--------------------------------------------------------------------------------------------------
+'
+'--------------------------------------------------------------------------------------------------
+' FILENAME: update_user.html
+' AUTHOR: ????
+' CREATED: ??/??/????
+' COPYRIGHT: Copyright 2006 eclink, inc.
+'			 All Rights Reserved.
+'
+' Description:  
+'
+' MODIFICATION HISTORY
+' 1.0   ??/??/????   ???? - INITIAL VERSION
+' 1.1	02/13/2007	Steve Loar - Added locationid
+' 1.2	02/21/2007  Steve Loar - Added class supervisor flag
+'
+'--------------------------------------------------------------------------------------------------
+'
+'--------------------------------------------------------------------------------------------------
+
+dim pagesize, totalpages,RA,totalrecords,groupname,thisname,currentpage,conn,rs,groupmode,strSQL,CName
+Dim AdditonURL,numstartid,numendid,i,deleteurl,EventOrNot,Str_Bgcolor,username,password,str_image
+Dim editurl,FullName,l_length,l_name,b_update,j,fld,sGrouplist
+
+thisname=request.servervariables("script_name")
+set conn = Server.CreateObject("ADODB.Connection")
+conn.Open Application("DSN")
+set rs = Server.CreateObject("ADODB.Recordset")
+set rs.ActiveConnection = conn
+rs.CursorLocation = 3 
+rs.CursorType = 3 
+if trim(request.querystring("userid"))="" then
+response.write "<br>No userid is entered, end program here"
+response.end
+else
+
+'group stuff begin
+strSQL = "select g.GroupName, g.GroupID, ug.IsPrimaryGroup from Groups [g] left outer join UsersGroups [ug] ON ug.GroupID = g.GroupID AND ug.UserID = " & cint(trim(request.querystring("userid")))
+rs.open strSQL
+rs.movefirst
+If Not rs.EOF Then
+  sGroupList = "<select name=""PrimaryGroup""><option value=""0"">(None)</option>"
+  Do While Not rs.EOF
+    if rs("IsPrimaryGroup") then
+      sGroupList = sGrouplist & "<option value=""" & rs("groupid") & """ selected=""selected"">" & rs("GroupName") & "</option>"
+    else
+      sGroupList = sGrouplist & "<option value=""" & rs("groupid") & """>" & rs("GroupName") & "</option>"
+    end if
+    rs.MoveNext
+  Loop
+  sGrouplist = sGrouplist & "</select>"
+End If
+rs.close
+'group stuff end
+
+strSQL = "select [UserID],[OrgID],[Username],[Password],"& _
+		 "[IsLoggedIn],[Enabled],[PageSize],[FirstName],[MiddleInitial],[LastName],"& _
+		 "[Nickname],[CompanyName],[JobTitle],[Department],[HomeAddress],[BusinessAddress], isnull(locationid,0) as locationid,"& _
+		 "[HomeNumber],[BusinessNumber],[MobileNumber],[PagerNumber],[FaxNumber],"& _
+		 "[Email],[Email2],[WebPage],[Birthday], isclasssupervisor "& _
+         "from users u where userid = " & cint(trim(request.querystring("userid")))
+end if
+rs.Open strSQL
+rs.movefirst
+
+DisplayIndividual
+
+rs.close
+set rs=nothing
+conn.close
+set conn=nothing
+
+'Sub DisplayPrimaryGroupsList
+  'If HasPermission("CanEditUsers") Then
+    'response.write "<tr><td width='10' height='23' align='justify'>&nbsp;</td>"
+    'response.write "<td width='123' height='23' align='left'>Primary Group: </td>"
+    'response.write "<td width='346' height='23' align=left>" & sgrouplist & "</td></tr>"
+ ' End If
+'End Sub
+%>
+
+<% Sub DisplayIndividual() %>
+	<form method="post" name="UpdateUser" action="update_user_action.asp" >
+
+	<div style="font-size:10px; padding-bottom:5px;">
+		<%	If UserHasPermission( Session("UserId"), "edit users" ) Then %>
+				<img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="display_member.asp"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<%	End If %>
+
+		<img src="../images/go.gif" align="absmiddle">&nbsp; <!-- <a href="javascript:document.UpdateUser.submit();"><%=langUpdate%></a> -->
+		<a href="#" onclick="validate();"><%=langUpdate%></a>
+	</div>
+
+	<table border="0"   width="478" height="220"   class='tablelist' cellpadding='3' cellspacing='0'>
+	<tr><th width='10' height='23' align='justify'>&nbsp;</th>
+	<th width='123' height='23' align='left'><%=langProperty%></th>
+	<th width='346' height='23' align=left><%=langValue%></th></tr>
+
+	<%
+	l_length=array( 32,4,15,15, _
+				   1,1,4,25,1,25, _
+					25,50,50,50,250,250,4, _
+					20,20,20,20,20, _ 
+					50,50,250,10,1 )
+	l_name=array("User ID","Org ID","User Name","Password", _
+		  "IsLoginIn","Enabled","Page Size","First Name","Middle Initial","Last Name", _
+				"Nickname","Company Name","Job Title","Department","Home Address","Business Address","Location", _
+					"Home Phone","Business Phone","Mobile Phone","Pager Number","Fax Number", _ 
+					"Email","Email(alternate)","Web Page","Birthday", "Is Class Supervisor")
+	b_update=array( 0,0,1,1, _
+				   0,0,0,1,1,1, _
+					25,50,50,50,250,250,0, _
+					20,20,20,20,20, _ 
+					50,50,250,10,0 )
+	dim i 
+	j=0
+	for each fld in rs.fields 
+		if b_update(j) > 0 then
+			response.write vbcrlf & "<tr><td width='10' height='23' align='justify'>&nbsp;</td>"
+			response.write "<td width='123' height='23' align=""left"" nowrap=""nowrap"">"&l_name(j)&": </td>"
+			if l_length(j)>100 then
+			'	if length(j)>150 then
+				response.write "<td width='346' height='23' align=left><textarea rows=2 cols=50 name="&fld.name&">"&trim(fld.value)&"</textarea></td></tr>"
+			else
+				if	fld.name="Password" then
+					response.write "<td width='346' height='23' align=left><input type=password name="&fld.name&" value="""&trim(fld.value)&"""  size="&l_length(j)&" maxlength="&l_length(j)&"></td></tr>"
+				else
+					response.write "<td width='346' height='23' align=left><input type=text name="&fld.name&" value="""&trim(fld.value)&"""  size="&l_length(j)&" maxlength="&l_length(j)&"></td></tr>"
+				end if
+			end if
+		Else
+			If fld.name="locationid" And OrgHasFeature( "admin locations" ) Then
+				' Show the dropdown of locations
+				ShowLocations fld.value
+			ElseIf fld.name="isclasssupervisor" Then 
+				If OrgHasFeature( "class supervisors" ) Then 
+					response.write vbcrlf & "<tr><td width='10' height='23'>&nbsp;</td>"
+					response.write vbcrlf & "<td width='123' height='23'>&nbsp;</td>"
+					response.write vbcrlf & "<td width='346' height='23' align=left>"
+					response.write "<input type=""checkbox"" name=""isclasssupervisor"""
+					If fld.value Then 
+						response.write " checked=""checked"" "
+					End If 
+					'response.write " onClick='ChangeSupervisor(" & rs("UserID") & ");' /> &nbsp; Class Supervisor</td></tr>"
+					response.write " />&nbsp;Class Supervisor</td></tr>"
+				End If 
+			Else 
+				response.write "<input type=hidden name="&fld.name&" value="""&fld.value&""">" 
+			End If 
+		end if
+
+		j=j+1
+		if j=4 then
+		  'call DisplayPrimaryGroupsList()
+		end if
+	next
+	rs.movefirst
+	%>
+	</table>
+
+	<div style="font-size:10px; padding-bottom:5px;">
+		<%	If UserHasPermission( Session("UserId"), "edit users" ) Then %>
+				<img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="display_member.asp"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;
+		<%	End If %>
+		<img src="../images/go.gif" align="absmiddle">&nbsp; <!-- <a href="javascript:document.UpdateUser.submit();"><%=langUpdate%></a> -->
+		<a href="#" onclick="validate();"><%=langUpdate%></a>
+	</div>
+
+	<input type="hidden" name="username_o" value="<%=rs("username")%>" />
+	<input type="hidden" name="email_original" value="<%=rs("email")%>" />
+	</form>
+<% end sub 
+
+
+'--------------------------------------------------------------------------------------------------
+' Sub ShowLocations( iLocationId )
+'--------------------------------------------------------------------------------------------------
+Sub ShowLocations( iLocationId )
+	Dim sSql, oLocations
+
+	sSql = "Select locationid, name from egov_class_location where orgid = " & Session("OrgID") & " Order by name"
+
+	Set oLocations = Server.CreateObject("ADODB.Recordset")
+	oLocations.Open sSQL, Application("DSN"), 0, 1
+
+	response.write vbcrlf & "<tr><td width='10' height='23' align='justify'>&nbsp;</td>"
+	response.write vbcrlf & "<td width='123' height='23' align=""left"" nowrap=""nowrap"">Location: </td>"
+	response.write vbcrlf & "<td width='346' height='23' align=left>"
+	response.write vbcrlf & "<select name=""locationid"">"	
+	response.write vbcrlf & "<option value=""0"" "
+	If CInt(iLocationId) = CInt(0) Then
+		response.write " selected=""selected"" "
+	End If 
+	response.write ">Select a Location...</option>"
+		
+	Do While NOT oLocations.EOF 
+		response.write vbcrlf & "<option value=""" &  oLocations("locationid") & """"
+		If CInt(iLocationId) = CInt(oLocations("locationid")) Then
+			response.write " selected=""selected"" "
+		End If 
+		response.write ">" & oLocations("name") & "</option>"
+		oLocations.MoveNext
+	Loop
+
+	response.write vbcrlf & "</select></td></tr>"
+
+	oLocations.close
+	Set oLocations = Nothing 
+
+End Sub 
+%>

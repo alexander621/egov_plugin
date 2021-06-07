@@ -1,0 +1,179 @@
+/* Familymembers css input by Steve Loar */
+#content { padding: 20px; width: 700px; font-size: 11px; font-family: Verdana,Tahoma; }
+
+/*#content table { position: relative; top: -4px; left: -4px; width: 100%; background: #fff;}*/
+
+#content table tr { height: 26px; }
+
+#content table tr.alt_row { background: #eee; }
+
+#content div#functionlinks { padding-bottom: 9px; }
+
+#content div#functionlinks2 { padding-bottom: 9px; }
+
+#content th {text-align: center; font-size: 11px; font-family: Verdana,Tahoma; border-bottom: 1px solid #000; }
+
+#content h1 {font-size: 13px; margin-bottom: 0; padding-bottom: 0;}
+
+#content table tr td.action { width: 130px;}
+
+#content p {font-size: 11px; font-family: Verdana,Tahoma;}
+
+#content p a {font-size: 11px; font-family: Verdana,Tahoma;}
+
+/*#content div.shadow { background: #919191; margin-bottom: 20px; }*/
+
+#content textarea {height:100px;width:600px;}
+
+#content textarea#waiver_desc { height: 90px; width: 360px; }
+
+#content textarea.elements { height:100px;width:400px; }
+
+#content table tr td.imageinput { text-align: right; padding-right: 15px; }
+
+#content table tr td a { margin-right: 5px; }
+
+#content table tr td a.selectimage { padding-right:215px; }
+
+#content textarea.message { height:60px;width:250px; }
+
+
+.reserveformtitle
+{
+    FONT-SIZE: 12px;
+	font-weight: bold;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	font-family: Verdana,Tahoma;
+	padding: 5px ;
+	margin-top: 10px;
+}
+
+.reserveforminputarea 
+{
+    border: #336699 1px solid;
+	font-family: Verdana,Tahoma;
+	FONT-SIZE: 10px;
+	margin-bottom: 20px;
+}
+
+.reserveforminputarea p {
+	margin-left: 10px;
+	FONT-SIZE: 10px;
+}
+.reserveforminputarea table
+{
+	margin: 0;
+	padding: 0;
+}
+.reserveforminputarea table th
+{
+	text-align: center;
+}
+
+#receiptcontent { padding: 15%; width: 600px; font-size: 11px; font-family: Verdana,Tahoma; }
+
+#receiptcontent table { position: relative; top: -4px; left: -4px; width: 100%; background: #fff; border: #336699 1px solid;}
+
+#receiptcontent table tr { height: 26px;}
+
+#receiptcontent div.shadow { background: #919191; margin-bottom: 20px;}
+
+#receiptcontent table th
+{
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: #336699 1px solid;
+    BACKGROUND-COLOR: #93bee1;
+	text-align: left;
+}
+
+#receiptlinks { 
+		padding: 0;
+		margin: 0;
+		padding-bottom: 14px; 
+		}
+
+#searchtable {
+		margin-bottom: 10px;
+		}
+#searchtable td {	height: 20px; 
+				}
+
+.familylist {	padding-left: 25px; 
+				padding-bottom: 10px; 
+			}
+
+div#content table.tableadmin { 
+	margin: 0;
+	padding: 0;
+/*	top: -16px; */
+	}
+
+
+table#family_table {
+	top: 0;
+	left: 0;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+input.button
+{
+	border: 1px solid #777;
+	color: black;
+	font: bold;
+	padding: 4px;
+	cursor: pointer;
+	/*Rounded Corners*/
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button:hover 
+{ 
+	color: white;
+	background-color: #666; 
+}
+
+div#centercontent p {
+	font-weight: bold;
+	font-size: 21px;
+	font-family: Helvetica, arial, sans-serif;
+}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+}
+
+#family_table td {
+	text-align: center;
+}
+
+#family_table td.accountbalance {
+	text-align: right;
+	padding-right: 30px;
+}
+
+#family_table td.actionbtn1 {
+	text-align: right;
+}
+
+#family_table td.actionbtn2 {
+	text-align: left;
+}
+
+#family_table td.name {
+	text-align: left;
+}
+

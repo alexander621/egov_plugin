@@ -1,0 +1,36 @@
+<FORM METHOD=POST name="RegisterRole" ACTION="Insert_Role.asp" onsubmit="return CheckRoleField();">
+ <div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterRole.reset();"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterRole.submit();" onclick="return CheckRoleField();"><%=langCreate%></a></div>
+
+<table border="0" width="100%"   class='tablelist' cellpadding='5' cellspacing='0'>
+<tr><th width="91" align=left><%=langProperty%></th><th  align=left><%=langValue%></th></td> <tr>
+
+
+	<td width="91" height="22"><%=langRole%></td>
+    <td  height="22">
+    <input type=text name="rolename" size=42 maxlength=50> <font color="#FF0000">*</font></td>
+ 
+    </td>	  </tr>
+    <tr>
+	<td width="91" height="22"><%=langDescription%></td>
+    <td  height="22" valign=middle>
+    <textarea name="roledescription" rows=6 cols=42></textarea></td>
+
+	  </tr>     
+</table>
+<div style="font-size:10px; padding-bottom:5px;"><img src="../images/cancel.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterRole.reset();"><%=langCancel%></a>&nbsp;&nbsp;&nbsp;&nbsp;<img src="../images/go.gif" align="absmiddle">&nbsp;<a href="javascript:document.all.RegisterRole.submit();" onclick="return CheckRoleField();"><%=langCreate%></a></div>
+ <p><font color="#FF0000">* </font><%=lanRegister_requred%></p>
+<br>
+</FORM>    
+
+<script language="JavaScript">
+function CheckRoleField()
+				{
+					if (document.RegisterRole.rolename.value == "")
+					{
+						alert("Role Name is required");
+						document.RegisterRole.rolename.focus();
+					return false;				
+					}					
+					return true;
+				}
+</script>

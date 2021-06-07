@@ -1,0 +1,59 @@
+#receiptlinks, #topbuttons, #listmenu, #userdisplay, div#topleftbuttons, #accountmenu, #datetagline {
+	display: none !important;
+	height: 0;
+	}
+
+.noprint, .menu, .footerbox, .datetagline, img {
+	display: none !important;
+	}
+
+#content { 
+	padding: 0; 
+	width: 600px; 
+	}
+
+#content table { 
+	position: relative; 
+	top: 0; 
+	left: 0; 
+	width: 600px; 
+	background: #fff;
+	}
+
+#topright {
+	float: right;
+	margin-bottom: 6px;
+	padding-right: 160px;
+	}
+
+table#receiptdatesandfees {
+	width: 100%;
+	}
+
+table#receiptreservationfees {
+	width: 100%;
+	}
+
+table#receiptfeetotal,
+table#receiptfeetotal2 {
+	width: 100%;
+	}
+
+#receiptfeetotal2 {
+	border-top: 1px solid #000000;
+    }
+
+#receiptRowPayments,
+#receiptRowTotalPaid,
+#receiptRowTotalRefunds {
+    border-bottom: 1px solid #808080;
+    }
+
+img.citylogo {
+	display: inline !important;
+	}
+
+div#receiptdocumentstart {
+	margin-top: 0;
+	page-break-before: always !important;
+	}

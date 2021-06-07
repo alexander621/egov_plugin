@@ -1,0 +1,12 @@
+User-Agent: *
+Disallow: /eclink/
+Disallow: /main/events/
+Disallow: /hanahan/events/
+Disallow: /*/events/
+Disallow: /*/payment_processors/
+
+User-agent: Googlebot-Image
+Disallow: /
+
+Crawl-delay: 10.0
+

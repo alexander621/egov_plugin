@@ -1,0 +1,365 @@
+table.altrow tr {
+	background-color: #ececec;
+	}
+
+input#savebutton {
+	font-weight: bold;
+	}
+
+div#featurebuttons {
+	width: 1100px;
+	}
+
+div#bottomsave {
+	position: relative;
+	clear: both;
+	margin-top: 2em;
+	}
+
+table#featuremanagelist {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+
+	}
+
+div#featuremanagelistshadow {
+	background: #919191;
+	width: 950px;
+	}
+
+table#featuremanagelist th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+.parentfeature {
+	background-color: #c0c0c0;
+	}
+
+table#featuremanagelist tr.parentfeature td {
+	border-bottom: 1px solid #336699;
+	border-top: 1px solid #336699;
+	padding-top: 1em;
+	padding-bottom: 1em;
+	}
+
+table#featurelist {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em 0 !important;
+	border: 1px solid black;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#featurelist th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	}
+
+table#tableorg {
+	width: 900px;
+	}
+
+div#tableorgshadow {
+	width: 900px;
+	margin-top: 1.4em;
+	margin-bottom: 2em;
+	}
+
+div.filterselection {
+	padding: 1em 1em 1em 0 !important; 
+	margin: 0;
+	margin-bottom: 2em;
+	margin-right: 5px;
+	}
+
+table#pagelogpicks {
+	width: 350px;
+	}
+
+table#pagelogsummary {
+	border: 1px solid #336699;
+	width: 800px;
+	top: 0;
+	left: 0;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#pagelogsummary th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	cursor: pointer;
+	}
+
+table#pagelogsummary td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#pagelogsummary .leftcol {
+	border-right: 1px solid #336699;
+	}
+
+table#pagelogsummaryshadow {
+	width: 800px;
+	}
+
+tr.totalrow td {
+	font-weight: bold;
+	background-color:#cccccc;
+	border-top: 1px solid black;
+	}
+
+div#functionlinks {
+	margin-top: 1em;
+	margin-bottom: 1em;
+	}
+
+div#lowerbuttons {
+	margin-top: .5em;
+	margin-bottom: 1em;
+	padding-left: 3em;
+	}
+
+div#pickform {
+	margin-top: 1em;
+	margin-bottom: 2em;
+	}
+
+table#screenMsgtable {
+	width: 100%;
+	}
+
+table#screenMsgtable td {
+	height: 2em;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+
+div#displaylistshadow {
+	width: 700px !important;
+	margin-top: 2em;
+	}
+
+table#displayslist {
+	border: 1px solid #336699;
+	width: 700px;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 3em 2em 0 !important;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#displayslist th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	cursor: pointer;
+	}
+
+table#displayslist td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#displayslist td.firstcol {
+	padding-left: 1em;
+	}
+
+p.displaynamecontainer {
+	margin-bottom: 2em;
+	}
+
+span.subnote {
+	margin-left: 5em;
+	}
+
+textarea#displaydescription {
+	width: 740px;
+	height: 100px;
+	behavior: none;
+	}
+
+span#isonadmincheck {
+	margin-left: 3em;
+	}
+
+textarea#clientdisplaydescription {
+	width: 740px;
+	height: 300px;
+	behavior: none;
+	}
+
+textarea#clientdisplayname {
+	width: 740px;
+	height: 50px;
+	behavior: none;
+	}
+
+tr.featuregrouptitlerow td {
+	height: 26px;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	background: #ccc;
+	}
+
+tr.featuregroupbottomrow td {
+	height: 13px;
+	border-bottom: 1px solid black;
+	}
+
+table#mobilefeaturesetup {
+	top: 0;
+	left: 0;
+	background-color: white;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	
+	}
+
+table#mobilefeaturesetup th { 
+	background-color: #99CCFF;
+	}
+
+table#mobilefeaturesetup tr.altrow {
+	background-color: #ECECEC;
+	}
+
+div#bottombtnsholder {
+	margin-top: 2em;
+	}
+
+div#topbtnsholder {
+	margin-bottom: 2em;
+	}
+
+div#mobilefeatureholder {
+	margin: 2em 0;
+	}
+
+span#screenMsg {
+	color: #ff0000; 
+	font-size: 10pt; 
+	font-weight: bold;
+	text-align: right;
+	position: relative;
+	float: right;
+	}
+
+table#useragentsummarypicks {
+	width: 650px;
+	}
+
+table#useragentsummary {
+	border: 1px solid #336699;
+	width: 800px;
+	top: 0 !important;
+	left: 0 !important;
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+	}
+
+table#useragentsummary th {
+	height: 26px;
+    font-size: 10px;
+    color: #003366;
+    border-bottom: 1px solid #336699;
+    background-color: #93bee1;
+	cursor: pointer;
+	}
+
+table#useragentsummary td {
+	height: 26px;
+    font-size: 10px;
+	}
+
+table#useragentsummary .leftcol {
+	border-right: 1px solid #336699;
+	}
+
+span.calendarimg {
+	cursor: pointer;
+	}
+
+table#featuretable
+{
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+table#featureselectiontopbuttons {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 2em 2em o !important;
+	}
+
+table#featuremanager {
+	position: relative;
+	top: 0;
+	left: 0;
+	margin: 1em 3em 2em 0 !important;
+	border: 1px solid #336699;
+
+	/* give a drop shadow */
+	-moz-box-shadow: 3px 3px 7px #777;
+	-webkit-box-shadow: 3px 3px 7px #777;
+	box-shadow: 3px 3px 7px #777;
+}
+
+table#featuremanager td {
+	border: 1px solid #fff;
+	}
+

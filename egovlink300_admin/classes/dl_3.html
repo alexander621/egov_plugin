@@ -1,0 +1,175 @@
+
+
+
+<html>
+<head>
+	<title>E-Gov Administration Console</title>
+	<link href="../global.css" rel="stylesheet" type="text/css">
+	<link href="../recreation/facility.css" rel="stylesheet" type="text/css">
+	<link href="classes.css" rel="stylesheet" type="text/css">
+
+	<script language="Javascript" src="tablesort.js"></script>
+
+	<style>
+		input {width:300px;}
+	</style>
+
+</head>
+
+
+<body>
+
+ 
+  <table border="0" cellpadding="0" cellspacing="0" width="100%" class="menu">    <tr>      <td height="15"></td>    </tr>    <tr>      <td colspan="2" background="/montgomery/admin/images/back_main.jpg">        <table border="0" cellpadding="0" cellspacing="0"><tr>
+<td valign=top background="/montgomery/admin/images/logo_background.jpg" ><img src='/montgomery/admin/custom/images/home.jpg'></td><td><img src="/montgomery/admin/images/tabfront.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/" class="tab" target="_top">Home</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/events/" class="tab" target="_top">Calendar</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/docs/" class="tab" target="_top">Documents</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/dirs/" class="tab" target="_top">Security</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/action_line/" class="tab" target="_top">Action Line</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/payments/" class="tab" target="_top">Payments</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/action_line/action.asp" class="tab" target="_top">New Request</a></td>
+<td><img src="/montgomery/admin/images/lefttab.jpg"></td><td background="/montgomery/admin/images/back.jpg"><a href="/montgomery/admin/dirs/display_citizen_groups.asp" class="tab" target="_top">Registration</a></td>
+<td><img src="/montgomery/admin/images/lefttab_selected.jpg"></td><td background="/montgomery/admin/images/back_selected.jpg"><a href="/montgomery/admin/recreation/default.asp" class="tab" target="_top">Recreation</a></td>
+            <td><img src="/montgomery/admin/images/tabend_selected.jpg"></td>            <td id="Sign Off">&nbsp;&nbsp;<a href="/montgomery/admin/signoff.asp" class="tab" style="color:#ffffff;" target="_top">Log Out</a></td>          </tr>        </table>      </td>    </tr>    <tr>      <td class="submenu"><img src="/montgomery/admin/images/spacer.gif" height="28" width="1" border="0"></td>    </tr>  </table>
+
+
+<!--BEGIN PAGE CONTENT-->
+<div id="content">
+
+	
+<!--BEGIN: PAGE TITLE-->
+<p>
+	<font size="+1"><strong>Recreation: Send Email</strong></font><br />
+	<a href="location_mgmt.asp"><img src="../images/arrow_2back.gif" align="absmiddle" border="0">&nbsp;Back</a>
+</p>
+<!--END: PAGE TITLE-->
+
+
+<!--BEGIN: FUNCTION LINKS-->
+<!--<div id="functionlinks">
+		<a href="location_mgmt.asp"><img src="../images/cancel.gif" align="absmiddle" border="0">&nbsp;Cancel</a>&nbsp;&nbsp;
+		<a href="javascript:document.frmlocation.submit();"><img src="../images/go.gif" align="absmiddle" border="0">&nbsp;Save Changes</a>&nbsp;&nbsp;
+</div>-->
+<!--END: FUNCTION LINKS-->
+
+
+<!--BEGIN: EDIT FORM-->
+<form name="frmlocation" action="location_save.asp" method="post">
+<input type="hidden" name="ilocationid" value="1" >
+
+<div class="shadow">
+	<table cellpadding="5" cellspacing="0" border="0" class="locationlist">
+		<tr>
+			<th>Email Information</th>
+		</tr>
+		<tr>
+			<td>
+				<table>
+					<tr>
+						<td>From Email Address:</td><td><input type="text" name="sName" maxlength="150" value="webmaster@montgomery.ci.oh.us" ></td>
+					</tr>
+					<tr>
+						<td>From Name:</td><td><input type="text" name="sName" maxlength="150" value="EGOV Application" ></td>
+					</tr>
+					<tr>
+						<td>Email Subject Line:</td><td><input type="text" name="sName" maxlength="150" value="Summer Fun Plans!" ></td>
+					</tr>
+					<tr>
+						<td colspan=2>Email Body:<br>
+						<textarea></textarea></td>
+					</tr>
+					<tr>
+					<td colspan=2>Select Groups to receive email:<br><br>
+
+						<TABLE cellpadding=10 cellspacing=0 width=350  border=0 >
+							<tr>
+								<TD>
+									<TABLE border=0 cellpadding=0 cellspacing=0 width=130 >
+										<TR><Td height=20><B>Selected Distribution Lists</B></Td></TR>
+										<TR>
+											<TD>
+												<form name=c1 method='POST' action='Committee_deletemember.asp?groupid=486'>
+													<select size='15' border=0 WIDTH="140" STYLE="width:140px" name='committeelist' multiple>
+														<option value=990>Distribution List 1</option>
+														<option value=1003>Distribution List 2</option>
+													</select>
+												</form>
+											</TD>
+										</TR>
+									</TABLE>
+								</TD>
+								
+								<td align=center>&nbsp;<A HREF='javascript:document.c1.submit();'><img src='../images/ieforward.gif' align='absmiddle' border=0></A><br><br><A HREF='javascript:document.r1.submit();'><img src='../images/ieback.gif' align='absmiddle' border=0></A>
+								</td>
+
+								<TD>
+									<TABLE border=0 cellpadding=0 cellspacing=0 width=130>
+										<TR><Tdheight=20><B>Available Distribution Lists</B></Td></TR>
+										<TR>
+											<TD>
+												<form name=r1 method='POST' action='Committee_AddMember.asp?groupid=486'>
+													<select size='15' WIDTH="140" STYLE="width:140px" name='OtherList' multiple>
+														<option value=990>Distribution List 3</option>
+														<option value=1003>Distribution List 4</option>
+														<option value=990>Distribution List 5</option>
+														<option value=1003>Distribution List 6</option>
+													</select></form>
+											</TD>
+										</TR>
+									</TABLE>
+								</TD>
+							</TR>
+						</TABLE>
+</td>
+
+
+					</tr>
+
+					<tr>
+					<td colspan=2>
+
+					<input type=button onClick="location.href='dl_list.csv';" value="SEND EMAIL TO SELECTED DISTRIBUTION LISTS">
+					</td>
+					</tr>
+
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+</form>
+<!--END: EDIT FORM-->
+
+
+</div>
+<!--END: PAGE CONTENT-->
+
+
+<!--BEGIN: BOTTOM MENU AND COPYRIGHT INFORMATION-->
+<center>
+<div class=footerbox  >
+	<table width=100% cellspacing=0 cellpadding=0>
+		<tr><td height=5 bgcolor=#93bee1 style="border-bottom: solid 1px #000000;">&nbsp; </td></tr>
+		<tr>
+			<TD valign=top align=center >
+				<font style="font-size:10px;font-weight:bold;">Copyright &copy;2004-<script type="text/javascript"> 
+		<!--
+			var theDate=new Date();
+			document.write(theDate.getFullYear());
+		//-->
+</script>. <i>electronic commerce</i> link, inc. dba <a  href="http://www.egovlink.com" target="_NEW"><font style="font-size:10px;">egovlink</font></a>.</font><br>&nbsp;</font>
+			</td>
+		</tr>
+	</table>
+</div>
+</center>
+<!--END: BOTTOM MENU AND COPYRIGHT INFORMATION-->  
+
+</body>
+
+
+</html>
+
+
+

@@ -1,0 +1,3101 @@
+dn: uid=1,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 1
+givenname: Lisa
+cn: Lisa Abraham
+sn: Abraham
+title: Administrative Assistant / Finance
+telephonenumber: 978-674-1107
+ou: Assessors
+ou: People
+
+dn: uid=2,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 2
+givenname: Mabel
+cn: Mabel Bond
+sn: Bond
+title: Assistant Assessor
+telephonenumber: 978-674-4200
+ou: Assessors
+ou: People
+
+dn: uid=3,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 3
+givenname: Donna
+cn: Donna Callahan
+sn: Callahan
+title: Administrative Assistant to the BOA
+telephonenumber: 978-674-1104
+ou: Assessors
+ou: People
+
+dn: uid=4,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 4
+givenname: Joel
+cn: Joel Cohen
+sn: Cohen
+title: Assessor
+telephonenumber: 978-674-4200
+ou: Assessors
+ou: People
+
+dn: uid=5,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 5
+givenname: Karen
+cn: Karen Golden
+sn: Golden
+title: Assessor
+telephonenumber: 978-674-4200
+ou: Assessors
+ou: People
+
+dn: uid=6,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 6
+givenname: Susan
+cn: Susan Lemay
+sn: Lemay
+title: Chief Assessor
+telephonenumber: 978-674-4200
+ou: Assessors
+ou: People
+
+dn: uid=7,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 7
+givenname: Karen
+cn: Karen Robinson
+sn: Robinson
+title: Principal Clerk
+telephonenumber: 978-674-1102
+ou: Assessors
+ou: People
+
+dn: uid=8,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 8
+givenname: Ryan
+cn: Ryan Rondeau
+sn: Rondeau
+title: Assistant Assessor
+telephonenumber: 978-674-4200
+ou: Assessors
+ou: People
+
+dn: uid=9,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 9
+givenname: Amy
+cn: Amy Silva
+sn: Silva
+title: Appraisal Clerk
+telephonenumber: 978-674-1101
+ou: Assessors
+ou: People
+
+dn: uid=10,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 10
+givenname: Michael
+cn: Michael Durkin
+sn: Durkin
+title: Budget Analyst/IT Manager
+telephonenumber: 978-805-4808
+ou: Career Center
+ou: People
+
+dn: uid=11,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 11
+givenname: Matthew
+cn: Matthew McCullough
+sn: McCullough
+title: Staff Accountant
+telephonenumber: 978-805-4821
+ou: Career Center
+ou: People
+
+dn: uid=12,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 12
+givenname: Shannon
+cn: Shannon Norton
+sn: Norton
+title: Fiscal Manager
+telephonenumber: 978-805-4816
+ou: Career Center
+ou: People
+
+dn: uid=13,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 13
+givenname: Tim
+cn: Tim O'Connor
+sn: O'Connor
+title: IT/Workshop Specialist
+telephonenumber: 978-805-4811
+ou: Career Center
+ou: People
+
+dn: uid=14,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 14
+givenname: Barbara
+cn: Barbara O'Neil
+sn: O'Neil
+title: Executive Director
+telephonenumber: 978-458-2503
+ou: Career Center
+ou: People
+
+dn: uid=15,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 15
+givenname: Christopher
+cn: Christopher Firicano
+sn: Firicano
+title: Financial Specialist
+telephonenumber: 978-674-1122
+ou: City Auditor
+ou: People
+
+dn: uid=16,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 16
+givenname: Boirsaliar
+cn: Boirsaliar Long
+sn: Long
+title: Head Clerk
+telephonenumber: 978-674-1123
+ou: City Auditor
+ou: People
+
+dn: uid=17,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 17
+givenname: Karen
+cn: Karen O'Beirne
+sn: O'Beirne
+title: Assistant City Auditor
+telephonenumber: 978-674-4075
+ou: City Auditor
+ou: People
+
+dn: uid=18,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 18
+givenname: Hannah
+cn: Hannah York
+sn: York
+title: City Auditor
+telephonenumber: 978-674-4080
+ou: City Auditor
+ou: People
+
+dn: uid=19,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 19
+givenname: Diane
+cn: Diane LeBlanc
+sn: LeBlanc
+title: Senior Accountant
+telephonenumber: 978-674-1120
+ou: City Auditor
+ou: People
+
+dn: uid=20,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 20
+givenname: Tricia
+cn: Tricia Lamarre
+sn: Lamarre
+title: Payroll Supervisor
+telephonenumber: 978-674-4081
+ou: City Auditor
+ou: People
+
+dn: uid=21,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 21
+givenname: Denisse
+cn: Denisse Molina
+sn: Molina
+title: Payroll Financial Specialist
+telephonenumber: 978-674-1121
+ou: City Auditor
+ou: People
+
+dn: uid=22,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 22
+givenname: Lisa
+cn: Lisa Riopelle
+sn: Riopelle
+title: Assistant Payroll Supervisor
+telephonenumber: 978-674-1125
+ou: City Auditor
+ou: People
+
+dn: uid=23,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 23
+givenname: Tim
+cn: Tim Coughlin
+sn: Coughlin
+title: Head Clerk
+telephonenumber: 978-674-1153
+ou: City Clerk
+ou: People
+
+dn: uid=24,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 24
+givenname: Michael
+cn: Michael Geary
+sn: Geary
+title: City Clerk
+telephonenumber: 978-674-1154
+ou: City Clerk
+ou: People
+
+dn: uid=25,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 25
+givenname: Angela
+cn: Angela Gitschier
+sn: Gitschier
+title: Assistant City Clerk
+telephonenumber: 978-674-1150
+ou: City Clerk
+ou: People
+
+dn: uid=26,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 26
+givenname: Shannon
+cn: Shannon Gouveia
+sn: Gouveia
+title: Head Clerk
+telephonenumber: 978-674-1155
+ou: City Clerk
+ou: People
+
+dn: uid=27,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 27
+givenname: Kathy
+cn: Kathy Hubert
+sn: Hubert
+title: Head Clerk
+telephonenumber: 978-674-1152
+ou: City Clerk
+ou: People
+
+dn: uid=28,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 28
+givenname: Jennifer
+cn: Jennifer Martinez
+sn: Martinez
+title: Head Clerk
+telephonenumber: 978-674-1151
+ou: City Clerk
+ou: People
+
+dn: uid=29,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 29
+givenname: Conor
+cn: Conor Baldwin
+sn: Baldwin
+title: CFO
+telephonenumber: 978-674-1005
+ou: City Manager
+ou: People
+
+dn: uid=30,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 30
+givenname: Mike
+cn: Mike McGovern
+sn: McGovern
+title: Assistant City Manager
+telephonenumber: 978-674-1002
+ou: City Manager
+ou: People
+
+dn: uid=31,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 31
+givenname: Karen
+cn: Karen Moynihan
+sn: Moynihan
+title: Executive Assistant/Finance
+telephonenumber: 978-674-1001
+ou: City Manager
+ou: People
+
+dn: uid=32,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 32
+givenname: Kevin
+cn: Kevin Murphy
+sn: Murphy
+title: City Manager
+telephonenumber: 978-674-1000
+ou: City Manager
+ou: People
+
+dn: uid=33,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 33
+givenname: Nicholas
+cn: Nicholas Navin
+sn: Navin
+title: Clerk
+telephonenumber: 978-674-1003
+ou: City Manager
+ou: People
+
+dn: uid=34,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 34
+givenname: Rodney
+cn: Rodney Conley
+sn: Conley
+title: Data Management Analyst
+telephonenumber: 978-674-1448
+ou: City Manager
+ou: People
+
+dn: uid=35,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 35
+givenname: Mike
+cn: Mike Demaras
+sn: Demaras
+title: Coordinator Of Neighborhood Services
+telephonenumber: 978-674-1560
+ou: City Manager
+ou: People
+
+dn: uid=36,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 36
+givenname: Corey
+cn: Corey Belanger
+sn: Belanger
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=37,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 37
+givenname: Rodney
+cn: Rodney Elliott
+sn: Elliott
+title: City Mayor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=38,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 38
+givenname: Celine
+cn: Celine Gettings
+sn: Gettings
+title: Mayor's Assistant
+telephonenumber: 978-674-1551
+ou: City Mayor
+ou: People
+
+dn: uid=39,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 39
+givenname: Edward
+cn: Edward Kennedy
+sn: Kennedy
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=40,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 40
+givenname: John
+cn: John Leahy
+sn: Leahy
+title: Vice-Chair
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=41,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 41
+givenname: William
+cn: William Martin
+sn: Martin
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=42,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 42
+givenname: Rita
+cn: Rita Mercier
+sn: Mercier
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=43,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 43
+givenname: James
+cn: James Millinazzo
+sn: Millinazzo
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=44,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 44
+givenname: Dan
+cn: Dan Rourke
+sn: Rourke
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=45,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 45
+givenname: William
+cn: William Samaras
+sn: Samaras
+title: Councilor
+telephonenumber: 978-674-4040
+ou: City Mayor
+ou: People
+
+dn: uid=46,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 46
+givenname: Gail
+cn: Gail Green
+sn: Green
+title: Member Service Representative
+telephonenumber: 978-970-4088
+ou: Credit Union
+ou: People
+
+dn: uid=47,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 47
+givenname: Joe
+cn: Joe Schiappa
+sn: Schiappa
+title: CEO
+telephonenumber: 978-970-4088
+ou: Credit Union
+ou: People
+
+dn: uid=48,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 48
+givenname: Suzzanne
+cn: Suzzanne Cromwell
+sn: Cromwell
+title: Program Assistant
+telephonenumber: 978-674-1483
+ou: Cultural Affairs
+ou: People
+
+dn: uid=49,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 49
+givenname: Susan
+cn: Susan Halter
+sn: Halter
+title: Director
+telephonenumber: 978-674-1480
+ou: Cultural Affairs
+ou: People
+
+dn: uid=50,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 50
+givenname: Henri
+cn: Henri Marchand
+sn: Marchand
+title: Special Events Coordinator
+telephonenumber: 978-674-1481
+ou: Cultural Affairs
+ou: People
+
+dn: uid=51,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 51
+givenname: Yovani
+cn: Yovani Baez-Rose
+sn: Baez-Rose
+title: Neighborhood Planner
+telephonenumber: 978-674-1413
+ou: Development Services
+ou: People
+
+dn: uid=52,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 52
+givenname: Claudia
+cn: Claudia Brienza
+sn: Brienza
+title: Principal Clerk
+telephonenumber: 978-674-1463
+ou: Development Services
+ou: People
+
+dn: uid=53,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 53
+givenname: Patricia
+cn: Patricia Brown
+sn: Brown
+title: Principal Clerk
+telephonenumber: 978-674-1462
+ou: Development Services
+ou: People
+
+dn: uid=54,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 54
+givenname: Dianne
+cn: Dianne Daigle
+sn: Daigle
+title: Head Clerk
+telephonenumber: 978-674-1461
+ou: Development Services
+ou: People
+
+dn: uid=55,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 55
+givenname: Dorreen
+cn: Dorreen Dolan
+sn: Dolan
+title: Principal Clerk
+telephonenumber: 978-674-1468
+ou: Development Services
+ou: People
+
+dn: uid=56,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 56
+givenname: Joe
+cn: Joe Gendreau
+sn: Gendreau
+title: Wire Inspector
+telephonenumber: 978-674-4144
+ou: Development Services
+ou: People
+
+dn: uid=57,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 57
+givenname: Shaun
+cn: Shaun Shanahan
+sn: Shanahan
+title: Building Commissioner
+telephonenumber: 978-674-4144
+ou: Development Services
+ou: People
+
+dn: uid=58,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 58
+givenname: Eric
+cn: Eric Slagle
+sn: Slagle
+title: Director
+telephonenumber: 978-674-4144
+ou: Development Services
+ou: People
+
+dn: uid=59,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 59
+givenname: Judith
+cn: Judith Tymon
+sn: Tymon
+title: Senior Planner
+telephonenumber: 978-674-1422
+ou: Development Services
+ou: People
+
+dn: uid=60,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 60
+givenname: Kerry
+cn: Kerry Weissbach
+sn: Weissbach
+title: Office Manager
+telephonenumber: 978-674-1452
+ou: Development Services
+ou: People
+
+dn: uid=61,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 61
+givenname: Norman
+cn: Norman Card
+sn: Card
+title: Plumbing & Gas Inspector
+telephonenumber: 978-674-1457
+ou: Development Services
+ou: People
+
+dn: uid=62,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 62
+givenname: Doug
+cn: Doug Collupy
+sn: Collupy
+title: Wire Inspector
+telephonenumber: 978-674-1451
+ou: Development Services
+ou: People
+
+dn: uid=63,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 63
+givenname: Martin
+cn: Martin Furtado
+sn: Furtado
+title: Local Building Inspector
+telephonenumber: 978-674-1454
+ou: Development Services
+ou: People
+
+dn: uid=64,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 64
+givenname: Jimmy
+cn: Jimmy Le
+sn: Le
+title: Sanitary Code Enforcement Inspector
+telephonenumber: 978-674-1465
+ou: Development Services
+ou: People
+
+dn: uid=65,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 65
+givenname: Shawn
+cn: Shawn Machado
+sn: Machado
+title: Board Enforcement Agwnt
+telephonenumber: 978-674-1453
+ou: Development Services
+ou: People
+
+dn: uid=66,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 66
+givenname: Christopher
+cn: Christopher McWhite
+sn: McWhite
+title: Building Inspector
+telephonenumber: 978-674-1456
+ou: Development Services
+ou: People
+
+dn: uid=67,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 67
+givenname: Nelson
+cn: Nelson Miller
+sn: Miller
+title: Building Inspector
+telephonenumber: 978-674-1450
+ou: Development Services
+ou: People
+
+dn: uid=68,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 68
+givenname: Donald
+cn: Donald Murphy
+sn: Murphy
+title: Sanitary Code Enforcement Inspector
+telephonenumber: 978-674-1467
+ou: Development Services
+ou: People
+
+dn: uid=69,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 69
+givenname: Steven
+cn: Steven Nocco
+sn: Nocco
+title: Building Inspector
+telephonenumber: 978-674-1449
+ou: Development Services
+ou: People
+
+dn: uid=70,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 70
+givenname: David
+cn: David Ouellette
+sn: Ouellette
+title: Senior Health Inspector
+telephonenumber: 978-674-1458
+ou: Development Services
+ou: People
+
+dn: uid=71,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 71
+givenname: Aurea
+cn: Aurea Rivera
+sn: Rivera
+title: Sanitary Code Enforcement Inspector
+telephonenumber: 978-674-1469
+ou: Development Services
+ou: People
+
+dn: uid=72,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 72
+givenname: Lisa
+cn: Lisa Sam
+sn: Sam
+title: Sanitary Code Enforcement Inspector
+telephonenumber: 978-674-1470
+ou: Development Services
+ou: People
+
+dn: uid=73,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 73
+givenname: Joe
+cn: Joe Smith
+sn: Smith
+title: Wire Inspector
+telephonenumber: 978-674-1451
+ou: Development Services
+ou: People
+
+dn: uid=74,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 74
+givenname: Paul
+cn: Paul Winchester
+sn: Winchester
+title: Senior Building Inspector / CBO
+telephonenumber: 978-674-1460
+ou: Development Services
+ou: People
+
+dn: uid=75,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 75
+givenname: Vivian
+cn: Vivian Zeng
+sn: Zeng
+title: Sanitary Code Enforcement Inspector
+telephonenumber: 978-674-1466
+ou: Development Services
+ou: People
+
+dn: uid=76,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 76
+givenname: Stephen
+cn: Stephen Stowell
+sn: Stowell
+title: Historic Board Administrator
+telephonenumber: 978-674-1443
+ou: Development Services
+ou: People
+
+dn: uid=77,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 77
+givenname: Joe
+cn: Joe Giniewicz
+sn: Giniewicz
+title: Associate Planner
+telephonenumber: 978-674-1424
+ou: Development Services
+ou: People
+
+dn: uid=78,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 78
+givenname: Swaathi
+cn: Swaathi Joseph
+sn: Joseph
+title: Associate Planner
+telephonenumber: 978-674-1472
+ou: Development Services
+ou: People
+
+dn: uid=79,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 79
+givenname: Stephanie
+cn: Stephanie Jarosz
+sn: Jarosz
+title: Administrative Assistant
+telephonenumber: 978-674-1198
+ou: Elections
+ou: People
+
+dn: uid=80,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 80
+givenname: Eda-Jane
+cn: Eda-Jane Matchak
+sn: Matchak
+title: Interim Director of Elections
+telephonenumber: 978-674-1196
+ou: Elections
+ou: People
+
+dn: uid=81,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 81
+givenname: Maureen
+cn: Maureen Ouellette
+sn: Ouellette
+title: Election Clerk
+telephonenumber: 978-674-1197
+ou: Elections
+ou: People
+
+dn: uid=82,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 82
+givenname: Tara
+cn: Tara Coates
+sn: Coates
+title: Business Manager
+telephonenumber: 978-674-1217
+ou: Fire
+ou: People
+
+dn: uid=83,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 83
+givenname: Debbie
+cn: Debbie Howard
+sn: Howard
+title: Administrative Assistant
+telephonenumber: 978-674-1218
+ou: Fire
+ou: People
+
+dn: uid=84,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 84
+givenname: Charles
+cn: Charles McMeniman
+sn: McMeniman
+title: Assistant Mechanic
+telephonenumber: 978-674-1237
+ou: Fire
+ou: People
+
+dn: uid=85,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 85
+givenname: Raymond
+cn: Raymond W Patenaude
+sn: W Patenaude
+title: Mechanic
+telephonenumber: 978-674-1237
+ou: Fire
+ou: People
+
+dn: uid=86,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 86
+givenname: Sherrold
+cn: Sherrold Vail
+sn: Vail
+title: Head Clerk
+telephonenumber: 978-459-5554
+ou: Fire
+ou: People
+
+dn: uid=87,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 87
+givenname: Jeffrey
+cn: Jeffrey Winward
+sn: Winward
+title: Chief
+telephonenumber: 978-459-5567
+ou: Fire
+ou: People
+
+dn: uid=88,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 88
+givenname: George
+cn: George Rose
+sn: Rose
+title: Deputy Director EOC
+telephonenumber: 978-674-1220
+ou: Fire
+ou: People
+
+dn: uid=89,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 89
+givenname: John
+cn: John Bue
+sn: Bue
+title: FF
+telephonenumber: 978-674-1228
+ou: Fire
+ou: People
+
+dn: uid=90,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 90
+givenname: William
+cn: William Ryan
+sn: Ryan
+title: FF
+telephonenumber: 978-674-1227
+ou: Fire
+ou: People
+
+dn: uid=91,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 91
+givenname: Christopher
+cn: Christopher Ryder
+sn: Ryder
+title: LT
+telephonenumber: 978-674-1227
+ou: Fire
+ou: People
+
+dn: uid=92,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 92
+givenname: Dennis
+cn: Dennis Bergeron
+sn: Bergeron
+title: IT
+telephonenumber: 978-674-1219
+ou: Fire
+ou: People
+
+dn: uid=93,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 93
+givenname: Darryn
+cn: Darryn Grooms
+sn: Grooms
+title: FF
+telephonenumber: 978-674-1222
+ou: Fire
+ou: People
+
+dn: uid=94,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 94
+givenname: Kerry
+cn: Kerry Alexander
+sn: Alexander
+title: Head Administrative Clerk
+telephonenumber: 978-674-1052
+ou: Health
+ou: People
+
+dn: uid=95,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 95
+givenname: Mim
+cn: Mim Bonn
+sn: Bonn
+title: Outreach Worker
+telephonenumber: 978-674-1055
+ou: Health
+ou: People
+
+dn: uid=96,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 96
+givenname: Donna
+cn: Donna Cox
+sn: Cox
+title: Office Manager
+telephonenumber: 978-674-1051
+ou: Health
+ou: People
+
+dn: uid=97,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 97
+givenname: Jo-Ann
+cn: Jo-Ann Keegan
+sn: Keegan
+title: Interim Health Director
+telephonenumber: 978-674-1050
+ou: Health
+ou: People
+
+dn: uid=98,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 98
+givenname: Maria
+cn: Maria Ruggiero
+sn: Ruggiero
+title: Health Educator
+telephonenumber: 978-674-1076
+ou: Health
+ou: People
+
+dn: uid=99,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 99
+givenname: Peter
+cn: Peter Saing
+sn: Saing
+title: Outreach Worker
+telephonenumber: 978-674-1064
+ou: Health
+ou: People
+
+dn: uid=100,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 100
+givenname: Kristin
+cn: Kristin McMahon
+sn: McMahon
+title: Senior Clerk
+telephonenumber: 978-674-1053
+ou: Health
+ou: People
+
+dn: uid=101,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 101
+givenname: Colleen
+cn: Colleen DaSilva
+sn: DaSilva
+title: Public Health Nurse
+telephonenumber: 978-674-1068
+ou: Health
+ou: People
+
+dn: uid=102,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 102
+givenname: Paula
+cn: Paula McHatton
+sn: McHatton
+title: Public Health Nurse
+telephonenumber: 978-674-1065
+ou: Health
+ou: People
+
+dn: uid=103,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 103
+givenname: Linda
+cn: Linda Gallagher
+sn: Gallagher
+title: Clinical Nurse Manager
+telephonenumber: 978-674-1069
+ou: Health
+ou: People
+
+dn: uid=104,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 104
+givenname: Laurie
+cn: Laurie Guay
+sn: Guay
+title: Clinical Nurse Manager
+telephonenumber: 978-674-1071
+ou: Health
+ou: People
+
+dn: uid=105,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 105
+givenname: Lesa
+cn: Lesa Gulbicki
+sn: Gulbicki
+title: Nurse Coordinator
+telephonenumber: 978-674-1070
+ou: Health
+ou: People
+
+dn: uid=106,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 106
+givenname: Beth
+cn: Beth Moffett
+sn: Moffett
+title: Clinical Nurse Manager
+telephonenumber: 978-674-1072
+ou: Health
+ou: People
+
+dn: uid=107,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 107
+givenname: Cesar
+cn: Cesar Pungirum
+sn: Pungirum
+title: Tobacco Control Officer
+telephonenumber: 978-674-1073
+ou: Health
+ou: People
+
+dn: uid=108,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 108
+givenname: Mary
+cn: Mary Callery
+sn: Callery
+title: HR Manager
+telephonenumber: 978-674-4105
+ou: Human Relations
+ou: People
+
+dn: uid=109,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 109
+givenname: Nancy
+cn: Nancy Do
+sn: Do
+title: Assistant HR Manager
+telephonenumber: 978-674-1032
+ou: Human Relations
+ou: People
+
+dn: uid=110,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 110
+givenname: Sean
+cn: Sean Donahue
+sn: Donahue
+title: Personnel Assistant
+telephonenumber: 978-674-1030
+ou: Human Relations
+ou: People
+
+dn: uid=111,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 111
+givenname: Linda
+cn: Linda Freitas
+sn: Freitas
+title: Benefits Coordinator
+telephonenumber: 978-674-1033
+ou: Human Relations
+ou: People
+
+dn: uid=112,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 112
+givenname: Yanin
+cn: Yanin Penh
+sn: Penh
+title: HR Clerk
+telephonenumber: 978-674-1034
+ou: Human Relations
+ou: People
+
+dn: uid=113,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 113
+givenname: Maureen
+cn: Maureen Apostolos
+sn: Apostolos
+title: Office Manager/Litigation Manager
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=114,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 114
+givenname: Rachel
+cn: Rachel Brown
+sn: Brown
+title: 2nd Assistant City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=115,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 115
+givenname: Michael
+cn: Michael Carlson
+sn: Carlson
+title: Assistant City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=116,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 116
+givenname: Kathy
+cn: Kathy Duggan
+sn: Duggan
+title: Assistant Office Manager/Contract Administrator
+telephonenumber: 978-674-1501
+ou: Law
+ou: People
+
+dn: uid=117,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 117
+givenname: Christine
+cn: Christine O'Connor
+sn: O'Connor
+title: City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=118,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 118
+givenname: Hannah
+cn: Hannah Pappenheim
+sn: Pappenheim
+title: 2nd Assistant City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=119,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 119
+givenname: Marta
+cn: Marta Pietroforte
+sn: Pietroforte
+title: Principal Clerk
+telephonenumber: 978-674-1514
+ou: Law
+ou: People
+
+dn: uid=120,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 120
+givenname: Kenneth
+cn: Kenneth Rossetti
+sn: Rossetti
+title: Assistant City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=121,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 121
+givenname: Marie
+cn: Marie Tessier
+sn: Tessier
+title: Administrative Head Clerk
+telephonenumber: 978-674-1511
+ou: Law
+ou: People
+
+dn: uid=122,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 122
+givenname: Elliott
+cn: Elliott Veloso
+sn: Veloso
+title: Assistant City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=123,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 123
+givenname: James
+cn: James Wellock
+sn: Wellock
+title: 2nd Assistant City Solicitor
+telephonenumber: 978-674-4050
+ou: Law
+ou: People
+
+dn: uid=124,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 124
+givenname: Ryan
+cn: Ryan Wynn
+sn: Wynn
+title: Executive Secretary - License
+telephonenumber: 978-674-1513
+ou: Law
+ou: People
+
+dn: uid=125,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 125
+givenname: Thida
+cn: Thida Long
+sn: Long
+title: Paralegal
+telephonenumber: 978-674-1505
+ou: Law
+ou: People
+
+dn: uid=126,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 126
+givenname: Karen
+cn: Karen Gagnon
+sn: Gagnon
+title: Workers Comp Claim Agent
+telephonenumber: 978-674-1503
+ou: Law
+ou: People
+
+dn: uid=127,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 127
+givenname: Karen
+cn: Karen Morrissette
+sn: Morrissette
+title: Medical Invoice Processing Clerk
+telephonenumber: 978-674-1507
+ou: Law
+ou: People
+
+dn: uid=128,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 128
+givenname: Rita
+cn: Rita Wahl
+sn: Wahl
+title: Nurse Case Manager / Nursing Service
+telephonenumber: 978-674-1517
+ou: Law
+ou: People
+
+dn: uid=129,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 129
+givenname: Tom
+cn: Tom Coomas
+sn: Coomas
+title: Desktop Support Technician
+telephonenumber: 978-674-1015
+ou: MIS
+ou: People
+
+dn: uid=130,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 130
+givenname: Joe
+cn: Joe Donovan
+sn: Donovan
+title: GIS Manager
+telephonenumber: 978-674-1012
+ou: MIS
+ou: People
+
+dn: uid=131,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 131
+givenname: Miran
+cn: Miran Fernandez
+sn: Fernandez
+title: Chief Information Officer
+telephonenumber: 978-674-1010
+ou: MIS
+ou: People
+
+dn: uid=132,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 132
+givenname: Lisa
+cn: Lisa Hanson
+sn: Hanson
+title: Application Specialist
+telephonenumber: 978-674-1011
+ou: MIS
+ou: People
+
+dn: uid=133,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 133
+givenname: Ed
+cn: Ed Kapeckas
+sn: Kapeckas
+title: System Administrator
+telephonenumber: 978-674-1013
+ou: MIS
+ou: People
+
+dn: uid=134,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 134
+givenname: Alex
+cn: Alex Magee
+sn: Magee
+title: Application Specialist
+telephonenumber: 978-674-1017
+ou: MIS
+ou: People
+
+dn: uid=135,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 135
+givenname: John
+cn: John Meyers
+sn: Meyers
+title: MIS Director
+telephonenumber: 978-674-1019
+ou: MIS
+ou: People
+
+dn: uid=136,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 136
+givenname: Robert
+cn: Robert Sweeney
+sn: Sweeney
+title: Network System Specialist
+telephonenumber: 978-674-1018
+ou: MIS
+ou: People
+
+dn: uid=137,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 137
+givenname: Maura
+cn: Maura Linscott
+sn: Linscott
+title: Parking Enforcement
+telephonenumber: 978-674-1580
+ou: Parking
+ou: People
+
+dn: uid=138,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 138
+givenname: Anne
+cn: Anne Scanlon
+sn: Scanlon
+title: Parking Administrator
+telephonenumber: 978-674-1566
+ou: Parking
+ou: People
+
+dn: uid=139,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 139
+givenname: James
+cn: James Troup
+sn: Troup
+title: Parking Director
+telephonenumber: 978-674-4014
+ou: Parking
+ou: People
+
+dn: uid=140,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 140
+givenname: Diane
+cn: Diane Fonzi
+sn: Fonzi
+title: Republic Parking System Inc.
+telephonenumber: 978-674-4014
+ou: Parking
+ou: People
+
+dn: uid=141,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 141
+givenname: Patty
+cn: Patty Livorsi
+sn: Livorsi
+title: Republic Parking System Assistant Manager
+telephonenumber: 978-674-1567
+ou: Parking
+ou: People
+
+dn: uid=142,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 142
+givenname: Rene
+cn: Rene Perez
+sn: Perez
+title: Kiosk Maintenance
+telephonenumber: 978-674-4014
+ou: Parking
+ou: People
+
+dn: uid=143,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 143
+givenname: William
+cn: William Reilly
+sn: Reilly
+title: Republic Parking System Inc.
+telephonenumber: 978-674-4014
+ou: Parking
+ou: People
+
+dn: uid=144,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 144
+givenname: Bill
+cn: Bill Schmit
+sn: Schmit
+title: Republic Parking System Manager
+telephonenumber: 978-674-1580
+ou: Parking
+ou: People
+
+dn: uid=145,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 145
+givenname: Bill
+cn: Bill Riley
+sn: Riley
+title: Parking Security
+telephonenumber: 978-674-1577
+ou: Parking
+ou: People
+
+dn: uid=146,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 146
+givenname: Kevin
+cn: Kevin Coughlin
+sn: Coughlin
+title: Deputy Director/Planning & Community Development
+telephonenumber: 978-674-1402
+ou: Planning and Development
+ou: People
+
+dn: uid=147,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 147
+givenname: Roberta
+cn: Roberta Shea
+sn: Shea
+title: Secretary / Receptionist
+telephonenumber: 978-674-1404
+ou: Planning and Development
+ou: People
+
+dn: uid=148,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 148
+givenname: Toni
+cn: Toni Snow
+sn: Snow
+title: Lead Hazard Control Grant Program Manager
+telephonenumber: 978-674-1409
+ou: Planning and Development
+ou: People
+
+dn: uid=149,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 149
+givenname: Nancy
+cn: Nancy Spenard
+sn: Spenard
+title: Executive Secretary
+telephonenumber: 978-674-1406
+ou: Planning and Development
+ou: People
+
+dn: uid=150,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 150
+givenname: Diane
+cn: Diane Tradd
+sn: Tradd
+title: Assistant City Manager / DPD Director
+telephonenumber: 978-674-1401
+ou: Planning and Development
+ou: People
+
+dn: uid=151,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 151
+givenname: Linda
+cn: Linda King
+sn: King
+title: Community Development Specialist
+telephonenumber: 978-674-1428
+ou: Planning and Development
+ou: People
+
+dn: uid=152,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 152
+givenname: Susan
+cn: Susan Murphy
+sn: Murphy
+title: Senior Program Manager
+telephonenumber: 978-674-1431
+ou: Planning and Development
+ou: People
+
+dn: uid=153,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 153
+givenname: Nick
+cn: Nick Pernice
+sn: Pernice
+title: Community Development Assistant
+telephonenumber: 978-674-1418
+ou: Planning and Development
+ou: People
+
+dn: uid=154,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 154
+givenname: Christopher
+cn: Christopher Samaras
+sn: Samaras
+title: Director of Community Development
+telephonenumber: 978-674-1429
+ou: Planning and Development
+ou: People
+
+dn: uid=155,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 155
+givenname: Sarah
+cn: Sarah Brown
+sn: Brown
+title: Environmental Officer
+telephonenumber: 978-674-1446
+ou: Planning and Development
+ou: People
+
+dn: uid=156,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 156
+givenname: Maria
+cn: Maria Dickinson
+sn: Dickinson
+title: Economic Development Officer
+telephonenumber: 978-674-1435
+ou: Planning and Development
+ou: People
+
+dn: uid=157,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 157
+givenname: Erin
+cn: Erin Findlen
+sn: Findlen
+title: Economic Development Assistant
+telephonenumber: 978-674-1437
+ou: Planning and Development
+ou: People
+
+dn: uid=158,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 158
+givenname: Allison
+cn: Allison Lamey
+sn: Lamey
+title: Director of Economic Development
+telephonenumber: 978-674-1432
+ou: Planning and Development
+ou: People
+
+dn: uid=159,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 159
+givenname: Michael
+cn: Michael Moyle
+sn: Moyle
+title: Graphic Designer
+telephonenumber: 978-674-1436
+ou: Planning and Development
+ou: People
+
+dn: uid=160,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 160
+givenname: Desmond
+cn: Desmond Everlidis
+sn: Everlidis
+title: Senior Finance Officer
+telephonenumber: 978-674-1425
+ou: Planning and Development
+ou: People
+
+dn: uid=161,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 161
+givenname: Kimberly
+cn: Kimberly Hayes-Hackett
+sn: Hayes-Hackett
+title: Head Administrative Clerk
+telephonenumber: 978-674-1426
+ou: Planning and Development
+ou: People
+
+dn: uid=162,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 162
+givenname: hilip
+cn: hilip Ferreira 
+sn: Ferreira 
+title: Housing & Energy Program Manager
+telephonenumber: 978-674-1410
+ou: Planning and Development
+ou: People
+
+dn: uid=163,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 163
+givenname: Katherine
+cn: Katherine Moses
+sn: Moses
+title: Energy Manager
+telephonenumber: 978-674-1438
+ou: Planning and Development
+ou: People
+
+dn: uid=164,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 164
+givenname: Amy
+cn: Amy Solomon
+sn: Solomon
+title: Housing Secretary
+telephonenumber: 978-674-1414
+ou: Planning and Development
+ou: People
+
+dn: uid=165,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 165
+givenname: Todd
+cn: Todd Woekel
+sn: Woekel
+title: Construction Manager
+telephonenumber: 978-674-1408
+ou: Planning and Development
+ou: People
+
+dn: uid=166,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 166
+givenname: Nicolas
+cn: Nicolas Bosonetto
+sn: Bosonetto
+title: Transportation Engineer
+telephonenumber: 978-674-1417
+ou: Planning and Development
+ou: People
+
+dn: uid=167,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 167
+givenname: Christopher
+cn: Christopher Hayes
+sn: Hayes
+title: Transportation Projects Manager
+telephonenumber: 978-674-1405
+ou: Planning and Development
+ou: People
+
+dn: uid=168,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 168
+givenname: Patti
+cn: Patti Lucken
+sn: Lucken
+title: Asset Manager
+telephonenumber: 978-674-1412
+ou: Planning and Development
+ou: People
+
+dn: uid=169,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 169
+givenname: Andy
+cn: Andy Mann
+sn: Mann
+title: Intern
+telephonenumber: 978-674-1420
+ou: Planning and Development
+ou: People
+
+dn: uid=170,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 170
+givenname: Sandy
+cn: Sandy Swaile
+sn: Swaile
+title: Design Planner
+telephonenumber: 978-674-1419
+ou: Planning and Development
+ou: People
+
+dn: uid=171,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 171
+givenname: Craig
+cn: Craig Thomas
+sn: Thomas
+title: Chief Design Planner
+telephonenumber: 978-674-1445
+ou: Planning and Development
+ou: People
+
+dn: uid=172,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 172
+givenname: Visol
+cn: Visol Un
+sn: Un
+title: Intern
+telephonenumber: 978-674-1420
+ou: Planning and Development
+ou: People
+
+dn: uid=173,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 173
+givenname: Deborah
+cn: Deborah Friedl
+sn: Friedl
+title: Deputy Superintendent - Support Services
+telephonenumber: 978-674-1949
+ou: Police
+ou: People
+
+dn: uid=174,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 174
+givenname: Chuck
+cn: Chuck Ouellette
+sn: Ouellette
+title: Communications Center Manager
+telephonenumber: 978-674-1941
+ou: Police
+ou: People
+
+dn: uid=175,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 175
+givenname: Gail
+cn: Gail Pouliot
+sn: Pouliot
+title: Administrative Assistant
+telephonenumber: 978-674-1902
+ou: Police
+ou: People
+
+dn: uid=176,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 176
+givenname: Arthur
+cn: Arthur Ryan Jr.
+sn: Ryan Jr.
+title: Deputy Superintendent - Operational Services
+telephonenumber: 978-674-1948
+ou: Police
+ou: People
+
+dn: uid=177,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 177
+givenname: William
+cn: William Taylor
+sn: Taylor
+title: Superintendent (Chief of Police)
+telephonenumber: 978-674-4500
+ou: Police
+ou: People
+
+dn: uid=178,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 178
+givenname: Jill
+cn: Jill Theriault
+sn: Theriault
+title: Executive Secretary
+telephonenumber: 978-674-1901
+ou: Police
+ou: People
+
+dn: uid=179,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 179
+givenname: Susan
+cn: Susan Bordeleau
+sn: Bordeleau
+title: Physical Coordinator Assistant
+telephonenumber: 978-674-1887
+ou: Police
+ou: People
+
+dn: uid=180,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 180
+givenname: Joan
+cn: Joan Gendron
+sn: Gendron
+title: Budget Director (Police)
+telephonenumber: 978-674-1889
+ou: Police
+ou: People
+
+dn: uid=181,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 181
+givenname: Jessica
+cn: Jessica Parker
+sn: Parker
+title: Head Clerk
+telephonenumber: 978-674-1886
+ou: Police
+ou: People
+
+dn: uid=182,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 182
+givenname: Gale
+cn: Gale Terilli
+sn: Terilli
+title: Grant Physical Coordinator
+telephonenumber: 978-674-1888
+ou: Police
+ou: People
+
+dn: uid=183,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 183
+givenname: Susan
+cn: Susan Fougstedt
+sn: Fougstedt
+title: Assistant Director
+telephonenumber: 978-674-1537
+ou: Pollard Memorial Library
+ou: People
+
+dn: uid=184,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 184
+givenname: Victoria
+cn: Victoria Woodley
+sn: Woodley
+title: Director
+telephonenumber: 978-674-1525
+ou: Pollard Memorial Library
+ou: People
+
+dn: uid=185,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 185
+givenname: Michelle
+cn: Michelle Brady
+sn: Brady
+title: Office Manager
+telephonenumber: 978-674-1802
+ou: Public Works
+ou: People
+
+dn: uid=186,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 186
+givenname: Dawn
+cn: Dawn Cooper
+sn: Cooper
+title: Administrative Assistant
+telephonenumber: 978-674-1801
+ou: Public Works
+ou: People
+
+dn: uid=187,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 187
+givenname: Lisa
+cn: Lisa Pilato
+sn: Pilato
+title: Accountant
+telephonenumber: 978-674-1803
+ou: Public Works
+ou: People
+
+dn: uid=188,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 188
+givenname: Gary
+cn: Gary Richards
+sn: Richards
+title: Principal Clerk
+telephonenumber: 978-674-1804
+ou: Public Works
+ou: People
+
+dn: uid=189,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 189
+givenname: Ralph
+cn: Ralph Snow
+sn: Snow
+title: DPW Commissioner/Asst. City Manager
+telephonenumber: 978-674-4111
+ou: Public Works
+ou: People
+
+dn: uid=190,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 190
+givenname: Gail
+cn: Gail Trzcienski
+sn: Trzcienski
+title: Principal Clerk
+telephonenumber: 978-674-1805
+ou: Public Works
+ou: People
+
+dn: uid=191,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 191
+givenname: Jade
+cn: Jade Bernis
+sn: Bernis
+title: Head Clerk
+telephonenumber: 978-970-3323
+ou: Public Works
+ou: People
+
+dn: uid=192,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 192
+givenname: Holly
+cn: Holly Dean
+sn: Dean
+title: CH Facilities Maintenance
+telephonenumber: 978-674-1812
+ou: Public Works
+ou: People
+
+dn: uid=193,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 193
+givenname: Andy
+cn: Andy Garabedian
+sn: Garabedian
+title: CH Facilities Maintenance
+telephonenumber: 978-674-1812
+ou: Public Works
+ou: People
+
+dn: uid=194,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 194
+givenname: James
+cn: James Noel
+sn: Noel
+title: Senior Custodian
+telephonenumber: 978-674-1812
+ou: Public Works
+ou: People
+
+dn: uid=195,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 195
+givenname: Steve
+cn: Steve Coutu
+sn: Coutu
+title: City Electrician
+telephonenumber: 978-674-1813
+ou: Public Works
+ou: People
+
+dn: uid=196,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 196
+givenname: Joseph
+cn: Joseph Z Assenza
+sn: Z Assenza
+title: Construction Inspector
+telephonenumber: 978-674-4070
+ou: Public Works
+ou: People
+
+dn: uid=197,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 197
+givenname: Joseph
+cn: Joseph Cady
+sn: Cady
+title: Civil Engineer
+telephonenumber: 978-674-4070
+ou: Public Works
+ou: People
+
+dn: uid=198,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 198
+givenname: Lisa
+cn: Lisa DeMeo
+sn: DeMeo
+title: City Engineer
+telephonenumber: 978-674-4070
+ou: Public Works
+ou: People
+
+dn: uid=199,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 199
+givenname: Cathy
+cn: Cathy Gagniere
+sn: Gagniere
+title: Principal Clerk
+telephonenumber: 978-674-1208
+ou: Public Works
+ou: People
+
+dn: uid=200,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 200
+givenname: John
+cn: John Gleason
+sn: Gleason
+title: Civil Engineer
+telephonenumber: 978-674-4070
+ou: Public Works
+ou: People
+
+dn: uid=201,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 201
+givenname: Mario
+cn: Mario Madrid
+sn: Madrid
+title: Construction Inspector
+telephonenumber: 978-674-4070
+ou: Public Works
+ou: People
+
+dn: uid=202,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 202
+givenname: Peter
+cn: Peter Moloney
+sn: Moloney
+title: Civil Engineer
+telephonenumber: 978-674-4070
+ou: Public Works
+ou: People
+
+dn: uid=203,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 203
+givenname: Tom
+cn: Tom Conlon
+sn: Conlon
+title: General Foreman
+telephonenumber: 978-674-4113
+ou: Public Works
+ou: People
+
+dn: uid=204,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 204
+givenname: James
+cn: James Green
+sn: Green
+title: Deputy Commissioner Lands & Buildings
+telephonenumber: 978-674-1810
+ou: Public Works
+ou: People
+
+dn: uid=205,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 205
+givenname: Tom
+cn: Tom Bellegarde
+sn: Bellegarde
+title: Commissioner Parks, Recreation & Cemeteries
+telephonenumber: 978-970-3323
+ou: Public Works
+ou: People
+
+dn: uid=206,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 206
+givenname: Terry
+cn: Terry Corkery
+sn: Corkery
+title: Administrative Assistant
+telephonenumber: 978-970-4173
+ou: Public Works
+ou: People
+
+dn: uid=207,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 207
+givenname: David
+cn: David Perry
+sn: Perry
+title: Parks Foreman
+telephonenumber: 978-970-4197
+ou: Public Works
+ou: People
+
+dn: uid=208,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 208
+givenname: Steve
+cn: Steve Purtell
+sn: Purtell
+title: Superintendent of Parks Open Spaces
+telephonenumber: 978-970-4194
+ou: Public Works
+ou: People
+
+dn: uid=209,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 209
+givenname: Peter
+cn: Peter Faticanti
+sn: Faticanti
+title: Program Director/Planner
+telephonenumber: 978-674-1750
+ou: Public Works
+ou: People
+
+dn: uid=210,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 210
+givenname: Kaitlyn
+cn: Kaitlyn Hickey
+sn: Hickey
+title: Youth Services Coordinator
+telephonenumber: 978-674-1752
+ou: Public Works
+ou: People
+
+dn: uid=211,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 211
+givenname: Stacey
+cn: Stacey Montbleau
+sn: Montbleau
+title: Associate Planner
+telephonenumber: 978-674-1751
+ou: Public Works
+ou: People
+
+dn: uid=212,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 212
+givenname: Tina
+cn: Tina Douk
+sn: Douk
+title: Recycling Enforcement Coordinator
+telephonenumber: 978-674-1819
+ou: Public Works
+ou: People
+
+dn: uid=213,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 213
+givenname: Gunther
+cn: Gunther Wellenstein
+sn: Wellenstein
+title: Recycling Coordinator
+telephonenumber: 978-674-1811
+ou: Public Works
+ou: People
+
+dn: uid=214,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 214
+givenname: Mike
+cn: Mike Balous
+sn: Balous
+title: Tree Foreman
+telephonenumber: 978-674-1808
+ou: Public Works
+ou: People
+
+dn: uid=215,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 215
+givenname: Steve
+cn: Steve Benoit
+sn: Benoit
+title: Garage Foreman
+telephonenumber: 978-674-1809
+ou: Public Works
+ou: People
+
+dn: uid=216,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 216
+givenname: Ed
+cn: Ed Patenaude
+sn: Patenaude
+title: Deputy Commissioner Streets
+telephonenumber: 978-674-1806
+ou: Public Works
+ou: People
+
+dn: uid=217,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 217
+givenname: Kara-Sokra
+cn: Kara-Sokra Lin
+sn: Lin
+title: Head Clerk
+telephonenumber: 978-674-1722
+ou: Purchasing
+ou: People
+
+dn: uid=218,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 218
+givenname: Helen
+cn: Helen Mcgovern
+sn: Mcgovern
+title: Senior Clerk
+telephonenumber: 978-674-1721
+ou: Purchasing
+ou: People
+
+dn: uid=219,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 219
+givenname: Pam
+cn: Pam Themelis
+sn: Themelis
+title: Office Manager
+telephonenumber: 978-674-1723
+ou: Purchasing
+ou: People
+
+dn: uid=220,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 220
+givenname: Michael
+cn: Michael Vaughn
+sn: Vaughn
+title: Chief Procurement Officer
+telephonenumber: 978-674-4110
+ou: Purchasing
+ou: People
+
+dn: uid=221,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 221
+givenname: Shannon
+cn: Shannon Dowd
+sn: Dowd
+title: Board Administrator
+telephonenumber: 978-674-1587
+ou: Retirement
+ou: People
+
+dn: uid=222,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 222
+givenname: Linda
+cn: Linda Montbleau
+sn: Montbleau
+title: Principal Clerk
+telephonenumber: 978-674-1586
+ou: Retirement
+ou: People
+
+dn: uid=223,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 223
+givenname: Erin
+cn: Erin Rawnsley
+sn: Rawnsley
+title: Senior Clerk
+telephonenumber: 978-674-1585
+ou: Retirement
+ou: People
+
+dn: uid=224,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 224
+givenname: Mary
+cn: Mary Bator
+sn: Bator
+title: Executive Secretary
+telephonenumber: 978-674-2019
+ou: Schools
+ou: People
+
+dn: uid=225,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 225
+givenname: Jay
+cn: Jay Lang
+sn: Lang
+title: Deputy Superintendent - Finance & Operations
+telephonenumber: 978-674-4325
+ou: Schools
+ou: People
+
+dn: uid=226,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 226
+givenname: Claire
+cn: Claire Abrams
+sn: Abrams
+title: Ast Superintendent Crclm Instrctn & Assessment
+telephonenumber:  978-674-4323
+ou: Schools
+ou: People
+
+dn: uid=227,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 227
+givenname: June
+cn: June Cormier
+sn: Cormier
+title: Confidential Secretary
+telephonenumber: 978-674-4324
+ou: Schools
+ou: People
+
+dn: uid=228,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 228
+givenname: Jean
+cn: Jean Franco
+sn: Franco
+title: Superintendent
+telephonenumber: 978-674-4324
+ou: Schools
+ou: People
+
+dn: uid=229,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 229
+givenname: Ann
+cn: Ann Murphy
+sn: Murphy
+title: Ast Superintendent - Student Support Srvcs
+telephonenumber: 978-674-4326
+ou: Schools
+ou: People
+
+dn: uid=230,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 230
+givenname: Kathleen
+cn: Kathleen Carroll
+sn: Carroll
+title: Civic Events Coordinator
+telephonenumber: 978-674-1169
+ou: Senior Center
+ou: People
+
+dn: uid=231,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 231
+givenname: Tara
+cn: Tara Donnelly
+sn: Donnelly
+title: Secretary
+telephonenumber: 978-674-1171
+ou: Senior Center
+ou: People
+
+dn: uid=232,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 232
+givenname: Linda
+cn: Linda Hin
+sn: Hin
+title: Minority Outreach Program
+telephonenumber: 978-674-1173
+ou: Senior Center
+ou: People
+
+dn: uid=233,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 233
+givenname: Amy
+cn: Amy Leal
+sn: Leal
+title: Outreach Coordinator
+telephonenumber: 978-674-1167
+ou: Senior Center
+ou: People
+
+dn: uid=234,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 234
+givenname: Audrey
+cn: Audrey McMahon
+sn: McMahon
+title: Volunteer Coordinator
+telephonenumber: 978-674-1166
+ou: Senior Center
+ou: People
+
+dn: uid=235,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 235
+givenname: Michelle
+cn: Michelle Ramalho
+sn: Ramalho
+title: Director
+telephonenumber: 978-674-1170
+ou: Senior Center
+ou: People
+
+dn: uid=236,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 236
+givenname: Donna
+cn: Donna Butt
+sn: Butt
+title: Accountant
+telephonenumber: 978-674-1701
+ou: Treasurers
+ou: People
+
+dn: uid=237,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 237
+givenname: Kathleen
+cn: Kathleen Darezzo
+sn: Darezzo
+title: Senior Accountant
+telephonenumber: 978-674-1704
+ou: Treasurers
+ou: People
+
+dn: uid=238,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 238
+givenname: Cheryl
+cn: Cheryl Robertson
+sn: Robertson
+title: City Treasurer
+telephonenumber: 978-674-4222
+ou: Treasurers
+ou: People
+
+dn: uid=239,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 239
+givenname: Judy
+cn: Judy Winters
+sn: Winters
+title: Assistant City Treasurer
+telephonenumber: 978-674-1708
+ou: Treasurers
+ou: People
+
+dn: uid=240,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 240
+givenname: Belinda
+cn: Belinda Boisson
+sn: Boisson
+title: Collector Clerk
+telephonenumber: 978-674-1700
+ou: Treasurers
+ou: People
+
+dn: uid=241,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 241
+givenname: Robert
+cn: Robert Haley
+sn: Haley
+title: Assistant Collector
+telephonenumber: 978-674-1702
+ou: Treasurers
+ou: People
+
+dn: uid=242,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 242
+givenname: Robin
+cn: Robin Lunn
+sn: Lunn
+title: Head Clerk
+telephonenumber: 978-674-1712
+ou: Treasurers
+ou: People
+
+dn: uid=243,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 243
+givenname: Dustin
+cn: Dustin Poirier
+sn: Poirier
+title: Clerk
+telephonenumber: 978-674-1706
+ou: Treasurers
+ou: People
+
+dn: uid=244,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 244
+givenname: Kathleen
+cn: Kathleen Ryea
+sn: Ryea
+title: Head Clerk
+telephonenumber: 978-674-1713
+ou: Treasurers
+ou: People
+
+dn: uid=245,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 245
+givenname: Carmen
+cn: Carmen Felix
+sn: Felix
+title: Head Clerk
+telephonenumber: 978-674-1596
+ou: Veterans
+ou: People
+
+dn: uid=246,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 246
+givenname: Eric
+cn: Eric Lamarche
+sn: Lamarche
+title: Director
+telephonenumber: 978-674-1595
+ou: Veterans
+ou: People
+
+dn: uid=247,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 247
+givenname: Nancy
+cn: Nancy McGuire
+sn: McGuire
+title: Head Clerk
+telephonenumber: 978-674-1597
+ou: Veterans
+ou: People
+
+dn: uid=248,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 248
+givenname: Cheryl
+cn: Cheryl Daigneault
+sn: Daigneault
+title: Head Clerk
+telephonenumber: 978-674-1603
+ou: Wastewater Utility
+ou: People
+
+dn: uid=249,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 249
+givenname: Thomas
+cn: Thomas Kawa
+sn: Kawa
+title: Operations Manager
+telephonenumber: 978-674-1605
+ou: Wastewater Utility
+ou: People
+
+dn: uid=250,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 250
+givenname: Lisa
+cn: Lisa Malcuit
+sn: Malcuit
+title: Office Manager
+telephonenumber: 978-674-1602
+ou: Wastewater Utility
+ou: People
+
+dn: uid=251,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 251
+givenname: Mark
+cn: Mark Young
+sn: Young
+title: Executive Director
+telephonenumber: 978-674-4248
+ou: Wastewater Utility
+ou: People
+
+dn: uid=252,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 252
+givenname: Michael
+cn: Michael Butler
+sn: Butler
+title: Staff Engineer
+telephonenumber: 978-674-1608
+ou: Wastewater Utility
+ou: People
+
+dn: uid=253,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 253
+givenname: Amy
+cn: Amy Daigneault
+sn: Daigneault
+title: Pretreatment Coordinator
+telephonenumber: 978-674-1622
+ou: Wastewater Utility
+ou: People
+
+dn: uid=254,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 254
+givenname: Liam
+cn: Liam McCann
+sn: McCann
+title: Staff Engineer
+telephonenumber: 978-674-1624
+ou: Wastewater Utility
+ou: People
+
+dn: uid=255,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 255
+givenname: Keith
+cn: Keith Murray
+sn: Murray
+title: Staff Engineer
+telephonenumber: 978-674-1630
+ou: Wastewater Utility
+ou: People
+
+dn: uid=256,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 256
+givenname: Carrie
+cn: Carrie Prescott
+sn: Prescott
+title: Staff Engineer
+telephonenumber: 978-674-1620
+ou: Wastewater Utility
+ou: People
+
+dn: uid=257,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 257
+givenname: John
+cn: John Pugh
+sn: Pugh
+title: Staff Engineer
+telephonenumber: 978-674-1625
+ou: Wastewater Utility
+ou: People
+
+dn: uid=258,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 258
+givenname: Michael
+cn: Michael Stuer
+sn: Stuer
+title: Engineering Manager
+telephonenumber: 978-674-1606
+ou: Wastewater Utility
+ou: People
+
+dn: uid=259,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 259
+givenname: Evan
+cn: Evan Walsh
+sn: Walsh
+title: Engineering Supervisor
+telephonenumber: 978-674-1638
+ou: Wastewater Utility
+ou: People
+
+dn: uid=260,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 260
+givenname: Kenneth
+cn: Kenneth Cavanaugh
+sn: Cavanaugh
+title: Laboratory Technician
+telephonenumber: 978-674-1612
+ou: Wastewater Utility
+ou: People
+
+dn: uid=261,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 261
+givenname: JIin-Bok
+cn: JIin-Bok McGowan
+sn: McGowan
+title: Chemist
+telephonenumber: 978-674-1607
+ou: Wastewater Utility
+ou: People
+
+dn: uid=262,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 262
+givenname: Joanne
+cn: Joanne Shea
+sn: Shea
+title: Assistant Chemist
+telephonenumber: 978-674-1611
+ou: Wastewater Utility
+ou: People
+
+dn: uid=263,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 263
+givenname: Shannon
+cn: Shannon Cohan
+sn: Cohan
+title: Head Collection Systems Supervisor
+telephonenumber: 978-674-1633
+ou: Wastewater Utility
+ou: People
+
+dn: uid=264,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 264
+givenname: Aaron
+cn: Aaron Fox
+sn: Fox
+title: Maintenance Manager
+telephonenumber: 978-674-1604
+ou: Wastewater Utility
+ou: People
+
+dn: uid=265,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 265
+givenname: Fred
+cn: Fred Hamel
+sn: Hamel
+title: Equipment/Parts Manager
+telephonenumber: 978-674-1623
+ou: Wastewater Utility
+ou: People
+
+dn: uid=266,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 266
+givenname: Mark
+cn: Mark Meehan
+sn: Meehan
+title: Electrician
+telephonenumber: 978-674-1632
+ou: Wastewater Utility
+ou: People
+
+dn: uid=267,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 267
+givenname: Jeff
+cn: Jeff Paquette
+sn: Paquette
+title: Head Mechanic
+telephonenumber: 978-674-1624
+ou: Wastewater Utility
+ou: People
+
+dn: uid=268,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 268
+givenname: John
+cn: John Taylor
+sn: Taylor
+title: Computer Maintenance Management Systems Administrator
+telephonenumber: 978-674-1626
+ou: Wastewater Utility
+ou: People
+
+dn: uid=269,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 269
+givenname: Arthur
+cn: Arthur Walsh
+sn: Walsh
+title: Instrumentation Technician
+telephonenumber: 978-674-1631
+ou: Wastewater Utility
+ou: People
+
+dn: uid=270,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 270
+givenname: Charles
+cn: Charles Coughlin
+sn: Coughlin
+title: Water Distribution Foreman
+telephonenumber: 978-674-1694
+ou: Water Utility
+ou: People
+
+dn: uid=271,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 271
+givenname: Steve
+cn: Steve Duchesne
+sn: Duchesne
+title: Operations Superintendent
+telephonenumber: 978-674-1677
+ou: Water Utility
+ou: People
+
+dn: uid=272,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 272
+givenname: Robert
+cn: Robert Farley
+sn: Farley
+title: Maintenance Superintendent
+telephonenumber: 978-674-1686
+ou: Water Utility
+ou: People
+
+dn: uid=273,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 273
+givenname: Erik
+cn: Erik Gitschier
+sn: Gitschier
+title: Executive Director
+telephonenumber: 978-674-4240
+ou: Water Utility
+ou: People
+
+dn: uid=274,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 274
+givenname: Carrie
+cn: Carrie Hammersley
+sn: Hammersley
+title: Principal Clerk
+telephonenumber: 978-674-1673
+ou: Water Utility
+ou: People
+
+dn: uid=275,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 275
+givenname: Bob
+cn: Bob Hogue
+sn: Hogue
+title: Supterintendent of Distribution
+telephonenumber: 978-674-1691
+ou: Water Utility
+ou: People
+
+dn: uid=276,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 276
+givenname: Akeem
+cn: Akeem McDougal
+sn: McDougal
+title: Billing Administrator
+telephonenumber: 978-674-1688
+ou: Water Utility
+ou: People
+
+dn: uid=277,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 277
+givenname: Eliana
+cn: Eliana Morales
+sn: Morales
+title: Laboratory Director
+telephonenumber: 978-674-1678
+ou: Water Utility
+ou: People
+
+dn: uid=278,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 278
+givenname: Paul
+cn: Paul Pires
+sn: Pires
+title: Water Distribution Foreman
+telephonenumber: 978-674-1694
+ou: Water Utility
+ou: People
+
+dn: uid=279,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 279
+givenname: Mary
+cn: Mary Savard
+sn: Savard
+title: Office Manager
+telephonenumber: 978-674-1690
+ou: Water Utility
+ou: People
+
+dn: uid=280,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 280
+givenname: Sharon
+cn: Sharon Spanos
+sn: Spanos
+title: Head Clerk
+telephonenumber: 978-674-1692
+ou: Water Utility
+ou: People
+
+dn: uid=281,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 281
+givenname: Thomas
+cn: Thomas Laird Jr.
+sn: Laird Jr.
+title: Backflow Inspector
+telephonenumber: 978-674-1683
+ou: Water Utility
+ou: People
+
+dn: uid=282,ou=People,dc=egovlink,dc=com
+objectClass: person
+uid: 282
+givenname: Trudy
+cn: Trudy Roane
+sn: Roane
+title: Billing Administrator
+telephonenumber: 978-674-1688
+ou: Water Utility
+ou: People

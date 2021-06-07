@@ -1,0 +1,28 @@
+.text {  font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000066}
+
+.textblack { font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: normal; font-variant: normal; color: #000000}
+
+a:link {  font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #333399; text-decoration: none}
+
+a:visited {  font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #999999; text-decoration: none}
+
+a:hover {  font-family: Arial, Helvetica, sans-serif; font-size: 13px; font-style: normal; line-height: normal; font-weight: bold; font-variant: normal; color: #FF000A; text-decoration: underline}
+
+.bgmain { background-color: #FFFFFF; background-image: url(images/bg_main.gif); background-repeat: no-repeat }
+
+div #placeholder {
+	position:relative; 
+	width:175; 
+	height:200px;
+	border: 1px solid black;
+	margin-left: 2em;
+}
+
+div.scroller {
+	margin-left: 2px;
+	}
+
+div.scrollertext {
+	margin-left: 2px;
+	color: #000000;
+	}

@@ -1,0 +1,697 @@
+/*DEFAULT PAGE STYLES*/
+font.pagetitle { padding: 4px;  color:#349967; font-family: arial,sans-serif; font-size: 14px; font-weight:bold; }
+font.datetagline { padding: 2px; COLOR: #000000; font-family: arial,sans-serif; font-size: 10px; font-weight:bold; }
+font.formtitle {COLOR: #000000; font-family: arial,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+/*
+div.footerbox {background-color:#349967;COLOR: #FFFFFF; TEXT-DECORATION: none; font-family: arial,sans-serif; font-size: 10px;  }
+td.box_header  {background-color:#349967;width:100%; color:#FFFFFF; font-family:arial,sans-serif; font-size:12px; font-weight:bold; text-align:center;}
+div.box_header2 {font-weight:bold;background-color:#349967;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:400 px;padding:2px;color:#FFFFFF;}
+*/
+
+
+/*DEFAULT PAGE STYLES*/
+
+/* Added for iframe */
+#iframenav {
+	display:inline-block !important;
+	margin-top:15px;
+}
+#iframenav div.iframenavlink, #iframenav div.searchMenuDiv {
+	display:inline-block !important;
+	margin-left:5px !important;
+}
+#iframenav div a {
+	padding:15px;
+	line-height:1;
+}
+
+	@media screen and (max-width:480px)
+	{
+		#iframenav #iframetxtsearchphrase
+		{
+			width:40%;
+		}
+		.searchMenuDiv
+		{
+			position:static !important;
+		}
+	}
+#footerbug {
+    position: fixed;
+    top: 0;
+    right:0;
+    padding:1px;
+    display:inline-block !important;
+    font-weight:bold;
+    font-size:10px !important;
+    background:#ccc;
+    font-family: Geneva, Arial, Helvetica, sans-serif !important;
+
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+}
+
+#fadelines { display:none; }
+
+#footerbug a
+{
+    font-weight:bold;
+    font-size:10px !important;
+    font-family: Geneva, Arial, Helvetica, sans-serif !important;
+}
+
+
+div#banner , div#nav, div#nav-wrap, div.footerbox, div#wrapper_footer, div#footer
+{
+	display:none;
+}
+div#wrapper {background:none; width:700px;}
+div#content, div#footer {margin-left:0;}
+div#centercontent {width:680px;}
+tr.fadeline {background-color:white;}
+
+.topbanner  {display:none;}
+.indent20 {padding-left:0;}
+div.rentalcategorygroup, div.categorygroup, div.subcategorygroup, div.subcategorymenu, .facilitylist {width:680px;}
+ .reserve_link {width:680px;}
+div#rentalscategorypagetop {width:680px;}
+
+table.maincaltbl {width:700px !important;}
+td.calfillerday, td.calrealday {width:80px !important;}
+.calfacilityselection { width:700px; }
+hr.calpghr {width: 700px !important; }
+h3.faccallimit {width:700px !important;}
+form#frmAvail div {width:680px !important;}
+div#paymentform {margin-left:10px;}
+
+div.subcategorymenu { width:690px}
+table.availablecategory, table.availablerentals  { width:690px}
+td.availabledatecolumn {width:400px}
+table#summaryterms { width:690px}
+
+fieldset legend, .fieldset_classes legend {color: #4b918b;}
+
+
+.searchMenuDiv 
+{
+    position: absolute;
+}
+
+.iframenavbutton
+{
+	font-size:12px;
+	float: left;
+    margin: 1px 10px 1px 1px;
+    padding: 2px 0px 2px 4px;
+	border: 1pt solid #808080;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+    cursor: pointer;
+}
+
+.searchBoxText 
+{
+	width: 100px;
+    background: #ffffff url('./../images/search.jpg') no-repeat 98% center;
+}
+
+.searchBox
+{
+	display: block;
+    position: absolute;
+    float: right;
+    margin-top: 20px;
+}
+
+.classesSearchBox 
+{
+    position: relative;
+    float: right;
+    z-index: 1001;
+    white-space: nowrap;
+    /* margin: 0px 10px 0 0; */
+    margin: 0px;
+    padding: 10px 5px 10px 5px;
+	border: 1pt solid #808080;
+	  border-radius: 5px;
+	  -moz-border-radius: 5px;
+	  -webkit-border-radius: 5px;
+    background-color: #c0c0c0;
+	text-align: left;
+    font-family: Verdana, sans-serif;
+    font-size: 0.75em;  /* 12 / 16 */
+    margin-left:-50px !important;
+}
+
+/* end for add iframe */
+
+.title {
+	COLOR: #000000; font-family: arial,sans-serif; font-size: 12px; padding-left:5px; font-weight:bold }
+
+div.footerbox {
+	background-color:#349967;
+	COLOR: #000000; 
+	TEXT-DECORATION: none; 
+	font-family: arial,sans-serif; 
+	font-size: 10px;  
+	}
+td.box_header  {background-color:#349967;width:100%; color:#ffffff; font-family:arial,sans-serif; font-size:12px; font-weight:bold; text-align:center;}
+/*
+div.box_header2 {font-weight:bold;background-color:#349967;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width: 400px;padding:2px;color:#FFFFFF;}
+div.box_header4 {font-weight:bold;background-color:#349967;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:600 px;padding:2px;color:#FFFFFF;}
+*/
+
+div.box_header2 {
+	background-color:#349967;
+	color:#FFFFFF;
+	}
+
+div.box_header4 {
+	background-color:#349967;
+	color:#FFFFFF;
+	}
+
+div.box_header5 {font-weight:bold;background-color:#349967;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:100%;padding:2px;color:#FFFFFF;}
+
+.button  {COLOR: #ffffff; font-family: arial,sans-serif;font-size:10px; font-weight:bold; background-color: #349967;}
+
+a:link { COLOR: #022d13; TEXT-DECORATION: none;}
+a:visited { COLOR: #022d13; TEXT-DECORATION: none;}
+a:active { COLOR: #022d13; TEXT-DECORATION: none;}
+a:hover { COLOR: #022d13; TEXT-DECORATION: underline;}
+	
+/*HOMEPAGE STYLES*/
+
+
+/*ACTION LINE STYLES*/
+input.actionbtn {BACKGROUND-COLOR:#349967; COLOR: #FFFFFF; font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+input.action {text-align:left; background-color: #349967; COLOR: #FFFFFF; font-family: arial,sans-serif; font-size: 10px; font-weight:bold; width:75px;}
+
+p.actionItem {COLOR: #FFFFFF; font-size: 10px; font-weight:normal; margin:0 0 0 6;}
+p.actionCategory {COLOR: #FFFFFF; font-size: 12px; font-weight:bold; margin:6 0 0 0;}
+
+
+/*PAYMENT STYLES*/
+input.paymentbtn {BACKGROUND-COLOR:#349967; COLOR: #FFFFFF; font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+
+
+/*DOCUMENT STYLES*/
+font.searchlabel { COLOR: #000000; font-family: arial,sans-serif; font-size: 12px; font-weight:bold; }
+font.searchlink { COLOR: #000000; font-family: arial,sans-serif; font-size: 10px; font-weight:bold; }
+font.documentfolder { COLOR: #000000; font-family: arial,sans-serif; font-size: 12px; font-weight:bold; }
+
+
+
+tr.topbanner { background-color: #349967;	}
+
+
+/* RECREATION RESERVATION CALENDAR */
+.legendlabeltitle {	background-color: #349967; color: #000000;	}
+.calfacilityselection  {background-color:#349967; }
+.caldateselect  {background-color:#349967;}
+.calfacilityselection  {background-color:#349967;}
+.calheader {background-color:#349967;}
+/* RECREATION RESERVATION FORM */
+.reserveformtitle{background-color:#349967;	color: #ffffff;}
+.reserveformbutton {background-color: #349967; COLOR: #ffffff; font-size:10px;}
+
+.categorytitle {font-size:14px;color:#349967;}
+A.categorytitle:active{COLOR: #349967; font-size:14px;}
+A.categorytitle:link{COLOR: #349967;  font-size:14px;}
+A.categorytitle:visited{COLOR: #349967; font-size:14px; }
+A.categorytitle:hover{TEXT-DECORATION: underline; COLOR: #000000; font-size:14px; }
+
+
+
+/* FACILITY LIST */
+A.subcategorymenu:active{COLOR: #FFFFFF; font-family: arial,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:link{COLOR: #FFFFFF;  font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+A.subcategorymenu:visited{COLOR: #FFFFFF;  font-family: arial,sans-serif; font-size: 10px;font-weight:bold; }
+A.subcategorymenu:hover{TEXT-DECORATION: underline;COLOR: #000000;  font-family: arial,sans-serif; font-size: 10px;font-weight:bold; }
+div.subcategorymenu {background-color:#349967; border: 1px solid #000000; width:760px; padding:5px;font-weight:bold;}
+font.subcategorymenuheader {COLOR: #ffffff; font-family: arial,sans-serif; font-size: 10px;font-weight:bold; }
+
+.facilitydesc
+{
+	font-size: 11px;
+	width: 600px;
+}
+.facilityname
+{
+	font-weight: bold;
+	font-size: 13px;
+	color: black;
+}
+
+
+/* CLASS STYLES */
+.classdaterange {font-weight:bold; color: white; font-family: arial, sans-serif;	background-color: #349967;}
+.classbutton  {COLOR: #ffffff; font-family: arial,sans-serif;font-size:10px; font-weight:bold; background-color: #349967;	cursor:pointer; }
+#cart_table th { background-color: #349967;	color: white;	}
+
+
+
+
+/* Transaction reports styles */
+#content table.transactionreport {
+	padding: 0;
+	margin: 0;
+	border: 1px solid #666;
+	/*width: 750px; */
+	position: relative; 
+	top: -4px; 
+	left: -4px;
+	background-color: #FFFFFF;
+	}
+
+#content table.transactionreport td{
+	padding: 4;
+	}
+	
+#content div.transactionreportshadow { 
+	background: #919191; 
+	width: 750px;
+	margin: 20px 0;
+	}
+
+.transaction_header {font-weight:bold; background-color:#349967; padding:3px; color:#FFFFFF;}
+
+/* End of Transaction Report styles */
+
+/* GIFT */
+div.gift_header {font-weight:bold;background-color:#349967;border-top: solid #000000 1px;border-left: solid #000000 1px;border-right: solid #000000 1px; width:700 px;padding:2px;color:#FFFFFF;}
+
+
+/* SKIPJACK PAYMENT FORM STYLES */
+input.skipjackbtn {
+	background-color: #349967;
+	color: #fff;
+	}
+
+
+/*CURRENTLY SELECTED FOLDER*/
+a.documentfolder:hover {color:#000000; text-decoration:none;font-family: arial,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:visited {color:#000000; text-decoration:none;font-family: arial,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:active {color:#000000; text-decoration:none;font-family: arial,sans-serif; font-size: 12px; font-weight:bold;}
+a.documentfolder:link {color:#000000; text-decoration:none;font-family: arial,sans-serif; font-size: 12px; font-weight:bold;}
+
+/*NEW FOLDER/DOCUMENT STYLES*/
+#foldheader {cursor: pointer; list-style-image:url('../docs/fold.gif'); list-style-type: none;font-family: arial,sans-serif; font-size: 12px; font-weight:bold;  }
+#foldinglist {list-style-image:none; list-style-type: none; font-family: arial,sans-serif; font-size: 10px;  }
+li.emptyfolder {color:#000000; font-family: arial,sans-serif; font-size: 10px;}
+
+a.documentlist:link {color:#000000; text-decoration:none;font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:visited {color:#000000; text-decoration:none; font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:active {color:#000000; text-decoration:none;font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+a.documentlist:hover {color:RED; text-decoration:underline; font-family: arial,sans-serif; font-size: 10px; font-weight:bold;}
+
+/*CALENDAR STYLES*/
+
+table#calendar {
+	border-left:1px solid #333333; 
+	border-top:1px solid #666666; 
+	}
+
+table#calendar th {
+	background-color: #349967;	
+	color: #FFFFFF;	
+	}
+
+tr#calendardayrow {
+	background-color: #349967;	
+	color: #ffffff;	
+	}
+
+table#eventlist {
+	border-left:1px solid #333333;	
+	border-top:1px solid #666666;	
+	}
+
+table#eventlist th {
+	background-color: #349967; 
+	color: #FFFFFF;	
+	}
+
+table#calendar td {
+	border-right:1px solid #333333; 
+	border-bottom:1px solid #666666; 
+	} 
+
+table#calendarheader td { 
+	border: 0;
+	}
+
+table#eventlist td {
+	border-right:1px solid #333333; 
+	border-bottom:1px solid #666666; 	
+	}
+
+
+
+/* Footer MENU STYLE*/
+/* this style is causing the afooter links to always be black 8/15/06
+font.footermenu, font.footermenu a, font.footermenu a:visited, font.footermenu a:hover { 
+	color:#000000; 
+	}
+*/
+
+font.footermenu { 
+	color:#ffffff; 
+	}
+
+
+a.afooter:active {
+	color: #ffffff; 
+	text-decoration: none; 
+	font-family: arial,sans-serif; 
+	font-size: 10px; 
+	}
+a.afooter:link {
+	color: #ffffff; 
+	text-decoration: none; 
+	font-family: arial,sans-serif; 
+	font-size: 10px; 
+	}
+a.afooter:visited {
+	color: #ffffff;  
+	text-decoration: none;
+	font-family: arial,sans-serif; 
+	font-size: 10px; 
+	}
+a.afooter:hover {
+	color: #ffffff;  
+	text-decoration: underline; /* leave this in */
+	font-family: arial,sans-serif; 
+	font-size: 10px; 
+	}
+
+
+/* for drop down menu */
+
+/* the horizontal menu starts here */
+div#listmenu {
+	margin: 0;
+	padding: 0;
+	width:100%; /* makes the div full width of screen */
+	float:left;
+	/*border-top:1px solid #069;	 draws line on top edge of div */
+	/*border-bottom:1px solid #069;	  draws line on bottom edge of div */
+	font-size: 1em;	/* SET FONT-SIZE HERE */
+	font-family: arial,sans-serif; 
+	font-size: 10px; 
+	font-weight:bold;
+	background-color: #6f7eaa; /*#011737; /*
+	/*background-color:#636563; /* colors the div */
+	/*margin-top:20px;  TEMPORARY - pushes the div away from the top of the browser for clarity in this example*/
+	}
+
+div#listmenu ul {
+	margin:0 0 0 30px;/* indents ul from edge of container - NOTE: diff value for IE in hacks below */
+	padding: 0;
+	border-top: 1px solid #000000;
+	}
+
+div#listmenu ul li {
+	margin: 0;
+	padding: 0;
+	float:left;	/* causes the list to align horizontally instead of stack */
+	position:relative; /* positioning context for the absolutely positioned drop-down */
+	list-style-type:none;	/* removes the bullet off each list item */
+	background-color:#349967; /*#349967; /*sets the background of the menu items */
+	/*color: #8caed6;*/
+	border-right:1px solid #000;  /* creates dividing lines between the li elements */
+	width:250px;
+	z-index: 99;
+	}
+	
+	/*#  5282bd, 8caed6; 29415a*/
+	
+	
+div#listmenu li:first-child {
+	border-left:1px solid #069; /*the first vertial line on the menu */
+	}
+
+div#listmenu li:hover { 
+	/*background-color:#FFF; /*sets the background of the menu items */
+	}
+
+div#listmenu a {
+	display:block;
+	padding:1px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color: #ffffff;	/* #000 sets the type color */
+	width:244px;  /* the width lines  and voice-family put in by Steve Loar - Makes the whole line a link, not just the text */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width:244px;
+	}
+div#listmenu a:hover {
+	/*background-color:#FFF;
+	color:#8caed6; */
+	cursor: default;
+	}
+
+div#listmenu ul li ul li a {
+	display:block;
+	/* padding:1px 6px; /*creates space each side of menu item's text */
+	text-decoration:none;	 /* removes the underlining of the link */
+	color:#fff;	/* sets the type color */
+	background-color:#6f7eaa;
+	width:244px;  /* the width lines  and voice-family put in by Steve Loar - Makes the whole line a link, not just the text */
+	voice-family: "\"}\"";
+	voice-family: inherit;
+	width:250px;
+	}
+
+div#listmenu ul li ul li a:hover {
+	background-color:#349967;
+	color:#ffffff;
+	cursor: pointer;
+	}
+
+/* the menu ends here */
+
+/* the drop-down starts here */
+div#listmenu ul li ul {
+	margin:0; 
+	padding: 0;
+	z-index:10; /* puts drop-down on top of div - Safari needs this as menu is 1px higher */
+	position:absolute; /* positions the drop-down ul in relation to its relatively positioned li parent */
+	width:250px; /*sets the width of the menu - in combo with the li's 100% width, makes the menu stack*/
+	border-right:0; /* stops SCBs drops having two right borders - they inherit the border, IE doesn't */
+	left:-1px; /*aligns the drop exactly under the menu */
+	/*width:250px;*/
+	}
+div#listmenu ul li ul li {
+	padding:0;
+	margin: 0;
+	width:250px; /* makes the list items fill the list container (ul) */
+	/*border-left:1px solid #069; /*  three sides of each drop-down item */
+	/* border-bottom:1px solid #069; */
+	/*border-right:1px solid #069;*/
+	}
+div#listmenu ul li ul li a {
+	padding: 0;
+	margin: 0;
+	padding:1px 6px; /*creates space each side of menu item's text */
+	/*padding:1px .5em; */
+	border-bottom: 1px solid #efeff7;
+	border-right:1px solid #efeff7;
+	border-left:1px solid #efeff7;
+	}
+div#listmenu ul li ul li:first-child {
+	border-top:1px solid #efeff7; /*the top edge of the dropdown */
+	}
+/* make the drop-down display as the menu is rolled over */
+div#listmenu ul li ul {display:none;} /* conceals the drop-down when menu not hovered */
+div#listmenu ul li:hover ul {display:block; } /* shows the drop-down when the menu is hovered */
+
+/* pop-out starts here */
+body div#listmenu ul li ul li ul  {
+	position:absolute; 
+	visibility:hidden; /* same effect as display:none in this situation */
+	top:-1px;
+	left:10em;
+	}
+div#listmenu ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* second level popouts start here*/
+div#listmenu ul li ul li:hover ul li ul {visibility:hidden;}
+div#listmenu ul li ul li ul li:hover ul {visibility:visible;} /* same effect as display:block in this situation */
+
+/* THE HACK ZONE - */
+/* hack for IE (all flavors) so the menu has a vertical line on the left */
+* html div#listmenu ul {
+	float:left; /* makes the ul wrap the li's */
+	border-left:1px solid #000; /* adds the rightmost menu vertical line to the ul */
+	margin-left:15px; /* IE doubles the given value above - why? */
+	}
+
+/* add a top line to drops and pops in IE browsers - can't read :first-child */
+* html  div#listmenu ul li ul {
+	border-top:1px solid #069;
+	border-left:0px; /* stops the drop inheriting the ul border */
+	}
+/* the Tantek hack to feed IE Win 5.5-5.0 a lower value to get the pop-out to touch the drop-down */
+* html  div#listmenu ul li ul li ul { 
+  left:9.85em; 
+  voice-family: "\"}\""; 
+  voice-family:inherit;
+  left:10em;
+  } 
+/* and the "be nice to Opera" rule */
+html>body div#listmenu ul li ul li ul {
+  left:10em;
+} 
+
+/* an Opera-only hack to fix a redraw problem by invisibly extending the ul */
+/* the first-level drop stays open for 100px below the bottom but at least it works */
+/* this can be reduced to as little as 22px if you don't have pop-outs */
+/* the pop-out menu stays open for 22px below the bottom but at least it works */
+	@media all and (min-width: 0px){
+   body div#listmenu ul li ul {padding-bottom:100px;}
+   body div#listmenu ul li ul li ul {padding-bottom:22px;}
+   ul li ul li ul li ul li:hover {visibility:visible;} /* same effect as display:block in this situation */
+
+   }
+/*end Opera hack */
+/* END OF HACK ZONE */
+/* the drop-down ends here */
+/* END OF LIST-BASED MENU */
+
+body {behavior: url('http://www.egovlink.com/menlopark/csshover.htc');}
+
+/* Organization level style overriddes for the public default_page.asp */
+
+#wrapper {
+	background:url(../custom/images/menlopark/page-bg.gif) repeat-y;
+	} 
+
+#subnav p {
+	border-bottom: 1px solid #FFFFFF;
+	background: #6F7EAA;
+	font-family: arial,sans-serif;
+	font-size: 14px;
+	}
+
+#subnav p a {
+	color: #FFFFFF;
+	}
+
+#subnav a:visited {
+	color: #FFFFFF;
+	}
+
+#subnav p a:hover {
+	color: #FFFFFF;
+	background: #349967;
+	}
+
+#content h2  {
+	color: #FFFFFF;
+	border-top: 3px solid #445380;;
+	background: #349967; 
+	}
+
+div.features {
+	background: #ebebe7;
+	border-bottom: 3px solid #445380;
+	}
+
+/* End of organization overriddes for the public default_page.asp */
+
+/* Purchases Report Styles */
+#content table.purchasereport th {
+    HEIGHT: 18px;
+    FONT-SIZE: 11px;
+    color: #ffffff;
+    border-bottom: 1px solid #336699;
+    background-color: #349967;
+	}
+
+/* Pool Pass styles */
+#poolformtitle { 
+	background-color: #349967; 
+	color: #ffffff;
+	border-top: solid #000000 1px;
+	border-right: solid #000000 1px;
+	border-left: solid #000000 1px; 
+	}
+
+#poolforminputarea {	
+	background-color:#ececf2; 
+	border: solid #000000 1px; 
+	}
+
+.reserveforminputarea {
+	background-color:#ececf2;
+	}
+
+
+
+
+/* 8/17/06 */
+div.picktitle	{	background-color:#349967; }
+
+
+
+/* Pool Pass Styles End */
+
+/* Size of default page central block */
+p.hasimage {
+	height: 53px;
+	}
+
+
+
+/* .NET styles ------------------------------------------------------------- */
+
+/* Classes/Events ---------------------------------------------------------- */
+.topbanner { background-color: #349967;	}
+
+/* ----------------------------------------------------------------------------
+BEGIN: Responsive Design Styles
+---------------------------------------------------------------------------- */
+/* -- Navigation: Main Menu -- */
+#nav-wrap
+{
+    background-color: #6f7eaa;
+}
+
+#menu-icon 
+{
+    background-color: #349967;
+    color: #ffffff;
+}
+
+#navmenu li a 
+{
+    background-color: #6f7eaa;
+    color: #ffffff;
+}
+
+#navmenu li a:hover
+{
+    background-color: #349967;
+}
+
+/* -- Footer -- */
+#footer
+{
+    background-color: #6f7eaa;
+    color: #ffffff;
+}
+
+#footer a 
+{
+    color: #ffffff;
+}
+/* ----------------------------------------------------------------------------
+END: Responsive Design Styles
+---------------------------------------------------------------------------- */
+

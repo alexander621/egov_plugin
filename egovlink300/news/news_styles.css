@@ -1,0 +1,21 @@
+.newsTable
+{
+	border: 1px solid #000000;
+	background-color: #c0c0c0;
+	margin-bottom: 3em;
+}
+
+.newsTableHeaders 
+{
+	border-bottom: 1px solid #000000;
+	font-weight: bold;
+	font-size: 12px;
+	text-align: left;
+}
+
+div#newsearchfailed p
+{
+    padding-bottom: 3em;
+	font-weight: bold;
+}
+

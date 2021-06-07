@@ -1,0 +1,186 @@
+﻿/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 800px) 
+{
+/*
+    #content
+    {
+        margin-left: 2.5%;  /* (20px / 800px) * 100 */
+/*
+    }
+*/
+   
+    #welcome_info 
+    {
+        margin: 3px;
+        padding: 2px;
+        background-color: #eeeeee;
+        border: 1pt solid #c0c0c0;
+        border-radius: 10px;
+        -moz-border-radius: 10px;
+        -webkit-border-radius: 10px;
+    }
+    
+	/* -- Main Navigation -- */
+	#menu-icon
+	{
+        top: 42px;  /* This is for screen LESS than 801px */
+	    height: 2em;
+		background: #ecebeb url(menu-icon_white.png) no-repeat 10px center;
+        width: 160px;  /* width is 200px.  With 20px padding-left, AND the menu image, the width is set to 160 */
+		padding: 10px 0px 0px 40px;
+		border-top-left-radius: 10px;
+		border-top-right-radius: 10px;
+		-moz-border-radius-topleft: 10px;
+		-moz-border-radius-topright: 10px;
+        font-size: 1em;
+        color: #ffff00;
+	}
+
+    #navmenu 
+    {
+       top: 42px;  /* This is for screen LESS than 801px */
+    }
+
+	#navmenu a 
+	{
+	    height: 2em;
+	    padding: 12px 0px 4px 10px;
+        font-size: 1em;
+	}
+
+   #navmenu ul a
+   {
+       font-size: 1em;
+   }
+ 
+   /* -- Sub-Navigation -- */
+   #submenu 
+   {
+       text-align: right;
+   }
+   
+   #submenu_options,
+   #submenu_nav_lists
+   {
+       width: 100%;
+   }
+
+   #submenu_nav
+   {
+       padding: 5px 10px 5px 0;
+   }
+
+   #submenu_lists 
+   {
+       min-width: 320px; /* (320 / 800) * 100 */
+       margin-top: 6px;
+       margin-right: 10px;
+   }
+
+   #submenu_options li
+   {
+       font-size: 0.875em;  /* 14 / 16 */
+       padding: 8px 5px;
+   }
+   
+   /* -- Footer -- */
+   
+   /* -- Bottom Navigation -- */
+   #bottom_navigation
+   {
+       display: none;
+   }
+
+   /* -- Google Translator -- */
+   #google_translator 
+   {
+       display: none;
+   }
+
+   /* -- Classes and Events -- */
+   #classesSearchBox
+   {
+   	text-align: center;
+   	margin-bottom: 10px;
+   }
+   
+   #txtsearchphrase,
+   #searchButton
+   {
+   	margin-left: auto;
+   	margin-right: auto;
+   }
+
+   #txtsearchphrase
+   {
+       height: 2.5em;  /* 40 / 16 */
+       border-radius: 20px;
+       -moz-border-radius: 20px;
+       -webkit-border-radius: 20px;
+       border: 1pt solid #c0c0c0;
+       padding-left: 0.625em;
+       padding-right: 0.625em;
+   }
+   
+   #searchButton
+   {
+       height: 3em;  /* 48 / 16 */
+       width: 60px;
+       border-radius: 20px;
+       -moz-border-radius: 20px;
+       -webkit-border-radius: 20px;
+       font-size: 1em;
+   }
+   
+   #viewpick 
+   {
+       text-align: center;
+       margin-bottom: 10px;
+   }
+
+   #dropdown_viewpick 
+   {
+       height: 2.5em;  /* 40 / 16 */
+       margin-left: auto;
+       margin-right: auto;
+   }
+
+   .fieldset_classes,
+   .fieldset_subcategories
+   {
+       border: 0pt solid #000000;
+       background-color: #ffffff;
+       padding: 0px;
+   }
+
+   .fieldset_classes legend,
+   .fieldset_subcategories legend,
+   .subcategoryinfo 
+   {
+       display: none;
+   }
+   
+   .mobile_subcategories 
+   {
+       margin-bottom: 5px;
+   }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 800px
+----------------------------------------------------------------------------------*/
+
+/*--------------------------------------------------------------------------------
+BEGIN: Set up for screens with max of 420px
+----------------------------------------------------------------------------------*/
+@media screen and (max-width: 420px) 
+{
+    #submenu_lists 
+    {
+        min-width: 90%;
+    }
+}
+/*--------------------------------------------------------------------------------
+END: Set up for screens with max of 420px
+----------------------------------------------------------------------------------*/

@@ -1,0 +1,269 @@
+  #centercontent {	
+	width:       1000px;
+	font-family: verdana,sans-serif;
+	float:       left;
+	margin-left: 15px;
+  }
+
+  .column {
+     margin-right: 0.5%;
+     height:       50px;
+/*
+     background:   #c0c0c0;
+     border:       1pt dotted #808080;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;
+*/
+     /*float:        left;*/
+  }
+
+  .column .dragbox,
+  .column .section {
+     background: #ffffff;
+     border:     1px solid #2D6190;
+     margin:     5px 2px 5px;
+     padding:    0;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;
+  }
+
+  .column .dragbox h2,
+  .column .section h2 {
+     margin:        0;
+     font-size:     12px;
+     padding:       5px;
+     background:    #f0f0f0;
+     color:         #000000;
+     border-bottom: 1px solid #eeeeee;
+     font-family:   Verdana;
+  }
+
+  .column .dragbox h2 {
+	 cursor: move;
+  }
+
+  .dragbox-content td,
+  .section-content td {
+/*     min-height:  100px; */
+     font-family: 'Lucida Grande', Verdana;
+     font-size:   0.9em;
+     line-height: 1.5em;
+     padding-left: 2px;
+  }
+
+  .layoutfieldset {
+     background:    #ffffff;
+     border:        1pt dotted #808080;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;
+  }
+
+  .layoutfieldset_noborder {
+     background: #ffffff;
+	 border:     0pt solid #ffffff;
+  }
+
+  .layoutfieldset legend,
+  .layoutfieldset_noborder legend {
+     background:    #ffffff;
+     font-size:     12pt;
+     font-weight:   bold;
+     color:         #800000;
+     padding:       0px 2px;
+  }
+
+  .accountinfo,
+  #fieldset_historylog {
+     border: 1pt solid #c0c0c0;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;     
+  }
+
+  .accountinfo legend,
+  #fieldset_historylog legend {
+     font-size:     12pt;
+     font-weight:   bold;
+     color:         #800000;
+     padding:       0px 2px;
+  }
+
+  .accountInfo_fieldname {
+     font-weight: bold;
+  }
+
+  #content h2 {
+     background:    none repeat scroll 0 0 #6298C7;
+     border-top:    0px solid #6298C7;
+     border-bottom: 1px solid #6298C7;
+     color:         #000000;
+     font-family:   Verdana;
+     font-size:     12px;
+     margin:        0;
+     padding:       5px;
+  }
+
+  /* datamgr.asp */
+  #categories {
+     background-color: #efefef;
+     margin-bottom:    2px;
+     position:         relative;
+     float:            left;
+     width:            99%;
+     padding:          4px;
+  }
+
+  #intro_message {
+     margin-top:    2px;
+     margin-bottom: 5px;
+     padding:       2px;
+  }
+
+  #advanced_search {
+     font-size: 10px;
+     color:     #800000;
+     cursor:    pointer;
+  }
+
+  #subcategorynames_display {
+     font-size: 10px;
+     color:     #800000;
+  }
+
+  #map_canvas {
+     border: 1pt solid #000000;
+     position: relative;
+     float:    left;
+     width:    74%;
+     /* width:    59%; */
+     height:   400px;
+     -moz-border-radius:    6px;
+/*
+     border-radius:         6px;
+     -webkit-border-radius: 6px;
+*/
+  }
+
+  #sidebar {
+     /* background-color: #efefef; */
+     /* border:           0pt dotted #ff0000; */
+     position: relative;
+     float:    right;
+     width:    25%;
+     /* width:    40%; */
+     height:   393px;
+     padding:  2px;
+  }
+
+  #sidebar_links {
+    /*background-color: #ffffff;*/
+    overflow: auto;
+    width:    100%;
+    height:   100%;
+  }
+
+  #sidebar_table {
+    width: 100%;
+  }
+
+  #search_criteria {
+     margin-top:       2px;
+     margin-bottom:    10px;
+     position:         relative;
+     float:            left;
+     width:            99%;
+  }
+
+  #search_criteria fieldset {
+     border: 1pt solid #808080;
+     -moz-border-radius:    6px;
+     -webkit-border-radius: 6px;
+  }
+
+  #advanced_search:hover  { text-decoration: underline; }
+  #advanced_searchoptions { display: none;              }
+
+  #list_results {
+     /* background-color: #efefef; */
+     margin-top:       10px;
+     position:         relative;
+     float:            left;
+     width:            99%;
+     padding:          4px;
+  }
+
+  #list_results td {
+     cursor: pointer;
+  }
+
+
+  /* datamgr_info.asp */
+  #map_canvas_dot,
+  #map_canvas_streetview {
+     border:   1pt solid #000000;
+     position: relative;
+     float:    left;
+     width:    98%;
+     height:   250px;
+     margin:   2px 2px;
+     -moz-border-radius:    6px;
+/*
+     border-radius:         6px;
+     -webkit-border-radius: 6px;
+*/
+  }
+
+  #returnButtonDIV {
+/*
+     position:      relative;
+     float:         left;
+     width:         50%;
+*/
+     margin-bottom: 5px;
+
+  }
+
+  /* datamgr_maint.asp */
+  #fieldset_subcategories {
+     border: 1pt solid #c0c0c0;
+     -moz-border-radius:    5px;
+     -webkit-border-radius: 5px;     
+  }
+
+  #legend_subcategories {
+     color:       #000000;
+     font-size:   10pt;
+     font-weight: normal;
+  }
+
+  #subCategoryDIV {
+     -moz-border-radius-topright:       6px;
+     -moz-border-radius-bottomleft:     6px;
+     -moz-border-radius-bottomright:    6px;
+     -webkit-border-radius-topright:    6px;
+     -webkit-border-radius-bottomleft:  6px;
+     -webkit-border-radius-bottomright: 6px;
+     background-color:      #c0c0c0;
+     padding:               5px 5px;
+  }
+
+  .helpOption     { cursor: pointer }
+  .helpOptionText {
+     background-color:      #a80000;
+     font-size:             12px;
+     color:                 #ffffff;
+     padding:               5px 5px;
+     margin:                5px 5px;
+     border:                1pt solid #000000;
+     -webkit-border-radius: 5px;
+     -moz-border-radius:    5px;
+  }
+
+  .redText {
+     color: #800000;
+  }
+
+  #screeMsg {
+     color:       #ff0000;
+     font-size:   10pt;
+     font-weight: bold;
+  }

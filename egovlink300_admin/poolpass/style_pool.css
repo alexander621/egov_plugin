@@ -1,0 +1,209 @@
+/* RECREATION RESERVATION FORM */
+* { 
+	font-family: verdana, sans-serif; 
+	}
+
+#content {
+/*
+	width: 870px;
+	margin:20px 0 20px 10px;
+*/
+	width: 920px;
+	margin:10px 0px 10px 0px;
+	}
+
+div#poolcentercontent {	
+/*	width:       615px; */
+    width:       680px;
+	font-family: verdana, sans-serif;
+	float:       left;
+	}
+
+div#poolcentercontent div.shadow {
+/*    width: 615px; */
+    width:       680px;
+   }
+
+#purchasePicks {
+   position: relative;
+   float:    right;
+   top:      0;
+   }
+
+#membershipRatesDropDown {
+   font-size:   10pt;
+   font-weight: bold;
+   }
+
+/*#membershipRenewals {
+   float: left;
+   }
+*/
+#membershipTerms legend {
+   color: #800000;
+   }
+
+#poolformtitle { 
+	background-color: #8a8ab0; 
+	border-top: 1px solid #000000;
+	border-right: 1px solid #000000;
+	border-left: 1px solid #000000; 
+	padding: 5px;
+	font-weight: bold;
+	font-family: verdana,sans-serif;
+	font-size: 12px;
+	margin: 0;
+	color: black;
+	}
+
+#poolforminputarea {	
+	background-color: #ececf2; 
+	border: 1px solid #000000; 
+	padding:5px;
+	padding-right: 15px;
+	padding-bottom: 20px;
+	}
+
+#poolfooter { 
+	margin: 0;
+	padding: 10px;
+	padding-right: 5px;
+	clear: both;
+	width: 850px;
+	}
+
+#poolfooter input {
+	float: right;
+	}
+
+#poolformfooter a { 
+	color: white;  
+	text-align: center;
+	}
+
+#poolformfooter a:hover { 
+	text-decoration: none;
+	}
+
+div#rightpicks {
+    position:    relative;
+	float:       right;
+	width:       220px;
+	font-family: verdana,sans-serif;
+	font-size:   12px;
+	text-align:  left;
+	}
+
+div#rightpicks_altlayout {
+	position:    relative;
+	float:       right;
+	width:       220px;
+	font-family: verdana,sans-serif;
+	font-size:   12px;
+	text-align:  left;
+	}
+
+div.picktitle {
+	background-color: #9999CD; 
+	padding: 5px;
+	font-weight: bold;
+	font-family: verdana, sans-serif;
+	font-size: 12px;
+	margin: 0;
+	color: black;
+	}
+
+div.pickchoice {
+	background-color: #e0e0e0; 
+	border-top: 1px solid #000000; 
+	border-bottom: 1px solid #000000; 
+	}
+
+div.rate {
+	border: 1px solid orange;
+	text-align: right;
+	}
+
+dir.rate input { 
+	text-align: left; 
+	}
+
+span.poolrate {
+	text-align: right;
+	margin-left: 5px;
+	border: 1px solid red;
+	}
+
+table.picktable { 
+	width: 190px; 
+	}
+					
+td.pickprice { 
+	text-align: right; 
+	}
+
+.tableright {
+    border: 1px solid #336699;
+	text-align: left;
+	}
+
+.tableright th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1
+	}
+
+.tableright td {
+	height: 10px;
+	}
+
+.tableright td.amount {
+	height: 10px;
+	width: 5em;
+	text-align: left;
+	}
+
+table.tableadmin th {
+	cursor:default;
+	}
+
+input.button {
+	cursor: pointer;
+	}
+
+#searchtip {
+	margin: 0;
+	padding: 0;
+	padding-left: 100px;
+	}
+
+#content span#searchresults {
+	color: red;
+	font-size: 1.2em;
+	}
+
+input#continuebutton {
+	width: 200px;
+	text-align: center;
+	}
+
+table#pooltable {
+	width: 380px;
+    border: 1px solid #336699;
+	}
+
+table#pooltable th {
+    HEIGHT: 26px;
+    FONT-SIZE: 10px;
+    COLOR: #003366;
+    BORDER-BOTTOM: 1px solid #336699;
+    BACKGROUND-COLOR: #93bee1;
+	cursor:pointer;
+	}
+
+#content div#poolshadow { 
+	background: #919191;
+	width: 380px; 
+	}
